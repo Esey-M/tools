@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 91 browser-based utilities for
+CinchPad is a free, ad-supported collection of 93 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -16,6 +16,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Discount Calculator](https://cinchpad.com/discount-calculator/): Free discount calculator. Enter a price and percentage off to see the sale price and what you save. Handles stacked discounts and sales tax too.
 - [Fuel Cost Calculator](https://cinchpad.com/fuel-cost-calculator/): Free fuel cost calculator. Work out what a trip costs in fuel from distance, fuel economy and price, in mpg or litres per 100 km, and split it between passengers.
 - [GPA Calculator](https://cinchpad.com/gpa-calculator/): Free GPA calculator. Enter your courses, letter grades and credit hours to get your grade point average on the 4.0 scale, weighted or unweighted.
+- [Income Tax Calculator](https://cinchpad.com/income-tax-calculator/): Free income tax calculator for the US and UK. Estimate take-home pay after income tax, national insurance or FICA, with the marginal rate and a band breakdown.
 - [Loan Calculator](https://cinchpad.com/loan-calculator/): Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.
 - [Mortgage Calculator](https://cinchpad.com/mortgage-calculator/): Free mortgage calculator. Work out your full monthly payment including property tax, home insurance, PMI and HOA fees, plus total interest over the loan.
 - [Overtime Pay Calculator](https://cinchpad.com/overtime-pay-calculator/): Free overtime pay calculator. Work out time and a half, double time and total weekly pay from your hourly rate and hours worked, including a daily breakdown.
@@ -40,6 +41,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Unit Converter](https://cinchpad.com/unit-converter/): Free unit converter for length, weight, volume, area, speed, temperature, time and digital storage. Metric to imperial and back, with exact conversion factors.
 - [Voice to Text](https://cinchpad.com/voice-to-text/): Free voice to text. Dictate with your microphone and get editable text you can copy, with punctuation commands and a choice of languages. No signup.
 ### File & Image Tools
+- [Background Remover](https://cinchpad.com/background-remover/): Free background remover. Click the background to remove it and get a transparent PNG. Works on plain, evenly lit backgrounds — no upload, no account.
 - [Image Compressor](https://cinchpad.com/image-compressor/): Free image compressor. Reduce JPG, PNG and WebP file sizes for email or web uploads, with a live quality preview. Runs in your browser — no upload, no waiting.
 - [Image Resizer](https://cinchpad.com/image-resizer/): Free image resizer. Change a photo to exact pixel dimensions, scale by percentage, or use presets for social media and passport photos. No upload required.
 - [Image to PDF](https://cinchpad.com/image-to-pdf/): Free image to PDF converter. Combine JPG, PNG and WebP images into a single PDF, reorder the pages by dragging, and choose page size and margins. No upload.
