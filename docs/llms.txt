@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 85 browser-based utilities for
+CinchPad is a free, ad-supported collection of 88 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -37,6 +37,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Text to Speech](https://cinchpad.com/text-to-speech/): Free text to speech. Paste any text and have it read aloud using your device’s built-in voices, with speed, pitch and language control. No signup.
 - [Time Zone Converter](https://cinchpad.com/time-zone-converter/): Free time zone converter. Pick a time and see it across several cities at once, with daylight saving handled and working-hours overlap highlighted.
 - [Unit Converter](https://cinchpad.com/unit-converter/): Free unit converter for length, weight, volume, area, speed, temperature, time and digital storage. Metric to imperial and back, with exact conversion factors.
+- [Voice to Text](https://cinchpad.com/voice-to-text/): Free voice to text. Dictate with your microphone and get editable text you can copy, with punctuation commands and a choice of languages. No signup.
 ### File & Image Tools
 - [Image Compressor](https://cinchpad.com/image-compressor/): Free image compressor. Reduce JPG, PNG and WebP file sizes for email or web uploads, with a live quality preview. Runs in your browser — no upload, no waiting.
 - [Image Resizer](https://cinchpad.com/image-resizer/): Free image resizer. Change a photo to exact pixel dimensions, scale by percentage, or use presets for social media and passport photos. No upload required.
@@ -50,6 +51,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Baby Name Generator](https://cinchpad.com/baby-name-generator/): Free baby name generator. Filter names by style, length, starting letter and origin, shortlist the ones you like, and see meanings and popularity notes.
 - [Coin Flip](https://cinchpad.com/coin-flip/): Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.
 - [Dice Roller](https://cinchpad.com/dice-roller/): Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.
+- [Gift Idea Generator](https://cinchpad.com/gift-idea-generator/): Free gift idea generator. Get suggestions filtered by relationship, occasion, budget and interests, with a shortlist you can save and copy.
 - [Lottery Number Picker](https://cinchpad.com/lottery-number-picker/): Free lottery number generator. Get random picks for Powerball, Mega Millions, EuroMillions, UK Lotto or any custom format, with honest odds shown.
 - [Random Name Picker](https://cinchpad.com/random-name-picker/): Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.
 - [Random Number Generator](https://cinchpad.com/random-number-generator/): Free random number generator. Pick one number or many from any range, with optional no-repeats and sorting. Uses secure browser randomness.
@@ -65,6 +67,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Colour Blindness Test](https://cinchpad.com/color-blindness-test/): Free online colour blindness test. Answer a short set of Ishihara-style plates to screen for red-green colour vision deficiency, with results explained.
 - [Heart Rate Zone Calculator](https://cinchpad.com/heart-rate-calculator/): Free heart rate zone calculator. Get your maximum heart rate and five training zones by age, plus the more accurate Karvonen method.
 - [Ideal Weight Calculator](https://cinchpad.com/ideal-weight-calculator/): Free ideal weight calculator. See your target weight from the Devine, Robinson, Miller and Hamwi formulas plus the healthy BMI range, and why they disagree.
+- [Medicine Schedule Planner](https://cinchpad.com/medicine-reminder/): Free medicine schedule planner. Turn a dosing frequency into specific times across your waking day, tick off each dose, and print or copy the schedule.
 - [Period Tracker](https://cinchpad.com/period-tracker/): Free period tracker and calculator. Predict your next periods and fertile window from your last period and cycle length. Stored in your browser, never uploaded.
 - [Sleep Calculator](https://cinchpad.com/sleep-calculator/): Free sleep calculator. Work out when to go to bed for a given wake-up time, or when to wake if you sleep now, based on 90-minute sleep cycles.
 - [Step Counter](https://cinchpad.com/step-counter/): Free step tracker and converter. Log daily steps, convert them to distance and calories from your height and weight, and track progress against a goal.
