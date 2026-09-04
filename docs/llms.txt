@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 68 browser-based utilities for
+CinchPad is a free, ad-supported collection of 70 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -39,6 +39,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Image Compressor](https://cinchpad.com/image-compressor/): Free image compressor. Reduce JPG, PNG and WebP file sizes for email or web uploads, with a live quality preview. Runs in your browser — no upload, no waiting.
 - [Image Resizer](https://cinchpad.com/image-resizer/): Free image resizer. Change a photo to exact pixel dimensions, scale by percentage, or use presets for social media and passport photos. No upload required.
 - [Image to PDF](https://cinchpad.com/image-to-pdf/): Free image to PDF converter. Combine JPG, PNG and WebP images into a single PDF, reorder the pages by dragging, and choose page size and margins. No upload.
+- [PDF Merger](https://cinchpad.com/pdf-merger/): Free PDF merger. Combine multiple PDF files into one document, drag to reorder the files, and download. Runs in your browser — your files are never uploaded.
 - [Photo Cropper](https://cinchpad.com/photo-cropper/): Free photo cropper. Drag to crop any image, lock to common aspect ratios for social profiles and posts, and download. Runs in your browser with no upload.
 ### Random Pickers
 - [Coin Flip](https://cinchpad.com/coin-flip/): Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.
@@ -64,6 +65,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Electricity Bill Estimator](https://cinchpad.com/electricity-bill-estimator/): Free electricity cost calculator. Work out what any appliance costs to run per hour, month and year from its wattage, usage and your unit rate.
 - [Grocery List Maker](https://cinchpad.com/grocery-list-maker/): Free grocery list maker. Type your shopping and it sorts automatically into supermarket aisles, saves in your browser, and works offline on your phone.
 - [Habit Tracker](https://cinchpad.com/habit-tracker/): Free habit tracker. Add daily habits, tick them off on a 30-day grid, and see your current streak and completion rate. Saved in your browser, no account.
+- [Packing List Generator](https://cinchpad.com/packing-list-generator/): Free packing list generator. Build a trip-specific list from length, climate and trip type, tick items off as you pack, and save it in your browser.
 - [Paint Calculator](https://cinchpad.com/paint-calculator/): Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.
 - [Recipe Scaler](https://cinchpad.com/recipe-scaler/): Free recipe scaler. Paste a recipe and change the number of servings — every quantity is rescaled automatically, with fractions kept readable.
 - [To-Do List](https://cinchpad.com/todo-list/): Free online to-do list. Add tasks with priorities and due dates, filter what is left, and reorder by dragging. Saved in your browser with no account.
