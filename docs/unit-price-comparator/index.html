@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit Price Calculator – Which Pack Is Actually Cheaper</title>
+<meta name="description" content="Free unit price calculator. Compare products of different sizes by price per kilo, litre or item, and see which pack is genuinely the better value.">
+<link rel="canonical" href="https://cinchpad.com/unit-price-comparator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Unit Price Calculator – Which Pack Is Actually Cheaper">
+<meta property="og:description" content="Free unit price calculator. Compare products of different sizes by price per kilo, litre or item, and see which pack is genuinely the better value.">
+<meta property="og:url" content="https://cinchpad.com/unit-price-comparator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Unit Price Calculator – Which Pack Is Actually Cheaper">
+<meta name="twitter:description" content="Free unit price calculator. Compare products of different sizes by price per kilo, litre or item, and see which pack is genuinely the better value.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.up-head,.up-row{display:grid;grid-template-columns:1fr 110px 120px 38px;gap:8px;align-items:center}
+.up-head{font-size:.76rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);font-weight:640;
+  margin-bottom:7px;padding:0 2px}
+.up-rows{display:flex;flex-direction:column;gap:8px}
+.up-row button{width:36px;height:38px;border:1px solid var(--line-strong);background:var(--bg);
+  border-radius:var(--radius-sm);color:var(--ink-3);cursor:pointer;font-size:1.1rem;line-height:1}
+.up-row button:hover{border-color:var(--danger);color:var(--danger)}
+@media (max-width:560px){.up-head{display:none}.up-row{grid-template-columns:1fr 1fr}.up-row input[type=text]{grid-column:1/-1}}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/unit-price-comparator/#app","name":"Unit Price Calculator","url":"https://cinchpad.com/unit-price-comparator/","description":"Free unit price calculator. Compare products of different sizes by price per kilo, litre or item, and see which pack is genuinely the better value.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Home & Daily Life","item":"https://cinchpad.com/category/home/"},{"@type":"ListItem","position":3,"name":"Unit Price Calculator","item":"https://cinchpad.com/unit-price-comparator/"}]},{"@type":"HowTo","name":"How to use the Unit Price Calculator","description":"Free unit price calculator. Compare products of different sizes by price per kilo, litre or item, and see which pack is genuinely the better value.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Choose whether you are comparing by weight, volume or item count.","url":"https://cinchpad.com/unit-price-comparator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Enter the price and size of each option.","url":"https://cinchpad.com/unit-price-comparator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"The cheapest per unit is highlighted, with the percentage gap to the others.","url":"https://cinchpad.com/unit-price-comparator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I work out price per kilo?","acceptedAnswer":{"@type":"Answer","text":"Divide the price by the weight in grams, then multiply by 1,000. A $2.50 pack of 400 g is 2.50 ÷ 400 × 1000 = $6.25 per kilo."}},{"@type":"Question","name":"Is the bigger pack usually cheaper?","acceptedAnswer":{"@type":"Answer","text":"Usually but not reliably. Shelf surveys regularly find larger packs priced higher per unit, especially on promotions, so it is worth checking rather than assuming."}},{"@type":"Question","name":"Can I compare different units, like grams and kilos?","acceptedAnswer":{"@type":"Answer","text":"Convert to the same unit first — 1 kg is 1,000 g. The calculator expects all options in the same unit."}},{"@type":"Question","name":"Does this account for offers like 3 for 2?","acceptedAnswer":{"@type":"Answer","text":"Not automatically. Enter the total price you would actually pay and the total quantity you would get, and the comparison works."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 83 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/home/">Home &amp; Daily Life</a></li><li><span aria-current="page">Unit Price Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Unit Price Calculator</h1>
+      <p class="lede">Enter two or more options and see the real price per unit. The big pack is cheaper surprisingly often — but not always.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="field">
+  <label for="unit">Compare by</label>
+  <select id="unit">
+    <option value="g" selected>Weight (g / kg)</option>
+    <option value="ml">Volume (ml / litre)</option>
+    <option value="item">Number of items</option>
+  </select>
+</div>
+
+<div class="field">
+  <span class="field-label">Options</span>
+  <div class="up-head"><span>Label</span><span>Price</span><span id="qtyhead">Size (g)</span><span></span></div>
+  <div id="rows" class="up-rows"></div>
+  <button type="button" class="btn btn-ghost" id="addrow" style="margin-top:9px">+ Add another</button>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label">Best value</div>
+  <div class="result-value" id="best" style="font-size:1.7rem">—</div>
+  <div class="result-note" id="note"></div>
+</div>
+
+<div id="table-wrap" hidden style="margin-top:20px">
+  <div class="table-scroll"><table id="table"><thead><tr><th>Option</th><th>Price</th><th>Size</th><th id="uh">Per kg</th><th>vs best</th></tr></thead><tbody></tbody></table></div>
+</div>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">Why the big pack is not always cheaper</h2>
+      <div class="answer"><p><strong>Unit price is total price divided by size, and it is the only number that lets you compare packs honestly.</strong> A 400 g pack at $2.50 is $6.25 per kilo; a 750 g pack at $4.20 is $5.60 per kilo — so the big one wins by 10%. But this reverses more often than people assume. Studies of supermarket shelves repeatedly find larger packs priced <em>above</em> smaller ones per unit, particularly on promoted lines, because shoppers assume bigger means better value and stop checking.</p></div>
+    </section>
+
+    <section class="section prose" id="traps">
+      <h2 id="traps-h">Shelf pricing traps</h2>
+      <ul>
+<li><strong>Different units on adjacent labels.</strong> One shows price per 100 g, the next per kilo. They are not comparable at a glance, which is the point.</li>
+<li><strong>Multibuys that are not savings.</strong> "3 for $5" is only a deal if $1.67 beats the single price — sometimes it does not.</li>
+<li><strong>Shrinkflation.</strong> The pack looks the same but holds 10% less. Only the unit price catches it.</li>
+<li><strong>Bigger pack, higher unit price.</strong> Common on promoted lines and premium brands, precisely because shoppers assume otherwise.</li>
+<li><strong>Waste is a real cost.</strong> The larger pack is not cheaper if a third of it goes off before you use it.</li>
+</ul>
+    </section>
+<section class="section prose" id="labels">
+      <h2 id="labels-h">Reading the shelf label</h2>
+      <p>In the UK, EU and most of Australia, retailers are legally required to display a unit price on the shelf edge. In the US it varies by state, though most large chains show it voluntarily.</p>
+<p>It is almost always in small print beneath the headline price, and it is the number worth looking at. The catch is that stores are not always required to use consistent units across similar products, which is exactly when a calculator earns its keep.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Unit Price Calculator</h2>
+  <ol class="prose"><li>Choose whether you are comparing by weight, volume or item count.</li><li>Enter the price and size of each option.</li><li>The cheapest per unit is highlighted, with the percentage gap to the others.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How do I work out price per kilo?</summary>
+    <div><p>Divide the price by the weight in grams, then multiply by 1,000. A $2.50 pack of 400 g is 2.50 ÷ 400 × 1000 = $6.25 per kilo.</p></div>
+  </details>
+  <details>
+    <summary>Is the bigger pack usually cheaper?</summary>
+    <div><p>Usually but not reliably. Shelf surveys regularly find larger packs priced higher per unit, especially on promotions, so it is worth checking rather than assuming.</p></div>
+  </details>
+  <details>
+    <summary>Can I compare different units, like grams and kilos?</summary>
+    <div><p>Convert to the same unit first — 1 kg is 1,000 g. The calculator expects all options in the same unit.</p></div>
+  </details>
+  <details>
+    <summary>Does this account for offers like 3 for 2?</summary>
+    <div><p>Not automatically. Enter the total price you would actually pay and the total quantity you would get, and the comparison works.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/grocery-list-maker/">
+      <strong>Grocery List Maker</strong>
+      <span>A shopping list that sorts itself into aisles so you only walk the shop once.</span>
+    </a>
+    <a class="tool-card" href="/discount-calculator/">
+      <strong>Discount Calculator</strong>
+      <span>Final sale price and your saving, including stacked and double discounts.</span>
+    </a>
+    <a class="tool-card" href="/percentage-calculator/">
+      <strong>Percentage Calculator</strong>
+      <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+    </a>
+    <a class="tool-card" href="/budget-tracker/">
+      <strong>Budget Tracker</strong>
+      <span>Track monthly income and spending, with the 50/30/20 split checked for you.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More home & daily life</h2>
+      <ul class="side-list">
+        <li><a href="/bill-split-calculator/">Bill Split Calculator</a></li>
+        <li><a href="/budget-tracker/">Budget Tracker</a></li>
+        <li><a href="/electricity-bill-estimator/">Electricity Bill Estimator</a></li>
+        <li><a href="/grocery-list-maker/">Grocery List Maker</a></li>
+        <li><a href="/habit-tracker/">Habit Tracker</a></li>
+        <li><a href="/packing-list-generator/">Packing List Generator</a></li>
+        <li><a href="/paint-calculator/">Paint Calculator</a></li>
+        <li><a href="/recipe-scaler/">Recipe Scaler</a></li>
+        <li><a href="/todo-list/">To-Do List</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/home/" style="font-size:.88rem">All home & daily life →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+
+  var UNITS = {
+    g:    { qty: 'Size (g)',   per: 'Per kg',    factor: 1000, label: 'kg' },
+    ml:   { qty: 'Size (ml)',  per: 'Per litre', factor: 1000, label: 'litre' },
+    item: { qty: 'Items',      per: 'Per item',  factor: 1,    label: 'item' }
+  };
+
+  function money(n){
+    return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: n < 1 ? 3 : 2 });
+  }
+
+  function addRow(label, price, qty){
+    var div = document.createElement('div');
+    div.className = 'up-row';
+    div.innerHTML =
+      '<input type="text" placeholder="Own brand 500g" value="' + (label || '') + '" aria-label="Label">' +
+      '<input type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00" value="' +
+        (price == null ? '' : price) + '" aria-label="Price">' +
+      '<input type="number" inputmode="decimal" min="0" step="1" placeholder="500" value="' +
+        (qty == null ? '' : qty) + '" aria-label="Size">' +
+      '<button type="button" aria-label="Remove">×</button>';
+    div.querySelector('button').addEventListener('click', function(){ div.remove(); calc(); });
+    div.querySelectorAll('input').forEach(function(i){ i.addEventListener('input', calc); });
+    $('rows').appendChild(div);
+  }
+
+  function calc(){
+    var u = UNITS[$('unit').value];
+    $('qtyhead').textContent = u.qty;
+    $('uh').textContent = u.per;
+
+    var rows = [].slice.call($('rows').children).map(function(r, i){
+      var inputs = r.querySelectorAll('input');
+      var price = parseFloat(inputs[1].value);
+      var qty = parseFloat(inputs[2].value);
+      return {
+        label: inputs[0].value.trim() || ('Option ' + (i + 1)),
+        price: price, qty: qty,
+        unit: (isFinite(price) && isFinite(qty) && qty > 0) ? price / qty * u.factor : NaN
+      };
+    }).filter(function(r){ return isFinite(r.unit); });
+
+    if (rows.length < 1) { $('out').hidden = true; $('table-wrap').hidden = true; return; }
+
+    var best = rows.reduce(function(a, b){ return b.unit < a.unit ? b : a; });
+    $('best').textContent = best.label + ' — ' + money(best.unit) + ' per ' + u.label;
+
+    if (rows.length > 1) {
+      var worst = rows.reduce(function(a, b){ return b.unit > a.unit ? b : a; });
+      var saving = (worst.unit - best.unit) / worst.unit * 100;
+      $('note').textContent = saving > 0.5
+        ? 'That is ' + saving.toFixed(0) + '% cheaper per ' + u.label + ' than ' + worst.label + '.'
+        : 'All the options are priced within half a percent of each other — buy whichever suits.';
+    } else {
+      $('note').textContent = 'Add another option to compare.';
+    }
+
+    $('table').querySelector('tbody').innerHTML = rows
+      .slice().sort(function(a, b){ return a.unit - b.unit; })
+      .map(function(r){
+        var diff = (r.unit - best.unit) / best.unit * 100;
+        return '<tr' + (r === best ? ' style="background:var(--accent-soft);font-weight:600"' : '') + '>' +
+          '<td>' + r.label.replace(/[<>&]/g, '') + '</td><td>' + money(r.price) + '</td><td>' + r.qty + '</td>' +
+          '<td>' + money(r.unit) + '</td><td>' + (diff < 0.05 ? 'best' : '+' + diff.toFixed(0) + '%') + '</td></tr>';
+      }).join('');
+
+    $('out').hidden = false; $('table-wrap').hidden = false;
+  }
+
+  $('addrow').addEventListener('click', function(){ addRow(); calc(); });
+  $('unit').addEventListener('change', calc);
+
+  addRow('Small pack', 2.50, 400);
+  addRow('Large pack', 4.20, 750);
+  addRow('', null, null);
+  calc();
+})();</script>
+</body>
+</html>

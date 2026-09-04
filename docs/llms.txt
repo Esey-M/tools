@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 79 browser-based utilities for
+CinchPad is a free, ad-supported collection of 83 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -47,6 +47,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Photo Cropper](https://cinchpad.com/photo-cropper/): Free photo cropper. Drag to crop any image, lock to common aspect ratios for social profiles and posts, and download. Runs in your browser with no upload.
 - [Photo Watermark](https://cinchpad.com/watermark-photo/): Free photo watermark tool. Add your name or website across an image, choose position, opacity, size and rotation, and download. No upload, no watermark of ours.
 ### Random Pickers
+- [Baby Name Generator](https://cinchpad.com/baby-name-generator/): Free baby name generator. Filter names by style, length, starting letter and origin, shortlist the ones you like, and see meanings and popularity notes.
 - [Coin Flip](https://cinchpad.com/coin-flip/): Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.
 - [Dice Roller](https://cinchpad.com/dice-roller/): Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.
 - [Lottery Number Picker](https://cinchpad.com/lottery-number-picker/): Free lottery number generator. Get random picks for Powerball, Mega Millions, EuroMillions, UK Lotto or any custom format, with honest odds shown.
@@ -65,6 +66,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Ideal Weight Calculator](https://cinchpad.com/ideal-weight-calculator/): Free ideal weight calculator. See your target weight from the Devine, Robinson, Miller and Hamwi formulas plus the healthy BMI range, and why they disagree.
 - [Period Tracker](https://cinchpad.com/period-tracker/): Free period tracker and calculator. Predict your next periods and fertile window from your last period and cycle length. Stored in your browser, never uploaded.
 - [Sleep Calculator](https://cinchpad.com/sleep-calculator/): Free sleep calculator. Work out when to go to bed for a given wake-up time, or when to wake if you sleep now, based on 90-minute sleep cycles.
+- [Step Counter](https://cinchpad.com/step-counter/): Free step tracker and converter. Log daily steps, convert them to distance and calories from your height and weight, and track progress against a goal.
 - [Water Intake Calculator](https://cinchpad.com/water-intake-calculator/): Free water intake calculator. Estimate how much water to drink each day based on your body weight, exercise and climate, and learn why the 8-glasses rule is a myth.
 ### Home & Daily Life
 - [Bill Split Calculator](https://cinchpad.com/bill-split-calculator/): Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.
@@ -76,6 +78,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Paint Calculator](https://cinchpad.com/paint-calculator/): Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.
 - [Recipe Scaler](https://cinchpad.com/recipe-scaler/): Free recipe scaler. Paste a recipe and change the number of servings — every quantity is rescaled automatically, with fractions kept readable.
 - [To-Do List](https://cinchpad.com/todo-list/): Free online to-do list. Add tasks with priorities and due dates, filter what is left, and reorder by dragging. Saved in your browser with no account.
+- [Unit Price Calculator](https://cinchpad.com/unit-price-comparator/): Free unit price calculator. Compare products of different sizes by price per kilo, litre or item, and see which pack is genuinely the better value.
 ### Fun & Social
 - [Anniversary Calculator](https://cinchpad.com/anniversary-calculator/): Free anniversary calculator. See exactly how long since your wedding or first date, when the next milestone falls, and the traditional and modern gifts.
 - [Birthday Countdown](https://cinchpad.com/birthday-countdown/): Free birthday countdown. Enter your date of birth to see how many days until your next birthday, how old you will turn, and what day of the week it falls on.
@@ -83,6 +86,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Love Calculator](https://cinchpad.com/love-calculator/): Free love calculator. Enter two names for a compatibility percentage using the classic FLAMES method. A bit of fun — not advice, and not a prediction.
 - [Meme Generator](https://cinchpad.com/meme-generator/): Free meme generator with no watermark. Upload any image, add top and bottom text in the classic Impact style, adjust size and download. No signup.
 - [Nickname Generator](https://cinchpad.com/nickname-generator/): Free nickname generator. Make usernames, gamertags and nicknames from your own name or a theme, in several styles, with availability tips.
+- [Quote Generator](https://cinchpad.com/quote-generator/): Free quote generator. Get a quote on work, resilience, creativity or life, correctly attributed, with a flag when the popular version is misquoted.
 - [Random Fact Generator](https://cinchpad.com/random-fact-generator/): Free random fact generator. Get an interesting, checkable fact about science, history, language, nature or space — each with a short explanation of why it is true.
 - [Typing Speed Test](https://cinchpad.com/typing-speed-test/): Free typing speed test. Measure your words per minute and accuracy on a one-minute test, with results compared against average typing speeds.
 - [Zodiac Sign Finder](https://cinchpad.com/zodiac-sign-finder/): Free zodiac sign finder. Enter your birth date to get your western star sign with its element and dates, plus your Chinese zodiac animal and birthstone.
