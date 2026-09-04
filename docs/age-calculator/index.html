@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Age Calculator – Your Exact Age in Years, Months and Days</title>
+<meta name="description" content="Free age calculator. Enter your date of birth for your exact age in years, months and days, your total days and hours, and a countdown to your next birthday.">
+<link rel="canonical" href="https://cinchpad.com/age-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Age Calculator – Your Exact Age in Years, Months and Days">
+<meta property="og:description" content="Free age calculator. Enter your date of birth for your exact age in years, months and days, your total days and hours, and a countdown to your next birthday.">
+<meta property="og:url" content="https://cinchpad.com/age-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Age Calculator – Your Exact Age in Years, Months and Days">
+<meta name="twitter:description" content="Free age calculator. Enter your date of birth for your exact age in years, months and days, your total days and hours, and a countdown to your next birthday.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/age-calculator/#app","name":"Age Calculator","url":"https://cinchpad.com/age-calculator/","description":"Free age calculator. Enter your date of birth for your exact age in years, months and days, your total days and hours, and a countdown to your next birthday.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://cinchpad.com/category/calculators/"},{"@type":"ListItem","position":3,"name":"Age Calculator","item":"https://cinchpad.com/age-calculator/"}]},{"@type":"HowTo","name":"How to use the Age Calculator","description":"Free age calculator. Enter your date of birth for your exact age in years, months and days, your total days and hours, and a countdown to your next birthday.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Pick your date of birth from the first field.","url":"https://cinchpad.com/age-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Leave the second field on today’s date, or change it to find your age on any past or future date.","url":"https://cinchpad.com/age-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Read your exact age in years, months and days, plus the totals underneath.","url":"https://cinchpad.com/age-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How old am I exactly?","acceptedAnswer":{"@type":"Answer","text":"Enter your date of birth above and the answer appears immediately, expressed in years, months and days, along with your total days and hours alive."}},{"@type":"Question","name":"Can I calculate my age on a future date?","acceptedAnswer":{"@type":"Answer","text":"Yes. Change the second field to any future date and the tool tells you how old you will be then. This is handy for checking eligibility dates for school, retirement or licences."}},{"@type":"Question","name":"Does this account for leap years?","acceptedAnswer":{"@type":"Answer","text":"Yes. It counts real calendar dates rather than dividing by 365, so every leap day between your birth date and the comparison date is included automatically."}},{"@type":"Question","name":"How many days old am I?","acceptedAnswer":{"@type":"Answer","text":"The total days figure in the results shows exactly that — the number of complete days between your date of birth and the comparison date."}},{"@type":"Question","name":"Is my date of birth stored anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The whole calculation happens in your browser. Nothing is sent to a server and nothing is saved after you close the page."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" placeholder="Search 100+ tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-label="Search tools">
+      <div class="search-results" id="search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/calculators/">Calculators</a></li><li><span aria-current="page">Age Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Age Calculator</h1>
+      <p class="lede">Enter your date of birth to see exactly how old you are today — down to the day — plus how long you have to wait for your next birthday.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="row">
+  <div class="field">
+    <label for="dob">Date of birth</label>
+    <input type="date" id="dob" max="2100-12-31" autocomplete="bday">
+  </div>
+  <div class="field">
+    <label for="asof">Age at this date</label>
+    <input type="date" id="asof">
+    <span class="hint">Defaults to today. Change it to find your age on any date.</span>
+  </div>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label">You are</div>
+  <div class="result-value" id="main">—</div>
+  <div class="result-note" id="bday"></div>
+  <dl class="result-grid">
+    <div class="stat"><dt>Total months</dt><dd id="m">—</dd></div>
+    <div class="stat"><dt>Total weeks</dt><dd id="w">—</dd></div>
+    <div class="stat"><dt>Total days</dt><dd id="d">—</dd></div>
+    <div class="stat"><dt>Total hours</dt><dd id="h">—</dd></div>
+  </dl>
+</div>
+<p class="hint" id="prompt" style="margin-top:14px">Pick your date of birth to see your age.</p>
+<p class="notice notice-warn" id="err" hidden style="margin-top:14px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How your age is worked out</h2>
+      <div class="answer"><p><strong>Your age is the number of complete years, then months, then days between your date of birth and today.</strong> The calculation is not simply days ÷ 365, because months have different lengths and leap years add an extra day roughly every four years. This calculator counts calendar months properly: if you were born on 15 March 1990, then on 10 September 2026 you are 36 years, 5 months and 26 days old — it borrows the 31 days of August to settle the day count.</p></div>
+    </section>
+
+    <section class="section prose" id="method">
+      <h2 id="method-h">Why days ÷ 365 gives the wrong answer</h2>
+      <p>A common shortcut is to count the days between two dates and divide by 365. That drifts, because a calendar year averages 365.2425 days once leap years are counted.</p>
+<p>Over a lifetime the error is visible. Someone alive for 20,000 days is 54.79 years old by the naive method, but 54 years, 9 months and 5 days by proper calendar counting — and on some dates the naive method lands you on the wrong side of a birthday entirely.</p>
+<p>This calculator works the way people actually count: increment the year on each birthday, then the months, then the leftover days.</p>
+    </section>
+<section class="section prose" id="leap">
+      <h2 id="leap-h">What happens if you were born on 29 February</h2>
+      <p>A leap day birthday only falls on the calendar once every four years. For age purposes, most countries treat 1 March as the legal birthday in common years, though some use 28 February.</p>
+<p>This calculator uses the arithmetic convention: in a non-leap year, a 29 February birth date rolls into 1 March, so your age still increases exactly once per year.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Age Calculator</h2>
+  <ol class="prose"><li>Pick your <strong>date of birth</strong> from the first field.</li><li>Leave the second field on today’s date, or change it to find your age on any past or future date.</li><li>Read your exact age in years, months and days, plus the totals underneath.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How old am I exactly?</summary>
+    <div><p>Enter your date of birth above and the answer appears immediately, expressed in years, months and days, along with your total days and hours alive.</p></div>
+  </details>
+  <details>
+    <summary>Can I calculate my age on a future date?</summary>
+    <div><p>Yes. Change the second field to any future date and the tool tells you how old you will be then. This is handy for checking eligibility dates for school, retirement or licences.</p></div>
+  </details>
+  <details>
+    <summary>Does this account for leap years?</summary>
+    <div><p>Yes. It counts real calendar dates rather than dividing by 365, so every leap day between your birth date and the comparison date is included automatically.</p></div>
+  </details>
+  <details>
+    <summary>How many days old am I?</summary>
+    <div><p>The total days figure in the results shows exactly that — the number of complete days between your date of birth and the comparison date.</p></div>
+  </details>
+  <details>
+    <summary>Is my date of birth stored anywhere?</summary>
+    <div><p>No. The whole calculation happens in your browser. Nothing is sent to a server and nothing is saved after you close the page.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/date-difference-calculator/">
+      <strong>Date Difference Calculator</strong>
+      <span>How many days, weeks, months or working days lie between any two dates.</span>
+    </a>
+    <a class="tool-card" href="/bmi-calculator/">
+      <strong>BMI Calculator</strong>
+      <span>Body mass index from your height and weight, with your healthy weight range.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More calculators</h2>
+      <ul class="side-list">
+        <li><a href="/date-difference-calculator/">Date Difference Calculator</a></li>
+        <li><a href="/discount-calculator/">Discount Calculator</a></li>
+        <li><a href="/loan-calculator/">Loan Calculator</a></li>
+        <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+        <li><a href="/tip-calculator/">Tip Calculator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/calculators/" style="font-size:.88rem">All calculators →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><a href="/category/generators/">Generators</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var dob = $('dob'), asof = $('asof'), out = $('out'), err = $('err'), prompt = $('prompt');
+  var fmt = function(n){ return n.toLocaleString('en-US'); };
+
+  // Local-midnight date from a yyyy-mm-dd value, avoiding UTC shift.
+  function parse(v){
+    var p = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v || '');
+    return p ? new Date(+p[1], +p[2] - 1, +p[3]) : null;
+  }
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  function todayStr(){ var t = new Date(); return t.getFullYear() + '-' + pad(t.getMonth()+1) + '-' + pad(t.getDate()); }
+
+  asof.value = todayStr();
+  dob.max = todayStr();
+
+  function plural(n, word){ return n + ' ' + word + (n === 1 ? '' : 's'); }
+
+  function calc(){
+    var a = parse(dob.value), b = parse(asof.value);
+    if (!a || !b) { out.hidden = true; prompt.hidden = false; err.hidden = true; return; }
+    if (a > b) {
+      out.hidden = true; prompt.hidden = true;
+      err.hidden = false; err.textContent = 'The date of birth is after the comparison date — swap them around.';
+      return;
+    }
+    err.hidden = true; prompt.hidden = true;
+
+    // Calendar-accurate years/months/days, borrowing from the previous month.
+    var y = b.getFullYear() - a.getFullYear();
+    var mo = b.getMonth() - a.getMonth();
+    var d = b.getDate() - a.getDate();
+    if (d < 0) { mo--; d += new Date(b.getFullYear(), b.getMonth(), 0).getDate(); }
+    if (mo < 0) { mo += 12; y--; }
+
+    var parts = [];
+    if (y) parts.push(plural(y, 'year'));
+    if (mo) parts.push(plural(mo, 'month'));
+    parts.push(plural(d, 'day'));
+    $('main').textContent = parts.join(', ');
+
+    var ms = b - a;
+    var days = Math.round(ms / 86400000);
+    $('d').textContent = fmt(days);
+    $('w').textContent = fmt(Math.floor(days / 7));
+    $('m').textContent = fmt(y * 12 + mo);
+    $('h').textContent = fmt(days * 24);
+
+    // Next birthday relative to the comparison date.
+    var next = new Date(b.getFullYear(), a.getMonth(), a.getDate());
+    if (next < b) next = new Date(b.getFullYear() + 1, a.getMonth(), a.getDate());
+    var until = Math.round((next - b) / 86400000);
+    $('bday').textContent = until === 0
+      ? 'Happy birthday — that is today!'
+      : 'Next birthday in ' + plural(until, 'day') + ', turning ' + (y + 1) + '.';
+
+    out.hidden = false;
+  }
+
+  dob.addEventListener('input', calc);
+  asof.addEventListener('input', calc);
+})();</script>
+</body>
+</html>

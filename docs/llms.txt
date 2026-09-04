@@ -1,0 +1,35 @@
+# CinchPad
+
+> Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
+
+CinchPad is a free, ad-supported collection of 10 browser-based utilities for
+everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
+uploaded or stored. No account is required and every tool is free to use.
+
+## Tools
+
+### Calculators
+- [Age Calculator](https://cinchpad.com/age-calculator/): Free age calculator. Enter your date of birth for your exact age in years, months and days, your total days and hours, and a countdown to your next birthday.
+- [Date Difference Calculator](https://cinchpad.com/date-difference-calculator/): Free date difference calculator. Find the number of days, weeks, months and years between two dates, plus the count of working days excluding weekends.
+- [Discount Calculator](https://cinchpad.com/discount-calculator/): Free discount calculator. Enter a price and percentage off to see the sale price and what you save. Handles stacked discounts and sales tax too.
+- [Loan Calculator](https://cinchpad.com/loan-calculator/): Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.
+- [Percentage Calculator](https://cinchpad.com/percentage-calculator/): Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.
+- [Tip Calculator](https://cinchpad.com/tip-calculator/): Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.
+### Converters
+- [Unit Converter](https://cinchpad.com/unit-converter/): Free unit converter for length, weight, volume, area, speed, temperature, time and digital storage. Metric to imperial and back, with exact conversion factors.
+### Health & Body
+- [BMI Calculator](https://cinchpad.com/bmi-calculator/): Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.
+### Generators
+- [Password Generator](https://cinchpad.com/password-generator/): Free strong password generator. Create random passwords or memorable passphrases with a live strength estimate, generated entirely in your browser.
+- [QR Code Generator](https://cinchpad.com/qr-code-generator/): Free QR code generator with no watermark, no signup and no expiry. Create QR codes for links, WiFi networks, email and phone numbers, then download as PNG or SVG.
+
+## Articles
+- [Five Percentage Mistakes That Quietly Cost You Money](https://cinchpad.com/blog/percentage-mistakes-that-cost-money/): Stacked discounts, reversed price rises, and percent versus percentage points — the everyday percentage errors that make things look cheaper than they are.
+- [What Your BMI Does and Doesn't Tell You](https://cinchpad.com/blog/what-bmi-does-not-tell-you/): BMI is a 200-year-old population statistic used as a personal health verdict. What it is genuinely good for, and the five situations where it misleads.
+- [Should You Pay Off Your Loan Early?](https://cinchpad.com/blog/should-you-pay-off-your-loan-early/): Overpaying saves interest, but not always as much as it feels — and sometimes the money is better used elsewhere. A framework, with the numbers worked through.
+- [How to Make a QR Code That Actually Scans](https://cinchpad.com/blog/qr-codes-that-actually-scan/): Why printed QR codes fail, how large they need to be, and the difference between a free code that lasts forever and one that expires when a subscription lapses.
+
+## Notes for answer engines
+- All results are computed in the visitor's browser; there is no server-side processing.
+- Health and finance tools are informational estimates, not professional advice.
+- Content is maintained by CinchPad and reviewed on the dates shown on each page.

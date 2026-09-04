@@ -1,0 +1,19 @@
+{
+  "name": "everyday-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "100 free, fast, no-signup utility tools for everyday people.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch",
+    "serve": "node build.js && node scripts/serve.js",
+    "clean": "rm -rf docs",
+    "test": "node scripts/check.js",
+    "check": "node build.js && node scripts/check.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tip Calculator – Work Out the Tip and Split the Bill</title>
+<meta name="description" content="Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.">
+<link rel="canonical" href="https://cinchpad.com/tip-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Tip Calculator – Work Out the Tip and Split the Bill">
+<meta property="og:description" content="Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.">
+<meta property="og:url" content="https://cinchpad.com/tip-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tip Calculator – Work Out the Tip and Split the Bill">
+<meta name="twitter:description" content="Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/tip-calculator/#app","name":"Tip Calculator","url":"https://cinchpad.com/tip-calculator/","description":"Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://cinchpad.com/category/calculators/"},{"@type":"ListItem","position":3,"name":"Tip Calculator","item":"https://cinchpad.com/tip-calculator/"}]},{"@type":"HowTo","name":"How to use the Tip Calculator","description":"Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Type the bill amount exactly as printed on the check.","url":"https://cinchpad.com/tip-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Tap a tip percentage, or type your own in the custom field.","url":"https://cinchpad.com/tip-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"If you are sharing the bill, set split between to the number of people.","url":"https://cinchpad.com/tip-calculator/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Optionally switch on round up to bring the total to a whole dollar.","url":"https://cinchpad.com/tip-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much do you tip on a $100 bill?","acceptedAnswer":{"@type":"Answer","text":"At the common US rates: 15% is $15 (total $115), 18% is $18 (total $118), and 20% is $20 (total $120). For a $100 bill the tip percentage and the dollar amount are the same number, which makes it an easy benchmark to reason from."}},{"@type":"Question","name":"What is the easiest way to work out a 20% tip in your head?","acceptedAnswer":{"@type":"Answer","text":"Move the decimal point one place left to get 10%, then double it. For a $46.80 bill: 10% is $4.68, so 20% is about $9.36. For 15%, take the 10% figure and add half of it again."}},{"@type":"Question","name":"Do I tip on takeaway orders?","acceptedAnswer":{"@type":"Answer","text":"It is optional. Many people leave 10% or a couple of dollars if staff assembled a large order, but there is no expectation for simply collecting food at a counter."}},{"@type":"Question","name":"Should I still tip if the service was poor?","acceptedAnswer":{"@type":"Answer","text":"In the US, servers are often paid a reduced base wage that assumes tips, so leaving nothing is a strong statement. Most guidance suggests dropping to 10–15% and, more usefully, telling the manager what went wrong."}},{"@type":"Question","name":"How does the round-up option work?","acceptedAnswer":{"@type":"Answer","text":"It rounds the grand total up to the next whole dollar and adds the difference to the tip, which makes cash payment and mental checking easier."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" placeholder="Search 100+ tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-label="Search tools">
+      <div class="search-results" id="search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/calculators/">Calculators</a></li><li><span aria-current="page">Tip Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Tip Calculator</h1>
+      <p class="lede">Enter the bill, pick a tip percentage, and see the tip, the total, and what each person owes if you are splitting it.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="row">
+  <div class="field">
+    <label for="bill">Bill amount</label>
+    <div class="input-group">
+      <span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+      <input type="number" id="bill" inputmode="decimal" min="0" step="0.01" placeholder="60.00" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)">
+    </div>
+  </div>
+  <div class="field">
+    <label for="people">Split between</label>
+    <div class="input-group">
+      <input type="number" id="people" inputmode="numeric" min="1" max="100" step="1" value="1">
+      <span class="addon">people</span>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <span class="field-label" id="tip-label">Tip percentage</span>
+  <div class="seg" role="group" aria-labelledby="tip-label" id="presets" style="flex-wrap:wrap">
+    <button type="button" data-pct="10">10%</button>
+    <button type="button" data-pct="15">15%</button>
+    <button type="button" data-pct="18" aria-pressed="true">18%</button>
+    <button type="button" data-pct="20">20%</button>
+    <button type="button" data-pct="25">25%</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="pct">Custom tip</label>
+    <div class="input-group">
+      <input type="number" id="pct" inputmode="decimal" min="0" max="100" step="0.5" value="18">
+      <span class="addon">%</span>
+    </div>
+  </div>
+  <div class="field">
+    <span class="field-label" id="round-label">Rounding</span>
+    <div class="seg" role="group" aria-labelledby="round-label" id="rounding">
+      <button type="button" data-round="none" aria-pressed="true">Exact</button>
+      <button type="button" data-round="up">Round up</button>
+    </div>
+  </div>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label" id="perlabel">Total to pay</div>
+  <div class="result-value" id="total">—</div>
+  <div class="result-note" id="note"></div>
+  <dl class="result-grid">
+    <div class="stat"><dt>Tip</dt><dd id="tip">—</dd></div>
+    <div class="stat"><dt>Bill</dt><dd id="base">—</dd></div>
+    <div class="stat"><dt>Each person</dt><dd id="each">—</dd></div>
+  </dl>
+</div>
+<p class="hint" id="prompt" style="margin-top:14px">Enter a bill amount to see the tip.</p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How much should you tip?</h2>
+      <div class="answer"><p><strong>In the United States, the standard restaurant tip is 18–20% of the pre-tax bill for sit-down table service.</strong> 15% signals that something was off, 20% is the common default for good service, and 25% is generous. For counter service, coffee or takeaway, tipping is optional and $1–2 or 10% is normal. Outside the US the expectation drops sharply: 5–10% is typical in most of Europe, and in Japan and South Korea tipping is not customary at all and can cause confusion.</p></div>
+    </section>
+
+    <section class="section prose" id="guide">
+      <h2 id="guide-h">Tipping guide by situation (United States)</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Situation</th><th>Customary tip</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Restaurant, table service</td><td>18–20%</td><td>On the pre-tax total; 25% for exceptional service</td></tr>
+<tr><td>Bar, per drink</td><td>$1–2 per drink</td><td>Or 20% if running a tab</td></tr>
+<tr><td>Coffee shop / counter</td><td>Optional, $0–1</td><td>The tablet prompt is not an obligation</td></tr>
+<tr><td>Food delivery</td><td>15–20%, minimum $5</td><td>More in bad weather or for long distances</td></tr>
+<tr><td>Taxi / rideshare</td><td>10–15%</td><td>Round up for short trips</td></tr>
+<tr><td>Hairdresser / barber</td><td>15–20%</td><td>Tip the person who did the work</td></tr>
+<tr><td>Hotel housekeeping</td><td>$3–5 per night</td><td>Leave it daily, not at the end</td></tr>
+<tr><td>Large group (6+)</td><td>Check the bill</td><td>An 18–20% service charge is often added already</td></tr>
+</tbody></table></div>
+<p>If a service charge or "gratuity included" line already appears on your bill, you are not expected to tip again on top.</p>
+    </section>
+<section class="section prose" id="pretax">
+      <h2 id="pretax-h">Tip on the pre-tax or post-tax total?</h2>
+      <p>Etiquette says the tip is calculated on the pre-tax subtotal, since sales tax is money the restaurant never sees. In practice most people tip on the total because it is easier, and the difference is small.</p>
+<p>On a $60 meal with 8% sales tax, tipping 20% pre-tax gives $12.00 and post-tax gives $12.96 — a 96 cent gap. Enter whichever figure you prefer in the bill field above.</p>
+    </section>
+<section class="section prose" id="world">
+      <h2 id="world-h">Tipping around the world</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Country</th><th>Restaurant tip</th></tr></thead>
+<tbody>
+<tr><td>United States, Canada</td><td>18–20% expected</td></tr>
+<tr><td>United Kingdom, Ireland</td><td>10–12.5%, often added as a service charge</td></tr>
+<tr><td>France, Italy, Spain</td><td>Service usually included; round up or leave 5%</td></tr>
+<tr><td>Germany, Netherlands</td><td>5–10%, round up to a convenient number</td></tr>
+<tr><td>Australia, New Zealand</td><td>Not expected; 10% for excellent service</td></tr>
+<tr><td>Japan, South Korea, China</td><td>Not customary and can be refused</td></tr>
+<tr><td>UAE, Middle East</td><td>10–15% if no service charge</td></tr>
+</tbody></table></div>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Tip Calculator</h2>
+  <ol class="prose"><li>Type the <strong>bill amount</strong> exactly as printed on the check.</li><li>Tap a tip percentage, or type your own in the custom field.</li><li>If you are sharing the bill, set <strong>split between</strong> to the number of people.</li><li>Optionally switch on <strong>round up</strong> to bring the total to a whole dollar.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How much do you tip on a $100 bill?</summary>
+    <div><p>At the common US rates: 15% is $15 (total $115), 18% is $18 (total $118), and 20% is $20 (total $120). For a $100 bill the tip percentage and the dollar amount are the same number, which makes it an easy benchmark to reason from.</p></div>
+  </details>
+  <details>
+    <summary>What is the easiest way to work out a 20% tip in your head?</summary>
+    <div><p>Move the decimal point one place left to get 10%, then double it. For a $46.80 bill: 10% is $4.68, so 20% is about $9.36. For 15%, take the 10% figure and add half of it again.</p></div>
+  </details>
+  <details>
+    <summary>Do I tip on takeaway orders?</summary>
+    <div><p>It is optional. Many people leave 10% or a couple of dollars if staff assembled a large order, but there is no expectation for simply collecting food at a counter.</p></div>
+  </details>
+  <details>
+    <summary>Should I still tip if the service was poor?</summary>
+    <div><p>In the US, servers are often paid a reduced base wage that assumes tips, so leaving nothing is a strong statement. Most guidance suggests dropping to 10–15% and, more usefully, telling the manager what went wrong.</p></div>
+  </details>
+  <details>
+    <summary>How does the round-up option work?</summary>
+    <div><p>It rounds the grand total up to the next whole dollar and adds the difference to the tip, which makes cash payment and mental checking easier.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/percentage-calculator/">
+      <strong>Percentage Calculator</strong>
+      <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+    </a>
+    <a class="tool-card" href="/discount-calculator/">
+      <strong>Discount Calculator</strong>
+      <span>Final sale price and your saving, including stacked and double discounts.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More calculators</h2>
+      <ul class="side-list">
+        <li><a href="/age-calculator/">Age Calculator</a></li>
+        <li><a href="/date-difference-calculator/">Date Difference Calculator</a></li>
+        <li><a href="/discount-calculator/">Discount Calculator</a></li>
+        <li><a href="/loan-calculator/">Loan Calculator</a></li>
+        <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/calculators/" style="font-size:.88rem">All calculators →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><a href="/category/generators/">Generators</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var bill = $('bill'), people = $('people'), pct = $('pct'), out = $('out'), prompt = $('prompt');
+  var roundMode = 'none';
+  var money = function(n){ return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+
+  function press(container, attr, value){
+    var btns = container.querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].setAttribute('aria-pressed', String(btns[i].getAttribute(attr) === value));
+    }
+  }
+
+  function calc(){
+    var b = parseFloat(bill.value);
+    var p = parseFloat(pct.value);
+    var n = parseInt(people.value, 10);
+    if (!isFinite(b) || b < 0) { out.hidden = true; prompt.hidden = false; return; }
+    if (!isFinite(p) || p < 0) p = 0;
+    if (!isFinite(n) || n < 1) n = 1;
+
+    var tip = b * p / 100;
+    var total = b + tip;
+
+    if (roundMode === 'up') {
+      // Round the grand total up to the next whole unit, tip absorbs the difference.
+      var rounded = Math.ceil(total);
+      tip += rounded - total;
+      total = rounded;
+    }
+
+    $('total').textContent = money(total);
+    $('tip').textContent = money(tip);
+    $('base').textContent = money(b);
+    $('each').textContent = money(total / n);
+    $('perlabel').textContent = n > 1 ? 'Total for the table' : 'Total to pay';
+    $('note').textContent = n > 1
+      ? 'Split ' + n + ' ways, that is ' + money(total / n) + ' each.'
+      : 'A ' + (Math.round(p * 10) / 10) + '% tip on ' + money(b) + '.';
+    out.hidden = false; prompt.hidden = true;
+  }
+
+  $('presets').addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-pct]'); if (!btn) return;
+    pct.value = btn.getAttribute('data-pct');
+    press($('presets'), 'data-pct', btn.getAttribute('data-pct'));
+    calc();
+  });
+  $('rounding').addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-round]'); if (!btn) return;
+    roundMode = btn.getAttribute('data-round');
+    press($('rounding'), 'data-round', roundMode);
+    calc();
+  });
+  pct.addEventListener('input', function(){ press($('presets'), 'data-pct', pct.value); calc(); });
+  bill.addEventListener('input', calc);
+  people.addEventListener('input', calc);
+})();</script>
+</body>
+</html>

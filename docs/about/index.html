@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About CinchPad | CinchPad</title>
+<meta name="description" content="What CinchPad is, who makes it, and the principles behind how the tools are built.">
+<link rel="canonical" href="https://cinchpad.com/about/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="About CinchPad | CinchPad">
+<meta property="og:description" content="What CinchPad is, who makes it, and the principles behind how the tools are built.">
+<meta property="og:url" content="https://cinchpad.com/about/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About CinchPad | CinchPad">
+<meta name="twitter:description" content="What CinchPad is, who makes it, and the principles behind how the tools are built.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"About CinchPad","item":"https://cinchpad.com/about/"}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" placeholder="Search 100+ tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-label="Search tools">
+      <div class="search-results" id="search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><span aria-current="page">About CinchPad</span></li></ol></nav>
+<header class="page-head"><h1>About CinchPad</h1><p class="lede">A small collection of everyday tools, built to load fast and get out of your way.</p></header>
+<div class="prose"><h2 id="what-this-is">What this is</h2>
+<p>CinchPad is a set of free tools for the small calculations and conversions that come up in ordinary life — working out a tip, checking how many days until an exam, resizing a photo for a form, splitting a bill.</p>
+<p>There is no account, no paywall, no upload step, and no &quot;download our app&quot; banner. You open a page, type two numbers, and get an answer.</p>
+<h2 id="how-the-tools-work">How the tools work</h2>
+<p>Every tool on this site runs entirely in your browser using JavaScript. When you type your weight into the BMI calculator or a password into the WiFi QR generator, that text stays on your device. It is not transmitted, not logged, and not stored on any server.</p>
+<p>This is not a privacy promise we are asking you to take on trust — it is a consequence of how the site is built. The pages are static files. There is no server-side code to receive your input even if we wanted it.</p>
+<p>You can verify this yourself: open your browser&#39;s network tab, use any tool, and watch that no request is made. Or disconnect from the internet entirely — most tools keep working.</p>
+<h2 id="what-we-get-wrong-and-how-we-handle-it">What we get wrong, and how we handle it</h2>
+<p>These tools do arithmetic, and arithmetic can be implemented incorrectly. A few things we do to reduce that risk:</p>
+<ul><li><strong>Formulas are stated on the page.</strong> Every calculator shows the formula it uses and, where useful, a worked example. If our number disagrees with yours, you can see exactly where.</li><li><strong>Worked examples are checked against the code.</strong> The figures quoted in the explanatory text are computed with the same maths the tool runs, not typed from memory.</li><li><strong>Limitations are stated plainly.</strong> BMI has well-known blind spots. Percentage changes do not reverse symmetrically. Where a tool can mislead, the page says so rather than hiding it.</li></ul>
+<p>If you find an error, please <a href="/contact/">tell us</a>. Corrections are the most useful thing you can send.</p>
+<h2 id="what-these-tools-are-not">What these tools are not</h2>
+<p>They are estimates and general information. The health tools are not medical advice, the finance tools are not financial advice, and neither is a substitute for a professional who knows your situation. See the <a href="/disclaimer/">disclaimer</a> for the full statement.</p>
+<h2 id="how-the-site-is-paid-for">How the site is paid for</h2>
+<p>Advertising. Ads are placed around the content rather than inside it, and no tool is gated behind one. We do not sell data, because we do not collect any.</p></div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><a href="/category/generators/">Generators</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+<script id="tool-index" type="application/json">[{"n":"Age Calculator","u":"/age-calculator/","c":"Calculators","k":"age calculator how old am i date of birth calculator exact age"},{"n":"BMI Calculator","u":"/bmi-calculator/","c":"Health & Body","k":"bmi calculator body mass index bmi chart healthy weight calculator"},{"n":"Date Difference Calculator","u":"/date-difference-calculator/","c":"Calculators","k":"days between dates date difference calculator date duration business days calculator"},{"n":"Discount Calculator","u":"/discount-calculator/","c":"Calculators","k":"discount calculator sale price calculator percent off calculator how much do i save"},{"n":"Loan Calculator","u":"/loan-calculator/","c":"Calculators","k":"loan calculator emi calculator monthly payment calculator loan repayment interest calculator"},{"n":"Password Generator","u":"/password-generator/","c":"Generators","k":"password generator strong password random password passphrase generator secure password"},{"n":"Percentage Calculator","u":"/percentage-calculator/","c":"Calculators","k":"percentage calculator percent calculator percentage increase percentage change what percent"},{"n":"QR Code Generator","u":"/qr-code-generator/","c":"Generators","k":"qr code generator free qr code make a qr code qr code maker wifi qr code"},{"n":"Tip Calculator","u":"/tip-calculator/","c":"Calculators","k":"tip calculator bill splitter how much to tip gratuity calculator split the bill"},{"n":"Unit Converter","u":"/unit-converter/","c":"Converters","k":"unit converter cm to inches kg to lbs metric to imperial measurement converter"}]</script>
+<script src="/app.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Date Difference Calculator – Days Between Two Dates</title>
+<meta name="description" content="Free date difference calculator. Find the number of days, weeks, months and years between two dates, plus the count of working days excluding weekends.">
+<link rel="canonical" href="https://cinchpad.com/date-difference-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Date Difference Calculator – Days Between Two Dates">
+<meta property="og:description" content="Free date difference calculator. Find the number of days, weeks, months and years between two dates, plus the count of working days excluding weekends.">
+<meta property="og:url" content="https://cinchpad.com/date-difference-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Date Difference Calculator – Days Between Two Dates">
+<meta name="twitter:description" content="Free date difference calculator. Find the number of days, weeks, months and years between two dates, plus the count of working days excluding weekends.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/date-difference-calculator/#app","name":"Date Difference Calculator","url":"https://cinchpad.com/date-difference-calculator/","description":"Free date difference calculator. Find the number of days, weeks, months and years between two dates, plus the count of working days excluding weekends.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://cinchpad.com/category/calculators/"},{"@type":"ListItem","position":3,"name":"Date Difference Calculator","item":"https://cinchpad.com/date-difference-calculator/"}]},{"@type":"HowTo","name":"How to use the Date Difference Calculator","description":"Free date difference calculator. Find the number of days, weeks, months and years between two dates, plus the count of working days excluding weekends.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Pick the start date . It defaults to today.","url":"https://cinchpad.com/date-difference-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Pick the end date . The order does not matter — the tool always reports a positive difference.","url":"https://cinchpad.com/date-difference-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Tick count both days if the first and last day should each be included, as with holiday bookings.","url":"https://cinchpad.com/date-difference-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many days are between two dates?","acceptedAnswer":{"@type":"Answer","text":"Enter both dates above. The tool counts the midnights between them, and you can tick the box to include both the first and last day if your situation calls for it."}},{"@type":"Question","name":"Does this include leap days?","acceptedAnswer":{"@type":"Answer","text":"Yes. The calculation works on real calendar dates, so 29 February is counted whenever it falls inside the range."}},{"@type":"Question","name":"How do I count working days only?","acceptedAnswer":{"@type":"Answer","text":"The working days figure in the results already excludes Saturdays and Sundays. Subtract any public holidays yourself, since those vary by location."}},{"@type":"Question","name":"Why does it say 7 days when I count 8 dates?","acceptedAnswer":{"@type":"Answer","text":"Because the gap between dates and the number of dates are different things. 1 to 8 March spans 8 dates but only 7 nights. Tick \"count both days\" if you want the 8."}},{"@type":"Question","name":"Can I use dates in the past?","acceptedAnswer":{"@type":"Answer","text":"Yes, and in any order. The tool sorts them for you and always reports a positive difference."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" placeholder="Search 100+ tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-label="Search tools">
+      <div class="search-results" id="search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/calculators/">Calculators</a></li><li><span aria-current="page">Date Difference Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Date Difference Calculator</h1>
+      <p class="lede">Pick two dates to see exactly how far apart they are — in days, weeks, months and years, plus working days with weekends removed.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="row">
+  <div class="field">
+    <label for="d1">Start date</label>
+    <input type="date" id="d1">
+  </div>
+  <div class="field">
+    <label for="d2">End date</label>
+    <input type="date" id="d2">
+  </div>
+</div>
+<label style="display:flex;align-items:center;gap:9px;font-size:.9rem;color:var(--ink-2);margin-bottom:6px">
+  <input type="checkbox" id="inclusive" style="width:auto"> Count both the start and end day
+</label>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label">Difference</div>
+  <div class="result-value" id="days">—</div>
+  <div class="result-note" id="cal"></div>
+  <dl class="result-grid">
+    <div class="stat"><dt>Weeks</dt><dd id="w">—</dd></div>
+    <div class="stat"><dt>Months</dt><dd id="m">—</dd></div>
+    <div class="stat"><dt>Working days</dt><dd id="b">—</dd></div>
+    <div class="stat"><dt>Hours</dt><dd id="h">—</dd></div>
+  </dl>
+</div>
+<p class="hint" id="prompt" style="margin-top:14px">Choose both dates to see the difference.</p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How the day count is worked out</h2>
+      <div class="answer"><p><strong>The difference between two dates is the number of midnights that pass between them.</strong> From 1 March to 8 March is 7 days, because seven midnights separate the two dates — even though eight dates are involved. Whether you want 7 or 8 depends on the question: a 7-day gap is right for "how long until", while 8 is right for "how many days am I on holiday", which is why this tool has a switch to count both end days.</p></div>
+    </section>
+
+    <section class="section prose" id="business">
+      <h2 id="business-h">What counts as a working day</h2>
+      <p>The working-days figure removes every Saturday and Sunday from the range. It does <strong>not</strong> remove public holidays, because those differ by country, state and sometimes by employer.</p>
+<p>If you need a strict business-day count for a contract or a shipping estimate, take the number here and subtract the public holidays that fall inside the range. In the United States there are 11 federal holidays a year; the UK has 8 bank holidays in England and Wales.</p>
+    </section>
+<section class="section prose" id="months">
+      <h2 id="months-h">Why the month count can look wrong</h2>
+      <p>Months are not a fixed length, so "months between two dates" has more than one defensible answer.</p>
+<p>This tool counts <strong>complete calendar months</strong>. From 31 January to 28 February is 0 complete months and 28 days, because the 31st has not come round again. From 15 January to 15 March is exactly 2 months regardless of how many days that spans.</p>
+<p>Dividing total days by 30 gives a different figure, which is why loan schedules and rental agreements always specify which convention they use.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Date Difference Calculator</h2>
+  <ol class="prose"><li>Pick the <strong>start date</strong>. It defaults to today.</li><li>Pick the <strong>end date</strong>. The order does not matter — the tool always reports a positive difference.</li><li>Tick <strong>count both days</strong> if the first and last day should each be included, as with holiday bookings.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How many days are between two dates?</summary>
+    <div><p>Enter both dates above. The tool counts the midnights between them, and you can tick the box to include both the first and last day if your situation calls for it.</p></div>
+  </details>
+  <details>
+    <summary>Does this include leap days?</summary>
+    <div><p>Yes. The calculation works on real calendar dates, so 29 February is counted whenever it falls inside the range.</p></div>
+  </details>
+  <details>
+    <summary>How do I count working days only?</summary>
+    <div><p>The working days figure in the results already excludes Saturdays and Sundays. Subtract any public holidays yourself, since those vary by location.</p></div>
+  </details>
+  <details>
+    <summary>Why does it say 7 days when I count 8 dates?</summary>
+    <div><p>Because the gap between dates and the number of dates are different things. 1 to 8 March spans 8 dates but only 7 nights. Tick "count both days" if you want the 8.</p></div>
+  </details>
+  <details>
+    <summary>Can I use dates in the past?</summary>
+    <div><p>Yes, and in any order. The tool sorts them for you and always reports a positive difference.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/age-calculator/">
+      <strong>Age Calculator</strong>
+      <span>Your exact age in years, months and days — plus a countdown to your next birthday.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More calculators</h2>
+      <ul class="side-list">
+        <li><a href="/age-calculator/">Age Calculator</a></li>
+        <li><a href="/discount-calculator/">Discount Calculator</a></li>
+        <li><a href="/loan-calculator/">Loan Calculator</a></li>
+        <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+        <li><a href="/tip-calculator/">Tip Calculator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/calculators/" style="font-size:.88rem">All calculators →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><a href="/category/generators/">Generators</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var d1 = $('d1'), d2 = $('d2'), inc = $('inclusive'), out = $('out'), prompt = $('prompt');
+  var fmt = function(n){ return n.toLocaleString('en-US'); };
+
+  function parse(v){
+    var p = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v || '');
+    return p ? new Date(+p[1], +p[2] - 1, +p[3]) : null;
+  }
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  var t = new Date();
+  d1.value = t.getFullYear() + '-' + pad(t.getMonth()+1) + '-' + pad(t.getDate());
+
+  // Counts weekdays over the same span the day total covers: when both end days
+  // are not being counted, the start day is the one dropped.
+  function workingDays(a, b, inclusive){
+    var start = new Date(a.getFullYear(), a.getMonth(), a.getDate());
+    if (!inclusive) start.setDate(start.getDate() + 1);
+    var total = Math.round((b - start) / 86400000) + 1;
+    if (total <= 0) return 0;
+    var whole = Math.floor(total / 7);
+    var count = whole * 5;
+    var rest = total - whole * 7;
+    var dow = (start.getDay() + whole * 7) % 7;
+    for (var i = 0; i < rest; i++) {
+      var d = (dow + i) % 7;
+      if (d !== 0 && d !== 6) count++;
+    }
+    return count;
+  }
+
+  function calc(){
+    var a = parse(d1.value), b = parse(d2.value);
+    if (!a || !b) { out.hidden = true; prompt.hidden = false; return; }
+    if (a > b) { var tmp = a; a = b; b = tmp; }
+
+    var days = Math.round((b - a) / 86400000);
+    if (inc.checked) days += 1;
+
+    $('days').textContent = fmt(days) + (days === 1 ? ' day' : ' days');
+    $('w').textContent = fmt(Math.floor(days / 7)) + (days % 7 ? ' + ' + (days % 7) + 'd' : '');
+    $('h').textContent = fmt(days * 24);
+    $('b').textContent = fmt(workingDays(a, b, inc.checked));
+
+    var y = b.getFullYear() - a.getFullYear();
+    var mo = b.getMonth() - a.getMonth();
+    var dd = b.getDate() - a.getDate();
+    if (dd < 0) { mo--; dd += new Date(b.getFullYear(), b.getMonth(), 0).getDate(); }
+    if (mo < 0) { mo += 12; y--; }
+    $('m').textContent = fmt(y * 12 + mo);
+
+    var parts = [];
+    if (y) parts.push(y + (y === 1 ? ' year' : ' years'));
+    if (mo) parts.push(mo + (mo === 1 ? ' month' : ' months'));
+    if (dd) parts.push(dd + (dd === 1 ? ' day' : ' days'));
+    $('cal').textContent = parts.length ? 'That is ' + parts.join(', ') + ' on the calendar.' : 'Same day.';
+
+    out.hidden = false; prompt.hidden = true;
+  }
+
+  d1.addEventListener('input', calc);
+  d2.addEventListener('input', calc);
+  inc.addEventListener('change', calc);
+})();</script>
+</body>
+</html>

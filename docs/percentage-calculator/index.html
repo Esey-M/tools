@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Percentage Calculator – Three Ways to Work Out a Percent</title>
+<meta name="description" content="Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.">
+<link rel="canonical" href="https://cinchpad.com/percentage-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Percentage Calculator – Three Ways to Work Out a Percent">
+<meta property="og:description" content="Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.">
+<meta property="og:url" content="https://cinchpad.com/percentage-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Percentage Calculator – Three Ways to Work Out a Percent">
+<meta name="twitter:description" content="Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.pc-line{display:flex;flex-wrap:wrap;align-items:center;gap:9px;font-size:1.05rem;color:var(--ink-2);margin-top:6px}
+.pc-line input{width:auto;flex:0 1 130px;min-width:96px;font-size:1.05rem}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/percentage-calculator/#app","name":"Percentage Calculator","url":"https://cinchpad.com/percentage-calculator/","description":"Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://cinchpad.com/category/calculators/"},{"@type":"ListItem","position":3,"name":"Percentage Calculator","item":"https://cinchpad.com/percentage-calculator/"}]},{"@type":"HowTo","name":"How to use the Percentage Calculator","description":"Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Choose which of the three questions you are asking using the buttons at the top.","url":"https://cinchpad.com/percentage-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Type the two numbers you already know into the sentence.","url":"https://cinchpad.com/percentage-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"The answer and the full working appear underneath as you type.","url":"https://cinchpad.com/percentage-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate a percentage of a number?","acceptedAnswer":{"@type":"Answer","text":"Divide the percentage by 100 and multiply by the number. For 15% of 200: 15 ÷ 100 = 0.15, then 0.15 × 200 = 30."}},{"@type":"Question","name":"How do I work out percentage increase?","acceptedAnswer":{"@type":"Answer","text":"Subtract the old value from the new one, divide by the old value, then multiply by 100. From 200 to 250: (250 − 200) ÷ 200 × 100 = 25% increase."}},{"@type":"Question","name":"What is the difference between percent and percentage point?","acceptedAnswer":{"@type":"Answer","text":"A percentage point is the plain arithmetic difference between two percentages. Moving from 4% to 5% is a rise of one percentage point, but a 25% relative increase. News reports often blur the two."}},{"@type":"Question","name":"How do I remove a percentage that has already been added?","acceptedAnswer":{"@type":"Answer","text":"Divide rather than subtract. To strip 20% VAT from a $120 price, divide by 1.2 to get $100. Subtracting 20% of $120 would wrongly give $96."}},{"@type":"Question","name":"Why does the calculator show the working?","acceptedAnswer":{"@type":"Answer","text":"So you can check the result and reuse the method by hand later. The line underneath the answer shows the exact arithmetic performed."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" placeholder="Search 100+ tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-label="Search tools">
+      <div class="search-results" id="search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/calculators/">Calculators</a></li><li><span aria-current="page">Percentage Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Percentage Calculator</h1>
+      <p class="lede">Three percentage questions, one tool. Pick the one you are asking and fill in the two numbers you know.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="field">
+  <span class="field-label" id="mode-label">What are you working out?</span>
+  <div class="seg" role="group" aria-labelledby="mode-label" id="modes" style="flex-wrap:wrap">
+    <button type="button" data-mode="of" aria-pressed="true">X% of Y</button>
+    <button type="button" data-mode="is">X is what % of Y</button>
+    <button type="button" data-mode="change">% change</button>
+  </div>
+</div>
+
+<div class="pc-line" id="line-of">
+  <span>What is</span>
+  <input type="number" id="of-a" inputmode="decimal" step="any" placeholder="15" aria-label="Percentage">
+  <span>% of</span>
+  <input type="number" id="of-b" inputmode="decimal" step="any" placeholder="200" aria-label="Number">
+  <span>?</span>
+</div>
+
+<div class="pc-line" id="line-is" hidden>
+  <input type="number" id="is-a" inputmode="decimal" step="any" placeholder="30" aria-label="Part">
+  <span>is what percent of</span>
+  <input type="number" id="is-b" inputmode="decimal" step="any" placeholder="200" aria-label="Whole">
+  <span>?</span>
+</div>
+
+<div class="pc-line" id="line-change" hidden>
+  <span>From</span>
+  <input type="number" id="ch-a" inputmode="decimal" step="any" placeholder="200" aria-label="Starting value">
+  <span>to</span>
+  <input type="number" id="ch-b" inputmode="decimal" step="any" placeholder="250" aria-label="Ending value">
+  <span>?</span>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label" id="rlabel">Answer</div>
+  <div class="result-value" id="ans">—</div>
+  <div class="result-note" id="work"></div>
+</div>
+<p class="hint" id="prompt" style="margin-top:14px">Fill in both numbers to see the answer.</p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">The three percentage questions</h2>
+      <div class="answer"><p><strong>Almost every percentage problem is one of three questions.</strong> To find a percentage of a number, multiply and divide by 100: 15% of 200 is 15 ÷ 100 × 200 = 30. To find what percentage one number is of another, divide and multiply by 100: 30 out of 200 is 30 ÷ 200 × 100 = 15%. To find percentage change, subtract, divide by the original, and multiply by 100: going from 200 to 250 is (250 − 200) ÷ 200 × 100 = a 25% increase.</p></div>
+    </section>
+
+    <section class="section prose" id="formulas">
+      <h2 id="formulas-h">The three formulas</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Question</th><th>Formula</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>What is X% of Y?</td><td><code>X ÷ 100 × Y</code></td><td>15% of 200 = 30</td></tr>
+<tr><td>X is what % of Y?</td><td><code>X ÷ Y × 100</code></td><td>30 of 200 = 15%</td></tr>
+<tr><td>% change from X to Y</td><td><code>(Y − X) ÷ X × 100</code></td><td>200 → 250 = +25%</td></tr>
+</tbody></table></div>
+    </section>
+<section class="section prose" id="mental">
+      <h2 id="mental-h">Doing percentages in your head</h2>
+      <p>A few shortcuts cover most everyday cases.</p>
+<ul>
+<li><strong>10%</strong> — move the decimal point one place left. 10% of 84 is 8.4.</li>
+<li><strong>5%</strong> — take 10% and halve it. 5% of 84 is 4.2.</li>
+<li><strong>20%</strong> — take 10% and double it. 20% of 84 is 16.8.</li>
+<li><strong>15%</strong> — 10% plus half of that. 8.4 + 4.2 = 12.6.</li>
+<li><strong>1%</strong> — move the decimal two places left. 1% of 84 is 0.84.</li>
+</ul>
+<p>The reversal trick is also worth knowing: <strong>X% of Y always equals Y% of X.</strong> 4% of 75 is awkward, but 75% of 4 is obviously 3. Same answer, far less effort.</p>
+    </section>
+<section class="section prose" id="gotcha">
+      <h2 id="gotcha-h">The trap: a 50% rise then a 50% fall is not zero</h2>
+      <p>Percentage changes do not cancel out, because each one is measured against a different starting point.</p>
+<p>Take $100. A 50% increase brings it to $150. A 50% decrease from $150 removes $75, leaving <strong>$75</strong> — not the $100 you started with. To undo a 50% rise you need a 33.3% fall.</p>
+<p>The same trap appears with discounts and taxes. If a price rises 20% and later drops 20%, you end up 4% below where you began.</p>
+<p>Note too the difference between <strong>percent</strong> and <strong>percentage point</strong>. If an interest rate moves from 4% to 5%, that is a rise of one percentage point but a 25% increase in the rate itself.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Percentage Calculator</h2>
+  <ol class="prose"><li>Choose which of the three questions you are asking using the buttons at the top.</li><li>Type the two numbers you already know into the sentence.</li><li>The answer and the full working appear underneath as you type.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How do I calculate a percentage of a number?</summary>
+    <div><p>Divide the percentage by 100 and multiply by the number. For 15% of 200: 15 ÷ 100 = 0.15, then 0.15 × 200 = 30.</p></div>
+  </details>
+  <details>
+    <summary>How do I work out percentage increase?</summary>
+    <div><p>Subtract the old value from the new one, divide by the old value, then multiply by 100. From 200 to 250: (250 − 200) ÷ 200 × 100 = 25% increase.</p></div>
+  </details>
+  <details>
+    <summary>What is the difference between percent and percentage point?</summary>
+    <div><p>A percentage point is the plain arithmetic difference between two percentages. Moving from 4% to 5% is a rise of one percentage point, but a 25% relative increase. News reports often blur the two.</p></div>
+  </details>
+  <details>
+    <summary>How do I remove a percentage that has already been added?</summary>
+    <div><p>Divide rather than subtract. To strip 20% VAT from a $120 price, divide by 1.2 to get $100. Subtracting 20% of $120 would wrongly give $96.</p></div>
+  </details>
+  <details>
+    <summary>Why does the calculator show the working?</summary>
+    <div><p>So you can check the result and reuse the method by hand later. The line underneath the answer shows the exact arithmetic performed.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/discount-calculator/">
+      <strong>Discount Calculator</strong>
+      <span>Final sale price and your saving, including stacked and double discounts.</span>
+    </a>
+    <a class="tool-card" href="/tip-calculator/">
+      <strong>Tip Calculator</strong>
+      <span>Tip amount, total, and what each person owes when you split the bill.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More calculators</h2>
+      <ul class="side-list">
+        <li><a href="/age-calculator/">Age Calculator</a></li>
+        <li><a href="/date-difference-calculator/">Date Difference Calculator</a></li>
+        <li><a href="/discount-calculator/">Discount Calculator</a></li>
+        <li><a href="/loan-calculator/">Loan Calculator</a></li>
+        <li><a href="/tip-calculator/">Tip Calculator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/calculators/" style="font-size:.88rem">All calculators →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><a href="/category/generators/">Generators</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var mode = 'of';
+  var out = $('out'), prompt = $('prompt');
+  var fmt = function(n){
+    if (!isFinite(n)) return '—';
+    var r = Math.round(n * 1e6) / 1e6;
+    return r.toLocaleString('en-US', { maximumFractionDigits: 6 });
+  };
+  var num = function(id){ var v = parseFloat($(id).value); return isFinite(v) ? v : NaN; };
+
+  function show(a, label, work){
+    $('ans').textContent = a;
+    $('rlabel').textContent = label;
+    $('work').textContent = work;
+    out.hidden = false; prompt.hidden = true;
+  }
+  function hide(){ out.hidden = true; prompt.hidden = false; }
+
+  function calc(){
+    if (mode === 'of') {
+      var p = num('of-a'), n = num('of-b');
+      if (isNaN(p) || isNaN(n)) return hide();
+      var r = p * n / 100;
+      show(fmt(r), fmt(p) + '% of ' + fmt(n) + ' is', fmt(p) + ' ÷ 100 × ' + fmt(n) + ' = ' + fmt(r));
+    } else if (mode === 'is') {
+      var a = num('is-a'), b = num('is-b');
+      if (isNaN(a) || isNaN(b)) return hide();
+      if (b === 0) return show('—', 'Undefined', 'You cannot express a number as a percentage of zero.');
+      var pc = a / b * 100;
+      show(fmt(pc) + '%', fmt(a) + ' as a percentage of ' + fmt(b), fmt(a) + ' ÷ ' + fmt(b) + ' × 100 = ' + fmt(pc) + '%');
+    } else {
+      var x = num('ch-a'), y = num('ch-b');
+      if (isNaN(x) || isNaN(y)) return hide();
+      if (x === 0) return show('—', 'Undefined', 'Percentage change from zero is undefined — any increase is infinite.');
+      var ch = (y - x) / Math.abs(x) * 100;
+      var word = ch > 0 ? 'increase' : ch < 0 ? 'decrease' : 'change';
+      show((ch > 0 ? '+' : '') + fmt(ch) + '%', 'Percentage ' + word,
+        '(' + fmt(y) + ' − ' + fmt(x) + ') ÷ ' + fmt(Math.abs(x)) + ' × 100 = ' + fmt(ch) + '%');
+    }
+  }
+
+  $('modes').addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-mode]'); if (!btn) return;
+    mode = btn.getAttribute('data-mode');
+    var btns = $('modes').querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) btns[i].setAttribute('aria-pressed', String(btns[i] === btn));
+    $('line-of').hidden = mode !== 'of';
+    $('line-is').hidden = mode !== 'is';
+    $('line-change').hidden = mode !== 'change';
+    calc();
+  });
+  ['of-a','of-b','is-a','is-b','ch-a','ch-b'].forEach(function(id){ $(id).addEventListener('input', calc); });
+})();</script>
+</body>
+</html>

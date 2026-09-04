@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loan Calculator – Monthly Payment, Interest and Total Cost</title>
+<meta name="description" content="Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.">
+<link rel="canonical" href="https://cinchpad.com/loan-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Loan Calculator – Monthly Payment, Interest and Total Cost">
+<meta property="og:description" content="Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.">
+<meta property="og:url" content="https://cinchpad.com/loan-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Loan Calculator – Monthly Payment, Interest and Total Cost">
+<meta name="twitter:description" content="Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/loan-calculator/#app","name":"Loan Calculator","url":"https://cinchpad.com/loan-calculator/","description":"Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://cinchpad.com/category/calculators/"},{"@type":"ListItem","position":3,"name":"Loan Calculator","item":"https://cinchpad.com/loan-calculator/"}]},{"@type":"HowTo","name":"How to use the Loan Calculator","description":"Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Enter the loan amount you want to borrow.","url":"https://cinchpad.com/loan-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Enter the annual interest rate your lender quoted, as an APR.","url":"https://cinchpad.com/loan-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Enter the term in years.","url":"https://cinchpad.com/loan-calculator/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Optionally add an extra monthly payment to see how much interest and time it saves.","url":"https://cinchpad.com/loan-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is EMI?","acceptedAnswer":{"@type":"Answer","text":"EMI stands for Equated Monthly Instalment — the fixed amount you pay each month until a loan is cleared. It is the same figure this calculator produces, and the same amortisation formula is used worldwide."}},{"@type":"Question","name":"Why does so much of my early payment go to interest?","acceptedAnswer":{"@type":"Answer","text":"Interest is charged on the balance you still owe, which is largest at the start. As the balance falls, the interest portion shrinks and more of each identical payment attacks the principal."}},{"@type":"Question","name":"Does this calculator include fees and insurance?","acceptedAnswer":{"@type":"Answer","text":"Only if you build them into the rate by entering the APR rather than the headline interest rate. Fees paid separately at closing are not included in the loan amount unless you add them yourself."}},{"@type":"Question","name":"Can I use this for a car loan or a mortgage?","acceptedAnswer":{"@type":"Answer","text":"Yes. Any fixed-rate amortising loan uses this same maths. For a mortgage, remember that property taxes, buildings insurance and any HOA fees sit on top of the payment shown here."}},{"@type":"Question","name":"What happens if the rate is 0%?","acceptedAnswer":{"@type":"Answer","text":"The calculator handles it: the payment is simply the amount divided by the number of months, and total interest is zero. This is how many promotional finance offers work."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" placeholder="Search 100+ tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-label="Search tools">
+      <div class="search-results" id="search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/calculators/">Calculators</a></li><li><span aria-current="page">Loan Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Loan Calculator</h1>
+      <p class="lede">Enter what you want to borrow, the interest rate and how long you need. You will see the monthly payment and, just as importantly, what the loan costs you in total.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="row">
+  <div class="field">
+    <label for="amt">Loan amount</label>
+    <div class="input-group">
+      <span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+      <input type="number" id="amt" inputmode="decimal" min="0" step="100" placeholder="25000" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)">
+    </div>
+  </div>
+  <div class="field">
+    <label for="rate">Annual interest rate</label>
+    <div class="input-group">
+      <input type="number" id="rate" inputmode="decimal" min="0" max="100" step="0.01" placeholder="7.5">
+      <span class="addon">% APR</span>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="field">
+    <label for="years">Loan term</label>
+    <div class="input-group">
+      <input type="number" id="years" inputmode="decimal" min="0" max="60" step="1" placeholder="5">
+      <span class="addon">years</span>
+    </div>
+  </div>
+  <div class="field">
+    <label for="extra">Extra monthly payment <span class="hint">(optional)</span></label>
+    <div class="input-group">
+      <span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+      <input type="number" id="extra" inputmode="decimal" min="0" step="10" placeholder="0" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)">
+    </div>
+  </div>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label">Monthly payment</div>
+  <div class="result-value" id="pay">—</div>
+  <div class="result-note" id="note"></div>
+  <dl class="result-grid">
+    <div class="stat"><dt>Total interest</dt><dd id="int">—</dd></div>
+    <div class="stat"><dt>Total repaid</dt><dd id="tot">—</dd></div>
+    <div class="stat"><dt>Payments</dt><dd id="n">—</dd></div>
+  </dl>
+  <div id="saved" hidden style="margin-top:14px" class="notice notice-warn"></div>
+</div>
+<p class="hint" id="prompt" style="margin-top:14px">Enter an amount, a rate and a term.</p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How a loan payment is calculated</h2>
+      <div class="answer"><p><strong>A fixed loan payment is the amount that clears both the principal and all the interest by the final month.</strong> It comes from the amortisation formula: <code>payment = P × r ÷ (1 − (1 + r)⁻ⁿ)</code>, where P is the amount borrowed, r is the monthly interest rate (annual rate ÷ 12) and n is the number of monthly payments. Borrow $25,000 at 7.5% over 5 years and the payment is $500.95 a month, which means you repay $30,057 in total — $5,057 of it interest.</p></div>
+    </section>
+
+    <section class="section prose" id="total-cost">
+      <h2 id="total-cost-h">Look at the total cost, not just the monthly payment</h2>
+      <p>Lenders advertise the monthly payment because it is the number that feels affordable. Stretching the term lowers it — and quietly raises what you pay overall.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Term on $25,000 at 7.5%</th><th>Monthly</th><th>Total interest</th></tr></thead>
+<tbody>
+<tr><td>3 years</td><td>$777.66</td><td>$2,996</td></tr>
+<tr><td>5 years</td><td>$500.95</td><td>$5,057</td></tr>
+<tr><td>7 years</td><td>$383.46</td><td>$7,210</td></tr>
+</tbody></table></div>
+<p>Going from three years to seven cuts the monthly payment by half, and more than doubles the interest. Whenever you can carry the higher payment comfortably, the shorter term is cheaper.</p>
+    </section>
+<section class="section prose" id="apr">
+      <h2 id="apr-h">APR and interest rate are not the same thing</h2>
+      <p>The <strong>interest rate</strong> is what you pay for borrowing the money. The <strong>APR</strong> folds in compulsory fees — origination charges, broker fees, some insurance — and expresses the lot as a yearly percentage.</p>
+<p>APR is the number to compare between lenders, because a low headline rate with a 3% origination fee can cost more than a higher rate with none. Enter the APR above for the most realistic estimate.</p>
+    </section>
+<section class="section prose" id="extra">
+      <h2 id="extra-h">Why overpaying works so well early on</h2>
+      <p>In the first months of a loan, most of your payment goes to interest and only a little touches the balance. Every extra dollar you pay skips straight to the principal, so it removes all the future interest that dollar would have generated.</p>
+<p>On the $25,000 example, an extra $100 a month clears the loan 11 months early and saves about $1,014 in interest. The same $100 added in the final year would save almost nothing.</p>
+<p>Before overpaying, check your agreement for early repayment charges — they are uncommon on personal loans but routine on some mortgages.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Loan Calculator</h2>
+  <ol class="prose"><li>Enter the <strong>loan amount</strong> you want to borrow.</li><li>Enter the <strong>annual interest rate</strong> your lender quoted, as an APR.</li><li>Enter the <strong>term</strong> in years.</li><li>Optionally add an <strong>extra monthly payment</strong> to see how much interest and time it saves.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>What is EMI?</summary>
+    <div><p>EMI stands for Equated Monthly Instalment — the fixed amount you pay each month until a loan is cleared. It is the same figure this calculator produces, and the same amortisation formula is used worldwide.</p></div>
+  </details>
+  <details>
+    <summary>Why does so much of my early payment go to interest?</summary>
+    <div><p>Interest is charged on the balance you still owe, which is largest at the start. As the balance falls, the interest portion shrinks and more of each identical payment attacks the principal.</p></div>
+  </details>
+  <details>
+    <summary>Does this calculator include fees and insurance?</summary>
+    <div><p>Only if you build them into the rate by entering the APR rather than the headline interest rate. Fees paid separately at closing are not included in the loan amount unless you add them yourself.</p></div>
+  </details>
+  <details>
+    <summary>Can I use this for a car loan or a mortgage?</summary>
+    <div><p>Yes. Any fixed-rate amortising loan uses this same maths. For a mortgage, remember that property taxes, buildings insurance and any HOA fees sit on top of the payment shown here.</p></div>
+  </details>
+  <details>
+    <summary>What happens if the rate is 0%?</summary>
+    <div><p>The calculator handles it: the payment is simply the amount divided by the number of months, and total interest is zero. This is how many promotional finance offers work.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/percentage-calculator/">
+      <strong>Percentage Calculator</strong>
+      <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Figures are estimates. Your lender’s quote is the one that counts.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More calculators</h2>
+      <ul class="side-list">
+        <li><a href="/age-calculator/">Age Calculator</a></li>
+        <li><a href="/date-difference-calculator/">Date Difference Calculator</a></li>
+        <li><a href="/discount-calculator/">Discount Calculator</a></li>
+        <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+        <li><a href="/tip-calculator/">Tip Calculator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/calculators/" style="font-size:.88rem">All calculators →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><a href="/category/generators/">Generators</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var out = $('out'), prompt = $('prompt');
+  var money = function(n){ return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var num = function(id){ var v = parseFloat($(id).value); return isFinite(v) ? v : NaN; };
+
+  // Amortise month by month so an extra payment can shorten the term.
+  function amortise(principal, monthlyRate, payment, cap){
+    var balance = principal, interest = 0, months = 0;
+    while (balance > 0.005 && months < cap) {
+      var i = balance * monthlyRate;
+      var principalPart = payment - i;
+      if (principalPart <= 0) return null;   // payment never clears the interest
+      if (principalPart > balance) { payment = balance + i; principalPart = balance; }
+      interest += i;
+      balance -= principalPart;
+      months++;
+    }
+    return { interest: interest, months: months };
+  }
+
+  function calc(){
+    var P = num('amt'), annual = num('rate'), years = num('years');
+    var extra = num('extra'); if (!isFinite(extra) || extra < 0) extra = 0;
+    if (!(P > 0) || !(years > 0) || isNaN(annual) || annual < 0) { out.hidden = true; prompt.hidden = false; return; }
+
+    var n = Math.round(years * 12);
+    var r = annual / 100 / 12;
+
+    // Standard amortising payment; the zero-rate case is a plain division.
+    var base = r === 0 ? P / n : P * r / (1 - Math.pow(1 + r, -n));
+    if (!isFinite(base)) { out.hidden = true; return; }
+
+    var scheduled = amortise(P, r, base + extra, 1200);
+    var interest = scheduled ? scheduled.interest : base * n - P;
+    var months = scheduled ? scheduled.months : n;
+
+    $('pay').textContent = money(base + extra);
+    $('int').textContent = money(interest);
+    $('tot').textContent = money(P + interest);
+    $('n').textContent = months + ' months';
+    $('note').textContent = 'Borrowing ' + money(P) + ' at ' + annual + '% over ' +
+      (months === n ? years + (years === 1 ? ' year' : ' years') : (months / 12).toFixed(1) + ' years');
+
+    if (extra > 0) {
+      var plain = amortise(P, r, base, 1200);
+      var savedInt = (plain ? plain.interest : 0) - interest;
+      var savedMonths = (plain ? plain.months : n) - months;
+      $('saved').hidden = false;
+      $('saved').textContent = 'Paying ' + money(extra) + ' extra each month clears the loan ' +
+        savedMonths + ' months early and saves ' + money(Math.max(0, savedInt)) + ' in interest.';
+    } else {
+      $('saved').hidden = true;
+    }
+
+    out.hidden = false; prompt.hidden = true;
+  }
+
+  ['amt','rate','years','extra'].forEach(function(id){ $(id).addEventListener('input', calc); });
+})();</script>
+</body>
+</html>

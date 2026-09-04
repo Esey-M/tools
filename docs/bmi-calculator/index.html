@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMI Calculator – Body Mass Index in Metric or Imperial</title>
+<meta name="description" content="Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.">
+<link rel="canonical" href="https://cinchpad.com/bmi-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="BMI Calculator – Body Mass Index in Metric or Imperial">
+<meta property="og:description" content="Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.">
+<meta property="og:url" content="https://cinchpad.com/bmi-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BMI Calculator – Body Mass Index in Metric or Imperial">
+<meta name="twitter:description" content="Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.bmi-scale{margin-top:18px;position:relative}
+.bmi-bar{display:flex;height:9px;border-radius:999px;overflow:hidden}
+.bmi-bar span{display:block}
+.bmi-ticks{display:flex;justify-content:space-between;font-size:.72rem;color:var(--ink-3);margin-top:5px;font-variant-numeric:tabular-nums}
+.bmi-pin{position:absolute;top:-5px;left:0;transition:left .25s ease}
+.bmi-pin span{display:block;width:3px;height:19px;border-radius:2px;background:var(--ink);box-shadow:0 0 0 2px var(--bg-raised)}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/bmi-calculator/#app","name":"BMI Calculator","url":"https://cinchpad.com/bmi-calculator/","description":"Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Health & Body","item":"https://cinchpad.com/category/health/"},{"@type":"ListItem","position":3,"name":"BMI Calculator","item":"https://cinchpad.com/bmi-calculator/"}]},{"@type":"HowTo","name":"How to use the BMI Calculator","description":"Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Choose Metric if you know your height in centimetres and weight in kilograms, or Imperial for feet, inches and pounds.","url":"https://cinchpad.com/bmi-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Type your height. In imperial, fill in feet and inches separately.","url":"https://cinchpad.com/bmi-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Type your weight. Your BMI appears as soon as both fields have a value.","url":"https://cinchpad.com/bmi-calculator/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Read the category and the healthy weight range shown for your height.","url":"https://cinchpad.com/bmi-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a good BMI?","acceptedAnswer":{"@type":"Answer","text":"For most adults, a BMI between 18.5 and 24.9 is considered the healthy range. That said, \"good\" depends on the person — a muscular athlete at BMI 27 and a sedentary person at BMI 27 have very different health profiles."}},{"@type":"Question","name":"Is BMI different for men and women?","acceptedAnswer":{"@type":"Answer","text":"No. The formula and the category thresholds are identical for adult men and women. Women do carry more body fat than men at the same BMI on average, which is one reason BMI alone is an incomplete picture."}},{"@type":"Question","name":"How do I calculate BMI by hand?","acceptedAnswer":{"@type":"Answer","text":"In metric, divide your weight in kilograms by your height in metres squared. In imperial, divide your weight in pounds by your height in inches squared, then multiply by 703."}},{"@type":"Question","name":"Does BMI work for children?","acceptedAnswer":{"@type":"Answer","text":"Not in this form. Children and teenagers are compared against age- and sex-specific percentile charts, because healthy body composition changes rapidly during growth. Ask a paediatrician or use a dedicated child BMI percentile tool."}},{"@type":"Question","name":"Should I use a lower BMI threshold if I am of Asian descent?","acceptedAnswer":{"@type":"Answer","text":"Several health authorities, including the WHO, suggest that health risks rise at a lower BMI in many Asian populations, with overweight sometimes set at 23 rather than 25. Your doctor can advise which thresholds apply to you."}},{"@type":"Question","name":"Is my data sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The calculation runs entirely in your browser. Your height and weight are never uploaded, stored on a server, or shared."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" placeholder="Search 100+ tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-label="Search tools">
+      <div class="search-results" id="search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><span aria-current="page">BMI Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>BMI Calculator</h1>
+      <p class="lede">Enter your height and weight to get your body mass index, what category it falls in, and the weight range considered healthy for your height.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="field">
+  <span class="field-label" id="unit-label">Units</span>
+  <div class="seg" role="group" aria-labelledby="unit-label">
+    <button type="button" id="u-metric" aria-pressed="true">Metric (cm / kg)</button>
+    <button type="button" id="u-imperial" aria-pressed="false">Imperial (ft / lb)</button>
+  </div>
+</div>
+
+<div id="metric-inputs">
+  <div class="row">
+    <div class="field">
+      <label for="cm">Height</label>
+      <div class="input-group">
+        <input type="number" id="cm" inputmode="decimal" min="50" max="260" step="0.1" placeholder="170" autocomplete="off">
+        <span class="addon">cm</span>
+      </div>
+    </div>
+    <div class="field">
+      <label for="kg">Weight</label>
+      <div class="input-group">
+        <input type="number" id="kg" inputmode="decimal" min="10" max="400" step="0.1" placeholder="68" autocomplete="off">
+        <span class="addon">kg</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="imperial-inputs" hidden>
+  <div class="row">
+    <div class="field">
+      <label for="ft">Height</label>
+      <div class="input-group">
+        <input type="number" id="ft" inputmode="numeric" min="1" max="8" step="1" placeholder="5" autocomplete="off" aria-label="Height, feet">
+        <span class="addon">ft</span>
+        <input type="number" id="inch" inputmode="decimal" min="0" max="11.9" step="0.1" placeholder="7" autocomplete="off" aria-label="Height, inches" style="border-radius:0;border-left:none">
+        <span class="addon">in</span>
+      </div>
+    </div>
+    <div class="field">
+      <label for="lb">Weight</label>
+      <div class="input-group">
+        <input type="number" id="lb" inputmode="decimal" min="20" max="900" step="0.1" placeholder="150" autocomplete="off">
+        <span class="addon">lb</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label">Your BMI</div>
+  <div class="result-value" id="bmi">—</div>
+  <div class="result-note" id="cat"></div>
+  <div class="bmi-scale" aria-hidden="true">
+    <div class="bmi-bar">
+      <span style="background:#5b9bd5;flex:18.5"></span>
+      <span style="background:#4caf7d;flex:6.5"></span>
+      <span style="background:#e8a33d;flex:5"></span>
+      <span style="background:#d9534f;flex:10"></span>
+    </div>
+    <div class="bmi-pin" id="pin"><span></span></div>
+    <div class="bmi-ticks"><span>15</span><span>18.5</span><span>25</span><span>30</span><span>40</span></div>
+  </div>
+  <dl class="result-grid">
+    <div class="stat"><dt>Healthy range</dt><dd id="range">—</dd></div>
+    <div class="stat"><dt>Category</dt><dd id="cat2" style="font-size:1.05rem">—</dd></div>
+  </dl>
+</div>
+<p class="hint" id="prompt" style="margin-top:14px">Fill in both fields to see your result.</p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">What BMI actually measures</h2>
+      <div class="answer"><p><strong>Body mass index (BMI) is your weight divided by the square of your height</strong> — a single number that estimates whether your weight is in a healthy range for someone of your height. A BMI between 18.5 and 24.9 is classed as healthy weight, 25 to 29.9 as overweight, and 30 or above as obesity. BMI does not measure body fat directly and does not account for muscle, bone density, or where fat is stored, so it is a starting point for a conversation with a doctor rather than a verdict on your health.</p></div>
+    </section>
+
+    <section class="section prose" id="chart">
+      <h2 id="chart-h">BMI categories chart</h2>
+      <p>These are the World Health Organization cut-offs used for adults aged 20 and over, and they are the same ones this calculator applies.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>BMI</th><th>Category</th><th>What it generally suggests</th></tr></thead>
+<tbody>
+<tr><td>Below 18.5</td><td>Underweight</td><td>May indicate undernutrition; worth discussing with a doctor</td></tr>
+<tr><td>18.5 – 24.9</td><td>Healthy weight</td><td>Lowest average risk of weight-related conditions</td></tr>
+<tr><td>25.0 – 29.9</td><td>Overweight</td><td>Somewhat raised risk of type 2 diabetes and heart disease</td></tr>
+<tr><td>30.0 – 34.9</td><td>Obesity class I</td><td>Moderately raised risk</td></tr>
+<tr><td>35.0 – 39.9</td><td>Obesity class II</td><td>High risk</td></tr>
+<tr><td>40.0 and above</td><td>Obesity class III</td><td>Very high risk</td></tr>
+</tbody></table></div>
+<p>Children and teenagers are assessed differently, using age- and sex-specific percentiles rather than these fixed numbers.</p>
+    </section>
+<section class="section prose" id="formula">
+      <h2 id="formula-h">The BMI formula</h2>
+      <p>There is one formula, expressed two ways depending on your units.</p>
+<p><strong>Metric:</strong> <code>BMI = weight in kg ÷ (height in metres)²</code></p>
+<p><strong>Imperial:</strong> <code>BMI = (weight in lb ÷ (height in inches)²) × 703</code></p>
+<p>Worked example: someone 170 cm tall weighing 68 kg has a height of 1.70 m. Squaring that gives 2.89. Then 68 ÷ 2.89 = <strong>23.5</strong>, which falls in the healthy weight category.</p>
+<p>The 703 in the imperial version is just the conversion factor that makes pounds and inches produce the same number as kilograms and metres.</p>
+    </section>
+<section class="section prose" id="limitations">
+      <h2 id="limitations-h">Where BMI gets it wrong</h2>
+      <p>BMI is popular because it needs only two easily measured numbers, but that simplicity is also its weakness.</p>
+<ul>
+<li><strong>It cannot tell muscle from fat.</strong> Athletes and heavily muscled people often land in the overweight or obese range while carrying very little fat.</li>
+<li><strong>It ignores fat distribution.</strong> Fat around the abdomen carries more health risk than fat on the hips and thighs, and BMI treats them identically. Waist circumference or waist-to-height ratio captures this better.</li>
+<li><strong>It shifts with age.</strong> Older adults lose muscle and bone, so the same BMI can mean more body fat at 70 than at 30.</li>
+<li><strong>The cut-offs were derived largely from European populations.</strong> Several health bodies recommend lower thresholds for people of South Asian, Chinese and other Asian descent, where risk rises at a lower BMI.</li>
+<li><strong>It does not apply during pregnancy</strong> or to children, who need growth-chart percentiles instead.</li>
+</ul>
+<p>A useful rule: treat BMI as one reading among several, alongside waist measurement, blood pressure, blood sugar and how you actually feel.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the BMI Calculator</h2>
+  <ol class="prose"><li>Choose <strong>Metric</strong> if you know your height in centimetres and weight in kilograms, or <strong>Imperial</strong> for feet, inches and pounds.</li><li>Type your height. In imperial, fill in feet and inches separately.</li><li>Type your weight. Your BMI appears as soon as both fields have a value.</li><li>Read the category and the healthy weight range shown for your height.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>What is a good BMI?</summary>
+    <div><p>For most adults, a BMI between 18.5 and 24.9 is considered the healthy range. That said, "good" depends on the person — a muscular athlete at BMI 27 and a sedentary person at BMI 27 have very different health profiles.</p></div>
+  </details>
+  <details>
+    <summary>Is BMI different for men and women?</summary>
+    <div><p>No. The formula and the category thresholds are identical for adult men and women. Women do carry more body fat than men at the same BMI on average, which is one reason BMI alone is an incomplete picture.</p></div>
+  </details>
+  <details>
+    <summary>How do I calculate BMI by hand?</summary>
+    <div><p>In metric, divide your weight in kilograms by your height in metres squared. In imperial, divide your weight in pounds by your height in inches squared, then multiply by 703.</p></div>
+  </details>
+  <details>
+    <summary>Does BMI work for children?</summary>
+    <div><p>Not in this form. Children and teenagers are compared against age- and sex-specific percentile charts, because healthy body composition changes rapidly during growth. Ask a paediatrician or use a dedicated child BMI percentile tool.</p></div>
+  </details>
+  <details>
+    <summary>Should I use a lower BMI threshold if I am of Asian descent?</summary>
+    <div><p>Several health authorities, including the WHO, suggest that health risks rise at a lower BMI in many Asian populations, with overweight sometimes set at 23 rather than 25. Your doctor can advise which thresholds apply to you.</p></div>
+  </details>
+  <details>
+    <summary>Is my data sent anywhere?</summary>
+    <div><p>No. The calculation runs entirely in your browser. Your height and weight are never uploaded, stored on a server, or shared.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/age-calculator/">
+      <strong>Age Calculator</strong>
+      <span>Your exact age in years, months and days — plus a countdown to your next birthday.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      BMI is a screening tool, not a diagnosis. Talk to a doctor about your individual health.
+    </p>
+  </div>
+
+  <aside class="side">
+    
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><a href="/category/generators/">Generators</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var metric = true;
+  var $ = function(id){ return document.getElementById(id); };
+  var els = { out:$('out'), bmi:$('bmi'), cat:$('cat'), cat2:$('cat2'), range:$('range'), pin:$('pin'), prompt:$('prompt') };
+
+  function categoryOf(b){
+    if (b < 18.5)  return ['Underweight', 'below the healthy range'];
+    if (b < 25)    return ['Healthy weight', 'within the healthy range'];
+    if (b < 30)    return ['Overweight', 'above the healthy range'];
+    if (b < 35)    return ['Obesity class I', 'well above the healthy range'];
+    if (b < 40)    return ['Obesity class II', 'well above the healthy range'];
+    return ['Obesity class III', 'far above the healthy range'];
+  }
+
+  function num(id){ var v = parseFloat($(id).value); return isFinite(v) ? v : NaN; }
+
+  function calc(){
+    var m, kg;
+    if (metric) {
+      var cm = num('cm'); kg = num('kg');
+      m = cm / 100;
+    } else {
+      var ft = num('ft'), inch = num('inch'); if (isNaN(inch)) inch = 0;
+      var lb = num('lb');
+      m = ((ft * 12) + inch) * 0.0254;
+      kg = lb * 0.45359237;
+    }
+    if (!(m > 0.5) || !(kg > 0)) { els.out.hidden = true; els.prompt.hidden = false; return; }
+
+    var bmi = kg / (m * m);
+    if (!isFinite(bmi) || bmi > 200) { els.out.hidden = true; return; }
+
+    var c = categoryOf(bmi);
+    els.bmi.textContent = bmi.toFixed(1);
+    els.cat.textContent = 'That is ' + c[1] + ' for your height.';
+    els.cat2.textContent = c[0];
+
+    // Healthy weight range = BMI 18.5–24.9 at this height.
+    var lo = 18.5 * m * m, hi = 24.9 * m * m;
+    els.range.textContent = metric
+      ? lo.toFixed(1) + '–' + hi.toFixed(1) + ' kg'
+      : (lo / 0.45359237).toFixed(0) + '–' + (hi / 0.45359237).toFixed(0) + ' lb';
+
+    // Pin position across a 15–40 scale.
+    var pct = Math.max(0, Math.min(100, ((bmi - 15) / 25) * 100));
+    els.pin.style.left = 'calc(' + pct.toFixed(1) + '% - 1.5px)';
+
+    els.out.hidden = false; els.prompt.hidden = true;
+  }
+
+  function setUnits(useMetric){
+    metric = useMetric;
+    $('u-metric').setAttribute('aria-pressed', String(useMetric));
+    $('u-imperial').setAttribute('aria-pressed', String(!useMetric));
+    $('metric-inputs').hidden = !useMetric;
+    $('imperial-inputs').hidden = useMetric;
+    try { localStorage.setItem('cp-units', useMetric ? 'metric' : 'imperial'); } catch(e){}
+    calc();
+  }
+
+  $('u-metric').addEventListener('click', function(){ setUnits(true); });
+  $('u-imperial').addEventListener('click', function(){ setUnits(false); });
+  ['cm','kg','ft','inch','lb'].forEach(function(id){ $(id).addEventListener('input', calc); });
+
+  try { if (localStorage.getItem('cp-units') === 'imperial') setUnits(false); } catch(e){}
+})();</script>
+</body>
+</html>
