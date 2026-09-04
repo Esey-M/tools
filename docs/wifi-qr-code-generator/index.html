@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QR Code Generator – Free, No Watermark, No Expiry</title>
-<meta name="description" content="Free QR code generator with no watermark, no signup and no expiry. Create QR codes for links, WiFi networks, email and phone numbers, then download as PNG or SVG.">
-<link rel="canonical" href="https://cinchpad.com/qr-code-generator/">
+<title>WiFi QR Code Generator – Share WiFi Without Typing It</title>
+<meta name="description" content="Free WiFi QR code generator. Make a scannable code that connects phones to your network without typing the password, with a printable card for guests.">
+<link rel="canonical" href="https://cinchpad.com/wifi-qr-code-generator/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="theme-color" content="#0f7d6b">
 <meta name="color-scheme" content="light dark">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CinchPad">
-<meta property="og:title" content="QR Code Generator – Free, No Watermark, No Expiry">
-<meta property="og:description" content="Free QR code generator with no watermark, no signup and no expiry. Create QR codes for links, WiFi networks, email and phone numbers, then download as PNG or SVG.">
-<meta property="og:url" content="https://cinchpad.com/qr-code-generator/">
+<meta property="og:title" content="WiFi QR Code Generator – Share WiFi Without Typing It">
+<meta property="og:description" content="Free WiFi QR code generator. Make a scannable code that connects phones to your network without typing the password, with a printable card for guests.">
+<meta property="og:url" content="https://cinchpad.com/wifi-qr-code-generator/">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cinchpad.com/og-default.png">
 <meta property="og:image:width" content="1200">
@@ -22,8 +22,8 @@
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="QR Code Generator – Free, No Watermark, No Expiry">
-<meta name="twitter:description" content="Free QR code generator with no watermark, no signup and no expiry. Create QR codes for links, WiFi networks, email and phone numbers, then download as PNG or SVG.">
+<meta name="twitter:title" content="WiFi QR Code Generator – Share WiFi Without Typing It">
+<meta name="twitter:description" content="Free WiFi QR code generator. Make a scannable code that connects phones to your network without typing the password, with a printable card for guests.">
 <meta name="twitter:image" content="https://cinchpad.com/og-default.png">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -34,16 +34,26 @@
 <style>
 .qr-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;margin-top:20px;align-items:start}
 @media (max-width:620px){.qr-wrap{grid-template-columns:1fr}}
-.qr-preview{background:var(--bg-sunken);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:grid;place-items:center;min-height:220px}
-.qr-preview svg{width:100%;max-width:300px;height:auto;border-radius:4px}
+.qr-preview{background:var(--bg-sunken);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;display:grid;place-items:center;min-height:220px}
+.qr-preview svg{width:100%;max-width:280px;height:auto;border-radius:4px}
 .qr-empty{color:var(--ink-3);font-size:.9rem;text-align:center}
-.qr-controls .field{margin-bottom:12px}
-input[type=color]{width:100%;border:1px solid var(--line-strong);border-radius:var(--radius-sm);background:var(--bg);cursor:pointer}</style>
+.wifi-card{display:none;text-align:center;padding:28px;border:2px solid #000;border-radius:14px;max-width:340px;margin:0 auto}
+.wifi-card h2{font-size:1.1rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+.wifi-card svg{width:190px;height:190px;margin:0 auto}
+.wifi-card .ssid{font-size:1.25rem;font-weight:700;margin-top:14px;word-break:break-word}
+.wifi-card .note{font-size:.85rem;color:#555;margin-top:5px}
+@media print{
+  .wifi-card{display:block !important}
+  body *{visibility:hidden}
+  .wifi-card,.wifi-card *{visibility:visible}
+  .wifi-card{position:absolute;left:50%;top:40px;transform:translateX(-50%)}
+}</style>
 <script>
 /* Apply the saved theme before first paint so there is no flash. */
 (function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/qr-code-generator/#app","name":"QR Code Generator","url":"https://cinchpad.com/qr-code-generator/","description":"Free QR code generator with no watermark, no signup and no expiry. Create QR codes for links, WiFi networks, email and phone numbers, then download as PNG or SVG.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Generators","item":"https://cinchpad.com/category/generators/"},{"@type":"ListItem","position":3,"name":"QR Code Generator","item":"https://cinchpad.com/qr-code-generator/"}]},{"@type":"HowTo","name":"How to use the QR Code Generator","description":"Free QR code generator with no watermark, no signup and no expiry. Create QR codes for links, WiFi networks, email and phone numbers, then download as PNG or SVG.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Choose what the code should do — open a link, join a WiFi network, start an email, or dial a number.","url":"https://cinchpad.com/qr-code-generator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Fill in the details. The preview updates as you type.","url":"https://cinchpad.com/qr-code-generator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Adjust the error-correction level and colours if you need to.","url":"https://cinchpad.com/qr-code-generator/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Download as PNG for screens and documents, or SVG for print at any size.","url":"https://cinchpad.com/qr-code-generator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are these QR codes really free, with no expiry?","acceptedAnswer":{"@type":"Answer","text":"Yes. The code encodes your link directly, so there is nothing to expire and no account behind it. Download it once and it will keep working indefinitely, including offline."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. The entire QR encoder runs in your browser. WiFi passwords, email addresses and links never leave your device — you can disconnect from the internet and this page still generates codes."}},{"@type":"Question","name":"Can I put a logo in the middle?","acceptedAnswer":{"@type":"Answer","text":"Yes, using any image editor. Set error correction to Q or H first, and keep the logo under about 25% of the code’s width. Always test the result before printing."}},{"@type":"Question","name":"How much data fits in a QR code?","acceptedAnswer":{"@type":"Answer","text":"Up to about 2,900 bytes of text at the lowest error-correction level, though codes that large are hard to scan. For links, staying under 300 characters keeps the pattern comfortably readable."}},{"@type":"Question","name":"Why does my QR code not scan?","acceptedAnswer":{"@type":"Answer","text":"The usual causes are too little quiet zone around the edge, printing it too small for the scan distance, poor contrast, or an inverted colour scheme. Try a larger size with high error correction and plain black on white."}},{"@type":"Question","name":"Can I use these codes commercially?","acceptedAnswer":{"@type":"Answer","text":"Yes. QR code patents expired long ago and the format is an open ISO standard. Codes made here carry no watermark and no licence conditions."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/wifi-qr-code-generator/#app","name":"WiFi QR Code Generator","url":"https://cinchpad.com/wifi-qr-code-generator/","description":"Free WiFi QR code generator. Make a scannable code that connects phones to your network without typing the password, with a printable card for guests.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Generators","item":"https://cinchpad.com/category/generators/"},{"@type":"ListItem","position":3,"name":"WiFi QR Code Generator","item":"https://cinchpad.com/wifi-qr-code-generator/"}]},{"@type":"HowTo","name":"How to use the WiFi QR Code Generator","description":"Free WiFi QR code generator. Make a scannable code that connects phones to your network without typing the password, with a printable card for guests.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Type your network name exactly as it appears, including capitals.","url":"https://cinchpad.com/wifi-qr-code-generator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Choose the security type — WPA covers WPA, WPA2 and WPA3.","url":"https://cinchpad.com/wifi-qr-code-generator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Enter the password.","url":"https://cinchpad.com/wifi-qr-code-generator/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Download the PNG, or press Print card for a framed card to leave out for guests.","url":"https://cinchpad.com/wifi-qr-code-generator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is my WiFi password sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The QR code is generated entirely in your browser. Disconnect from the internet and the tool still works, which is the simplest way to confirm it."}},{"@type":"Question","name":"Do iPhones and Android phones both support this?","acceptedAnswer":{"@type":"Answer","text":"Yes. iOS 11 and later and Android 10 and later read WiFi QR codes with the built-in camera. Older Androids may need a QR scanner app."}},{"@type":"Question","name":"Can someone steal my password from the code?","acceptedAnswer":{"@type":"Answer","text":"Yes — the password is encoded in the image in plain text, so anyone who photographs the code can extract it. Treat a printed code exactly as you would treat the password written on paper, and use a guest network."}},{"@type":"Question","name":"What if my password contains special characters?","acceptedAnswer":{"@type":"Answer","text":"Semicolons, colons, commas, quotes and backslashes are escaped automatically to the WiFi QR specification, so they work correctly."}},{"@type":"Question","name":"Which security type should I choose?","acceptedAnswer":{"@type":"Answer","text":"WPA covers WPA, WPA2 and WPA3 — almost every modern network. Choose WEP only for genuinely old hardware, and Open for a network with no password."}},{"@type":"Question","name":"Does the code expire?","acceptedAnswer":{"@type":"Answer","text":"No. It keeps working until you change the network name or password, at which point you simply generate a new one."}}]}]}</script>
 
 </head>
 <body>
@@ -72,122 +82,64 @@ input[type=color]{width:100%;border:1px solid var(--line-strong);border-radius:v
   </div>
 </header>
 <main id="main"><div class="wrap">
-<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/generators/">Generators</a></li><li><span aria-current="page">QR Code Generator</span></li></ol></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/generators/">Generators</a></li><li><span aria-current="page">WiFi QR Code Generator</span></li></ol></nav>
 <div class="tool-layout">
   <div>
     <header class="page-head">
-      <h1>QR Code Generator</h1>
-      <p class="lede">Create a QR code for a link, WiFi network, email or phone number. Generated entirely in your browser — nothing is uploaded, and the code never expires.</p>
+      <h1>WiFi QR Code Generator</h1>
+      <p class="lede">Create a QR code that joins any phone to your network in one scan. Generated in your browser — your password is never uploaded.</p>
     </header>
 
     <div class="panel" id="tool">
       
-<div class="field">
-  <span class="field-label" id="kind-label">What should it do?</span>
-  <div class="seg" role="group" aria-labelledby="kind-label" id="kinds" style="flex-wrap:wrap">
-    <button type="button" data-kind="text" aria-pressed="true">Link or text</button>
-    <button type="button" data-kind="wifi">WiFi</button>
-    <button type="button" data-kind="email">Email</button>
-    <button type="button" data-kind="phone">Phone</button>
+<div class="row">
+  <div class="field">
+    <label for="ssid">Network name (SSID)</label>
+    <input type="text" id="ssid" placeholder="My Home WiFi" autocomplete="off" spellcheck="false">
+    <span class="hint">Must match exactly, including capitals.</span>
+  </div>
+  <div class="field">
+    <label for="enc">Security type</label>
+    <select id="enc">
+      <option value="WPA" selected>WPA / WPA2 / WPA3</option>
+      <option value="WEP">WEP (old)</option>
+      <option value="nopass">Open — no password</option>
+    </select>
   </div>
 </div>
 
-<div id="panel-text">
-  <div class="field">
-    <label for="t-text">Link or text</label>
-    <textarea id="t-text" rows="3" placeholder="https://example.com" style="min-height:80px">https://cinchpad.com</textarea>
+<div class="field" id="pass-field">
+  <label for="pass">WiFi password</label>
+  <div class="input-group">
+    <input type="password" id="pass" autocomplete="off" spellcheck="false" placeholder="Your network password">
+    <button type="button" class="addon" id="show" style="cursor:pointer;border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none">Show</button>
   </div>
+  <span class="hint">Stays in your browser. Never sent to a server.</span>
 </div>
 
-<div id="panel-wifi" hidden>
-  <div class="row">
-    <div class="field">
-      <label for="w-ssid">Network name (SSID)</label>
-      <input type="text" id="w-ssid" placeholder="My Home WiFi" autocomplete="off">
-    </div>
-    <div class="field">
-      <label for="w-enc">Security</label>
-      <select id="w-enc">
-        <option value="WPA">WPA / WPA2 / WPA3</option>
-        <option value="WEP">WEP</option>
-        <option value="nopass">Open (no password)</option>
-      </select>
-    </div>
-  </div>
-  <div class="field" id="w-pass-field">
-    <label for="w-pass">Password</label>
-    <input type="text" id="w-pass" placeholder="Network password" autocomplete="off">
-    <span class="hint">Stays in your browser. Nothing is sent anywhere.</span>
-  </div>
-  <label style="display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--ink-2)">
-    <input type="checkbox" id="w-hidden" style="width:auto"> This is a hidden network
-  </label>
-</div>
-
-<div id="panel-email" hidden>
-  <div class="field">
-    <label for="e-addr">Email address</label>
-    <input type="email" id="e-addr" placeholder="hello@example.com" autocomplete="off">
-  </div>
-  <div class="field">
-    <label for="e-subj">Subject <span class="hint">(optional)</span></label>
-    <input type="text" id="e-subj" placeholder="Enquiry">
-  </div>
-  <div class="field">
-    <label for="e-body">Message <span class="hint">(optional)</span></label>
-    <textarea id="e-body" rows="2" style="min-height:60px"></textarea>
-  </div>
-</div>
-
-<div id="panel-phone" hidden>
-  <div class="field">
-    <label for="p-num">Phone number</label>
-    <input type="tel" id="p-num" placeholder="+1 555 123 4567" autocomplete="off">
-  </div>
-  <label style="display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--ink-2)">
-    <input type="checkbox" id="p-sms" style="width:auto"> Start a text message instead of a call
-  </label>
-</div>
+<label style="display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--ink-2);margin-bottom:6px">
+  <input type="checkbox" id="hidden" style="width:auto"> This network is hidden
+</label>
 
 <div class="qr-wrap">
-  <div class="qr-preview" id="preview"><div class="qr-empty">Your QR code appears here</div></div>
-  <div class="qr-controls">
-    <div class="field">
-      <label for="ec">Error correction</label>
-      <select id="ec">
-        <option value="L">Low — smallest code</option>
-        <option value="M" selected>Medium — recommended</option>
-        <option value="Q">Quartile</option>
-        <option value="H">High — survives damage</option>
-      </select>
-    </div>
-    <div class="row">
-      <div class="field">
-        <label for="fg">Dark</label>
-        <input type="color" id="fg" value="#000000" style="height:42px;padding:4px">
-      </div>
-      <div class="field">
-        <label for="bg">Light</label>
-        <input type="color" id="bg" value="#ffffff" style="height:42px;padding:4px">
-      </div>
-    </div>
-    <div class="field">
-      <label for="size">PNG size</label>
-      <select id="size">
-        <option value="256">256 px</option>
-        <option value="512" selected>512 px</option>
-        <option value="1024">1024 px</option>
-        <option value="2048">2048 px — print</option>
-      </select>
-    </div>
-    <div class="btn-row">
+  <div class="qr-preview" id="preview"><div class="qr-empty">Enter your network name to see the code</div></div>
+  <div>
+    <div class="btn-row" style="margin-bottom:14px">
       <button type="button" class="btn" id="dl-png" disabled>Download PNG</button>
       <button type="button" class="btn btn-ghost" id="dl-svg" disabled>SVG</button>
+      <button type="button" class="btn btn-ghost" id="print" disabled>Print card</button>
     </div>
+    <p class="hint" id="meta"></p>
+    <p class="notice notice-warn" id="err" hidden style="margin-top:12px"></p>
   </div>
 </div>
-<p class="hint" id="meta" style="margin-top:12px"></p>
-<p class="notice notice-warn" id="err" hidden style="margin-top:12px"></p>
+
+<div class="wifi-card print-only" aria-hidden="true">
+  <h2>WiFi</h2>
+  <div id="card-qr"></div>
+  <p class="ssid" id="card-ssid">Network name</p>
+  <p class="note" id="card-note">Scan with your camera to join</p>
+</div>
       <noscript>
         <p class="notice notice-warn" style="margin-top:16px">
           This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
@@ -198,91 +150,80 @@ input[type=color]{width:100%;border:1px solid var(--line-strong);border-radius:v
     <div class="ad" data-empty="true" data-slot="tool-top"></div>
 
     <section class="section prose" id="what-is" aria-labelledby="what-h">
-      <h2 id="what-h">What a QR code actually holds</h2>
-      <div class="answer"><p><strong>A QR code is a picture of text — usually a web address.</strong> Scanning it does not connect to any service; the camera simply reads the characters encoded in the pattern and hands them to your phone, which then opens the link. That means a QR code generated here works forever, offline, with no account and no tracking, because the destination is baked into the pattern itself. Codes that expire or need a subscription are "dynamic" codes: they encode a short redirect link owned by the provider, so if the provider disappears, so does your code.</p></div>
+      <h2 id="what-h">How a WiFi QR code works</h2>
+      <div class="answer"><p><strong>The code contains a short text string in a standard format — <code>WIFI:T:WPA;S:NetworkName;P:password;;</code> — which phones recognise and turn into a join prompt.</strong> Nothing clever is happening: your camera reads the text, sees the WIFI prefix, and offers to connect. It works natively on iOS 11 and later and on Android 10 and later with no app required. Because the credentials are encoded in the image itself, anyone who can see or photograph the code can join your network.</p></div>
     </section>
 
-    <section class="section prose" id="static-dynamic">
-      <h2 id="static-dynamic-h">Static versus dynamic QR codes</h2>
-      <div class="table-scroll"><table>
-<thead><tr><th></th><th>Static (this tool)</th><th>Dynamic (subscription services)</th></tr></thead>
-<tbody>
-<tr><td>What is encoded</td><td>Your actual link or text</td><td>A short redirect owned by the provider</td></tr>
-<tr><td>Expires</td><td>Never</td><td>When you stop paying</td></tr>
-<tr><td>Editable later</td><td>No — regenerate instead</td><td>Yes</td></tr>
-<tr><td>Scan tracking</td><td>None</td><td>Yes, by the provider</td></tr>
-<tr><td>Works offline</td><td>Yes</td><td>Needs the provider's servers</td></tr>
-<tr><td>Cost</td><td>Free</td><td>Usually monthly</td></tr>
-</tbody></table></div>
-<p>Use a static code for anything printed and permanent: a menu, a business card, a WiFi sign, a product label. Dynamic codes are only worth it when you genuinely need to change the destination after printing, or need scan analytics.</p>
+    <section class="section prose" id="guest">
+      <h2 id="guest-h">Use your guest network for this</h2>
+      <p>A printed QR code hands out your WiFi password to everyone who sees it, permanently. That is fine for a guest network and a poor idea for your main one.</p>
+<p>Most routers can broadcast a separate guest network that reaches the internet but not your other devices. Printers, network storage, cameras and smart home equipment stay invisible to anyone who joins it — which matters, because a guest device that is compromised should not be able to reach your file server.</p>
+<p>If you run a café, shop or holiday let, a guest network with a rotating password is the right setup, and this tool makes regenerating the card trivial.</p>
     </section>
-<section class="section prose" id="error-correction">
-      <h2 id="error-correction-h">Which error-correction level to choose</h2>
-      <p>QR codes carry redundant data so they still scan when partly obscured. More redundancy means a denser, larger pattern.</p>
-<div class="table-scroll"><table>
-<thead><tr><th>Level</th><th>Damage tolerated</th><th>Best for</th></tr></thead>
-<tbody>
-<tr><td>L (Low)</td><td>~7%</td><td>Clean digital use, long URLs</td></tr>
-<tr><td>M (Medium)</td><td>~15%</td><td>The sensible default for most uses</td></tr>
-<tr><td>Q (Quartile)</td><td>~25%</td><td>Codes with a logo placed over the centre</td></tr>
-<tr><td>H (High)</td><td>~30%</td><td>Printed labels, outdoor signs, anything likely to scuff</td></tr>
-</tbody></table></div>
-<p>If you plan to drop a logo in the middle, use Q or H — the redundancy is what lets the code survive the covered area.</p>
-    </section>
-<section class="section prose" id="printing">
-      <h2 id="printing-h">Getting QR codes to scan reliably in print</h2>
+<section class="section prose" id="troubleshooting">
+      <h2 id="troubleshooting-h">If the code will not connect</h2>
       <ul>
-<li><strong>Keep the quiet zone.</strong> The blank margin around the code must be at least four modules wide. Crowding it with text is the most common reason a code fails to scan.</li>
-<li><strong>Size for the scan distance.</strong> A rough rule is a code width of at least one tenth of the intended scanning distance: 2 cm for 20 cm away, 30 cm for a poster read from 3 metres.</li>
-<li><strong>Keep the contrast dark-on-light.</strong> Inverted codes (light on dark) fail on many scanners. Avoid low-contrast pairings entirely.</li>
-<li><strong>Use SVG for print.</strong> It stays sharp at any size. PNG at 1024 px or more is fine for most documents.</li>
-<li><strong>Shorten long links first.</strong> Fewer characters means a lower version with larger modules, which scans far more easily.</li>
-<li><strong>Test before you print a thousand.</strong> Scan it with both an iPhone and an Android device, in the lighting where it will actually live.</li>
+<li><strong>Check the network name character by character.</strong> SSIDs are case-sensitive, and a trailing space is invisible but fatal.</li>
+<li><strong>Check the security type.</strong> WPA3 networks use the WPA setting. WEP is only for genuinely old equipment.</li>
+<li><strong>Special characters in the password.</strong> Semicolons, colons, commas, quotes and backslashes are escaped automatically here, but some routers display them oddly in their own admin pages — copy the password from a text field, not a screenshot.</li>
+<li><strong>Hidden networks need the box ticked.</strong> Without it, phones will not find the network even with correct credentials.</li>
+<li><strong>5 GHz-only networks.</strong> If a device does not support 5 GHz it cannot join regardless of the code.</li>
+<li><strong>Print it large enough.</strong> At least 3 cm across for a code held at arm's length.</li>
 </ul>
+    </section>
+<section class="section prose" id="privacy">
+      <h2 id="privacy-h">Why generating this locally matters</h2>
+      <p>Your WiFi password is one of the more sensitive strings you own. It protects every device on your network.</p>
+<p>Many WiFi QR generators send the network name and password to a server to render the image. Even with good intentions, that puts your credentials in someone else's logs, and a network name is often enough to locate a home through public WiFi mapping databases.</p>
+<p>This tool implements the QR encoder in JavaScript and runs it in your browser. Nothing is transmitted — you can disconnect from the internet entirely and it will still produce the code.</p>
     </section>
 
     <section class="section" id="how-to" aria-labelledby="howto-h">
-  <h2 id="howto-h">How to use the QR Code Generator</h2>
-  <ol class="prose"><li>Choose what the code should do — open a link, join a WiFi network, start an email, or dial a number.</li><li>Fill in the details. The preview updates as you type.</li><li>Adjust the error-correction level and colours if you need to.</li><li>Download as <strong>PNG</strong> for screens and documents, or <strong>SVG</strong> for print at any size.</li></ol>
+  <h2 id="howto-h">How to use the WiFi QR Code Generator</h2>
+  <ol class="prose"><li>Type your network name exactly as it appears, including capitals.</li><li>Choose the security type — WPA covers WPA, WPA2 and WPA3.</li><li>Enter the password.</li><li>Download the PNG, or press <strong>Print card</strong> for a framed card to leave out for guests.</li></ol>
 </section>
     <div class="ad" data-empty="true" data-slot="tool-mid"></div>
     <section class="section faq" id="faq" aria-labelledby="faq-h">
   <h2 id="faq-h">Frequently asked questions</h2>
   <details>
-    <summary>Are these QR codes really free, with no expiry?</summary>
-    <div><p>Yes. The code encodes your link directly, so there is nothing to expire and no account behind it. Download it once and it will keep working indefinitely, including offline.</p></div>
+    <summary>Is my WiFi password sent anywhere?</summary>
+    <div><p>No. The QR code is generated entirely in your browser. Disconnect from the internet and the tool still works, which is the simplest way to confirm it.</p></div>
   </details>
   <details>
-    <summary>Is my data sent to a server?</summary>
-    <div><p>No. The entire QR encoder runs in your browser. WiFi passwords, email addresses and links never leave your device — you can disconnect from the internet and this page still generates codes.</p></div>
+    <summary>Do iPhones and Android phones both support this?</summary>
+    <div><p>Yes. iOS 11 and later and Android 10 and later read WiFi QR codes with the built-in camera. Older Androids may need a QR scanner app.</p></div>
   </details>
   <details>
-    <summary>Can I put a logo in the middle?</summary>
-    <div><p>Yes, using any image editor. Set error correction to Q or H first, and keep the logo under about 25% of the code’s width. Always test the result before printing.</p></div>
+    <summary>Can someone steal my password from the code?</summary>
+    <div><p>Yes — the password is encoded in the image in plain text, so anyone who photographs the code can extract it. Treat a printed code exactly as you would treat the password written on paper, and use a guest network.</p></div>
   </details>
   <details>
-    <summary>How much data fits in a QR code?</summary>
-    <div><p>Up to about 2,900 bytes of text at the lowest error-correction level, though codes that large are hard to scan. For links, staying under 300 characters keeps the pattern comfortably readable.</p></div>
+    <summary>What if my password contains special characters?</summary>
+    <div><p>Semicolons, colons, commas, quotes and backslashes are escaped automatically to the WiFi QR specification, so they work correctly.</p></div>
   </details>
   <details>
-    <summary>Why does my QR code not scan?</summary>
-    <div><p>The usual causes are too little quiet zone around the edge, printing it too small for the scan distance, poor contrast, or an inverted colour scheme. Try a larger size with high error correction and plain black on white.</p></div>
+    <summary>Which security type should I choose?</summary>
+    <div><p>WPA covers WPA, WPA2 and WPA3 — almost every modern network. Choose WEP only for genuinely old hardware, and Open for a network with no password.</p></div>
   </details>
   <details>
-    <summary>Can I use these codes commercially?</summary>
-    <div><p>Yes. QR code patents expired long ago and the format is an open ISO standard. Codes made here carry no watermark and no licence conditions.</p></div>
+    <summary>Does the code expire?</summary>
+    <div><p>No. It keeps working until you change the network name or password, at which point you simply generate a new one.</p></div>
   </details>
 </section>
     <section class="section" aria-labelledby="rel-h">
   <h2 id="rel-h">Related tools</h2>
   <div class="card-grid">
-    <a class="tool-card" href="/wifi-qr-code-generator/">
-      <strong>WiFi QR Code Generator</strong>
-      <span>A printable QR code that joins guests to your WiFi in one scan.</span>
+    <a class="tool-card" href="/qr-code-generator/">
+      <strong>QR Code Generator</strong>
+      <span>Make a QR code for a link, WiFi, email or phone. Download as PNG or SVG.</span>
     </a>
     <a class="tool-card" href="/password-generator/">
       <strong>Password Generator</strong>
       <span>Strong random passwords and memorable passphrases, generated in your browser.</span>
+    </a>
+    <a class="tool-card" href="/password-strength-checker/">
+      <strong>Password Strength Checker</strong>
+      <span>Test a password’s real strength and see how long it would take to crack.</span>
     </a>
   </div>
 </section>
@@ -299,7 +240,7 @@ input[type=color]{width:100%;border:1px solid var(--line-strong);border-radius:v
       <ul class="side-list">
         <li><a href="/password-generator/">Password Generator</a></li>
         <li><a href="/password-strength-checker/">Password Strength Checker</a></li>
-        <li><a href="/wifi-qr-code-generator/">WiFi QR Code Generator</a></li>
+        <li><a href="/qr-code-generator/">QR Code Generator</a></li>
       </ul>
       <p style="margin-top:10px"><a href="/category/generators/" style="font-size:.88rem">All generators →</a></p>
     </nav>
@@ -750,64 +691,50 @@ if (typeof module !== 'undefined' && module.exports) module.exports = QRCode;
 
 (function(){
   var $ = function(id){ return document.getElementById(id); };
-  var kind = 'text';
   var current = null;
 
-  function wifiPayload(){
-    // Backslash, semicolon, comma, colon and quote must be escaped in WIFI: strings.
+  function payload(){
+    // Backslash, semicolon, comma, colon and quote must be escaped per the WIFI: scheme.
     var esc = function(s){ return String(s).replace(/([\\;,:"])/g, '\\$1'); };
-    var enc = $('w-enc').value;
-    var ssid = esc($('w-ssid').value);
-    var pass = esc($('w-pass').value);
-    var hidden = $('w-hidden').checked ? 'H:true;' : '';
+    var enc = $('enc').value;
+    var ssid = esc($('ssid').value);
+    var pass = esc($('pass').value);
+    var hidden = $('hidden').checked ? 'H:true;' : '';
+    if (!$('ssid').value) return '';
     if (enc === 'nopass') return 'WIFI:T:nopass;S:' + ssid + ';' + hidden + ';';
     return 'WIFI:T:' + enc + ';S:' + ssid + ';P:' + pass + ';' + hidden + ';';
   }
 
-  function payload(){
-    if (kind === 'text') return $('t-text').value;
-    if (kind === 'wifi') return wifiPayload();
-    if (kind === 'email') {
-      var addr = $('e-addr').value.trim();
-      var subj = $('e-subj').value.trim();
-      var body = $('e-body').value.trim();
-      var q = [];
-      if (subj) q.push('subject=' + encodeURIComponent(subj));
-      if (body) q.push('body=' + encodeURIComponent(body));
-      return 'mailto:' + addr + (q.length ? '?' + q.join('&') : '');
-    }
-    if (kind === 'phone') {
-      var num = $('p-num').value.replace(/[^\d+]/g, '');
-      return $('p-sms').checked ? 'sms:' + num : 'tel:' + num;
-    }
-    return '';
-  }
-
   function render(){
     var text = payload();
-    var box = $('preview');
-    var meta = $('meta');
     if (!text) {
-      box.innerHTML = '<div class="qr-empty">Your QR code appears here</div>';
-      meta.textContent = '';
-      $('dl-png').disabled = true; $('dl-svg').disabled = true;
+      $('preview').innerHTML = '<div class="qr-empty">Enter your network name to see the code</div>';
+      $('meta').textContent = '';
+      $('dl-png').disabled = true; $('dl-svg').disabled = true; $('print').disabled = true;
       current = null;
+      $('card-ssid').textContent = 'Network name';
+      $('card-qr').innerHTML = '';
       return;
     }
     try {
-      var qr = QRCode.encode(text, { ec: $('ec').value });
+      // High error correction, because these get printed and stuck to walls.
+      var qr = QRCode.encode(text, { ec: 'H' });
       current = qr;
-      box.innerHTML = QRCode.toSvg(qr, { quiet: 4, dark: $('fg').value, light: $('bg').value });
-      meta.textContent = 'Version ' + qr.version + ' · ' + qr.size + '×' + qr.size + ' modules · ' +
-        'error correction ' + qr.ec + ' · ' + text.length + ' characters';
-      $('dl-png').disabled = false; $('dl-svg').disabled = false;
+      var svg = QRCode.toSvg(qr, { quiet: 4, dark: '#000000', light: '#ffffff' });
+      $('preview').innerHTML = svg;
+      $('card-qr').innerHTML = svg;
+      $('card-ssid').textContent = $('ssid').value;
+      $('card-note').textContent = $('enc').value === 'nopass'
+        ? 'Open network — no password needed'
+        : 'Scan with your camera to join';
+      $('meta').textContent = 'Version ' + qr.version + ' · error correction H · ' + text.length + ' characters';
+      $('dl-png').disabled = false; $('dl-svg').disabled = false; $('print').disabled = false;
       $('err').hidden = true;
     } catch (e) {
       current = null;
-      box.innerHTML = '<div class="qr-empty">Too much data</div>';
       $('err').hidden = false;
-      $('err').textContent = e.message + ' Try a shorter text or a lower error-correction level.';
-      $('dl-png').disabled = true; $('dl-svg').disabled = true;
+      $('err').textContent = e.message;
+      $('dl-png').disabled = true; $('dl-svg').disabled = true; $('print').disabled = true;
     }
   }
 
@@ -819,48 +746,41 @@ if (typeof module !== 'undefined' && module.exports) module.exports = QRCode;
 
   $('dl-svg').addEventListener('click', function(){
     if (!current) return;
-    var svg = QRCode.toSvg(current, { quiet: 4, dark: $('fg').value, light: $('bg').value });
-    download('qr-code.svg', 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg));
+    download('wifi-qr.svg', 'data:image/svg+xml;charset=utf-8,' +
+      encodeURIComponent(QRCode.toSvg(current, { quiet: 4 })));
   });
 
   $('dl-png').addEventListener('click', function(){
     if (!current) return;
-    var px = parseInt($('size').value, 10);
-    var quiet = 4;
-    var total = current.size + quiet * 2;
-    var scale = Math.max(1, Math.floor(px / total));
+    var quiet = 4, total = current.size + quiet * 2;
+    var scale = Math.max(1, Math.floor(1024 / total));
     var canvas = document.createElement('canvas');
     canvas.width = canvas.height = total * scale;
     var ctx = canvas.getContext('2d');
-    ctx.fillStyle = $('bg').value;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = $('fg').value;
+    ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#000';
     for (var y = 0; y < current.size; y++) {
       for (var x = 0; x < current.size; x++) {
         if (current.modules[y][x]) ctx.fillRect((x + quiet) * scale, (y + quiet) * scale, scale, scale);
       }
     }
-    download('qr-code.png', canvas.toDataURL('image/png'));
+    download('wifi-qr.png', canvas.toDataURL('image/png'));
   });
 
-  $('kinds').addEventListener('click', function(e){
-    var b = e.target.closest('button[data-kind]'); if (!b) return;
-    kind = b.getAttribute('data-kind');
-    var btns = $('kinds').querySelectorAll('button');
-    for (var i = 0; i < btns.length; i++) btns[i].setAttribute('aria-pressed', String(btns[i] === b));
-    ['text','wifi','email','phone'].forEach(function(k){ $('panel-' + k).hidden = k !== kind; });
+  $('print').addEventListener('click', function(){ window.print(); });
+
+  $('show').addEventListener('click', function(){
+    var showing = $('pass').type === 'text';
+    $('pass').type = showing ? 'password' : 'text';
+    this.textContent = showing ? 'Show' : 'Hide';
+  });
+
+  $('enc').addEventListener('change', function(){
+    $('pass-field').hidden = this.value === 'nopass';
     render();
   });
-
-  $('w-enc').addEventListener('change', function(){
-    $('w-pass-field').hidden = $('w-enc').value === 'nopass';
-    render();
-  });
-
-  var inputs = ['t-text','w-ssid','w-pass','w-hidden','e-addr','e-subj','e-body','p-num','p-sms','ec','fg','bg'];
-  inputs.forEach(function(id){
-    var el = $(id);
-    el.addEventListener(el.type === 'checkbox' || el.tagName === 'SELECT' ? 'change' : 'input', render);
+  ['ssid','pass','hidden'].forEach(function(id){
+    $(id).addEventListener($(id).type === 'checkbox' ? 'change' : 'input', render);
   });
 
   render();

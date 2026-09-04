@@ -99,6 +99,17 @@ async function main() {
       }
     }
 
+    // --- WiFi QR escaping -------------------------------------------------
+    // Backslashes inside a tool's inlined JS pass through a template literal,
+    // so the WIFI: escape set has silently lost its backslash twice before.
+    if (html.includes('WIFI:T:')) {
+      const m = html.match(/replace\(\/\(\[([^\]]*)\]\)\/g/);
+      if (!m) fail(page, 'builds a WIFI: payload but has no escaping regex');
+      else if (!m[1].includes('\\\\')) {
+        fail(page, `WIFI: escape set is missing the backslash -> [${m[1]}]`);
+      }
+    }
+
     // --- images ---------------------------------------------------------
     for (const [, tag] of html.matchAll(/<img([^>]*)>/g)) {
       if (!/\salt=/.test(tag)) fail(page, 'an <img> has no alt attribute');

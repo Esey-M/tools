@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 46 browser-based utilities for
+CinchPad is a free, ad-supported collection of 47 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -63,6 +63,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Password Generator](https://cinchpad.com/password-generator/): Free strong password generator. Create random passwords or memorable passphrases with a live strength estimate, generated entirely in your browser.
 - [Password Strength Checker](https://cinchpad.com/password-strength-checker/): Free password strength checker. See how strong a password really is, how long it would take to crack, and which specific weaknesses make it guessable.
 - [QR Code Generator](https://cinchpad.com/qr-code-generator/): Free QR code generator with no watermark, no signup and no expiry. Create QR codes for links, WiFi networks, email and phone numbers, then download as PNG or SVG.
+- [WiFi QR Code Generator](https://cinchpad.com/wifi-qr-code-generator/): Free WiFi QR code generator. Make a scannable code that connects phones to your network without typing the password, with a printable card for guests.
 
 ## Articles
 - [Five Percentage Mistakes That Quietly Cost You Money](https://cinchpad.com/blog/percentage-mistakes-that-cost-money/): Stacked discounts, reversed price rises, and percent versus percentage points — the everyday percentage errors that make things look cheaper than they are.
