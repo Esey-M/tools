@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 83 browser-based utilities for
+CinchPad is a free, ad-supported collection of 85 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -62,6 +62,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [BMI Calculator](https://cinchpad.com/bmi-calculator/): Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.
 - [Body Fat Calculator](https://cinchpad.com/body-fat-calculator/): Free body fat calculator using the US Navy tape method. Estimate body fat percentage from height, neck, waist and hip measurements, with category ranges.
 - [Calorie Calculator](https://cinchpad.com/calorie-calculator/): Free calorie calculator. Work out your BMR and daily calorie needs from height, weight, age and activity level, with targets for losing or gaining weight.
+- [Colour Blindness Test](https://cinchpad.com/color-blindness-test/): Free online colour blindness test. Answer a short set of Ishihara-style plates to screen for red-green colour vision deficiency, with results explained.
 - [Heart Rate Zone Calculator](https://cinchpad.com/heart-rate-calculator/): Free heart rate zone calculator. Get your maximum heart rate and five training zones by age, plus the more accurate Karvonen method.
 - [Ideal Weight Calculator](https://cinchpad.com/ideal-weight-calculator/): Free ideal weight calculator. See your target weight from the Devine, Robinson, Miller and Hamwi formulas plus the healthy BMI range, and why they disagree.
 - [Period Tracker](https://cinchpad.com/period-tracker/): Free period tracker and calculator. Predict your next periods and fertile window from your last period and cycle length. Stored in your browser, never uploaded.
@@ -77,6 +78,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Packing List Generator](https://cinchpad.com/packing-list-generator/): Free packing list generator. Build a trip-specific list from length, climate and trip type, tick items off as you pack, and save it in your browser.
 - [Paint Calculator](https://cinchpad.com/paint-calculator/): Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.
 - [Recipe Scaler](https://cinchpad.com/recipe-scaler/): Free recipe scaler. Paste a recipe and change the number of servings — every quantity is rescaled automatically, with fractions kept readable.
+- [Rent vs Buy Calculator](https://cinchpad.com/rent-vs-buy-calculator/): Free rent vs buy calculator. Compare the true cost of renting against buying over any period, including maintenance, fees, and what a deposit would earn invested.
 - [To-Do List](https://cinchpad.com/todo-list/): Free online to-do list. Add tasks with priorities and due dates, filter what is left, and reorder by dragging. Saved in your browser with no account.
 - [Unit Price Calculator](https://cinchpad.com/unit-price-comparator/): Free unit price calculator. Compare products of different sizes by price per kilo, litre or item, and see which pack is genuinely the better value.
 ### Fun & Social
