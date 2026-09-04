@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 70 browser-based utilities for
+CinchPad is a free, ad-supported collection of 74 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -26,6 +26,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Sales Tax Calculator](https://cinchpad.com/sales-tax-calculator/): Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.
 - [Tip Calculator](https://cinchpad.com/tip-calculator/): Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.
 ### Converters
+- [Clothing Size Converter](https://cinchpad.com/clothing-size-converter/): Free clothing size converter for women’s and men’s clothing across US, UK, EU, Italian, French and Japanese sizing, with body measurements shown.
 - [Cooking Converter](https://cinchpad.com/cooking-converter/): Free cooking measurement converter. Convert cups to grams for common ingredients, plus spoons, ounces, millilitres and oven temperatures including gas marks.
 - [Currency Converter](https://cinchpad.com/currency-converter/): Free currency converter using daily European Central Bank reference rates. Convert between 30 major currencies, with a clear note on why your bank gives you less.
 - [Roman Numeral Converter](https://cinchpad.com/roman-numeral-converter/): Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.
@@ -40,7 +41,9 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Image Resizer](https://cinchpad.com/image-resizer/): Free image resizer. Change a photo to exact pixel dimensions, scale by percentage, or use presets for social media and passport photos. No upload required.
 - [Image to PDF](https://cinchpad.com/image-to-pdf/): Free image to PDF converter. Combine JPG, PNG and WebP images into a single PDF, reorder the pages by dragging, and choose page size and margins. No upload.
 - [PDF Merger](https://cinchpad.com/pdf-merger/): Free PDF merger. Combine multiple PDF files into one document, drag to reorder the files, and download. Runs in your browser — your files are never uploaded.
+- [PDF Splitter](https://cinchpad.com/pdf-splitter/): Free PDF splitter. Extract a page range, remove unwanted pages, or split a PDF into single files. Runs in your browser — your document is never uploaded.
 - [Photo Cropper](https://cinchpad.com/photo-cropper/): Free photo cropper. Drag to crop any image, lock to common aspect ratios for social profiles and posts, and download. Runs in your browser with no upload.
+- [Photo Watermark](https://cinchpad.com/watermark-photo/): Free photo watermark tool. Add your name or website across an image, choose position, opacity, size and rotation, and download. No upload, no watermark of ours.
 ### Random Pickers
 - [Coin Flip](https://cinchpad.com/coin-flip/): Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.
 - [Dice Roller](https://cinchpad.com/dice-roller/): Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.
@@ -52,6 +55,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Wheel of Names](https://cinchpad.com/wheel-of-names/): Free spinning wheel picker. Add names, spin the wheel and get a random winner, with an option to remove each winner as it is drawn. No signup.
 - [Yes or No Decision Maker](https://cinchpad.com/yes-no-decision-maker/): Free yes or no decision maker. Ask a question and get a random answer, with an option to weight the odds. Useful for breaking a deadlock, not for real decisions.
 ### Health & Body
+- [Blood Type Calculator](https://cinchpad.com/blood-type-calculator/): Free blood type calculator. See who you can donate to and receive from, and work out the possible blood types of a child from both parents’ types.
 - [BMI Calculator](https://cinchpad.com/bmi-calculator/): Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.
 - [Body Fat Calculator](https://cinchpad.com/body-fat-calculator/): Free body fat calculator using the US Navy tape method. Estimate body fat percentage from height, neck, waist and hip measurements, with category ranges.
 - [Calorie Calculator](https://cinchpad.com/calorie-calculator/): Free calorie calculator. Work out your BMR and daily calorie needs from height, weight, age and activity level, with targets for losing or gaining weight.
