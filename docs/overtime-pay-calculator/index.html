@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overtime Pay Calculator – Time and a Half, Double Time</title>
+<meta name="description" content="Free overtime pay calculator. Work out time and a half, double time and total weekly pay from your hourly rate and hours worked, including a daily breakdown.">
+<link rel="canonical" href="https://cinchpad.com/overtime-pay-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Overtime Pay Calculator – Time and a Half, Double Time">
+<meta property="og:description" content="Free overtime pay calculator. Work out time and a half, double time and total weekly pay from your hourly rate and hours worked, including a daily breakdown.">
+<meta property="og:url" content="https://cinchpad.com/overtime-pay-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Overtime Pay Calculator – Time and a Half, Double Time">
+<meta name="twitter:description" content="Free overtime pay calculator. Work out time and a half, double time and total weekly pay from your hourly rate and hours worked, including a daily breakdown.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/overtime-pay-calculator/#app","name":"Overtime Pay Calculator","url":"https://cinchpad.com/overtime-pay-calculator/","description":"Free overtime pay calculator. Work out time and a half, double time and total weekly pay from your hourly rate and hours worked, including a daily breakdown.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://cinchpad.com/category/calculators/"},{"@type":"ListItem","position":3,"name":"Overtime Pay Calculator","item":"https://cinchpad.com/overtime-pay-calculator/"}]},{"@type":"HowTo","name":"How to use the Overtime Pay Calculator","description":"Free overtime pay calculator. Work out time and a half, double time and total weekly pay from your hourly rate and hours worked, including a daily breakdown.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Enter your hourly rate and total hours worked this week.","url":"https://cinchpad.com/overtime-pay-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Set the threshold at which overtime begins — 40 hours in the US, often 48 in the UK and EU.","url":"https://cinchpad.com/overtime-pay-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Choose the overtime multiplier, or type a custom one from your contract.","url":"https://cinchpad.com/overtime-pay-calculator/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Add any hours paid at double time separately.","url":"https://cinchpad.com/overtime-pay-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is time and a half?","acceptedAnswer":{"@type":"Answer","text":"1.5 times your normal hourly rate. At $20 an hour, time and a half is $30 an hour for the qualifying hours."}},{"@type":"Question","name":"Is overtime paid on all hours or just the extra ones?","acceptedAnswer":{"@type":"Answer","text":"Only the hours above the threshold. Working 45 hours with a 40-hour threshold means 40 at normal rate and 5 at the overtime rate."}},{"@type":"Question","name":"Is overtime taxed at a higher rate?","acceptedAnswer":{"@type":"Answer","text":"No. Overtime is ordinary income taxed at the same rates. It can look higher on a payslip because withholding is sometimes calculated as if that pay period were typical, but this evens out over the year."}},{"@type":"Question","name":"Does paid holiday count towards the overtime threshold?","acceptedAnswer":{"@type":"Answer","text":"Under US federal law, no — only hours actually worked count. Some contracts and collective agreements are more generous, so check yours."}},{"@type":"Question","name":"Can my employer give time off instead of overtime pay?","acceptedAnswer":{"@type":"Answer","text":"In the US private sector, generally not for non-exempt employees; compensatory time is mainly a public sector arrangement. Elsewhere, time off in lieu is common and depends on your contract."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 55 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/calculators/">Calculators</a></li><li><span aria-current="page">Overtime Pay Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Overtime Pay Calculator</h1>
+      <p class="lede">Enter your hourly rate and hours worked. Overtime above the threshold is paid at your chosen multiplier.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="row">
+  <div class="field">
+    <label for="rate">Hourly rate</label>
+    <div class="input-group"><span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+      <input type="number" id="rate" inputmode="decimal" min="0" step="0.25" value="22" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)"></div>
+  </div>
+  <div class="field">
+    <label for="hours">Hours worked this week</label>
+    <input type="number" id="hours" inputmode="decimal" min="0" max="168" step="0.5" value="47">
+  </div>
+  <div class="field">
+    <label for="threshold">Overtime starts after</label>
+    <div class="input-group"><input type="number" id="threshold" inputmode="decimal" min="0" max="80" step="1" value="40"><span class="addon">hrs</span></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <span class="field-label" id="mult-label">Overtime rate</span>
+    <div class="seg" role="group" aria-labelledby="mult-label" id="mults" style="flex-wrap:wrap">
+      <button type="button" data-m="1.5" aria-pressed="true">Time and a half</button>
+      <button type="button" data-m="2">Double time</button>
+      <button type="button" data-m="1.25">1.25×</button>
+    </div>
+  </div>
+  <div class="field">
+    <label for="custom">Or a custom multiplier</label>
+    <div class="input-group"><input type="number" id="custom" inputmode="decimal" min="1" max="5" step="0.05" value="1.5"><span class="addon">×</span></div>
+  </div>
+  <div class="field">
+    <label for="double">Hours at double time <span class="hint">(optional)</span></label>
+    <input type="number" id="double" inputmode="decimal" min="0" max="80" step="0.5" value="0">
+    <span class="hint">Sundays or holidays, where your contract pays 2×.</span>
+  </div>
+</div>
+
+<div class="result" id="out" aria-live="polite">
+  <div class="result-label">Total pay this week</div>
+  <div class="result-value" id="total">—</div>
+  <div class="result-note" id="note"></div>
+  <dl class="result-grid">
+    <div class="stat"><dt>Regular pay</dt><dd id="reg">—</dd></div>
+    <div class="stat"><dt>Overtime pay</dt><dd id="ot">—</dd></div>
+    <div class="stat"><dt>Overtime hours</dt><dd id="oth">—</dd></div>
+    <div class="stat"><dt>Effective hourly</dt><dd id="eff">—</dd></div>
+  </dl>
+</div>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How overtime pay is calculated</h2>
+      <div class="answer"><p><strong>Overtime is your regular hourly rate multiplied by the overtime rate, applied only to hours above the threshold.</strong> "Time and a half" means 1.5×, so at $22 an hour overtime pays $33. Working 47 hours in a week with a 40-hour threshold gives 40 regular hours at $22 ($880) plus 7 overtime hours at $33 ($231), totalling $1,111. Note that overtime applies to the <em>extra</em> hours only — a common mistake is applying the multiplier to the whole week.</p></div>
+    </section>
+
+    <section class="section prose" id="rules">
+      <h2 id="rules-h">Overtime rules vary a lot</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Where</th><th>Typical rule</th></tr></thead>
+<tbody>
+<tr><td>United States (federal)</td><td>1.5× over 40 hours a week for non-exempt employees, under the FLSA</td></tr>
+<tr><td>California</td><td>1.5× over 8 hours a day or 40 a week; 2× over 12 hours a day</td></tr>
+<tr><td>United Kingdom</td><td>No statutory overtime rate — it is whatever your contract says, provided average pay meets minimum wage</td></tr>
+<tr><td>European Union</td><td>Working time capped at 48 hours a week on average; rates set nationally or by contract</td></tr>
+<tr><td>Australia</td><td>Usually 1.5× for the first 2–3 hours then 2×, set by the relevant award</td></tr>
+<tr><td>Canada</td><td>1.5× over 40–44 hours depending on province</td></tr>
+</tbody></table></div>
+<p>The biggest single misconception is that overtime pay is automatic everywhere. In the UK there is no legal right to an enhanced rate at all — it depends entirely on your contract.</p>
+    </section>
+<section class="section prose" id="exempt">
+      <h2 id="exempt-h">Exempt and non-exempt in the US</h2>
+      <p>Under the Fair Labor Standards Act, only <strong>non-exempt</strong> employees are entitled to overtime. Exempt status requires meeting all three of a salary basis test, a salary threshold, and a duties test covering genuine executive, administrative or professional work.</p>
+<p>Being paid a salary does not by itself make you exempt — this is misapplied often enough that it is a common source of wage claims. Job title is irrelevant; what matters is what you actually do day to day.</p>
+<p>If you are unsure, your country's labour department is the authority. In the US that is the Department of Labor's Wage and Hour Division.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Overtime Pay Calculator</h2>
+  <ol class="prose"><li>Enter your hourly rate and total hours worked this week.</li><li>Set the threshold at which overtime begins — 40 hours in the US, often 48 in the UK and EU.</li><li>Choose the overtime multiplier, or type a custom one from your contract.</li><li>Add any hours paid at double time separately.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>What is time and a half?</summary>
+    <div><p>1.5 times your normal hourly rate. At $20 an hour, time and a half is $30 an hour for the qualifying hours.</p></div>
+  </details>
+  <details>
+    <summary>Is overtime paid on all hours or just the extra ones?</summary>
+    <div><p>Only the hours above the threshold. Working 45 hours with a 40-hour threshold means 40 at normal rate and 5 at the overtime rate.</p></div>
+  </details>
+  <details>
+    <summary>Is overtime taxed at a higher rate?</summary>
+    <div><p>No. Overtime is ordinary income taxed at the same rates. It can look higher on a payslip because withholding is sometimes calculated as if that pay period were typical, but this evens out over the year.</p></div>
+  </details>
+  <details>
+    <summary>Does paid holiday count towards the overtime threshold?</summary>
+    <div><p>Under US federal law, no — only hours actually worked count. Some contracts and collective agreements are more generous, so check yours.</p></div>
+  </details>
+  <details>
+    <summary>Can my employer give time off instead of overtime pay?</summary>
+    <div><p>In the US private sector, generally not for non-exempt employees; compensatory time is mainly a public sector arrangement. Elsewhere, time off in lieu is common and depends on your contract.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/salary-calculator/">
+      <strong>Salary Calculator</strong>
+      <span>Convert between hourly, weekly, monthly and annual pay in one step.</span>
+    </a>
+    <a class="tool-card" href="/budget-tracker/">
+      <strong>Budget Tracker</strong>
+      <span>Track monthly income and spending, with the 50/30/20 split checked for you.</span>
+    </a>
+    <a class="tool-card" href="/percentage-calculator/">
+      <strong>Percentage Calculator</strong>
+      <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+    </a>
+    <a class="tool-card" href="/date-difference-calculator/">
+      <strong>Date Difference Calculator</strong>
+      <span>How many days, weeks, months or working days lie between any two dates.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Overtime rules vary by country, state and contract. Check your own before relying on this.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More calculators</h2>
+      <ul class="side-list">
+        <li><a href="/age-calculator/">Age Calculator</a></li>
+        <li><a href="/car-loan-calculator/">Car Loan Calculator</a></li>
+        <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+        <li><a href="/date-difference-calculator/">Date Difference Calculator</a></li>
+        <li><a href="/discount-calculator/">Discount Calculator</a></li>
+        <li><a href="/fuel-cost-calculator/">Fuel Cost Calculator</a></li>
+        <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+        <li><a href="/loan-calculator/">Loan Calculator</a></li>
+        <li><a href="/mortgage-calculator/">Mortgage Calculator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/calculators/" style="font-size:.88rem">All calculators →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var money = function(n){ return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var num = function(id, d){ var v = parseFloat($(id).value); return isFinite(v) && v >= 0 ? v : d; };
+
+  function calc(){
+    var rate = num('rate', 0);
+    var hours = num('hours', 0);
+    var threshold = num('threshold', 40);
+    var mult = num('custom', 1.5);
+    var doubleHours = Math.min(num('double', 0), hours);
+
+    // Double-time hours are paid separately and do not also count as overtime.
+    var remaining = hours - doubleHours;
+    var regularHours = Math.min(remaining, threshold);
+    var otHours = Math.max(0, remaining - threshold);
+
+    var regularPay = regularHours * rate;
+    var otPay = otHours * rate * mult;
+    var doublePay = doubleHours * rate * 2;
+    var total = regularPay + otPay + doublePay;
+
+    $('total').textContent = money(total);
+    $('reg').textContent = money(regularPay);
+    $('ot').textContent = money(otPay + doublePay);
+    $('oth').textContent = (otHours + doubleHours) % 1 === 0
+      ? (otHours + doubleHours) + ' hrs'
+      : (otHours + doubleHours).toFixed(1) + ' hrs';
+    $('eff').textContent = hours > 0 ? money(total / hours) : '—';
+
+    var parts = [regularHours + ' hours at ' + money(rate)];
+    if (otHours > 0) parts.push(otHours + ' at ' + mult + '× (' + money(rate * mult) + ')');
+    if (doubleHours > 0) parts.push(doubleHours + ' at 2× (' + money(rate * 2) + ')');
+    $('note').textContent = parts.join(', ') + '.';
+  }
+
+  $('mults').addEventListener('click', function(e){
+    var b = e.target.closest('button[data-m]'); if (!b) return;
+    $('custom').value = b.getAttribute('data-m');
+    var btns = $('mults').querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) btns[i].setAttribute('aria-pressed', String(btns[i] === b));
+    calc();
+  });
+  ['rate','hours','threshold','custom','double'].forEach(function(id){ $(id).addEventListener('input', calc); });
+  calc();
+})();</script>
+</body>
+</html>

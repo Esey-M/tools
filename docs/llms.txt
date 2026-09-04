@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 50 browser-based utilities for
+CinchPad is a free, ad-supported collection of 55 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -10,6 +10,7 @@ uploaded or stored. No account is required and every tool is free to use.
 
 ### Calculators
 - [Age Calculator](https://cinchpad.com/age-calculator/): Free age calculator. Enter your date of birth for your exact age in years, months and days, your total days and hours, and a countdown to your next birthday.
+- [Car Loan Calculator](https://cinchpad.com/car-loan-calculator/): Free car loan calculator. Work out the monthly payment including sales tax, trade-in value, down payment and dealer fees, plus total interest over the term.
 - [Compound Interest Calculator](https://cinchpad.com/compound-interest-calculator/): Free compound interest calculator. See how savings grow with regular contributions, any compounding frequency, and a year-by-year breakdown of interest earned.
 - [Date Difference Calculator](https://cinchpad.com/date-difference-calculator/): Free date difference calculator. Find the number of days, weeks, months and years between two dates, plus the count of working days excluding weekends.
 - [Discount Calculator](https://cinchpad.com/discount-calculator/): Free discount calculator. Enter a price and percentage off to see the sale price and what you save. Handles stacked discounts and sales tax too.
@@ -17,6 +18,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [GPA Calculator](https://cinchpad.com/gpa-calculator/): Free GPA calculator. Enter your courses, letter grades and credit hours to get your grade point average on the 4.0 scale, weighted or unweighted.
 - [Loan Calculator](https://cinchpad.com/loan-calculator/): Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.
 - [Mortgage Calculator](https://cinchpad.com/mortgage-calculator/): Free mortgage calculator. Work out your full monthly payment including property tax, home insurance, PMI and HOA fees, plus total interest over the loan.
+- [Overtime Pay Calculator](https://cinchpad.com/overtime-pay-calculator/): Free overtime pay calculator. Work out time and a half, double time and total weekly pay from your hourly rate and hours worked, including a daily breakdown.
 - [Percentage Calculator](https://cinchpad.com/percentage-calculator/): Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.
 - [Salary Calculator](https://cinchpad.com/salary-calculator/): Free salary calculator. Convert between hourly, daily, weekly, monthly and annual pay, adjust for holiday and part-time hours, and compare two offers.
 - [Sales Tax Calculator](https://cinchpad.com/sales-tax-calculator/): Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.
@@ -43,6 +45,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Yes or No Decision Maker](https://cinchpad.com/yes-no-decision-maker/): Free yes or no decision maker. Ask a question and get a random answer, with an option to weight the odds. Useful for breaking a deadlock, not for real decisions.
 ### Health & Body
 - [BMI Calculator](https://cinchpad.com/bmi-calculator/): Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.
+- [Body Fat Calculator](https://cinchpad.com/body-fat-calculator/): Free body fat calculator using the US Navy tape method. Estimate body fat percentage from height, neck, waist and hip measurements, with category ranges.
 - [Calorie Calculator](https://cinchpad.com/calorie-calculator/): Free calorie calculator. Work out your BMR and daily calorie needs from height, weight, age and activity level, with targets for losing or gaining weight.
 - [Heart Rate Zone Calculator](https://cinchpad.com/heart-rate-calculator/): Free heart rate zone calculator. Get your maximum heart rate and five training zones by age, plus the more accurate Karvonen method.
 - [Ideal Weight Calculator](https://cinchpad.com/ideal-weight-calculator/): Free ideal weight calculator. See your target weight from the Devine, Robinson, Miller and Hamwi formulas plus the healthy BMI range, and why they disagree.
@@ -51,6 +54,8 @@ uploaded or stored. No account is required and every tool is free to use.
 ### Home & Daily Life
 - [Bill Split Calculator](https://cinchpad.com/bill-split-calculator/): Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.
 - [Budget Tracker](https://cinchpad.com/budget-tracker/): Free monthly budget tracker. Enter income and expenses to see what is left over, how your spending splits across needs, wants and savings, and where it goes.
+- [Grocery List Maker](https://cinchpad.com/grocery-list-maker/): Free grocery list maker. Type your shopping and it sorts automatically into supermarket aisles, saves in your browser, and works offline on your phone.
+- [Recipe Scaler](https://cinchpad.com/recipe-scaler/): Free recipe scaler. Paste a recipe and change the number of servings — every quantity is rescaled automatically, with fractions kept readable.
 ### Fun & Social
 - [Birthday Countdown](https://cinchpad.com/birthday-countdown/): Free birthday countdown. Enter your date of birth to see how many days until your next birthday, how old you will turn, and what day of the week it falls on.
 - [Countdown Timer](https://cinchpad.com/countdown-timer/): Free countdown timer to any date. See days, hours, minutes and seconds ticking down to a wedding, exam, holiday or launch, and share the countdown by link.
