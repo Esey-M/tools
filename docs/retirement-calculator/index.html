@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retirement Calculator – Will Your Savings Last?</title>
+<meta name="description" content="Free retirement calculator. Project your savings to retirement, see the income it supports, and how long the pot lasts — all adjusted for inflation.">
+<link rel="canonical" href="https://cinchpad.com/retirement-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Retirement Calculator – Will Your Savings Last?">
+<meta property="og:description" content="Free retirement calculator. Project your savings to retirement, see the income it supports, and how long the pot lasts — all adjusted for inflation.">
+<meta property="og:url" content="https://cinchpad.com/retirement-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Retirement Calculator – Will Your Savings Last?">
+<meta name="twitter:description" content="Free retirement calculator. Project your savings to retirement, see the income it supports, and how long the pot lasts — all adjusted for inflation.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/retirement-calculator/#app","name":"Retirement Calculator","url":"https://cinchpad.com/retirement-calculator/","description":"Free retirement calculator. Project your savings to retirement, see the income it supports, and how long the pot lasts — all adjusted for inflation.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://cinchpad.com/category/calculators/"},{"@type":"ListItem","position":3,"name":"Retirement Calculator","item":"https://cinchpad.com/retirement-calculator/"}]},{"@type":"HowTo","name":"How to use the Retirement Calculator","description":"Free retirement calculator. Project your savings to retirement, see the income it supports, and how long the pot lasts — all adjusted for inflation.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Enter your age, target retirement age, and how long to plan for.","url":"https://cinchpad.com/retirement-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Add what you have saved and what you save each month.","url":"https://cinchpad.com/retirement-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Enter the annual income you want, and any state pension or other income you expect.","url":"https://cinchpad.com/retirement-calculator/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Adjust the return and inflation assumptions — the gap between them is what actually matters.","url":"https://cinchpad.com/retirement-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much do I need to retire?","acceptedAnswer":{"@type":"Answer","text":"A rough anchor is 25 times the annual income you need the pot to provide, after any state pension. The calculator works out the precise figure for your planned retirement length and assumptions."}},{"@type":"Question","name":"What is the 4% rule?","acceptedAnswer":{"@type":"Answer","text":"Withdraw 4% of the pot in year one, then increase that amount with inflation each year. It held up over 30-year periods in historical US data. For longer retirements, 3.3–3.5% is safer."}},{"@type":"Question","name":"Why is the figure lower than other calculators show?","acceptedAnswer":{"@type":"Answer","text":"Because this one shows today’s money. Calculators quoting large nominal figures are not wrong, but those dollars buy less. The nominal pot is shown as a separate figure."}},{"@type":"Question","name":"Should I include my house?","acceptedAnswer":{"@type":"Answer","text":"Generally not. A home you live in produces no income, and you cannot sell part of it to buy groceries. Include it only if you genuinely intend to downsize or release equity."}},{"@type":"Question","name":"What return should I assume?","acceptedAnswer":{"@type":"Answer","text":"Historically, a globally diversified equity portfolio has returned roughly 6–7% nominal over long periods. Be more conservative as you approach retirement, and subtract your fund fees."}},{"@type":"Question","name":"Does this account for tax?","acceptedAnswer":{"@type":"Answer","text":"No. Retirement income is usually taxable, and the treatment varies enormously by country and account type. Treat the income figure as gross unless you enter a post-tax target."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 68 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/calculators/">Calculators</a></li><li><span aria-current="page">Retirement Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Retirement Calculator</h1>
+      <p class="lede">Everything below is shown in today’s money, so the numbers mean something. A £1m pot in 30 years is not £1m of spending power.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="row">
+  <div class="field">
+    <label for="age">Current age</label>
+    <input type="number" id="age" inputmode="numeric" min="16" max="80" step="1" value="35">
+  </div>
+  <div class="field">
+    <label for="retire">Retirement age</label>
+    <input type="number" id="retire" inputmode="numeric" min="40" max="85" step="1" value="67">
+  </div>
+  <div class="field">
+    <label for="until">Plan until age</label>
+    <input type="number" id="until" inputmode="numeric" min="60" max="110" step="1" value="95">
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="pot">Saved so far</label>
+    <div class="input-group"><span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+      <input type="number" id="pot" inputmode="decimal" min="0" step="1000" value="60000" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)"></div>
+  </div>
+  <div class="field">
+    <label for="monthly">Saving each month</label>
+    <div class="input-group"><span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+      <input type="number" id="monthly" inputmode="decimal" min="0" step="50" value="600" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)"></div>
+  </div>
+  <div class="field">
+    <label for="income">Income you want in retirement</label>
+    <div class="input-group"><span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+      <input type="number" id="income" inputmode="decimal" min="0" step="1000" value="40000" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)"></div>
+    <span class="hint">A year, in today’s money, before state pension.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="growth">Investment return</label>
+    <div class="input-group"><input type="number" id="growth" inputmode="decimal" min="0" max="20" step="0.1" value="6.5"><span class="addon">% a year</span></div>
+  </div>
+  <div class="field">
+    <label for="inflation">Inflation</label>
+    <div class="input-group"><input type="number" id="inflation" inputmode="decimal" min="0" max="15" step="0.1" value="2.5"><span class="addon">% a year</span></div>
+  </div>
+  <div class="field">
+    <label for="statepension">Other income from retirement</label>
+    <div class="input-group"><span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+      <input type="number" id="statepension" inputmode="decimal" min="0" step="500" value="18000" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)"></div>
+    <span class="hint">State pension, social security, rental income.</span>
+  </div>
+</div>
+
+<div class="result" id="out" aria-live="polite">
+  <div class="result-label">Pot at retirement, in today’s money</div>
+  <div class="result-value" id="pot-at">—</div>
+  <div class="result-note" id="note"></div>
+  <dl class="result-grid">
+    <div class="stat"><dt>Lasts until age</dt><dd id="lasts">—</dd></div>
+    <div class="stat"><dt>You need about</dt><dd id="needed">—</dd></div>
+    <div class="stat"><dt>Gap</dt><dd id="gap">—</dd></div>
+    <div class="stat"><dt>Nominal pot</dt><dd id="nominal">—</dd></div>
+  </dl>
+</div>
+<p class="notice" id="verdict" hidden style="margin-top:16px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How much do you need to retire?</h2>
+      <div class="answer"><p><strong>A common starting point is 25 times the annual income you want the pot to provide.</strong> That comes from the 4% rule: withdraw 4% of the pot in the first year, adjust for inflation each year after, and historically it survived 30 years in almost every US market period tested. If you want $40,000 a year and expect $18,000 from a state pension, the pot only needs to cover the $22,000 gap — around $550,000. Every figure on this page is in today's money, because a projection in nominal terms tells you almost nothing useful.</p></div>
+    </section>
+
+    <section class="section prose" id="real-terms">
+      <h2 id="real-terms-h">Why everything here is in today’s money</h2>
+      <p>Most retirement calculators show a large nominal figure — "you will have $1.4 million" — which is misleading, because those dollars will buy far less than today's.</p>
+<p>At 2.5% inflation over 32 years, prices roughly double. A $1.4m nominal pot has the spending power of about $635,000 today. Planning against the nominal number leads people to badly overestimate what they will have.</p>
+<p>This calculator uses the <strong>real return</strong> — return minus inflation, compounded properly — so every figure shown is in current spending power. The nominal figure is included as a footnote, because that is the number you will actually see on a statement.</p>
+    </section>
+<section class="section prose" id="four-percent">
+      <h2 id="four-percent-h">The 4% rule, and its limits</h2>
+      <p>The rule comes from the 1998 Trinity Study, which tested historical US market returns and found a 4% initial withdrawal, inflation-adjusted, survived 30 years in the large majority of periods.</p>
+<p>It is a useful anchor, not a law. Four caveats matter:</p>
+<ul>
+<li><strong>It assumed 30 years.</strong> Retiring at 55 and planning to 95 is 40 years, where a 3.3–3.5% rate is safer.</li>
+<li><strong>It used US market history</strong>, which was unusually good. International data gives lower safe rates.</li>
+<li><strong>Sequence of returns matters enormously.</strong> A market fall in the first few years of drawdown does far more damage than the same fall later, because you are selling into it.</li>
+<li><strong>Real spending is not flat.</strong> It typically falls through the sixties and seventies, then rises again with care costs.</li>
+</ul>
+<p>The practical version: be willing to reduce withdrawals in bad years. Flexibility is worth more than precision in the starting number.</p>
+    </section>
+<section class="section prose" id="assumptions">
+      <h2 id="assumptions-h">Choosing sensible assumptions</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Input</th><th>A defensible figure</th></tr></thead>
+<tbody>
+<tr><td>Return, mostly equities, long horizon</td><td>6–7% nominal</td></tr>
+<tr><td>Return, balanced portfolio</td><td>5–6% nominal</td></tr>
+<tr><td>Return, near or in retirement</td><td>4–5% nominal</td></tr>
+<tr><td>Inflation</td><td>2–3%</td></tr>
+<tr><td>Income needed</td><td>Often 60–75% of pre-retirement income</td></tr>
+</tbody></table></div>
+<p>Fees deserve a mention because they are invisible and enormous. A 1% annual charge on a 6.5% return removes roughly a fifth of your final pot over 30 years. If you want to model that, subtract your fund charges from the return figure.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Retirement Calculator</h2>
+  <ol class="prose"><li>Enter your age, target retirement age, and how long to plan for.</li><li>Add what you have saved and what you save each month.</li><li>Enter the annual income you want, and any state pension or other income you expect.</li><li>Adjust the return and inflation assumptions — the gap between them is what actually matters.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How much do I need to retire?</summary>
+    <div><p>A rough anchor is 25 times the annual income you need the pot to provide, after any state pension. The calculator works out the precise figure for your planned retirement length and assumptions.</p></div>
+  </details>
+  <details>
+    <summary>What is the 4% rule?</summary>
+    <div><p>Withdraw 4% of the pot in year one, then increase that amount with inflation each year. It held up over 30-year periods in historical US data. For longer retirements, 3.3–3.5% is safer.</p></div>
+  </details>
+  <details>
+    <summary>Why is the figure lower than other calculators show?</summary>
+    <div><p>Because this one shows today’s money. Calculators quoting large nominal figures are not wrong, but those dollars buy less. The nominal pot is shown as a separate figure.</p></div>
+  </details>
+  <details>
+    <summary>Should I include my house?</summary>
+    <div><p>Generally not. A home you live in produces no income, and you cannot sell part of it to buy groceries. Include it only if you genuinely intend to downsize or release equity.</p></div>
+  </details>
+  <details>
+    <summary>What return should I assume?</summary>
+    <div><p>Historically, a globally diversified equity portfolio has returned roughly 6–7% nominal over long periods. Be more conservative as you approach retirement, and subtract your fund fees.</p></div>
+  </details>
+  <details>
+    <summary>Does this account for tax?</summary>
+    <div><p>No. Retirement income is usually taxable, and the treatment varies enormously by country and account type. Treat the income figure as gross unless you enter a post-tax target.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/compound-interest-calculator/">
+      <strong>Compound Interest Calculator</strong>
+      <span>How savings grow over time with regular contributions and compounding.</span>
+    </a>
+    <a class="tool-card" href="/budget-tracker/">
+      <strong>Budget Tracker</strong>
+      <span>Track monthly income and spending, with the 50/30/20 split checked for you.</span>
+    </a>
+    <a class="tool-card" href="/salary-calculator/">
+      <strong>Salary Calculator</strong>
+      <span>Convert between hourly, weekly, monthly and annual pay in one step.</span>
+    </a>
+    <a class="tool-card" href="/mortgage-calculator/">
+      <strong>Mortgage Calculator</strong>
+      <span>Full monthly payment including tax, insurance and PMI — not just principal and interest.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      A projection under fixed assumptions, not financial advice. Real returns vary enormously.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More calculators</h2>
+      <ul class="side-list">
+        <li><a href="/age-calculator/">Age Calculator</a></li>
+        <li><a href="/car-loan-calculator/">Car Loan Calculator</a></li>
+        <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+        <li><a href="/date-difference-calculator/">Date Difference Calculator</a></li>
+        <li><a href="/discount-calculator/">Discount Calculator</a></li>
+        <li><a href="/fuel-cost-calculator/">Fuel Cost Calculator</a></li>
+        <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+        <li><a href="/loan-calculator/">Loan Calculator</a></li>
+        <li><a href="/mortgage-calculator/">Mortgage Calculator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/calculators/" style="font-size:.88rem">All calculators →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var money = function(n){ return '$' + Math.round(n).toLocaleString('en-US'); };
+  var num = function(id, d){ var v = parseFloat($(id).value); return isFinite(v) && v >= 0 ? v : d; };
+
+  function calc(){
+    var age = num('age', 35), retire = num('retire', 67), until = num('until', 95);
+    var pot = num('pot', 0), monthly = num('monthly', 0);
+    var income = num('income', 0), other = num('statepension', 0);
+    var growth = num('growth', 6) / 100, inflation = num('inflation', 2.5) / 100;
+
+    if (retire <= age) { $('note').textContent = 'Retirement age must be after your current age.'; return; }
+
+    // Work entirely in real terms so every figure is in today's money.
+    var realReturn = (1 + growth) / (1 + inflation) - 1;
+    var years = retire - age;
+    var months = Math.round(years * 12);
+    var rMonthly = Math.pow(1 + realReturn, 1 / 12) - 1;
+
+    var balance = pot;
+    for (var m = 0; m < months; m++) {
+      balance += monthly;
+      balance *= (1 + rMonthly);
+    }
+
+    var nominal = balance * Math.pow(1 + inflation, years);
+    var shortfall = Math.max(0, income - other);
+
+    // Drawdown: withdraw the shortfall each year, pot keeps growing in real terms.
+    var draw = balance;
+    var lastsTo = retire;
+    var plannedYears = until - retire;
+    for (var y = 0; y < 60; y++) {
+      draw -= shortfall;
+      if (draw <= 0) break;
+      draw *= (1 + realReturn);
+      lastsTo++;
+    }
+
+    // Capital needed to sustain the shortfall for the planned period.
+    var needed;
+    if (realReturn <= 0) needed = shortfall * plannedYears;
+    else needed = shortfall * (1 - Math.pow(1 + realReturn, -plannedYears)) / realReturn;
+
+    $('pot-at').textContent = money(balance);
+    $('nominal').textContent = money(nominal);
+    $('needed').textContent = money(needed);
+    $('lasts').textContent = shortfall <= 0 ? 'Indefinitely' : (lastsTo >= retire + 60 ? '95+' : lastsTo);
+    var gap = needed - balance;
+    $('gap').textContent = gap > 0 ? money(gap) + ' short' : money(-gap) + ' spare';
+
+    $('note').textContent = 'Real return ' + (realReturn * 100).toFixed(1) + '% a year after ' +
+      (inflation * 100).toFixed(1) + '% inflation, over ' + years + ' years of saving. ' +
+      'Nominal pot would be ' + money(nominal) + ', but that buys what ' + money(balance) + ' buys today.';
+
+    var v = $('verdict');
+    v.hidden = false;
+    if (shortfall <= 0) {
+      v.className = 'notice';
+      v.style.cssText = 'margin-top:16px;background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)';
+      v.textContent = 'Your other income already covers the target, so the pot is spare capacity.';
+    } else if (gap <= 0) {
+      v.className = 'notice';
+      v.style.cssText = 'margin-top:16px;background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)';
+      v.textContent = 'On these assumptions you are on track, with ' + money(-gap) + ' more than the plan requires.';
+    } else {
+      v.className = 'notice notice-warn';
+      v.style.cssText = 'margin-top:16px';
+      var extraMonthly = gap / (months > 0 ? months : 1);
+      v.textContent = 'On these assumptions you are ' + money(gap) + ' short. Saving roughly ' +
+        money(monthly + extraMonthly) + ' a month instead of ' + money(monthly) + ' would close the gap.';
+    }
+  }
+
+  ['age','retire','until','pot','monthly','income','growth','inflation','statepension'].forEach(function(id){
+    $(id).addEventListener('input', calc);
+  });
+  calc();
+})();</script>
+</body>
+</html>
