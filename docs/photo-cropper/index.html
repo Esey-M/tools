@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo Cropper – Crop Images to Any Aspect Ratio</title>
+<meta name="description" content="Free photo cropper. Drag to crop any image, lock to common aspect ratios for social profiles and posts, and download. Runs in your browser with no upload.">
+<link rel="canonical" href="https://cinchpad.com/photo-cropper/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Photo Cropper – Crop Images to Any Aspect Ratio">
+<meta property="og:description" content="Free photo cropper. Drag to crop any image, lock to common aspect ratios for social profiles and posts, and download. Runs in your browser with no upload.">
+<meta property="og:url" content="https://cinchpad.com/photo-cropper/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Photo Cropper – Crop Images to Any Aspect Ratio">
+<meta name="twitter:description" content="Free photo cropper. Drag to crop any image, lock to common aspect ratios for social profiles and posts, and download. Runs in your browser with no upload.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.drop{border:2px dashed var(--line-strong);border-radius:var(--radius-lg);padding:34px 20px;text-align:center;
+  cursor:pointer;color:var(--ink-2);display:grid;place-items:center;gap:8px;transition:border-color .15s,background .15s}
+.drop:hover,.drop:focus-visible,.drop.over{border-color:var(--accent);background:var(--accent-soft)}
+.drop p{margin:0}.drop svg{color:var(--ink-3)}
+.crop-stage{position:relative;margin-top:16px;background:var(--bg-sunken);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;display:grid;place-items:center;user-select:none;touch-action:none}
+.crop-stage img{display:block;max-width:100%;max-height:460px;pointer-events:none}
+.crop-box{position:absolute;border:2px solid #fff;box-shadow:0 0 0 9999px rgba(0,0,0,.48);cursor:move}
+.crop-box .h{position:absolute;width:15px;height:15px;background:#fff;border:2px solid var(--accent);border-radius:3px}
+.crop-box .h[data-h=nw]{left:-8px;top:-8px;cursor:nwse-resize}
+.crop-box .h[data-h=ne]{right:-8px;top:-8px;cursor:nesw-resize}
+.crop-box .h[data-h=sw]{left:-8px;bottom:-8px;cursor:nesw-resize}
+.crop-box .h[data-h=se]{right:-8px;bottom:-8px;cursor:nwse-resize}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/photo-cropper/#app","name":"Photo Cropper","url":"https://cinchpad.com/photo-cropper/","description":"Free photo cropper. Drag to crop any image, lock to common aspect ratios for social profiles and posts, and download. Runs in your browser with no upload.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"File & Image Tools","item":"https://cinchpad.com/category/file-tools/"},{"@type":"ListItem","position":3,"name":"Photo Cropper","item":"https://cinchpad.com/photo-cropper/"}]},{"@type":"HowTo","name":"How to use the Photo Cropper","description":"Free photo cropper. Drag to crop any image, lock to common aspect ratios for social profiles and posts, and download. Runs in your browser with no upload.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Drop in an image, or click to choose one.","url":"https://cinchpad.com/photo-cropper/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Drag inside the box to move it, or drag a corner to resize.","url":"https://cinchpad.com/photo-cropper/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Lock an aspect ratio if you are cropping for a specific platform.","url":"https://cinchpad.com/photo-cropper/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Choose a format and download.","url":"https://cinchpad.com/photo-cropper/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does cropping reduce image quality?","acceptedAnswer":{"@type":"Answer","text":"Not in the retained area — those pixels are copied unchanged. You do lose total resolution, since you are keeping fewer pixels overall. Save as PNG if you want no re-compression at all."}},{"@type":"Question","name":"Are my photos uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Cropping happens entirely in your browser using the canvas API, and the page works with no internet connection."}},{"@type":"Question","name":"How do I crop to an exact size in pixels?","acceptedAnswer":{"@type":"Answer","text":"Crop to the right shape here, then use the image resizer to set exact dimensions. Doing it in that order avoids distortion."}},{"@type":"Question","name":"What size should a profile picture be?","acceptedAnswer":{"@type":"Answer","text":"Square, at least 400 × 400 px, and larger is better since platforms downscale. Remember the image will usually be displayed as a circle."}},{"@type":"Question","name":"Can I crop a photo to passport size?","acceptedAnswer":{"@type":"Answer","text":"Crop to the right ratio here — 35 × 45 mm is roughly 0.78:1 and US 2 × 2 in is square — then resize to the exact pixel dimensions. Check your country’s rules on head size and background separately."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 63 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><span aria-current="page">Photo Cropper</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Photo Cropper</h1>
+      <p class="lede">Drag the box to choose your crop, or lock an aspect ratio for a profile picture or post. Nothing is uploaded.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose an image to crop">
+  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+    <path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/>
+  </svg>
+  <p><strong>Drop an image here</strong> or click to choose</p>
+  <p class="hint">JPG, PNG or WebP · processed on your device</p>
+  <input type="file" id="file" accept="image/jpeg,image/png,image/webp" hidden>
+</div>
+
+<div id="editor" hidden>
+  <div class="field" style="margin-top:18px">
+    <span class="field-label" id="ratio-label">Aspect ratio</span>
+    <div class="seg" role="group" aria-labelledby="ratio-label" id="ratios" style="flex-wrap:wrap">
+      <button type="button" data-r="0" aria-pressed="true">Free</button>
+      <button type="button" data-r="1">1:1 square</button>
+      <button type="button" data-r="0.8">4:5 portrait</button>
+      <button type="button" data-r="1.7778">16:9</button>
+      <button type="button" data-r="1.5">3:2</button>
+      <button type="button" data-r="0.5625">9:16 story</button>
+    </div>
+  </div>
+
+  <div class="crop-stage" id="stage">
+    <img id="img" alt="Image being cropped">
+    <div class="crop-box" id="box">
+      <span class="h" data-h="nw"></span><span class="h" data-h="ne"></span>
+      <span class="h" data-h="sw"></span><span class="h" data-h="se"></span>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:16px">
+    <div class="field">
+      <label for="format">Save as</label>
+      <select id="format">
+        <option value="image/jpeg" selected>JPEG</option>
+        <option value="image/png">PNG</option>
+        <option value="image/webp">WebP</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="quality">Quality: <strong id="qval">90</strong>%</label>
+      <input type="range" id="quality" min="50" max="100" step="5" value="90" style="width:100%;padding:0;border:none;background:transparent">
+    </div>
+  </div>
+
+  <div class="btn-row">
+    <button type="button" class="btn" id="dl">Download crop</button>
+    <button type="button" class="btn btn-ghost" id="reset">Reset crop</button>
+    <button type="button" class="btn btn-ghost" id="change">Choose another image</button>
+  </div>
+  <p class="hint" id="meta" style="margin-top:12px"></p>
+</div>
+<p class="notice notice-warn" id="err" hidden style="margin-top:14px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">Cropping without losing quality</h2>
+      <div class="answer"><p><strong>Cropping never reduces quality in the part you keep — it simply discards the rest.</strong> The pixels inside your crop box are copied across untouched, so a crop from a 4000-pixel photo is as sharp as the original. What you lose is resolution: crop to a quarter of the frame and you have a quarter of the pixels, which matters if you then need to print or display it large. The rule is to crop from the largest original you have, and only once.</p></div>
+    </section>
+
+    <section class="section prose" id="ratios">
+      <h2 id="ratios-h">Which aspect ratio to use</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Ratio</th><th>Shape</th><th>Used for</th></tr></thead>
+<tbody>
+<tr><td>1:1</td><td>Square</td><td>Profile pictures, Instagram grid posts</td></tr>
+<tr><td>4:5</td><td>Portrait</td><td>Instagram portrait — the largest feed format</td></tr>
+<tr><td>9:16</td><td>Tall</td><td>Stories, Reels, TikTok, phone wallpapers</td></tr>
+<tr><td>16:9</td><td>Widescreen</td><td>YouTube thumbnails, video, presentations</td></tr>
+<tr><td>3:2</td><td>Classic photo</td><td>Standard camera output, 6×4 prints</td></tr>
+<tr><td>1.91:1</td><td>Wide</td><td>Link preview cards on social platforms</td></tr>
+</tbody></table></div>
+<p>Profile pictures are almost always displayed as circles even when you upload a square, so keep the subject well inside the middle and leave margin at the edges.</p>
+    </section>
+<section class="section prose" id="composition">
+      <h2 id="composition-h">Cropping well</h2>
+      <ul>
+<li><strong>Rule of thirds.</strong> Place the subject a third of the way in rather than dead centre. Eyes on the upper third line is the standard for portraits.</li>
+<li><strong>Do not crop at a joint.</strong> Cutting a person at the wrist, elbow, knee or ankle looks like an accident. Crop mid-limb instead.</li>
+<li><strong>Leave room in the direction of movement or gaze.</strong> A subject looking left wants space on the left.</li>
+<li><strong>Straighten before cropping.</strong> A tilted horizon is much more noticeable than a slightly loose crop.</li>
+<li><strong>Crop once, from the original.</strong> Repeatedly cropping and re-saving a JPEG compounds compression loss each time.</li>
+</ul>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Photo Cropper</h2>
+  <ol class="prose"><li>Drop in an image, or click to choose one.</li><li>Drag inside the box to move it, or drag a corner to resize.</li><li>Lock an aspect ratio if you are cropping for a specific platform.</li><li>Choose a format and download.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>Does cropping reduce image quality?</summary>
+    <div><p>Not in the retained area — those pixels are copied unchanged. You do lose total resolution, since you are keeping fewer pixels overall. Save as PNG if you want no re-compression at all.</p></div>
+  </details>
+  <details>
+    <summary>Are my photos uploaded?</summary>
+    <div><p>No. Cropping happens entirely in your browser using the canvas API, and the page works with no internet connection.</p></div>
+  </details>
+  <details>
+    <summary>How do I crop to an exact size in pixels?</summary>
+    <div><p>Crop to the right shape here, then use the <a href="/image-resizer/">image resizer</a> to set exact dimensions. Doing it in that order avoids distortion.</p></div>
+  </details>
+  <details>
+    <summary>What size should a profile picture be?</summary>
+    <div><p>Square, at least 400 × 400 px, and larger is better since platforms downscale. Remember the image will usually be displayed as a circle.</p></div>
+  </details>
+  <details>
+    <summary>Can I crop a photo to passport size?</summary>
+    <div><p>Crop to the right ratio here — 35 × 45 mm is roughly 0.78:1 and US 2 × 2 in is square — then resize to the exact pixel dimensions. Check your country’s rules on head size and background separately.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/image-resizer/">
+      <strong>Image Resizer</strong>
+      <span>Resize a photo to exact pixels, a percentage, or a preset size.</span>
+    </a>
+    <a class="tool-card" href="/image-compressor/">
+      <strong>Image Compressor</strong>
+      <span>Make photos smaller for email or uploads. Nothing leaves your device.</span>
+    </a>
+    <a class="tool-card" href="/image-to-pdf/">
+      <strong>Image to PDF</strong>
+      <span>Turn photos into a PDF, several to a document, in the order you choose.</span>
+    </a>
+    <a class="tool-card" href="/signature-maker/">
+      <strong>Signature Maker</strong>
+      <span>Draw your signature and download it as a transparent PNG.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More file & image tools</h2>
+      <ul class="side-list">
+        <li><a href="/image-compressor/">Image Compressor</a></li>
+        <li><a href="/image-resizer/">Image Resizer</a></li>
+        <li><a href="/image-to-pdf/">Image to PDF</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/file-tools/" style="font-size:.88rem">All file & image tools →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var img = $('img'), box = $('box'), stage = $('stage');
+  var natural = { w: 0, h: 0 };
+  var ratio = 0;                       // 0 means free
+  var crop = { x: 0, y: 0, w: 0, h: 0 };   // in displayed pixels
+  var drag = null;
+
+  function displayRect(){ return img.getBoundingClientRect(); }
+
+  function clamp(){
+    var r = displayRect();
+    crop.w = Math.max(24, Math.min(crop.w, r.width));
+    crop.h = Math.max(24, Math.min(crop.h, r.height));
+    crop.x = Math.max(0, Math.min(crop.x, r.width - crop.w));
+    crop.y = Math.max(0, Math.min(crop.y, r.height - crop.h));
+  }
+
+  function paint(){
+    clamp();
+    var r = displayRect();
+    var s = stage.getBoundingClientRect();
+    box.style.left = (r.left - s.left + crop.x) + 'px';
+    box.style.top = (r.top - s.top + crop.y) + 'px';
+    box.style.width = crop.w + 'px';
+    box.style.height = crop.h + 'px';
+
+    var scale = natural.w / r.width;
+    $('meta').textContent = 'Crop ' + Math.round(crop.w * scale) + ' × ' + Math.round(crop.h * scale) +
+      ' px  ·  original ' + natural.w + ' × ' + natural.h + ' px';
+  }
+
+  function resetCrop(){
+    var r = displayRect();
+    if (ratio > 0) {
+      // Largest box of this ratio that fits, centred.
+      var w = r.width, h = w / ratio;
+      if (h > r.height) { h = r.height; w = h * ratio; }
+      crop = { x: (r.width - w) / 2, y: (r.height - h) / 2, w: w * 0.9, h: h * 0.9 };
+      crop.x = (r.width - crop.w) / 2;
+      crop.y = (r.height - crop.h) / 2;
+    } else {
+      crop = { x: r.width * 0.1, y: r.height * 0.1, w: r.width * 0.8, h: r.height * 0.8 };
+    }
+    paint();
+  }
+
+  function applyRatio(anchor){
+    if (ratio <= 0) return;
+    // Keep width, derive height, then correct if it overflows.
+    var r = displayRect();
+    crop.h = crop.w / ratio;
+    if (crop.y + crop.h > r.height) {
+      crop.h = r.height - crop.y;
+      crop.w = crop.h * ratio;
+    }
+  }
+
+  stage.addEventListener('pointerdown', function(e){
+    var handle = e.target.closest('.h');
+    var inBox = e.target === box || handle;
+    if (!inBox) return;
+    e.preventDefault();
+    stage.setPointerCapture(e.pointerId);
+    drag = {
+      handle: handle ? handle.getAttribute('data-h') : null,
+      startX: e.clientX, startY: e.clientY,
+      orig: { x: crop.x, y: crop.y, w: crop.w, h: crop.h }
+    };
+  });
+
+  stage.addEventListener('pointermove', function(e){
+    if (!drag) return;
+    e.preventDefault();
+    var dx = e.clientX - drag.startX;
+    var dy = e.clientY - drag.startY;
+    var o = drag.orig;
+
+    if (!drag.handle) {
+      crop.x = o.x + dx;
+      crop.y = o.y + dy;
+    } else {
+      if (drag.handle === 'se') { crop.w = o.w + dx; crop.h = o.h + dy; }
+      if (drag.handle === 'sw') { crop.x = o.x + dx; crop.w = o.w - dx; crop.h = o.h + dy; }
+      if (drag.handle === 'ne') { crop.y = o.y + dy; crop.w = o.w + dx; crop.h = o.h - dy; }
+      if (drag.handle === 'nw') { crop.x = o.x + dx; crop.y = o.y + dy; crop.w = o.w - dx; crop.h = o.h - dy; }
+      if (ratio > 0) {
+        crop.h = crop.w / ratio;
+        if (drag.handle === 'nw' || drag.handle === 'ne') crop.y = o.y + o.h - crop.h;
+      }
+    }
+    paint();
+  });
+
+  ['pointerup','pointercancel'].forEach(function(ev){
+    stage.addEventListener(ev, function(){ drag = null; });
+  });
+
+  $('ratios').addEventListener('click', function(e){
+    var b = e.target.closest('button[data-r]'); if (!b) return;
+    ratio = parseFloat(b.getAttribute('data-r'));
+    var btns = $('ratios').querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) btns[i].setAttribute('aria-pressed', String(btns[i] === b));
+    resetCrop();
+  });
+
+  function load(file){
+    if (!/^image\/(jpeg|png|webp)$/.test(file.type)) {
+      $('err').hidden = false;
+      $('err').textContent = 'That file type is not supported. Choose a JPG, PNG or WebP image.';
+      return;
+    }
+    $('err').hidden = true;
+    var url = URL.createObjectURL(file);
+    img.onload = function(){
+      natural = { w: img.naturalWidth, h: img.naturalHeight };
+      $('editor').hidden = false;
+      $('drop').hidden = true;
+      requestAnimationFrame(resetCrop);
+    };
+    img.src = url;
+  }
+
+  var drop = $('drop');
+  drop.addEventListener('click', function(){ $('file').click(); });
+  drop.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('file').click(); } });
+  $('file').addEventListener('change', function(){ if (this.files[0]) load(this.files[0]); this.value = ''; });
+  ['dragenter','dragover'].forEach(function(ev){ drop.addEventListener(ev, function(e){ e.preventDefault(); drop.classList.add('over'); }); });
+  ['dragleave','drop'].forEach(function(ev){ drop.addEventListener(ev, function(e){ e.preventDefault(); drop.classList.remove('over'); }); });
+  drop.addEventListener('drop', function(e){ if (e.dataTransfer.files[0]) load(e.dataTransfer.files[0]); });
+
+  $('change').addEventListener('click', function(){ $('drop').hidden = false; $('editor').hidden = true; });
+  $('reset').addEventListener('click', resetCrop);
+  $('quality').addEventListener('input', function(){ $('qval').textContent = this.value; });
+  window.addEventListener('resize', function(){ if (!$('editor').hidden) paint(); });
+
+  $('dl').addEventListener('click', function(){
+    var r = displayRect();
+    var scale = natural.w / r.width;
+    var sx = Math.round(crop.x * scale), sy = Math.round(crop.y * scale);
+    var sw = Math.round(crop.w * scale), sh = Math.round(crop.h * scale);
+
+    var canvas = document.createElement('canvas');
+    canvas.width = sw; canvas.height = sh;
+    var ctx = canvas.getContext('2d');
+    if ($('format').value === 'image/jpeg') { ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, sw, sh); }
+    ctx.drawImage(img, sx, sy, sw, sh, 0, 0, sw, sh);
+
+    var ext = $('format').value === 'image/png' ? 'png' : $('format').value === 'image/webp' ? 'webp' : 'jpg';
+    canvas.toBlob(function(blob){
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = 'cropped-' + sw + 'x' + sh + '.' + ext;
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+    }, $('format').value, parseInt($('quality').value, 10) / 100);
+  });
+})();</script>
+</body>
+</html>
