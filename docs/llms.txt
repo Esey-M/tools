@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 48 browser-based utilities for
+CinchPad is a free, ad-supported collection of 50 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -18,6 +18,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Loan Calculator](https://cinchpad.com/loan-calculator/): Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.
 - [Mortgage Calculator](https://cinchpad.com/mortgage-calculator/): Free mortgage calculator. Work out your full monthly payment including property tax, home insurance, PMI and HOA fees, plus total interest over the loan.
 - [Percentage Calculator](https://cinchpad.com/percentage-calculator/): Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.
+- [Salary Calculator](https://cinchpad.com/salary-calculator/): Free salary calculator. Convert between hourly, daily, weekly, monthly and annual pay, adjust for holiday and part-time hours, and compare two offers.
 - [Sales Tax Calculator](https://cinchpad.com/sales-tax-calculator/): Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.
 - [Tip Calculator](https://cinchpad.com/tip-calculator/): Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.
 ### Converters
@@ -57,6 +58,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Typing Speed Test](https://cinchpad.com/typing-speed-test/): Free typing speed test. Measure your words per minute and accuracy on a one-minute test, with results compared against average typing speeds.
 - [Zodiac Sign Finder](https://cinchpad.com/zodiac-sign-finder/): Free zodiac sign finder. Enter your birth date to get your western star sign with its element and dates, plus your Chinese zodiac animal and birthstone.
 ### Text & Documents
+- [Signature Maker](https://cinchpad.com/signature-maker/): Free signature maker. Draw your signature with a mouse, trackpad or finger and download it as a transparent PNG to drop into documents and PDFs.
 - [Text Case Converter](https://cinchpad.com/text-case-converter/): Free text case converter. Change text to UPPERCASE, lowercase, Title Case, Sentence case, camelCase, snake_case or kebab-case instantly in your browser.
 - [Word Counter](https://cinchpad.com/word-counter/): Free word counter. Paste your text for instant word, character, sentence and paragraph counts, reading time, and a check against social media limits.
 ### Generators
