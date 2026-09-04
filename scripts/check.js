@@ -51,6 +51,11 @@ async function main() {
     const html = await fs.readFile(file.full, 'utf8');
     const page = '/' + file.rel.replace(/index\.html$/, '');
     const noindex = /name="robots" content="noindex/.test(html);
+    // Tool logic is inlined, so markup inside <script> and <style> is code, not
+    // document structure. Strip it before checking headings, images and links.
+    const markup = html
+      .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
+      .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '');
 
     // --- metadata -------------------------------------------------------
     const title = attr(html, /<title>([^<]*)<\/title>/);
@@ -80,7 +85,7 @@ async function main() {
     else if (!canonical.startsWith(site.origin)) fail(page, `canonical does not use the site origin: ${canonical}`);
 
     // --- headings -------------------------------------------------------
-    const h1s = html.match(/<h1[^>]*>/g) || [];
+    const h1s = markup.match(/<h1[^>]*>/g) || [];
     if (h1s.length === 0) fail(page, 'no <h1>');
     if (h1s.length > 1) fail(page, `${h1s.length} <h1> elements, expected exactly 1`);
 
@@ -111,12 +116,12 @@ async function main() {
     }
 
     // --- images ---------------------------------------------------------
-    for (const [, tag] of html.matchAll(/<img([^>]*)>/g)) {
+    for (const [, tag] of markup.matchAll(/<img([^>]*)>/g)) {
       if (!/\salt=/.test(tag)) fail(page, 'an <img> has no alt attribute');
     }
 
     // --- internal links --------------------------------------------------
-    for (const [, href] of html.matchAll(/<a[^>]+href="([^"]+)"/g)) {
+    for (const [, href] of markup.matchAll(/<a[^>]+href="([^"]+)"/g)) {
       if (/^(https?:|mailto:|tel:|#|data:)/.test(href)) continue;
       const clean = href.split('#')[0].split('?')[0];
       if (!clean) continue;

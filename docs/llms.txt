@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 93 browser-based utilities for
+CinchPad is a free, ad-supported collection of 97 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -100,6 +100,10 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Typing Speed Test](https://cinchpad.com/typing-speed-test/): Free typing speed test. Measure your words per minute and accuracy on a one-minute test, with results compared against average typing speeds.
 - [Zodiac Sign Finder](https://cinchpad.com/zodiac-sign-finder/): Free zodiac sign finder. Enter your birth date to get your western star sign with its element and dates, plus your Chinese zodiac animal and birthstone.
 ### Text & Documents
+- [Business Card Maker](https://cinchpad.com/business-card-maker/): Free business card maker. Design a card, choose a layout and colours, and download a print-ready PNG at 300 dpi with bleed. No watermark and no signup.
+- [Greeting Card Maker](https://cinchpad.com/greeting-card-maker/): Free greeting card maker. Design a folded card with a front design and an inside message, then download a print-ready sheet that folds into a card.
+- [Invitation Maker](https://cinchpad.com/invitation-card-maker/): Free invitation maker. Design a printable invitation for a party, wedding or event, choose a style and colours, and download at print resolution.
+- [Resume Builder](https://cinchpad.com/resume-builder/): Free resume and CV builder. Fill in your details, get a clean one-page layout that passes applicant tracking systems, and print or save as PDF. No signup.
 - [Signature Maker](https://cinchpad.com/signature-maker/): Free signature maker. Draw your signature with a mouse, trackpad or finger and download it as a transparent PNG to drop into documents and PDFs.
 - [Text Case Converter](https://cinchpad.com/text-case-converter/): Free text case converter. Change text to UPPERCASE, lowercase, Title Case, Sentence case, camelCase, snake_case or kebab-case instantly in your browser.
 - [Word Counter](https://cinchpad.com/word-counter/): Free word counter. Paste your text for instant word, character, sentence and paragraph counts, reading time, and a check against social media limits.
