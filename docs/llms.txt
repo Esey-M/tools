@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 29 browser-based utilities for
+CinchPad is a free, ad-supported collection of 34 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -20,6 +20,9 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Sales Tax Calculator](https://cinchpad.com/sales-tax-calculator/): Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.
 - [Tip Calculator](https://cinchpad.com/tip-calculator/): Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.
 ### Converters
+- [Cooking Converter](https://cinchpad.com/cooking-converter/): Free cooking measurement converter. Convert cups to grams for common ingredients, plus spoons, ounces, millilitres and oven temperatures including gas marks.
+- [Roman Numeral Converter](https://cinchpad.com/roman-numeral-converter/): Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.
+- [Speed Converter](https://cinchpad.com/speed-converter/): Free speed converter for mph, km/h, m/s, feet per second and knots, with running pace per mile and per kilometre shown alongside.
 - [Temperature Converter](https://cinchpad.com/temperature-converter/): Free temperature converter for Celsius, Fahrenheit and Kelvin. Type any one value and see all three at once, with a reference chart of everyday temperatures.
 - [Unit Converter](https://cinchpad.com/unit-converter/): Free unit converter for length, weight, volume, area, speed, temperature, time and digital storage. Metric to imperial and back, with exact conversion factors.
 ### File & Image Tools
@@ -30,11 +33,13 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Dice Roller](https://cinchpad.com/dice-roller/): Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.
 - [Random Name Picker](https://cinchpad.com/random-name-picker/): Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.
 - [Random Number Generator](https://cinchpad.com/random-number-generator/): Free random number generator. Pick one number or many from any range, with optional no-repeats and sorting. Uses secure browser randomness.
+- [Yes or No Decision Maker](https://cinchpad.com/yes-no-decision-maker/): Free yes or no decision maker. Ask a question and get a random answer, with an option to weight the odds. Useful for breaking a deadlock, not for real decisions.
 ### Health & Body
 - [BMI Calculator](https://cinchpad.com/bmi-calculator/): Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.
 - [Calorie Calculator](https://cinchpad.com/calorie-calculator/): Free calorie calculator. Work out your BMR and daily calorie needs from height, weight, age and activity level, with targets for losing or gaining weight.
 - [Ideal Weight Calculator](https://cinchpad.com/ideal-weight-calculator/): Free ideal weight calculator. See your target weight from the Devine, Robinson, Miller and Hamwi formulas plus the healthy BMI range, and why they disagree.
 - [Sleep Calculator](https://cinchpad.com/sleep-calculator/): Free sleep calculator. Work out when to go to bed for a given wake-up time, or when to wake if you sleep now, based on 90-minute sleep cycles.
+- [Water Intake Calculator](https://cinchpad.com/water-intake-calculator/): Free water intake calculator. Estimate how much water to drink each day based on your body weight, exercise and climate, and learn why the 8-glasses rule is a myth.
 ### Home & Daily Life
 - [Bill Split Calculator](https://cinchpad.com/bill-split-calculator/): Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.
 ### Fun & Social

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roman Numeral Converter – Numbers to Roman and Back</title>
+<meta name="description" content="Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.">
+<link rel="canonical" href="https://cinchpad.com/roman-numeral-converter/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Roman Numeral Converter – Numbers to Roman and Back">
+<meta property="og:description" content="Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.">
+<meta property="og:url" content="https://cinchpad.com/roman-numeral-converter/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Roman Numeral Converter – Numbers to Roman and Back">
+<meta name="twitter:description" content="Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/roman-numeral-converter/#app","name":"Roman Numeral Converter","url":"https://cinchpad.com/roman-numeral-converter/","description":"Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Converters","item":"https://cinchpad.com/category/converters/"},{"@type":"ListItem","position":3,"name":"Roman Numeral Converter","item":"https://cinchpad.com/roman-numeral-converter/"}]},{"@type":"HowTo","name":"How to use the Roman Numeral Converter","description":"Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Type a number between 1 and 3,999 into the left box.","url":"https://cinchpad.com/roman-numeral-converter/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Or type a Roman numeral into the right box to decode it.","url":"https://cinchpad.com/roman-numeral-converter/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Malformed numerals are explained rather than silently accepted.","url":"https://cinchpad.com/roman-numeral-converter/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is XIV in numbers?","acceptedAnswer":{"@type":"Answer","text":"14. The X is 10, and IV is 4 because the I before the V subtracts one from five."}},{"@type":"Question","name":"Why is 4 written IV and not IIII?","acceptedAnswer":{"@type":"Answer","text":"Standard notation uses subtraction to avoid four identical letters in a row. IIII does appear historically, most famously on clock faces, where it is still used for visual balance against the VIII opposite."}},{"@type":"Question","name":"Is there a zero in Roman numerals?","acceptedAnswer":{"@type":"Answer","text":"No. The system has no symbol for zero and no concept of place value, which is precisely why positional Hindu-Arabic numerals replaced it for calculation."}},{"@type":"Question","name":"What is the largest Roman numeral?","acceptedAnswer":{"@type":"Answer","text":"MMMCMXCIX, which is 3,999, in standard notation. Larger values needed an overbar to multiply by a thousand."}},{"@type":"Question","name":"How do I write the current year?","acceptedAnswer":{"@type":"Answer","text":"2026 is MMXXVI — two thousands, two tens, a five and a one."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 34 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/converters/">Converters</a></li><li><span aria-current="page">Roman Numeral Converter</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Roman Numeral Converter</h1>
+      <p class="lede">Type a number or a Roman numeral into either box. The other side updates as you type, and invalid numerals are flagged with the reason.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="row">
+  <div class="field">
+    <label for="num">Number</label>
+    <input type="number" id="num" inputmode="numeric" min="1" max="3999" step="1" value="2026" placeholder="2026">
+    <span class="hint">1 to 3,999</span>
+  </div>
+  <div class="field">
+    <label for="rom">Roman numeral</label>
+    <input type="text" id="rom" placeholder="MMXXVI" autocomplete="off" spellcheck="false" style="text-transform:uppercase;font-family:var(--font-num);letter-spacing:.04em">
+    <span class="hint">I V X L C D M</span>
+  </div>
+</div>
+
+<div class="result" id="out" aria-live="polite">
+  <div class="result-label" id="lbl">Roman numeral</div>
+  <div class="result-value" id="main" style="letter-spacing:.05em">—</div>
+  <div class="result-note" id="note"></div>
+</div>
+<p class="notice notice-warn" id="err" hidden style="margin-top:14px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How Roman numerals work</h2>
+      <div class="answer"><p><strong>Seven letters carry fixed values — I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000 — and you add them left to right.</strong> The one twist is subtractive notation: when a smaller value sits immediately before a larger one, it is subtracted instead. So IV is 4 (5 − 1) and XC is 90 (100 − 10). Only six subtractive pairs are valid: IV, IX, XL, XC, CD and CM. The system has no zero and no way to write fractions, which is why it was replaced for arithmetic.</p></div>
+    </section>
+
+    <section class="section prose" id="rules">
+      <h2 id="rules-h">The rules that make a numeral valid</h2>
+      <ul>
+<li><strong>I, X, C and M may repeat</strong> up to three times in a row. IIII is not standard; IV is.</li>
+<li><strong>V, L and D never repeat.</strong> VV would be X, so it is simply written as X.</li>
+<li><strong>Only I, X and C are subtracted</strong>, and only from the next two values up. IX and IV are valid; IL and IC are not.</li>
+<li><strong>Subtract only from the next two denominations.</strong> XC (90) is valid; XM would not be — 990 is CMXC.</li>
+<li><strong>Read left to right, largest first</strong>, apart from the six subtractive pairs.</li>
+</ul>
+<p>This is why 1999 is MCMXCIX and not MIM: each part of the number is expressed separately as 1000 + 900 + 90 + 9.</p>
+    </section>
+<section class="section prose" id="chart">
+      <h2 id="chart-h">Roman numeral chart</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Number</th><th>Roman</th><th>Number</th><th>Roman</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>I</td><td>30</td><td>XXX</td></tr>
+<tr><td>2</td><td>II</td><td>40</td><td>XL</td></tr>
+<tr><td>3</td><td>III</td><td>50</td><td>L</td></tr>
+<tr><td>4</td><td>IV</td><td>90</td><td>XC</td></tr>
+<tr><td>5</td><td>V</td><td>100</td><td>C</td></tr>
+<tr><td>6</td><td>VI</td><td>400</td><td>CD</td></tr>
+<tr><td>9</td><td>IX</td><td>500</td><td>D</td></tr>
+<tr><td>10</td><td>X</td><td>900</td><td>CM</td></tr>
+<tr><td>14</td><td>XIV</td><td>1000</td><td>M</td></tr>
+<tr><td>20</td><td>XX</td><td>2026</td><td>MMXXVI</td></tr>
+</tbody></table></div>
+    </section>
+<section class="section prose" id="why-3999">
+      <h2 id="why-3999-h">Why the limit is 3,999</h2>
+      <p>M is the largest single letter, and it may repeat at most three times, so MMMCMXCIX — 3,999 — is the largest number standard notation can express.</p>
+<p>The Romans handled larger figures with a <em>vinculum</em>, a bar drawn over a numeral to multiply it by a thousand: V̄ meant 5,000 and X̄ meant 10,000. Because that is a typographic mark rather than a letter, it is rarely supported, and most converters — this one included — stop at 3,999.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Roman Numeral Converter</h2>
+  <ol class="prose"><li>Type a number between 1 and 3,999 into the left box.</li><li>Or type a Roman numeral into the right box to decode it.</li><li>Malformed numerals are explained rather than silently accepted.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>What is XIV in numbers?</summary>
+    <div><p>14. The X is 10, and IV is 4 because the I before the V subtracts one from five.</p></div>
+  </details>
+  <details>
+    <summary>Why is 4 written IV and not IIII?</summary>
+    <div><p>Standard notation uses subtraction to avoid four identical letters in a row. IIII does appear historically, most famously on clock faces, where it is still used for visual balance against the VIII opposite.</p></div>
+  </details>
+  <details>
+    <summary>Is there a zero in Roman numerals?</summary>
+    <div><p>No. The system has no symbol for zero and no concept of place value, which is precisely why positional Hindu-Arabic numerals replaced it for calculation.</p></div>
+  </details>
+  <details>
+    <summary>What is the largest Roman numeral?</summary>
+    <div><p>MMMCMXCIX, which is 3,999, in standard notation. Larger values needed an overbar to multiply by a thousand.</p></div>
+  </details>
+  <details>
+    <summary>How do I write the current year?</summary>
+    <div><p>2026 is MMXXVI — two thousands, two tens, a five and a one.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/unit-converter/">
+      <strong>Unit Converter</strong>
+      <span>Convert length, weight, volume, area, speed, temperature and data in one place.</span>
+    </a>
+    <a class="tool-card" href="/percentage-calculator/">
+      <strong>Percentage Calculator</strong>
+      <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+    </a>
+    <a class="tool-card" href="/text-case-converter/">
+      <strong>Text Case Converter</strong>
+      <span>Switch text between upper, lower, title, sentence and other cases.</span>
+    </a>
+    <a class="tool-card" href="/word-counter/">
+      <strong>Word Counter</strong>
+      <span>Live word, character, sentence and paragraph counts, plus reading time.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More converters</h2>
+      <ul class="side-list">
+        <li><a href="/cooking-converter/">Cooking Converter</a></li>
+        <li><a href="/speed-converter/">Speed Converter</a></li>
+        <li><a href="/temperature-converter/">Temperature Converter</a></li>
+        <li><a href="/unit-converter/">Unit Converter</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/converters/" style="font-size:.88rem">All converters →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var busy = false;
+
+  var TABLE = [
+    [1000,'M'], [900,'CM'], [500,'D'], [400,'CD'], [100,'C'], [90,'XC'],
+    [50,'L'], [40,'XL'], [10,'X'], [9,'IX'], [5,'V'], [4,'IV'], [1,'I']
+  ];
+  var VALUE = { I:1, V:5, X:10, L:50, C:100, D:500, M:1000 };
+
+  function toRoman(n){
+    var out = '';
+    for (var i = 0; i < TABLE.length; i++) {
+      while (n >= TABLE[i][0]) { out += TABLE[i][1]; n -= TABLE[i][0]; }
+    }
+    return out;
+  }
+
+  /** Returns { value } or { error } — validation is strict, not just permissive parsing. */
+  function fromRoman(s){
+    s = s.toUpperCase().replace(/\s/g, '');
+    if (!s) return { error: '' };
+    if (!/^[IVXLCDM]+$/.test(s)) return { error: 'Roman numerals only use the letters I, V, X, L, C, D and M.' };
+
+    var total = 0;
+    for (var i = 0; i < s.length; i++) {
+      var v = VALUE[s[i]];
+      var next = i + 1 < s.length ? VALUE[s[i + 1]] : 0;
+      total += v < next ? -v : v;
+    }
+    if (total > 3999) return { error: 'Standard Roman numerals stop at 3,999 (MMMCMXCIX).' };
+
+    // The only valid numeral for a value is the canonical one.
+    if (toRoman(total) !== s) {
+      return { error: '"' + s + '" is not written correctly. ' + total + ' is normally ' + toRoman(total) + '.' };
+    }
+    return { value: total };
+  }
+
+  function showNumber(n){
+    var r = toRoman(n);
+    $('lbl').textContent = 'Roman numeral';
+    $('main').textContent = r;
+    $('note').textContent = n.toLocaleString('en-US') + ' written in Roman numerals.' +
+      (r.length > 8 ? ' Long numerals like this are why the system fell out of use for arithmetic.' : '');
+    $('err').hidden = true;
+  }
+
+  $('num').addEventListener('input', function(){
+    if (busy) return;
+    busy = true;
+    var n = parseInt(this.value, 10);
+    if (!isFinite(n) || n < 1 || n > 3999) {
+      $('rom').value = '';
+      $('main').textContent = '—'; $('note').textContent = '';
+      $('err').hidden = !this.value;
+      if (this.value) $('err').textContent = 'Enter a whole number between 1 and 3,999.';
+    } else {
+      $('rom').value = toRoman(n);
+      showNumber(n);
+    }
+    busy = false;
+  });
+
+  $('rom').addEventListener('input', function(){
+    if (busy) return;
+    busy = true;
+    var r = fromRoman(this.value);
+    if (r.error !== undefined) {
+      $('num').value = '';
+      $('main').textContent = '—'; $('note').textContent = '';
+      $('err').hidden = !r.error;
+      if (r.error) $('err').textContent = r.error;
+    } else {
+      $('num').value = r.value;
+      $('lbl').textContent = 'Number';
+      $('main').textContent = r.value.toLocaleString('en-US');
+      $('note').textContent = this.value.toUpperCase() + ' is ' + r.value.toLocaleString('en-US') + '.';
+      $('err').hidden = true;
+    }
+    busy = false;
+  });
+
+  $('rom').value = toRoman(2026);
+  showNumber(2026);
+})();</script>
+</body>
+</html>
