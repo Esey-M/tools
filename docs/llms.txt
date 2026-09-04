@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 57 browser-based utilities for
+CinchPad is a free, ad-supported collection of 60 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -26,7 +26,9 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Tip Calculator](https://cinchpad.com/tip-calculator/): Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.
 ### Converters
 - [Cooking Converter](https://cinchpad.com/cooking-converter/): Free cooking measurement converter. Convert cups to grams for common ingredients, plus spoons, ounces, millilitres and oven temperatures including gas marks.
+- [Currency Converter](https://cinchpad.com/currency-converter/): Free currency converter using daily European Central Bank reference rates. Convert between 30 major currencies, with a clear note on why your bank gives you less.
 - [Roman Numeral Converter](https://cinchpad.com/roman-numeral-converter/): Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.
+- [Shoe Size Converter](https://cinchpad.com/shoe-size-converter/): Free shoe size converter for US, UK, EU, Japan and centimetres, for men, women and children, with a guide to measuring your foot properly.
 - [Speed Converter](https://cinchpad.com/speed-converter/): Free speed converter for mph, km/h, m/s, feet per second and knots, with running pace per mile and per kilometre shown alongside.
 - [Temperature Converter](https://cinchpad.com/temperature-converter/): Free temperature converter for Celsius, Fahrenheit and Kelvin. Type any one value and see all three at once, with a reference chart of everyday temperatures.
 - [Time Zone Converter](https://cinchpad.com/time-zone-converter/): Free time zone converter. Pick a time and see it across several cities at once, with daylight saving handled and working-hours overlap highlighted.
@@ -57,6 +59,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Bill Split Calculator](https://cinchpad.com/bill-split-calculator/): Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.
 - [Budget Tracker](https://cinchpad.com/budget-tracker/): Free monthly budget tracker. Enter income and expenses to see what is left over, how your spending splits across needs, wants and savings, and where it goes.
 - [Grocery List Maker](https://cinchpad.com/grocery-list-maker/): Free grocery list maker. Type your shopping and it sorts automatically into supermarket aisles, saves in your browser, and works offline on your phone.
+- [Paint Calculator](https://cinchpad.com/paint-calculator/): Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.
 - [Recipe Scaler](https://cinchpad.com/recipe-scaler/): Free recipe scaler. Paste a recipe and change the number of servings — every quantity is rescaled automatically, with fractions kept readable.
 ### Fun & Social
 - [Birthday Countdown](https://cinchpad.com/birthday-countdown/): Free birthday countdown. Enter your date of birth to see how many days until your next birthday, how old you will turn, and what day of the week it falls on.

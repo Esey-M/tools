@@ -145,6 +145,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://cinchpad.com/currency-converter/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://cinchpad.com/date-difference-calculator/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -241,6 +247,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://cinchpad.com/paint-calculator/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://cinchpad.com/password-generator/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -308,6 +320,12 @@
   </url>
   <url>
     <loc>https://cinchpad.com/sales-tax-calculator/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cinchpad.com/shoe-size-converter/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

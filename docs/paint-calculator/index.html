@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paint Calculator – How Much Paint to Buy for a Room</title>
+<meta name="description" content="Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.">
+<link rel="canonical" href="https://cinchpad.com/paint-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Paint Calculator – How Much Paint to Buy for a Room">
+<meta property="og:description" content="Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.">
+<meta property="og:url" content="https://cinchpad.com/paint-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paint Calculator – How Much Paint to Buy for a Room">
+<meta name="twitter:description" content="Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/paint-calculator/#app","name":"Paint Calculator","url":"https://cinchpad.com/paint-calculator/","description":"Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Home & Daily Life","item":"https://cinchpad.com/category/home/"},{"@type":"ListItem","position":3,"name":"Paint Calculator","item":"https://cinchpad.com/paint-calculator/"}]},{"@type":"HowTo","name":"How to use the Paint Calculator","description":"Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Enter the room’s length, width and wall height.","url":"https://cinchpad.com/paint-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Say how many doors and windows there are — standard sizes are subtracted automatically.","url":"https://cinchpad.com/paint-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Choose the number of coats. Two is standard.","url":"https://cinchpad.com/paint-calculator/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Read the amount needed and the suggested tin sizes.","url":"https://cinchpad.com/paint-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a litre of paint cover?","acceptedAnswer":{"@type":"Answer","text":"Typically 10–14 m² for one coat on a smooth, previously painted wall. This calculator uses 12 m² per litre. Bare plaster, textured surfaces and dark colours all reduce it."}},{"@type":"Question","name":"How many gallons for a 12x12 room?","acceptedAnswer":{"@type":"Answer","text":"A 12 × 12 ft room with 8 ft walls has 384 sq ft of wall. After a door and two windows, roughly 334 sq ft — about 0.9 gallons per coat, so 2 gallons covers two coats with some left over."}},{"@type":"Question","name":"Do I subtract windows and doors?","acceptedAnswer":{"@type":"Answer","text":"Yes, and this calculator does it for you at about 1.9 m² per door and 1.4 m² per window. For unusually large windows or patio doors, measure them and reduce the room dimensions accordingly."}},{"@type":"Question","name":"Do I need primer?","acceptedAnswer":{"@type":"Answer","text":"On bare plaster, wood, metal or over a dramatic colour change, yes. On a previously painted wall in a similar shade, no — two coats of emulsion is enough."}},{"@type":"Question","name":"Why does the tin claim more coverage than this?","acceptedAnswer":{"@type":"Answer","text":"Manufacturer figures assume ideal conditions: smooth, sealed, previously painted surfaces and an even application. Real walls, cutting in and roller loss all reduce it, which is why this calculator uses a slightly conservative figure."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 60 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/home/">Home &amp; Daily Life</a></li><li><span aria-current="page">Paint Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Paint Calculator</h1>
+      <p class="lede">Enter the room dimensions and how many doors and windows. The calculator subtracts them and works out the paint for your chosen number of coats.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="field">
+  <span class="field-label" id="unit-label">Units</span>
+  <div class="seg" role="group" aria-labelledby="unit-label">
+    <button type="button" id="u-metric" aria-pressed="true">Metres &amp; litres</button>
+    <button type="button" id="u-imperial">Feet &amp; gallons</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="length">Room length</label>
+    <div class="input-group"><input type="number" id="length" inputmode="decimal" min="0" step="0.1" value="4.5"><span class="addon" id="d1">m</span></div>
+  </div>
+  <div class="field">
+    <label for="width">Room width</label>
+    <div class="input-group"><input type="number" id="width" inputmode="decimal" min="0" step="0.1" value="3.6"><span class="addon" id="d2">m</span></div>
+  </div>
+  <div class="field">
+    <label for="height">Wall height</label>
+    <div class="input-group"><input type="number" id="height" inputmode="decimal" min="0" step="0.1" value="2.4"><span class="addon" id="d3">m</span></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="doors">Doors</label>
+    <input type="number" id="doors" inputmode="numeric" min="0" max="20" step="1" value="1">
+  </div>
+  <div class="field">
+    <label for="windows">Windows</label>
+    <input type="number" id="windows" inputmode="numeric" min="0" max="20" step="1" value="2">
+  </div>
+  <div class="field">
+    <label for="coats">Coats</label>
+    <select id="coats">
+      <option value="1">1 coat</option>
+      <option value="2" selected>2 coats</option>
+      <option value="3">3 coats</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="ceiling">Include ceiling</label>
+    <select id="ceiling">
+      <option value="0" selected>Walls only</option>
+      <option value="1">Walls and ceiling</option>
+    </select>
+  </div>
+</div>
+
+<div class="result" id="out" aria-live="polite">
+  <div class="result-label">Paint needed</div>
+  <div class="result-value" id="paint">—</div>
+  <div class="result-note" id="note"></div>
+  <dl class="result-grid">
+    <div class="stat"><dt>Area to paint</dt><dd id="area">—</dd></div>
+    <div class="stat"><dt>Openings subtracted</dt><dd id="minus">—</dd></div>
+    <div class="stat"><dt>Buy</dt><dd id="buy" style="font-size:1.1rem">—</dd></div>
+  </dl>
+</div>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How much paint a room needs</h2>
+      <div class="answer"><p><strong>Work out the wall area, subtract the doors and windows, then divide by the paint's coverage and multiply by the number of coats.</strong> Wall area is the room's perimeter times its height: a 4.5 × 3.6 m room with 2.4 m walls has 38.9 m² of wall. Subtract about 1.9 m² per door and 1.4 m² per window, and at 12 m² per litre two coats need roughly 5.7 litres. Most emulsion covers 10–14 m² per litre, so check the tin — dark colours and textured walls cover less.</p></div>
+    </section>
+
+    <section class="section prose" id="coats">
+      <h2 id="coats-h">How many coats you actually need</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Situation</th><th>Coats</th></tr></thead>
+<tbody>
+<tr><td>Same colour, refreshing</td><td>1</td></tr>
+<tr><td>Similar shade, previously painted</td><td>2</td></tr>
+<tr><td>Light over dark</td><td>2–3, plus primer</td></tr>
+<tr><td>Strong colour, especially red or yellow</td><td>3, over a tinted primer</td></tr>
+<tr><td>New plaster</td><td>Mist coat (thinned paint) plus 2</td></tr>
+<tr><td>Covering stains or smoke</td><td>Stain-blocking primer plus 2</td></tr>
+</tbody></table></div>
+<p>Reds and yellows genuinely need more coats than other colours, because the pigments used are less opaque. A grey-tinted primer underneath saves a coat and is cheaper than the topcoat.</p>
+    </section>
+<section class="section prose" id="buying">
+      <h2 id="buying-h">Buying without over- or under-ordering</h2>
+      <ul>
+<li><strong>Round up, and buy it all at once.</strong> Paint is mixed in batches and two tins of the same colour bought weeks apart can differ subtly. If you need 5.7 litres, buy 10 rather than topping up later.</li>
+<li><strong>Add 10% for cutting in.</strong> Edges, corners and around fittings use more than flat area suggests.</li>
+<li><strong>Textured or bare surfaces drink paint.</strong> Bare plaster, artex and rough render can cut coverage by a third.</li>
+<li><strong>Keep the leftovers labelled</strong> with the room and date. Touch-ups are much easier than rematching.</li>
+<li><strong>Ceilings need less than you think</strong> but are harder to keep even — a full roller and steady overlaps beat trying to stretch it.</li>
+</ul>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Paint Calculator</h2>
+  <ol class="prose"><li>Enter the room’s length, width and wall height.</li><li>Say how many doors and windows there are — standard sizes are subtracted automatically.</li><li>Choose the number of coats. Two is standard.</li><li>Read the amount needed and the suggested tin sizes.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How much does a litre of paint cover?</summary>
+    <div><p>Typically 10–14 m² for one coat on a smooth, previously painted wall. This calculator uses 12 m² per litre. Bare plaster, textured surfaces and dark colours all reduce it.</p></div>
+  </details>
+  <details>
+    <summary>How many gallons for a 12x12 room?</summary>
+    <div><p>A 12 × 12 ft room with 8 ft walls has 384 sq ft of wall. After a door and two windows, roughly 334 sq ft — about 0.9 gallons per coat, so 2 gallons covers two coats with some left over.</p></div>
+  </details>
+  <details>
+    <summary>Do I subtract windows and doors?</summary>
+    <div><p>Yes, and this calculator does it for you at about 1.9 m² per door and 1.4 m² per window. For unusually large windows or patio doors, measure them and reduce the room dimensions accordingly.</p></div>
+  </details>
+  <details>
+    <summary>Do I need primer?</summary>
+    <div><p>On bare plaster, wood, metal or over a dramatic colour change, yes. On a previously painted wall in a similar shade, no — two coats of emulsion is enough.</p></div>
+  </details>
+  <details>
+    <summary>Why does the tin claim more coverage than this?</summary>
+    <div><p>Manufacturer figures assume ideal conditions: smooth, sealed, previously painted surfaces and an even application. Real walls, cutting in and roller loss all reduce it, which is why this calculator uses a slightly conservative figure.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/unit-converter/">
+      <strong>Unit Converter</strong>
+      <span>Convert length, weight, volume, area, speed, temperature and data in one place.</span>
+    </a>
+    <a class="tool-card" href="/budget-tracker/">
+      <strong>Budget Tracker</strong>
+      <span>Track monthly income and spending, with the 50/30/20 split checked for you.</span>
+    </a>
+    <a class="tool-card" href="/percentage-calculator/">
+      <strong>Percentage Calculator</strong>
+      <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More home & daily life</h2>
+      <ul class="side-list">
+        <li><a href="/bill-split-calculator/">Bill Split Calculator</a></li>
+        <li><a href="/budget-tracker/">Budget Tracker</a></li>
+        <li><a href="/grocery-list-maker/">Grocery List Maker</a></li>
+        <li><a href="/recipe-scaler/">Recipe Scaler</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/home/" style="font-size:.88rem">All home & daily life →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var metric = true;
+
+  // Typical coverage: 12 m² per litre, or 375 sq ft per US gallon, for one coat.
+  var COVER_M2_PER_L = 12;
+  var COVER_SQFT_PER_GAL = 375;
+
+  // Standard opening sizes.
+  var DOOR_M2 = 1.9;      // ~2.0 x 0.95 m
+  var WINDOW_M2 = 1.4;    // ~1.2 x 1.2 m average
+  var DOOR_SQFT = 20;
+  var WINDOW_SQFT = 15;
+
+  function num(id, d){ var v = parseFloat($(id).value); return isFinite(v) && v >= 0 ? v : d; }
+
+  function calc(){
+    var L = num('length', 0), W = num('width', 0), H = num('height', 0);
+    var doors = Math.round(num('doors', 0)), windows = Math.round(num('windows', 0));
+    var coats = parseInt($('coats').value, 10);
+    var ceiling = $('ceiling').value === '1';
+
+    if (!(L > 0) || !(W > 0) || !(H > 0)) return;
+
+    var wallArea = 2 * (L + W) * H;
+    if (ceiling) wallArea += L * W;
+
+    var openings = metric
+      ? doors * DOOR_M2 + windows * WINDOW_M2
+      : doors * DOOR_SQFT + windows * WINDOW_SQFT;
+
+    var paintable = Math.max(0, wallArea - openings);
+    var perCoat = metric ? paintable / COVER_M2_PER_L : paintable / COVER_SQFT_PER_GAL;
+    var total = perCoat * coats;
+
+    var unit = metric ? 'litres' : 'gallons';
+    $('paint').textContent = (Math.round(total * 10) / 10) + ' ' + unit;
+    $('area').textContent = Math.round(paintable) + (metric ? ' m²' : ' sq ft');
+    $('minus').textContent = Math.round(openings) + (metric ? ' m²' : ' sq ft');
+
+    // Round up to tins people can actually buy.
+    var tins;
+    if (metric) {
+      var sizes = [10, 5, 2.5, 1];
+      tins = packFor(total, sizes, 'L');
+    } else {
+      tins = packFor(total, [5, 1, 0.25], 'gal');
+    }
+    $('buy').textContent = tins;
+    $('note').textContent = Math.round(paintable) + (metric ? ' m²' : ' sq ft') + ' over ' + coats +
+      (coats === 1 ? ' coat' : ' coats') + ', at ' +
+      (metric ? COVER_M2_PER_L + ' m² per litre' : COVER_SQFT_PER_GAL + ' sq ft per gallon') + '.';
+  }
+
+  /** Greedy tin selection, largest first, always rounding up. */
+  function packFor(amount, sizes, unit){
+    var remaining = amount;
+    var parts = [];
+    for (var i = 0; i < sizes.length; i++) {
+      var s = sizes[i];
+      var isLast = i === sizes.length - 1;
+      var n = isLast ? Math.ceil(remaining / s) : Math.floor(remaining / s);
+      if (n > 0) { parts.push(n + ' × ' + s + unit); remaining -= n * s; }
+      if (remaining <= 0.001) break;
+    }
+    return parts.length ? parts.join(' + ') : '1 × ' + sizes[sizes.length - 1] + unit;
+  }
+
+  function setUnits(m){
+    if (m === metric) return;
+    metric = m;
+    $('u-metric').setAttribute('aria-pressed', String(m));
+    $('u-imperial').setAttribute('aria-pressed', String(!m));
+    ['d1','d2','d3'].forEach(function(id){ $(id).textContent = m ? 'm' : 'ft'; });
+    ['length','width','height'].forEach(function(id){
+      var v = parseFloat($(id).value);
+      if (isFinite(v)) $(id).value = (m ? v * 0.3048 : v / 0.3048).toFixed(1);
+    });
+    calc();
+  }
+
+  $('u-metric').addEventListener('click', function(){ setUnits(true); });
+  $('u-imperial').addEventListener('click', function(){ setUnits(false); });
+  ['length','width','height','doors','windows','coats','ceiling'].forEach(function(id){
+    $(id).addEventListener($(id).tagName === 'SELECT' ? 'change' : 'input', calc);
+  });
+  calc();
+})();</script>
+</body>
+</html>
