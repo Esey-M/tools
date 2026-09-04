@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 44 browser-based utilities for
+CinchPad is a free, ad-supported collection of 46 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -29,6 +29,7 @@ uploaded or stored. No account is required and every tool is free to use.
 ### File & Image Tools
 - [Image Compressor](https://cinchpad.com/image-compressor/): Free image compressor. Reduce JPG, PNG and WebP file sizes for email or web uploads, with a live quality preview. Runs in your browser — no upload, no waiting.
 - [Image Resizer](https://cinchpad.com/image-resizer/): Free image resizer. Change a photo to exact pixel dimensions, scale by percentage, or use presets for social media and passport photos. No upload required.
+- [Image to PDF](https://cinchpad.com/image-to-pdf/): Free image to PDF converter. Combine JPG, PNG and WebP images into a single PDF, reorder the pages by dragging, and choose page size and margins. No upload.
 ### Random Pickers
 - [Coin Flip](https://cinchpad.com/coin-flip/): Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.
 - [Dice Roller](https://cinchpad.com/dice-roller/): Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.
@@ -48,6 +49,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Water Intake Calculator](https://cinchpad.com/water-intake-calculator/): Free water intake calculator. Estimate how much water to drink each day based on your body weight, exercise and climate, and learn why the 8-glasses rule is a myth.
 ### Home & Daily Life
 - [Bill Split Calculator](https://cinchpad.com/bill-split-calculator/): Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.
+- [Budget Tracker](https://cinchpad.com/budget-tracker/): Free monthly budget tracker. Enter income and expenses to see what is left over, how your spending splits across needs, wants and savings, and where it goes.
 ### Fun & Social
 - [Birthday Countdown](https://cinchpad.com/birthday-countdown/): Free birthday countdown. Enter your date of birth to see how many days until your next birthday, how old you will turn, and what day of the week it falls on.
 - [Countdown Timer](https://cinchpad.com/countdown-timer/): Free countdown timer to any date. See days, hours, minutes and seconds ticking down to a wedding, exam, holiday or launch, and share the countdown by link.
