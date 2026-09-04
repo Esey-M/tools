@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heart Rate Zone Calculator – Training Zones by Age</title>
+<meta name="description" content="Free heart rate zone calculator. Get your maximum heart rate and five training zones by age, plus the more accurate Karvonen method.">
+<link rel="canonical" href="https://cinchpad.com/heart-rate-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Heart Rate Zone Calculator – Training Zones by Age">
+<meta property="og:description" content="Free heart rate zone calculator. Get your maximum heart rate and five training zones by age, plus the more accurate Karvonen method.">
+<meta property="og:url" content="https://cinchpad.com/heart-rate-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Heart Rate Zone Calculator – Training Zones by Age">
+<meta name="twitter:description" content="Free heart rate zone calculator. Get your maximum heart rate and five training zones by age, plus the more accurate Karvonen method.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.zone-list{display:flex;flex-direction:column;gap:8px}
+.zone{display:flex;align-items:center;gap:13px;background:var(--bg-raised);border:1px solid var(--line);
+  border-radius:var(--radius);padding:12px 15px}
+.zone .sw{width:5px;align-self:stretch;border-radius:3px;flex:none;min-height:38px}
+.zone .z{flex:1;min-width:0}
+.zone .z b{display:block;font-size:.95rem;font-weight:620}
+.zone .z span{display:block;font-size:.83rem;color:var(--ink-3);margin-top:2px}
+.zone .bpm{font-variant-numeric:tabular-nums;font-weight:660;font-size:1.02rem;white-space:nowrap}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/heart-rate-calculator/#app","name":"Heart Rate Zone Calculator","url":"https://cinchpad.com/heart-rate-calculator/","description":"Free heart rate zone calculator. Get your maximum heart rate and five training zones by age, plus the more accurate Karvonen method.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Health & Body","item":"https://cinchpad.com/category/health/"},{"@type":"ListItem","position":3,"name":"Heart Rate Zone Calculator","item":"https://cinchpad.com/heart-rate-calculator/"}]},{"@type":"HowTo","name":"How to use the Heart Rate Zone Calculator","description":"Free heart rate zone calculator. Get your maximum heart rate and five training zones by age, plus the more accurate Karvonen method.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Enter your age.","url":"https://cinchpad.com/heart-rate-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"If you know your resting heart rate, add it — this switches to the more accurate Karvonen method.","url":"https://cinchpad.com/heart-rate-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Choose a formula. Tanaka is the sensible default.","url":"https://cinchpad.com/heart-rate-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is my maximum heart rate?","acceptedAnswer":{"@type":"Answer","text":"The calculator estimates it from your age. The only accurate way to know is a supervised maximal exercise test — individual variation around any formula is roughly ±10–12 bpm."}},{"@type":"Question","name":"Which max heart rate formula should I use?","acceptedAnswer":{"@type":"Answer","text":"Tanaka (208 − 0.7 × age) for most people, as it predicts better than 220 − age especially over 40. Women may find Gulati (206 − 0.88 × age) closer still."}},{"@type":"Question","name":"What is the fat burning zone?","acceptedAnswer":{"@type":"Answer","text":"At low intensities a higher proportion of energy comes from fat, but total calories burned is lower. For fat loss, total energy expenditure and diet matter far more than which zone you train in."}},{"@type":"Question","name":"Is it dangerous to exceed my maximum heart rate?","acceptedAnswer":{"@type":"Answer","text":"Reading above your estimated maximum usually means the estimate is low for you, not that something is wrong. That said, chest pain, dizziness or unusual breathlessness during exercise warrant stopping and seeing a doctor."}},{"@type":"Question","name":"Why does my watch give different zones?","acceptedAnswer":{"@type":"Answer","text":"Devices use different formulas and some estimate your maximum from your own recorded data, which is often better than any age formula. If your watch has seen you work genuinely hard, trust it over this calculator."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 44 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><span aria-current="page">Heart Rate Zone Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Heart Rate Zone Calculator</h1>
+      <p class="lede">Enter your age for a quick estimate, or add your resting heart rate for the more accurate Karvonen calculation.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="row">
+  <div class="field">
+    <label for="age">Age</label>
+    <div class="input-group"><input type="number" id="age" inputmode="numeric" min="10" max="100" step="1" value="35"><span class="addon">years</span></div>
+  </div>
+  <div class="field">
+    <label for="rest">Resting heart rate <span class="hint">(optional)</span></label>
+    <div class="input-group"><input type="number" id="rest" inputmode="numeric" min="30" max="120" step="1" placeholder="60"><span class="addon">bpm</span></div>
+    <span class="hint">Measure first thing in the morning, before getting up.</span>
+  </div>
+  <div class="field">
+    <label for="formula">Max HR formula</label>
+    <select id="formula">
+      <option value="tanaka" selected>Tanaka — 208 − 0.7 × age</option>
+      <option value="haskell">Haskell — 220 − age</option>
+      <option value="gulati">Gulati — 206 − 0.88 × age (women)</option>
+    </select>
+  </div>
+</div>
+
+<div class="result" id="out" aria-live="polite">
+  <div class="result-label">Estimated maximum heart rate</div>
+  <div class="result-value" id="max">—</div>
+  <div class="result-note" id="note"></div>
+</div>
+
+<div style="margin-top:20px">
+  <h2 style="font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);margin-bottom:10px">Your training zones</h2>
+  <div id="zones" class="zone-list"></div>
+</div>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">Why &quot;220 minus your age&quot; is not the best formula</h2>
+      <div class="answer"><p><strong>The familiar 220 − age formula was never derived from research; it was an approximation noted in passing in 1970 and has a standard deviation of about 10–12 beats per minute.</strong> That means it can be 20 bpm out for a given individual. The Tanaka formula, <code>208 − 0.7 × age</code>, comes from a 2001 meta-analysis and predicts more accurately, particularly for people over 40 — where 220 − age systematically underestimates. For women specifically, the Gulati formula performs better still.</p></div>
+    </section>
+
+    <section class="section prose" id="karvonen">
+      <h2 id="karvonen-h">Why resting heart rate matters</h2>
+      <p>Simple percentage zones ignore how fit you already are. Two people with the same maximum heart rate but resting rates of 45 and 75 bpm are in genuinely different physiological states at the same absolute heart rate.</p>
+<p>The Karvonen method works from <strong>heart rate reserve</strong> — the gap between resting and maximum — and adds the resting rate back:</p>
+<p><code>Target = ((Max − Resting) × intensity) + Resting</code></p>
+<p>For a 35-year-old with a maximum of 184 and a resting rate of 60, Zone 2 (60–70%) works out to 134–147 bpm, rather than the 110–129 a plain percentage would suggest. That is a substantial difference, and the Karvonen figure is the one to train by.</p>
+    </section>
+<section class="section prose" id="zone2">
+      <h2 id="zone2-h">The case for training slower</h2>
+      <p>Most recreational athletes train too hard on easy days and not hard enough on hard days, ending up in a mediocre middle. Endurance coaching has converged on the opposite: roughly 80% of training in Zone 2, 20% in Zones 4 and 5, and very little in between.</p>
+<p>Zone 2 feels almost too easy — you should be able to hold a conversation in full sentences. It builds mitochondrial density and capillary networks, the adaptations that raise your ceiling, and it does so with far less fatigue than harder work.</p>
+<p>If you are new to this, the honest sign you have it right is mild boredom.</p>
+    </section>
+<section class="section prose" id="resting">
+      <h2 id="resting-h">What your resting heart rate says</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Resting heart rate</th><th>Typically indicates</th></tr></thead>
+<tbody>
+<tr><td>40–50 bpm</td><td>Well-trained endurance athlete</td></tr>
+<tr><td>50–60 bpm</td><td>Good cardiovascular fitness</td></tr>
+<tr><td>60–75 bpm</td><td>Normal for most adults</td></tr>
+<tr><td>75–90 bpm</td><td>Higher end of normal; often improves with training</td></tr>
+<tr><td>Over 100 bpm at rest</td><td>Tachycardia — worth discussing with a doctor</td></tr>
+</tbody></table></div>
+<p>Measure it before getting out of bed, over three mornings, and take the average. A resting rate that rises 5–10 bpm above your normal is a well-established early sign of overtraining, poor sleep or illness.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Heart Rate Zone Calculator</h2>
+  <ol class="prose"><li>Enter your age.</li><li>If you know your resting heart rate, add it — this switches to the more accurate Karvonen method.</li><li>Choose a formula. Tanaka is the sensible default.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>What is my maximum heart rate?</summary>
+    <div><p>The calculator estimates it from your age. The only accurate way to know is a supervised maximal exercise test — individual variation around any formula is roughly ±10–12 bpm.</p></div>
+  </details>
+  <details>
+    <summary>Which max heart rate formula should I use?</summary>
+    <div><p>Tanaka (208 − 0.7 × age) for most people, as it predicts better than 220 − age especially over 40. Women may find Gulati (206 − 0.88 × age) closer still.</p></div>
+  </details>
+  <details>
+    <summary>What is the fat burning zone?</summary>
+    <div><p>At low intensities a higher <em>proportion</em> of energy comes from fat, but total calories burned is lower. For fat loss, total energy expenditure and diet matter far more than which zone you train in.</p></div>
+  </details>
+  <details>
+    <summary>Is it dangerous to exceed my maximum heart rate?</summary>
+    <div><p>Reading above your estimated maximum usually means the estimate is low for you, not that something is wrong. That said, chest pain, dizziness or unusual breathlessness during exercise warrant stopping and seeing a doctor.</p></div>
+  </details>
+  <details>
+    <summary>Why does my watch give different zones?</summary>
+    <div><p>Devices use different formulas and some estimate your maximum from your own recorded data, which is often better than any age formula. If your watch has seen you work genuinely hard, trust it over this calculator.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/calorie-calculator/">
+      <strong>Calorie Calculator</strong>
+      <span>Daily calories to maintain, lose or gain weight, from the Mifflin-St Jeor equation.</span>
+    </a>
+    <a class="tool-card" href="/bmi-calculator/">
+      <strong>BMI Calculator</strong>
+      <span>Body mass index from your height and weight, with your healthy weight range.</span>
+    </a>
+    <a class="tool-card" href="/sleep-calculator/">
+      <strong>Sleep Calculator</strong>
+      <span>Bedtimes and wake times that land between sleep cycles, not in the middle of one.</span>
+    </a>
+    <a class="tool-card" href="/water-intake-calculator/">
+      <strong>Water Intake Calculator</strong>
+      <span>A daily water target based on your weight, activity and climate.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Estimates from population formulas. If you have a heart condition or take medication affecting heart rate, ask your doctor.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More health & body</h2>
+      <ul class="side-list">
+        <li><a href="/bmi-calculator/">BMI Calculator</a></li>
+        <li><a href="/calorie-calculator/">Calorie Calculator</a></li>
+        <li><a href="/ideal-weight-calculator/">Ideal Weight Calculator</a></li>
+        <li><a href="/sleep-calculator/">Sleep Calculator</a></li>
+        <li><a href="/water-intake-calculator/">Water Intake Calculator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/health/" style="font-size:.88rem">All health & body →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+
+  var ZONES = [
+    ['Zone 1 — Very light', 50, 60, 'Warm-up and recovery. You can hold a full conversation.', '#7a9e4f'],
+    ['Zone 2 — Light', 60, 70, 'Builds aerobic base and fat oxidation. Most training should live here.', '#4caf7d'],
+    ['Zone 3 — Moderate', 70, 80, 'Improves aerobic fitness. Talking becomes short sentences.', '#e8a33d'],
+    ['Zone 4 — Hard', 80, 90, 'Raises lactate threshold. A few words at a time.', '#e07a4a'],
+    ['Zone 5 — Maximum', 90, 100, 'Short intervals only. No talking at all.', '#d9534f']
+  ];
+
+  function calc(){
+    var age = parseInt($('age').value, 10);
+    var rest = parseInt($('rest').value, 10);
+    if (!isFinite(age) || age < 10 || age > 100) return;
+
+    var f = $('formula').value;
+    var max = f === 'haskell' ? 220 - age
+            : f === 'gulati'  ? 206 - 0.88 * age
+            :                   208 - 0.7 * age;   // Tanaka
+    max = Math.round(max);
+
+    var useKarvonen = isFinite(rest) && rest >= 30 && rest < max;
+    var reserve = useKarvonen ? max - rest : 0;
+
+    $('max').textContent = max + ' bpm';
+    $('note').textContent = useKarvonen
+      ? 'Heart rate reserve is ' + reserve + ' bpm. Zones below use the Karvonen method, which accounts for your resting rate.'
+      : 'Zones below are simple percentages of maximum. Add your resting heart rate for a more accurate calculation.';
+
+    $('zones').innerHTML = ZONES.map(function(z){
+      var lo = useKarvonen ? Math.round(reserve * z[1] / 100 + rest) : Math.round(max * z[1] / 100);
+      var hi = useKarvonen ? Math.round(reserve * z[2] / 100 + rest) : Math.round(max * z[2] / 100);
+      return '<div class="zone"><span class="sw" style="background:' + z[4] + '"></span>' +
+        '<span class="z"><b>' + z[0] + '</b><span>' + z[3] + '</span></span>' +
+        '<span class="bpm">' + lo + '–' + hi + '</span></div>';
+    }).join('');
+  }
+
+  ['age','rest','formula'].forEach(function(id){
+    $(id).addEventListener($(id).tagName === 'SELECT' ? 'change' : 'input', calc);
+  });
+  calc();
+})();</script>
+</body>
+</html>

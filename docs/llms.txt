@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 41 browser-based utilities for
+CinchPad is a free, ad-supported collection of 44 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -32,14 +32,17 @@ uploaded or stored. No account is required and every tool is free to use.
 ### Random Pickers
 - [Coin Flip](https://cinchpad.com/coin-flip/): Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.
 - [Dice Roller](https://cinchpad.com/dice-roller/): Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.
+- [Lottery Number Picker](https://cinchpad.com/lottery-number-picker/): Free lottery number generator. Get random picks for Powerball, Mega Millions, EuroMillions, UK Lotto or any custom format, with honest odds shown.
 - [Random Name Picker](https://cinchpad.com/random-name-picker/): Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.
 - [Random Number Generator](https://cinchpad.com/random-number-generator/): Free random number generator. Pick one number or many from any range, with optional no-repeats and sorting. Uses secure browser randomness.
+- [Random Team Generator](https://cinchpad.com/random-team-generator/): Free random team generator. Paste a list of names and split them into a set number of teams, or into groups of a fixed size, with even distribution.
 - [What Should I Eat?](https://cinchpad.com/what-to-eat-picker/): Free random meal picker. Get a suggestion for what to eat by cuisine and meal type, or add your own options and let the tool decide for you.
 - [Wheel of Names](https://cinchpad.com/wheel-of-names/): Free spinning wheel picker. Add names, spin the wheel and get a random winner, with an option to remove each winner as it is drawn. No signup.
 - [Yes or No Decision Maker](https://cinchpad.com/yes-no-decision-maker/): Free yes or no decision maker. Ask a question and get a random answer, with an option to weight the odds. Useful for breaking a deadlock, not for real decisions.
 ### Health & Body
 - [BMI Calculator](https://cinchpad.com/bmi-calculator/): Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.
 - [Calorie Calculator](https://cinchpad.com/calorie-calculator/): Free calorie calculator. Work out your BMR and daily calorie needs from height, weight, age and activity level, with targets for losing or gaining weight.
+- [Heart Rate Zone Calculator](https://cinchpad.com/heart-rate-calculator/): Free heart rate zone calculator. Get your maximum heart rate and five training zones by age, plus the more accurate Karvonen method.
 - [Ideal Weight Calculator](https://cinchpad.com/ideal-weight-calculator/): Free ideal weight calculator. See your target weight from the Devine, Robinson, Miller and Hamwi formulas plus the healthy BMI range, and why they disagree.
 - [Sleep Calculator](https://cinchpad.com/sleep-calculator/): Free sleep calculator. Work out when to go to bed for a given wake-up time, or when to wake if you sleep now, based on 90-minute sleep cycles.
 - [Water Intake Calculator](https://cinchpad.com/water-intake-calculator/): Free water intake calculator. Estimate how much water to drink each day based on your body weight, exercise and climate, and learn why the 8-glasses rule is a myth.
