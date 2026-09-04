@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 34 browser-based utilities for
+CinchPad is a free, ad-supported collection of 39 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -13,6 +13,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Compound Interest Calculator](https://cinchpad.com/compound-interest-calculator/): Free compound interest calculator. See how savings grow with regular contributions, any compounding frequency, and a year-by-year breakdown of interest earned.
 - [Date Difference Calculator](https://cinchpad.com/date-difference-calculator/): Free date difference calculator. Find the number of days, weeks, months and years between two dates, plus the count of working days excluding weekends.
 - [Discount Calculator](https://cinchpad.com/discount-calculator/): Free discount calculator. Enter a price and percentage off to see the sale price and what you save. Handles stacked discounts and sales tax too.
+- [Fuel Cost Calculator](https://cinchpad.com/fuel-cost-calculator/): Free fuel cost calculator. Work out what a trip costs in fuel from distance, fuel economy and price, in mpg or litres per 100 km, and split it between passengers.
 - [GPA Calculator](https://cinchpad.com/gpa-calculator/): Free GPA calculator. Enter your courses, letter grades and credit hours to get your grade point average on the 4.0 scale, weighted or unweighted.
 - [Loan Calculator](https://cinchpad.com/loan-calculator/): Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.
 - [Mortgage Calculator](https://cinchpad.com/mortgage-calculator/): Free mortgage calculator. Work out your full monthly payment including property tax, home insurance, PMI and HOA fees, plus total interest over the loan.
@@ -33,6 +34,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Dice Roller](https://cinchpad.com/dice-roller/): Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.
 - [Random Name Picker](https://cinchpad.com/random-name-picker/): Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.
 - [Random Number Generator](https://cinchpad.com/random-number-generator/): Free random number generator. Pick one number or many from any range, with optional no-repeats and sorting. Uses secure browser randomness.
+- [What Should I Eat?](https://cinchpad.com/what-to-eat-picker/): Free random meal picker. Get a suggestion for what to eat by cuisine and meal type, or add your own options and let the tool decide for you.
 - [Yes or No Decision Maker](https://cinchpad.com/yes-no-decision-maker/): Free yes or no decision maker. Ask a question and get a random answer, with an option to weight the odds. Useful for breaking a deadlock, not for real decisions.
 ### Health & Body
 - [BMI Calculator](https://cinchpad.com/bmi-calculator/): Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.
@@ -45,6 +47,9 @@ uploaded or stored. No account is required and every tool is free to use.
 ### Fun & Social
 - [Birthday Countdown](https://cinchpad.com/birthday-countdown/): Free birthday countdown. Enter your date of birth to see how many days until your next birthday, how old you will turn, and what day of the week it falls on.
 - [Countdown Timer](https://cinchpad.com/countdown-timer/): Free countdown timer to any date. See days, hours, minutes and seconds ticking down to a wedding, exam, holiday or launch, and share the countdown by link.
+- [Love Calculator](https://cinchpad.com/love-calculator/): Free love calculator. Enter two names for a compatibility percentage using the classic FLAMES method. A bit of fun — not advice, and not a prediction.
+- [Typing Speed Test](https://cinchpad.com/typing-speed-test/): Free typing speed test. Measure your words per minute and accuracy on a one-minute test, with results compared against average typing speeds.
+- [Zodiac Sign Finder](https://cinchpad.com/zodiac-sign-finder/): Free zodiac sign finder. Enter your birth date to get your western star sign with its element and dates, plus your Chinese zodiac animal and birthstone.
 ### Text & Documents
 - [Text Case Converter](https://cinchpad.com/text-case-converter/): Free text case converter. Change text to UPPERCASE, lowercase, Title Case, Sentence case, camelCase, snake_case or kebab-case instantly in your browser.
 - [Word Counter](https://cinchpad.com/word-counter/): Free word counter. Paste your text for instant word, character, sentence and paragraph counts, reading time, and a check against social media limits.

@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Should I Eat? – Random Meal Picker</title>
+<meta name="description" content="Free random meal picker. Get a suggestion for what to eat by cuisine and meal type, or add your own options and let the tool decide for you.">
+<link rel="canonical" href="https://cinchpad.com/what-to-eat-picker/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="What Should I Eat? – Random Meal Picker">
+<meta property="og:description" content="Free random meal picker. Get a suggestion for what to eat by cuisine and meal type, or add your own options and let the tool decide for you.">
+<meta property="og:url" content="https://cinchpad.com/what-to-eat-picker/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Should I Eat? – Random Meal Picker">
+<meta name="twitter:description" content="Free random meal picker. Get a suggestion for what to eat by cuisine and meal type, or add your own options and let the tool decide for you.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/what-to-eat-picker/#app","name":"What Should I Eat?","url":"https://cinchpad.com/what-to-eat-picker/","description":"Free random meal picker. Get a suggestion for what to eat by cuisine and meal type, or add your own options and let the tool decide for you.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Random Pickers","item":"https://cinchpad.com/category/random/"},{"@type":"ListItem","position":3,"name":"What Should I Eat?","item":"https://cinchpad.com/what-to-eat-picker/"}]},{"@type":"HowTo","name":"How to use the What Should I Eat?","description":"Free random meal picker. Get a suggestion for what to eat by cuisine and meal type, or add your own options and let the tool decide for you.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Filter by meal, cuisine and how much effort you are willing to spend.","url":"https://cinchpad.com/what-to-eat-picker/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Or switch to my own options and paste the shortlist you are actually arguing about.","url":"https://cinchpad.com/what-to-eat-picker/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Press decide. If you feel disappointed, you have learned what you wanted.","url":"https://cinchpad.com/what-to-eat-picker/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I add my own options?","acceptedAnswer":{"@type":"Answer","text":"Yes. Switch to \"my own options\" and paste your list, one per line. Useful when the real argument is between three specific takeaways."}},{"@type":"Question","name":"Will it suggest the same thing twice?","acceptedAnswer":{"@type":"Answer","text":"It avoids repeating the previous suggestion whenever there is an alternative available, so pressing \"something else\" always gives you something else."}},{"@type":"Question","name":"How many dishes are in the list?","acceptedAnswer":{"@type":"Answer","text":"Around 45, spread across breakfast, lunch and dinner and a dozen cuisines, each tagged by how much effort it takes."}},{"@type":"Question","name":"Does it account for dietary requirements?","acceptedAnswer":{"@type":"Answer","text":"Not directly. For anything specific — vegetarian, gluten-free, allergies — use your own options list, which gives you full control."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 39 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/random/">Random Pickers</a></li><li><span aria-current="page">What Should I Eat?</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>What Should I Eat?</h1>
+      <p class="lede">Filter by meal and cuisine, or paste in your own shortlist. Either way, something gets decided.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="field">
+  <span class="field-label" id="src-label">Choose from</span>
+  <div class="seg" role="group" aria-labelledby="src-label" id="sources">
+    <button type="button" data-src="built" aria-pressed="true">Our list</button>
+    <button type="button" data-src="own">My own options</button>
+  </div>
+</div>
+
+<div id="pane-built">
+  <div class="row">
+    <div class="field">
+      <label for="meal">Meal</label>
+      <select id="meal">
+        <option value="any" selected>Any</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="cuisine">Cuisine</label>
+      <select id="cuisine"><option value="any" selected>Any</option></select>
+    </div>
+    <div class="field">
+      <label for="effort">Effort</label>
+      <select id="effort">
+        <option value="any" selected>Any</option>
+        <option value="1">Barely cooking</option>
+        <option value="2">A bit of work</option>
+        <option value="3">A proper project</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div id="pane-own" hidden>
+  <div class="field">
+    <label for="own">Your options, one per line</label>
+    <textarea id="own" rows="6" placeholder="Leftovers&#10;That noodle place&#10;Beans on toast" style="min-height:130px"></textarea>
+  </div>
+</div>
+
+<div class="btn-row">
+  <button type="button" class="btn btn-lg" id="pick">Decide for me</button>
+  <button type="button" class="btn btn-ghost" id="again" hidden>Something else</button>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite" style="text-align:center">
+  <div class="result-label" id="lbl">Tonight you are having</div>
+  <div class="result-value" id="dish" style="font-size:clamp(1.7rem,1.2rem+2.4vw,2.6rem)">—</div>
+  <div class="result-note" id="note"></div>
+</div>
+<p class="notice notice-warn" id="err" hidden style="margin-top:14px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">Why deciding what to eat is so hard</h2>
+      <div class="answer"><p><strong>The problem is not lack of options — it is too many of them.</strong> Psychologists call this choice overload: past a certain point, adding options makes deciding harder and satisfaction lower, because every choice now carries the cost of everything you did not pick. Food is a particularly bad case because it recurs daily, the options are near-infinite, and it is usually a negotiation with someone else. Removing the choice entirely, by handing it to something arbitrary, is a genuinely effective fix.</p></div>
+    </section>
+
+    <section class="section prose" id="deadlock">
+      <h2 id="deadlock-h">Breaking the &quot;I don’t mind&quot; deadlock</h2>
+      <p>The stalemate has a predictable shape: both people genuinely have a preference, neither wants to impose it, and so both say they do not mind. Twenty minutes later nobody has eaten.</p>
+<p>Two things break it reliably.</p>
+<p><strong>Narrow before you randomise.</strong> Each person names two options they would be happy with. Put those four into the box and let it choose. The result is now guaranteed acceptable to both, and nobody had to be the one who decided.</p>
+<p><strong>Use the disappointment test.</strong> When the answer appears, notice your reaction. Relief means take it. A small sinking feeling means you had a preference all along — and now you can just say what it was.</p>
+    </section>
+<section class="section prose" id="overload">
+      <h2 id="overload-h">The paradox of choice, briefly</h2>
+      <p>The best-known study is Iyengar and Lepper's supermarket jam experiment. A tasting table with 24 varieties attracted more passers-by than one with 6 — but shoppers who saw the 6 were roughly ten times more likely to actually buy.</p>
+<p>Later work has found the effect is smaller and more conditional than the popular version suggests; it depends on time pressure, familiarity and how hard the options are to compare. But the everyday lesson survives: when a decision does not matter much, spending effort on it is pure cost.</p>
+<p>Dinner on a Tuesday is exactly that kind of decision.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the What Should I Eat?</h2>
+  <ol class="prose"><li>Filter by meal, cuisine and how much effort you are willing to spend.</li><li>Or switch to <strong>my own options</strong> and paste the shortlist you are actually arguing about.</li><li>Press decide. If you feel disappointed, you have learned what you wanted.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>Can I add my own options?</summary>
+    <div><p>Yes. Switch to "my own options" and paste your list, one per line. Useful when the real argument is between three specific takeaways.</p></div>
+  </details>
+  <details>
+    <summary>Will it suggest the same thing twice?</summary>
+    <div><p>It avoids repeating the previous suggestion whenever there is an alternative available, so pressing "something else" always gives you something else.</p></div>
+  </details>
+  <details>
+    <summary>How many dishes are in the list?</summary>
+    <div><p>Around 45, spread across breakfast, lunch and dinner and a dozen cuisines, each tagged by how much effort it takes.</p></div>
+  </details>
+  <details>
+    <summary>Does it account for dietary requirements?</summary>
+    <div><p>Not directly. For anything specific — vegetarian, gluten-free, allergies — use your own options list, which gives you full control.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/yes-no-decision-maker/">
+      <strong>Yes or No Decision Maker</strong>
+      <span>A random yes or no when you genuinely cannot decide.</span>
+    </a>
+    <a class="tool-card" href="/random-name-picker/">
+      <strong>Random Name Picker</strong>
+      <span>Paste a list and draw a fair winner, or several, with no repeats.</span>
+    </a>
+    <a class="tool-card" href="/coin-flip/">
+      <strong>Coin Flip</strong>
+      <span>Flip a fair virtual coin, one at a time or hundreds at once.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More random pickers</h2>
+      <ul class="side-list">
+        <li><a href="/coin-flip/">Coin Flip</a></li>
+        <li><a href="/dice-roller/">Dice Roller</a></li>
+        <li><a href="/random-name-picker/">Random Name Picker</a></li>
+        <li><a href="/random-number-generator/">Random Number Generator</a></li>
+        <li><a href="/yes-no-decision-maker/">Yes or No Decision Maker</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/random/" style="font-size:.88rem">All random pickers →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var src = 'built';
+  var last = '';
+
+  // [dish, meal, cuisine, effort 1-3]
+  var DISHES = [
+    ['Scrambled eggs on toast','breakfast','British',1],
+    ['Porridge with honey and banana','breakfast','British',1],
+    ['Greek yoghurt with granola','breakfast','Greek',1],
+    ['Full English breakfast','breakfast','British',3],
+    ['Shakshuka','breakfast','Middle Eastern',2],
+    ['Pancakes with maple syrup','breakfast','American',2],
+    ['Avocado toast with chilli flakes','breakfast','American',1],
+    ['Congee with spring onion','breakfast','Chinese',2],
+    ['Breakfast burrito','breakfast','Mexican',2],
+    ['Croissant and coffee','breakfast','French',1],
+    ['Toasted cheese sandwich','lunch','British',1],
+    ['Caesar salad','lunch','American',2],
+    ['Pho','lunch','Vietnamese',3],
+    ['Banh mi','lunch','Vietnamese',2],
+    ['Falafel wrap','lunch','Middle Eastern',2],
+    ['Ramen','lunch','Japanese',3],
+    ['Margherita pizza','lunch','Italian',2],
+    ['Jacket potato with beans','lunch','British',1],
+    ['Chicken katsu curry','lunch','Japanese',3],
+    ['Greek salad with feta','lunch','Greek',1],
+    ['Tomato soup and bread','lunch','British',1],
+    ['Sushi','lunch','Japanese',3],
+    ['Spaghetti carbonara','dinner','Italian',2],
+    ['Thai green curry','dinner','Thai',2],
+    ['Beef tacos','dinner','Mexican',2],
+    ['Roast chicken with potatoes','dinner','British',3],
+    ['Butter chicken with rice','dinner','Indian',3],
+    ['Pad thai','dinner','Thai',2],
+    ['Mushroom risotto','dinner','Italian',3],
+    ['Fish and chips','dinner','British',3],
+    ['Chilli con carne','dinner','Mexican',2],
+    ['Lasagne','dinner','Italian',3],
+    ['Stir-fried noodles with vegetables','dinner','Chinese',1],
+    ['Dal and rice','dinner','Indian',2],
+    ['Moussaka','dinner','Greek',3],
+    ['Bibimbap','dinner','Korean',3],
+    ['Paella','dinner','Spanish',3],
+    ['Tagine with couscous','dinner','Moroccan',3],
+    ['Sausage and mash','dinner','British',2],
+    ['Pesto pasta','dinner','Italian',1],
+    ['Beef stew','dinner','French',3],
+    ['Katsu sando','dinner','Japanese',2],
+    ['Quesadillas','dinner','Mexican',1],
+    ['Omelette and salad','dinner','French',1],
+    ['Fried rice with whatever is in the fridge','dinner','Chinese',1]
+  ];
+
+  var cuisines = [];
+  DISHES.forEach(function(d){ if (cuisines.indexOf(d[2]) === -1) cuisines.push(d[2]); });
+  cuisines.sort();
+  $('cuisine').innerHTML = '<option value="any" selected>Any</option>' +
+    cuisines.map(function(c){ return '<option value="' + c + '">' + c + '</option>'; }).join('');
+
+  function randInt(max){
+    var limit = Math.floor(4294967296 / max) * max;
+    var buf = new Uint32Array(1), v;
+    do { crypto.getRandomValues(buf); v = buf[0]; } while (v >= limit);
+    return v % max;
+  }
+
+  function candidates(){
+    if (src === 'own') {
+      return $('own').value.split('\n').map(function(s){ return s.trim(); }).filter(Boolean);
+    }
+    var meal = $('meal').value, cuisine = $('cuisine').value, effort = $('effort').value;
+    return DISHES.filter(function(d){
+      return (meal === 'any' || d[1] === meal) &&
+             (cuisine === 'any' || d[2] === cuisine) &&
+             (effort === 'any' || String(d[3]) === effort);
+    }).map(function(d){ return d[0] + '||' + d[2] + '||' + d[3]; });
+  }
+
+  function pick(){
+    var list = candidates();
+    if (!list.length) {
+      $('err').hidden = false;
+      $('err').textContent = src === 'own'
+        ? 'Add a few options first, one per line.'
+        : 'Nothing matches those filters. Try loosening one of them.';
+      $('out').hidden = true; $('again').hidden = true;
+      return;
+    }
+    $('err').hidden = true;
+
+    // Avoid repeating the previous suggestion when there is an alternative.
+    var choice, tries = 0;
+    do { choice = list[randInt(list.length)]; tries++; } while (choice === last && list.length > 1 && tries < 12);
+    last = choice;
+
+    var parts = choice.split('||');
+    $('dish').textContent = parts[0];
+    $('note').textContent = parts.length > 1
+      ? parts[1] + '  ·  ' + ['barely cooking', 'a bit of work', 'a proper project'][parts[2] - 1] +
+        '  ·  chosen from ' + list.length + ' options'
+      : 'Chosen from ' + list.length + ' of your options.';
+    $('lbl').textContent = $('meal').value === 'breakfast' ? 'Breakfast is' :
+                           $('meal').value === 'lunch' ? 'Lunch is' : 'You are having';
+    $('out').hidden = false;
+    $('again').hidden = false;
+  }
+
+  $('sources').addEventListener('click', function(e){
+    var b = e.target.closest('button[data-src]'); if (!b) return;
+    src = b.getAttribute('data-src');
+    var btns = $('sources').querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) btns[i].setAttribute('aria-pressed', String(btns[i] === b));
+    $('pane-built').hidden = src !== 'built';
+    $('pane-own').hidden = src === 'built';
+  });
+  $('pick').addEventListener('click', pick);
+  $('again').addEventListener('click', pick);
+})();</script>
+</body>
+</html>
