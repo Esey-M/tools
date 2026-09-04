@@ -51,6 +51,17 @@ ${site.adsenseClient ? `<script async src="https://pagead2.googlesyndication.com
 <body>`;
 }
 
+/** A search input wired up by app.js. Several can coexist on one page. */
+export function searchBox(id, placeholder) {
+  const text = placeholder || `Search ${state.toolCount} tools\u2026`;
+  return `<div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="${id}" class="js-search" placeholder="${esc(text)}" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="${id}-results" aria-label="Search tools">
+      <div class="search-results" id="${id}-results" role="listbox" hidden></div>
+    </div>`;
+}
+
 function header(currentPath = '') {
   const isCurrent = (href) => (currentPath === href ? ' aria-current="page"' : '');
   return `<a class="skip" href="#main">Skip to content</a>
@@ -60,12 +71,7 @@ function header(currentPath = '') {
       <span class="brand-mark" aria-hidden="true">C</span>
       <span>${esc(site.name)}</span>
     </a>
-    <div class="search" role="search">
-      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
-      <input type="search" id="site-search" placeholder="Search 100+ tools…" autocomplete="off"
-             role="combobox" aria-expanded="false" aria-controls="search-results" aria-label="Search tools">
-      <div class="search-results" id="search-results" role="listbox" hidden></div>
-    </div>
+    ${searchBox('site-search')}
     <nav class="nav" aria-label="Main">
       <a class="hide-sm" href="${B}/tools/"${isCurrent('/tools/')}>All tools</a>
       <a class="hide-sm" href="${B}/blog/"${isCurrent('/blog/')}>Blog</a>

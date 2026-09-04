@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dice Roller – Roll D4, D6, D8, D10, D12 and D20 Online</title>
+<meta name="description" content="Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.">
+<link rel="canonical" href="https://cinchpad.com/dice-roller/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Dice Roller – Roll D4, D6, D8, D10, D12 and D20 Online">
+<meta property="og:description" content="Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.">
+<meta property="og:url" content="https://cinchpad.com/dice-roller/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dice Roller – Roll D4, D6, D8, D10, D12 and D20 Online">
+<meta name="twitter:description" content="Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.dice-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dice-list span{min-width:42px;height:42px;display:grid;place-items:center;padding:0 8px;
+  background:var(--bg-raised);border:1px solid var(--line);border-radius:9px;
+  font-weight:660;font-variant-numeric:tabular-nums;font-size:1.05rem}
+.dice-list span.max{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink)}
+.dice-list span.min{border-color:color-mix(in srgb,var(--danger) 45%,transparent);color:var(--danger)}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/dice-roller/#app","name":"Dice Roller","url":"https://cinchpad.com/dice-roller/","description":"Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Random Pickers","item":"https://cinchpad.com/category/random/"},{"@type":"ListItem","position":3,"name":"Dice Roller","item":"https://cinchpad.com/dice-roller/"}]},{"@type":"HowTo","name":"How to use the Dice Roller","description":"Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Choose your die type, from D4 up to D100.","url":"https://cinchpad.com/dice-roller/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Set how many dice to roll at once.","url":"https://cinchpad.com/dice-roller/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Add a modifier if your game calls for one — it is added to the total, not to each die.","url":"https://cinchpad.com/dice-roller/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Press Roll. Individual results are shown, with natural maximums and ones highlighted.","url":"https://cinchpad.com/dice-roller/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this dice roller fair?","acceptedAnswer":{"@type":"Answer","text":"Yes. It uses crypto.getRandomValues with rejection sampling, so each face has exactly equal probability with no modulo bias."}},{"@type":"Question","name":"Can I roll dice for Dungeons & Dragons?","acceptedAnswer":{"@type":"Answer","text":"Yes — every standard polyhedral die is here, along with a modifier field for adding your ability and proficiency bonuses. Natural 20s and natural 1s are highlighted automatically."}},{"@type":"Question","name":"How do I roll with advantage?","acceptedAnswer":{"@type":"Answer","text":"Roll 2d20 and take the higher of the two individual results shown. For disadvantage, take the lower. The total is not what you want in either case."}},{"@type":"Question","name":"How do I roll percentile dice?","acceptedAnswer":{"@type":"Answer","text":"Select D100 and roll one die. That is equivalent to the traditional d10 tens plus d10 units, giving a flat 1 to 100."}},{"@type":"Question","name":"Are physical dice biased?","acceptedAnswer":{"@type":"Answer","text":"Slightly. Standard pipped casino-grade dice are filled to compensate, but ordinary board game dice have drilled pips that remove a little material, marginally favouring the six. The effect is small, but a digital roll avoids it entirely."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 16 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/random/">Random Pickers</a></li><li><span aria-current="page">Dice Roller</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Dice Roller</h1>
+      <p class="lede">Pick your die, choose how many, add a modifier if you need one, and roll. Every individual result is shown, not just the total.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="field">
+  <span class="field-label" id="die-label">Die</span>
+  <div class="seg" role="group" aria-labelledby="die-label" id="dice" style="flex-wrap:wrap">
+    <button type="button" data-d="4">D4</button>
+    <button type="button" data-d="6" aria-pressed="true">D6</button>
+    <button type="button" data-d="8">D8</button>
+    <button type="button" data-d="10">D10</button>
+    <button type="button" data-d="12">D12</button>
+    <button type="button" data-d="20">D20</button>
+    <button type="button" data-d="100">D100</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="count">How many dice</label>
+    <input type="number" id="count" inputmode="numeric" min="1" max="50" step="1" value="2">
+  </div>
+  <div class="field">
+    <label for="mod">Modifier</label>
+    <input type="number" id="mod" inputmode="numeric" step="1" value="0" placeholder="+0">
+  </div>
+</div>
+
+<div class="btn-row">
+  <button type="button" class="btn btn-lg" id="roll">Roll</button>
+  <button type="button" class="btn btn-ghost" id="reset">Clear history</button>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label" id="lbl">Total</div>
+  <div class="result-value" id="total">—</div>
+  <div class="dice-list" id="list"></div>
+  <div class="result-note" id="note"></div>
+</div>
+<p class="hint" id="hist" style="margin-top:14px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How the rolls are generated</h2>
+      <div class="answer"><p><strong>Each die is rolled independently using your browser's cryptographic random number generator</strong>, with rejection sampling so every face is exactly equally likely. There is no seed, no pattern, and no server involvement. A physical die is subtly biased by manufacturing tolerances — pipped dice are famously slightly weighted towards the six, because the drilled pips remove material from that face — so a digital roll is, if anything, fairer.</p></div>
+    </section>
+
+    <section class="section prose" id="probability">
+      <h2 id="probability-h">Why 2d6 is not the same as 1d12</h2>
+      <p>Both produce a range, but the shapes are completely different. One twelve-sided die is uniform — every result from 1 to 12 is equally likely. Two six-sided dice cluster hard around 7.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Total on 2d6</th><th>Ways to roll it</th><th>Probability</th></tr></thead>
+<tbody>
+<tr><td>2 or 12</td><td>1</td><td>2.8%</td></tr>
+<tr><td>3 or 11</td><td>2</td><td>5.6%</td></tr>
+<tr><td>4 or 10</td><td>3</td><td>8.3%</td></tr>
+<tr><td>5 or 9</td><td>4</td><td>11.1%</td></tr>
+<tr><td>6 or 8</td><td>5</td><td>13.9%</td></tr>
+<tr><td>7</td><td>6</td><td>16.7%</td></tr>
+</tbody></table></div>
+<p>Seven comes up six times more often than two. This is why board games that use 2d6 feel predictable while a d12 feels wild, even though both span a similar range.</p>
+    </section>
+<section class="section prose" id="reference">
+      <h2 id="reference-h">Common dice and their averages</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Die</th><th>Range</th><th>Average roll</th><th>Typically used for</th></tr></thead>
+<tbody>
+<tr><td>D4</td><td>1–4</td><td>2.5</td><td>Small damage rolls</td></tr>
+<tr><td>D6</td><td>1–6</td><td>3.5</td><td>Board games, most damage rolls</td></tr>
+<tr><td>D8</td><td>1–8</td><td>4.5</td><td>Weapon damage</td></tr>
+<tr><td>D10</td><td>1–10</td><td>5.5</td><td>Percentile tens, damage</td></tr>
+<tr><td>D12</td><td>1–12</td><td>6.5</td><td>Heavy weapon damage</td></tr>
+<tr><td>D20</td><td>1–20</td><td>10.5</td><td>Attack rolls, skill checks</td></tr>
+<tr><td>D100</td><td>1–100</td><td>50.5</td><td>Percentage outcomes, loot tables</td></tr>
+</tbody></table></div>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Dice Roller</h2>
+  <ol class="prose"><li>Choose your die type, from D4 up to D100.</li><li>Set how many dice to roll at once.</li><li>Add a modifier if your game calls for one — it is added to the total, not to each die.</li><li>Press Roll. Individual results are shown, with natural maximums and ones highlighted.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>Is this dice roller fair?</summary>
+    <div><p>Yes. It uses <code>crypto.getRandomValues</code> with rejection sampling, so each face has exactly equal probability with no modulo bias.</p></div>
+  </details>
+  <details>
+    <summary>Can I roll dice for Dungeons &amp; Dragons?</summary>
+    <div><p>Yes — every standard polyhedral die is here, along with a modifier field for adding your ability and proficiency bonuses. Natural 20s and natural 1s are highlighted automatically.</p></div>
+  </details>
+  <details>
+    <summary>How do I roll with advantage?</summary>
+    <div><p>Roll 2d20 and take the higher of the two individual results shown. For disadvantage, take the lower. The total is not what you want in either case.</p></div>
+  </details>
+  <details>
+    <summary>How do I roll percentile dice?</summary>
+    <div><p>Select D100 and roll one die. That is equivalent to the traditional d10 tens plus d10 units, giving a flat 1 to 100.</p></div>
+  </details>
+  <details>
+    <summary>Are physical dice biased?</summary>
+    <div><p>Slightly. Standard pipped casino-grade dice are filled to compensate, but ordinary board game dice have drilled pips that remove a little material, marginally favouring the six. The effect is small, but a digital roll avoids it entirely.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/coin-flip/">
+      <strong>Coin Flip</strong>
+      <span>Flip a fair virtual coin, one at a time or hundreds at once.</span>
+    </a>
+    <a class="tool-card" href="/random-number-generator/">
+      <strong>Random Number Generator</strong>
+      <span>Generate one number or many, in any range, with or without duplicates.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More random pickers</h2>
+      <ul class="side-list">
+        <li><a href="/coin-flip/">Coin Flip</a></li>
+        <li><a href="/random-number-generator/">Random Number Generator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/random/" style="font-size:.88rem">All random pickers →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><a href="/category/text/">Text &amp; Documents</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var sides = 6;
+  var history = [];
+
+  function randInt(max){
+    var limit = Math.floor(4294967296 / max) * max;
+    var buf = new Uint32Array(1), v;
+    do { crypto.getRandomValues(buf); v = buf[0]; } while (v >= limit);
+    return 1 + (v % max);
+  }
+
+  function roll(){
+    var n = Math.max(1, Math.min(50, parseInt($('count').value, 10) || 1));
+    var mod = parseInt($('mod').value, 10) || 0;
+    var rolls = [];
+    for (var i = 0; i < n; i++) rolls.push(randInt(sides));
+    var sum = rolls.reduce(function(a, b){ return a + b; }, 0);
+    var total = sum + mod;
+
+    $('total').textContent = total.toLocaleString('en-US');
+    $('lbl').textContent = n + 'd' + sides + (mod ? (mod > 0 ? ' + ' + mod : ' − ' + Math.abs(mod)) : '');
+    $('list').innerHTML = rolls.map(function(r){
+      var cls = r === sides ? ' class="max"' : (r === 1 && sides > 1 ? ' class="min"' : '');
+      return '<span' + cls + '>' + r + '</span>';
+    }).join('');
+    $('note').textContent = n > 1
+      ? 'Dice total ' + sum + (mod ? ', modifier ' + (mod > 0 ? '+' : '') + mod : '') +
+        '  ·  highest ' + Math.max.apply(null, rolls) + ', lowest ' + Math.min.apply(null, rolls)
+      : (mod ? 'Rolled ' + rolls[0] + ', modifier ' + (mod > 0 ? '+' : '') + mod : 'Possible range 1–' + sides);
+    $('out').hidden = false;
+
+    history.unshift(n + 'd' + sides + (mod ? (mod > 0 ? '+' + mod : mod) : '') + ' → ' + total);
+    $('hist').textContent = 'Recent rolls: ' + history.slice(0, 8).join('  ·  ');
+  }
+
+  $('dice').addEventListener('click', function(e){
+    var b = e.target.closest('button[data-d]'); if (!b) return;
+    sides = parseInt(b.getAttribute('data-d'), 10);
+    var btns = $('dice').querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) btns[i].setAttribute('aria-pressed', String(btns[i] === b));
+    roll();
+  });
+  $('roll').addEventListener('click', roll);
+  $('reset').addEventListener('click', function(){ history = []; $('hist').textContent = ''; });
+})();</script>
+</body>
+</html>

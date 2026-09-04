@@ -135,6 +135,7 @@ async function main() {
 
   // Shared chrome must only link to category pages that will be generated.
   state.liveCategories = categories.filter((c) => categoryTools[c.slug].length);
+  state.toolCount = tools.length;
 
   const popular = POPULAR.filter((s) => bySlug[s]);
   // Top up the popular row if some flagship tools are not built yet.

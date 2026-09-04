@@ -1,5 +1,5 @@
 import { site, categories, categoryBySlug } from '../config.js';
-import { layout, adSlot, breadcrumbs } from './layout.js';
+import { layout, adSlot, breadcrumbs, searchBox } from './layout.js';
 import { esc, formatDate } from '../lib/html.js';
 import * as seo from '../lib/seo.js';
 
@@ -25,11 +25,7 @@ export function renderHome(ctx) {
 <section class="hero">
   <h1>${tools.length} free tools for everyday life</h1>
   <p>Calculators, converters and file tools that load fast, work on your phone, and never ask you to sign up. Everything runs in your browser.</p>
-  <div class="search" role="search">
-    <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
-    <input type="search" placeholder="What do you need to work out?" aria-label="Search tools"
-           onfocus="document.getElementById('site-search').focus()" readonly>
-  </div>
+  ${searchBox('hero-search', 'What do you need to work out?')}
   <div class="pills">
     ${popular.slice(0, 6).map((t) => `<a class="pill" href="${B}/${t.slug}/">${esc(t.h1 || t.title)}</a>`).join('')}
   </div>

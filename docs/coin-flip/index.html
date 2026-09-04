@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coin Flip – Heads or Tails Online</title>
+<meta name="description" content="Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.">
+<link rel="canonical" href="https://cinchpad.com/coin-flip/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Coin Flip – Heads or Tails Online">
+<meta property="og:description" content="Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.">
+<meta property="og:url" content="https://cinchpad.com/coin-flip/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Coin Flip – Heads or Tails Online">
+<meta name="twitter:description" content="Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.coin-stage{display:grid;place-items:center;gap:14px;padding:14px 0 6px}
+.coin{width:118px;height:118px;position:relative;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.3,.8,.4,1)}
+.coin-face{position:absolute;inset:0;display:grid;place-items:center;border-radius:50%;
+  font-size:2.9rem;font-weight:750;color:#6b4f12;backface-visibility:hidden;
+  background:radial-gradient(circle at 32% 28%,#fbe9a8,#e6c25c 55%,#c99a2e);
+  box-shadow:inset 0 0 0 5px rgba(255,255,255,.35),0 6px 16px -6px rgba(0,0,0,.4)}
+.coin-t{transform:rotateY(180deg)}
+.coin.is-tails{transform:rotateY(180deg)}
+.coin.spin{transition:transform 1s cubic-bezier(.3,.9,.35,1)}
+.coin-result{font-size:1.5rem;font-weight:660;letter-spacing:-.02em;min-height:1.4em}
+@media (prefers-reduced-motion: reduce){.coin{transition:none}}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/coin-flip/#app","name":"Coin Flip","url":"https://cinchpad.com/coin-flip/","description":"Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Random Pickers","item":"https://cinchpad.com/category/random/"},{"@type":"ListItem","position":3,"name":"Coin Flip","item":"https://cinchpad.com/coin-flip/"}]},{"@type":"HowTo","name":"How to use the Coin Flip","description":"Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Press Flip the coin for a single heads-or-tails result.","url":"https://cinchpad.com/coin-flip/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Use Flip 10 to run ten flips at once and watch the tally.","url":"https://cinchpad.com/coin-flip/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"The running count and heads percentage update as you go.","url":"https://cinchpad.com/coin-flip/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this coin flip really 50/50?","acceptedAnswer":{"@type":"Answer","text":"Yes. It reads a cryptographically secure random byte and tests a single bit, which is exactly even. There is no weighting and no hidden pattern."}},{"@type":"Question","name":"Can I use it to settle a bet?","acceptedAnswer":{"@type":"Answer","text":"For anything informal, absolutely. Because the result is generated on your own device, both parties should be watching the same screen — a flip you report from another room proves nothing."}},{"@type":"Question","name":"Are real coins actually biased?","acceptedAnswer":{"@type":"Answer","text":"Slightly. Research led by Persi Diaconis found that a spinning coin caught in the hand favours its starting face about 51% of the time. Spinning a coin on a table can be much more biased still, depending on the coin’s edge."}},{"@type":"Question","name":"Does the tally reset when I reload?","acceptedAnswer":{"@type":"Answer","text":"Yes. Nothing is stored — reloading or closing the page clears the count entirely."}},{"@type":"Question","name":"Why did I get eight heads in a row?","acceptedAnswer":{"@type":"Answer","text":"Because that happens. In a long session, runs of six, seven or eight are expected rather than surprising. See the streak table above."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 16 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/random/">Random Pickers</a></li><li><span aria-current="page">Coin Flip</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Coin Flip</h1>
+      <p class="lede">A fair 50/50 flip, decided by your browser’s secure random number generator. No coin required.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="coin-stage">
+  <div class="coin" id="coin" data-face="heads" aria-hidden="true">
+    <span class="coin-face coin-h">H</span>
+    <span class="coin-face coin-t">T</span>
+  </div>
+  <p class="coin-result" id="result" aria-live="polite">Ready to flip</p>
+</div>
+
+<div class="btn-row" style="justify-content:center">
+  <button type="button" class="btn btn-lg" id="flip">Flip the coin</button>
+  <button type="button" class="btn btn-ghost" id="flip10">Flip 10</button>
+  <button type="button" class="btn btn-ghost" id="reset">Reset tally</button>
+</div>
+
+<dl class="result-grid" style="margin-top:22px">
+  <div class="stat"><dt>Heads</dt><dd id="h">0</dd></div>
+  <div class="stat"><dt>Tails</dt><dd id="t">0</dd></div>
+  <div class="stat"><dt>Flips</dt><dd id="n">0</dd></div>
+  <div class="stat"><dt>Heads share</dt><dd id="pct">—</dd></div>
+</dl>
+<p class="hint" id="hist" style="margin-top:12px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">Is a virtual coin flip actually fair?</h2>
+      <div class="answer"><p><strong>Yes — arguably fairer than a real coin.</strong> This flip reads a random byte from your browser's cryptographic random source and checks whether it is even or odd, giving exactly 50% for each outcome. A physical coin is very slightly biased: a well-known Stanford analysis found that a coin caught in the hand lands on the same face it started about 51% of the time, because of the way it precesses in flight. A digital flip has no such wobble.</p></div>
+    </section>
+
+    <section class="section prose" id="streaks">
+      <h2 id="streaks-h">Why long streaks are normal</h2>
+      <p>People assume a fair coin should alternate. It does not, and streaks appear far more often than intuition suggests.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>In 100 flips</th><th>Probability of seeing it</th></tr></thead>
+<tbody>
+<tr><td>A run of 5 in a row</td><td>~97%</td></tr>
+<tr><td>A run of 6 in a row</td><td>~80%</td></tr>
+<tr><td>A run of 7 in a row</td><td>~54%</td></tr>
+<tr><td>A run of 10 in a row</td><td>~5%</td></tr>
+</tbody></table></div>
+<p>A run of six identical results in a hundred flips is more likely than not. If a sequence of coin flips looks suspiciously "random" — neatly alternating, no long runs — that is usually a sign it was made up by a human rather than generated.</p>
+    </section>
+<section class="section prose" id="gamblers-fallacy">
+      <h2 id="gamblers-fallacy-h">The coin has no memory</h2>
+      <p>After five heads in a row, tails is <strong>not</strong> more likely. The next flip is still exactly 50/50, because the coin carries no record of what came before. Believing otherwise is the gambler's fallacy, and it is one of the most persistent errors in everyday probability reasoning.</p>
+<p>What confuses people is <em>regression to the mean</em>, which is real but different. Over thousands of flips the overall proportion does drift towards 50%, not because past results get corrected, but because they get diluted by the sheer volume of new flips.</p>
+<p>Flip 10 times and landing 7 heads is unremarkable. Flip 10,000 times and 7,000 heads would be extraordinary — not because the coin evened itself out, but because the early imbalance became statistically insignificant.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Coin Flip</h2>
+  <ol class="prose"><li>Press <strong>Flip the coin</strong> for a single heads-or-tails result.</li><li>Use <strong>Flip 10</strong> to run ten flips at once and watch the tally.</li><li>The running count and heads percentage update as you go.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>Is this coin flip really 50/50?</summary>
+    <div><p>Yes. It reads a cryptographically secure random byte and tests a single bit, which is exactly even. There is no weighting and no hidden pattern.</p></div>
+  </details>
+  <details>
+    <summary>Can I use it to settle a bet?</summary>
+    <div><p>For anything informal, absolutely. Because the result is generated on your own device, both parties should be watching the same screen — a flip you report from another room proves nothing.</p></div>
+  </details>
+  <details>
+    <summary>Are real coins actually biased?</summary>
+    <div><p>Slightly. Research led by Persi Diaconis found that a spinning coin caught in the hand favours its starting face about 51% of the time. Spinning a coin on a table can be much more biased still, depending on the coin’s edge.</p></div>
+  </details>
+  <details>
+    <summary>Does the tally reset when I reload?</summary>
+    <div><p>Yes. Nothing is stored — reloading or closing the page clears the count entirely.</p></div>
+  </details>
+  <details>
+    <summary>Why did I get eight heads in a row?</summary>
+    <div><p>Because that happens. In a long session, runs of six, seven or eight are expected rather than surprising. See the streak table above.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/dice-roller/">
+      <strong>Dice Roller</strong>
+      <span>Roll any number of dice, from a single D6 to a fistful of D20s.</span>
+    </a>
+    <a class="tool-card" href="/random-number-generator/">
+      <strong>Random Number Generator</strong>
+      <span>Generate one number or many, in any range, with or without duplicates.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More random pickers</h2>
+      <ul class="side-list">
+        <li><a href="/dice-roller/">Dice Roller</a></li>
+        <li><a href="/random-number-generator/">Random Number Generator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/random/" style="font-size:.88rem">All random pickers →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li><li><a href="/category/text/">Text &amp; Documents</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var heads = 0, tails = 0, turns = 0;
+  var recent = [];
+  var coin = $('coin');
+
+  function flipOnce(){
+    var buf = new Uint8Array(1);
+    crypto.getRandomValues(buf);
+    return (buf[0] & 1) === 0 ? 'heads' : 'tails';
+  }
+
+  function updateStats(){
+    $('h').textContent = heads;
+    $('t').textContent = tails;
+    $('n').textContent = heads + tails;
+    $('pct').textContent = (heads + tails) ? (heads / (heads + tails) * 100).toFixed(1) + '%' : '—';
+    $('hist').textContent = recent.length
+      ? 'Recent: ' + recent.slice(-24).map(function(r){ return r === 'heads' ? 'H' : 'T'; }).join(' ')
+      : '';
+  }
+
+  function show(face, spins){
+    turns += spins;
+    coin.style.transform = 'rotateY(' + (turns * 180) + 'deg)';
+    // Land on the correct face: even half-turns show heads, odd show tails.
+    if ((turns % 2 === 0) !== (face === 'heads')) {
+      turns += 1;
+      coin.style.transform = 'rotateY(' + (turns * 180) + 'deg)';
+    }
+    $('result').textContent = face === 'heads' ? 'Heads' : 'Tails';
+  }
+
+  $('flip').addEventListener('click', function(){
+    var face = flipOnce();
+    if (face === 'heads') heads++; else tails++;
+    recent.push(face);
+    show(face, 5);
+    updateStats();
+  });
+
+  $('flip10').addEventListener('click', function(){
+    var last = 'heads';
+    for (var i = 0; i < 10; i++) {
+      last = flipOnce();
+      if (last === 'heads') heads++; else tails++;
+      recent.push(last);
+    }
+    show(last, 7);
+    $('result').textContent = 'Flipped 10 — last was ' + (last === 'heads' ? 'heads' : 'tails');
+    updateStats();
+  });
+
+  $('reset').addEventListener('click', function(){
+    heads = tails = 0; recent = [];
+    $('result').textContent = 'Ready to flip';
+    updateStats();
+  });
+
+  updateStats();
+})();</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 10 browser-based utilities for
+CinchPad is a free, ad-supported collection of 16 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -10,15 +10,23 @@ uploaded or stored. No account is required and every tool is free to use.
 
 ### Calculators
 - [Age Calculator](https://cinchpad.com/age-calculator/): Free age calculator. Enter your date of birth for your exact age in years, months and days, your total days and hours, and a countdown to your next birthday.
+- [Compound Interest Calculator](https://cinchpad.com/compound-interest-calculator/): Free compound interest calculator. See how savings grow with regular contributions, any compounding frequency, and a year-by-year breakdown of interest earned.
 - [Date Difference Calculator](https://cinchpad.com/date-difference-calculator/): Free date difference calculator. Find the number of days, weeks, months and years between two dates, plus the count of working days excluding weekends.
 - [Discount Calculator](https://cinchpad.com/discount-calculator/): Free discount calculator. Enter a price and percentage off to see the sale price and what you save. Handles stacked discounts and sales tax too.
 - [Loan Calculator](https://cinchpad.com/loan-calculator/): Free loan and EMI calculator. Enter the amount, interest rate and term to see your monthly payment, the total interest you will pay, and the full cost of the loan.
 - [Percentage Calculator](https://cinchpad.com/percentage-calculator/): Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.
 - [Tip Calculator](https://cinchpad.com/tip-calculator/): Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.
 ### Converters
+- [Temperature Converter](https://cinchpad.com/temperature-converter/): Free temperature converter for Celsius, Fahrenheit and Kelvin. Type any one value and see all three at once, with a reference chart of everyday temperatures.
 - [Unit Converter](https://cinchpad.com/unit-converter/): Free unit converter for length, weight, volume, area, speed, temperature, time and digital storage. Metric to imperial and back, with exact conversion factors.
+### Random Pickers
+- [Coin Flip](https://cinchpad.com/coin-flip/): Free online coin flip. Get heads or tails instantly with a fair 50/50 result, flip many coins at once, and see the running tally of your results.
+- [Dice Roller](https://cinchpad.com/dice-roller/): Free online dice roller for D4, D6, D8, D10, D12, D20 and D100. Roll several dice at once, add a modifier, and see every individual result plus the total.
+- [Random Number Generator](https://cinchpad.com/random-number-generator/): Free random number generator. Pick one number or many from any range, with optional no-repeats and sorting. Uses secure browser randomness.
 ### Health & Body
 - [BMI Calculator](https://cinchpad.com/bmi-calculator/): Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.
+### Text & Documents
+- [Word Counter](https://cinchpad.com/word-counter/): Free word counter. Paste your text for instant word, character, sentence and paragraph counts, reading time, and a check against social media limits.
 ### Generators
 - [Password Generator](https://cinchpad.com/password-generator/): Free strong password generator. Create random passwords or memorable passphrases with a live strength estimate, generated entirely in your browser.
 - [QR Code Generator](https://cinchpad.com/qr-code-generator/): Free QR code generator with no watermark, no signup and no expiry. Create QR codes for links, WiFi networks, email and phone numbers, then download as PNG or SVG.
