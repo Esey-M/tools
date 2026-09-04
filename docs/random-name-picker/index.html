@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Random Name Picker – Pick a Winner From a List</title>
+<meta name="description" content="Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.">
+<link rel="canonical" href="https://cinchpad.com/random-name-picker/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Random Name Picker – Pick a Winner From a List">
+<meta property="og:description" content="Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.">
+<meta property="og:url" content="https://cinchpad.com/random-name-picker/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Random Name Picker – Pick a Winner From a List">
+<meta name="twitter:description" content="Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.pw-opts{display:grid;gap:8px}
+.pw-opts label{display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--ink-2);cursor:pointer}
+.pw-opts input{width:auto}
+.win-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.win-list span{background:var(--bg-raised);border:1px solid var(--line);border-radius:999px;
+  padding:6px 14px;font-weight:580;font-size:.95rem}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/random-name-picker/#app","name":"Random Name Picker","url":"https://cinchpad.com/random-name-picker/","description":"Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Random Pickers","item":"https://cinchpad.com/category/random/"},{"@type":"ListItem","position":3,"name":"Random Name Picker","item":"https://cinchpad.com/random-name-picker/"}]},{"@type":"HowTo","name":"How to use the Random Name Picker","description":"Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Paste your names into the box, one per line.","url":"https://cinchpad.com/random-name-picker/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Set how many winners you need.","url":"https://cinchpad.com/random-name-picker/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Tick remove winners if you are drawing several prizes in sequence.","url":"https://cinchpad.com/random-name-picker/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Press Pick a winner .","url":"https://cinchpad.com/random-name-picker/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the picker actually random?","acceptedAnswer":{"@type":"Answer","text":"Yes. It draws from your browser’s cryptographically secure random source and uses an unbiased shuffle algorithm, so every name and every ordering is equally likely."}},{"@type":"Question","name":"Can the same name win twice?","acceptedAnswer":{"@type":"Answer","text":"Not within a single draw — picking three winners always gives three different entries. Across separate draws it can, unless you tick \"remove winners from the list\"."}},{"@type":"Question","name":"How do I handle duplicate entries?","acceptedAnswer":{"@type":"Answer","text":"Leave \"ignore duplicate names\" ticked to give each person one chance regardless of how many times they appear. Untick it if repeated entries are meant to improve someone’s odds, as with earned raffle tickets."}},{"@type":"Question","name":"Is there a limit on list size?","acceptedAnswer":{"@type":"Answer","text":"No practical limit. Lists of many thousands of names work fine, since everything runs locally."}},{"@type":"Question","name":"Are the names uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The list stays in your browser and is discarded when you close the page."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 29 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/random/">Random Pickers</a></li><li><span aria-current="page">Random Name Picker</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Random Name Picker</h1>
+      <p class="lede">Paste your list — one name per line — and draw. Uses your browser’s secure random source, so every name has an equal chance.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="field">
+  <label for="names">Names, one per line</label>
+  <textarea id="names" rows="8" placeholder="Alex&#10;Blake&#10;Casey&#10;Devon&#10;Emerson" style="min-height:165px"></textarea>
+  <span class="hint" id="count">0 names</span>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="winners">How many to pick</label>
+    <input type="number" id="winners" inputmode="numeric" min="1" max="100" step="1" value="1">
+  </div>
+  <div class="field">
+    <span class="field-label">Options</span>
+    <div class="pw-opts">
+      <label><input type="checkbox" id="dedupe" checked> Ignore duplicate names</label>
+      <label><input type="checkbox" id="remove"> Remove winners from the list</label>
+    </div>
+  </div>
+</div>
+
+<div class="btn-row">
+  <button type="button" class="btn btn-lg" id="draw">Pick a winner</button>
+  <button type="button" class="btn btn-ghost" id="shuffle">Shuffle whole list</button>
+  <button type="button" class="btn btn-ghost" id="clear">Clear</button>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label" id="lbl">Winner</div>
+  <div class="result-value" id="winner">—</div>
+  <div class="win-list" id="list"></div>
+  <div class="result-note" id="note"></div>
+</div>
+<p class="notice notice-warn" id="err" hidden style="margin-top:14px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How the draw stays fair</h2>
+      <div class="answer"><p><strong>Every name has exactly the same chance, and picking several never favours the top of your list.</strong> The tool uses a partial Fisher–Yates shuffle driven by <code>crypto.getRandomValues</code>, which is the standard way to select without replacement without introducing bias. A common naive approach — sorting the list by a random number, or repeatedly picking an index and splicing it out — subtly favours certain positions. This does not. Nothing is uploaded, so the draw happens entirely on your device.</p></div>
+    </section>
+
+    <section class="section prose" id="giveaway">
+      <h2 id="giveaway-h">Running a giveaway people will trust</h2>
+      <p>Because the draw happens on your device, nobody else can verify it after the fact. If the prize matters, make the process visible instead.</p>
+<ul>
+<li><strong>Publish the entry list first</strong>, or its length, before drawing.</li>
+<li><strong>Record the screen</strong> while you paste the list and press the button. A continuous recording is far more convincing than a screenshot of the result.</li>
+<li><strong>Draw live</strong> if you can — a stream removes the question entirely.</li>
+<li><strong>State the rules in advance</strong>: how duplicates are handled, whether one person can win twice, and what happens if a winner does not respond.</li>
+</ul>
+<p>For anything with legal or regulatory weight — a prize promotion with significant value, or anything classed as a lottery — use a service that provides an audit trail. This tool is designed for informal draws.</p>
+    </section>
+<section class="section prose" id="classroom">
+      <h2 id="classroom-h">Using it in a classroom</h2>
+      <p>Cold-calling from a random picker is a well-established technique for spreading participation, but two adjustments make it work much better in practice.</p>
+<p>First, turn <strong>remove winners</strong> on. Without it, the same few students get picked repeatedly by chance, which feels arbitrary and lets the rest disengage. Removing each name as it comes up guarantees everyone is asked once before anyone is asked twice.</p>
+<p>Second, give thinking time before revealing the name. Asking the question, pausing, and only then drawing means the whole class prepares an answer rather than only the person selected.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Random Name Picker</h2>
+  <ol class="prose"><li>Paste your names into the box, one per line.</li><li>Set how many winners you need.</li><li>Tick <strong>remove winners</strong> if you are drawing several prizes in sequence.</li><li>Press <strong>Pick a winner</strong>.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>Is the picker actually random?</summary>
+    <div><p>Yes. It draws from your browser’s cryptographically secure random source and uses an unbiased shuffle algorithm, so every name and every ordering is equally likely.</p></div>
+  </details>
+  <details>
+    <summary>Can the same name win twice?</summary>
+    <div><p>Not within a single draw — picking three winners always gives three different entries. Across separate draws it can, unless you tick "remove winners from the list".</p></div>
+  </details>
+  <details>
+    <summary>How do I handle duplicate entries?</summary>
+    <div><p>Leave "ignore duplicate names" ticked to give each person one chance regardless of how many times they appear. Untick it if repeated entries are meant to improve someone’s odds, as with earned raffle tickets.</p></div>
+  </details>
+  <details>
+    <summary>Is there a limit on list size?</summary>
+    <div><p>No practical limit. Lists of many thousands of names work fine, since everything runs locally.</p></div>
+  </details>
+  <details>
+    <summary>Are the names uploaded anywhere?</summary>
+    <div><p>No. The list stays in your browser and is discarded when you close the page.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/random-number-generator/">
+      <strong>Random Number Generator</strong>
+      <span>Generate one number or many, in any range, with or without duplicates.</span>
+    </a>
+    <a class="tool-card" href="/coin-flip/">
+      <strong>Coin Flip</strong>
+      <span>Flip a fair virtual coin, one at a time or hundreds at once.</span>
+    </a>
+    <a class="tool-card" href="/dice-roller/">
+      <strong>Dice Roller</strong>
+      <span>Roll any number of dice, from a single D6 to a fistful of D20s.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More random pickers</h2>
+      <ul class="side-list">
+        <li><a href="/coin-flip/">Coin Flip</a></li>
+        <li><a href="/dice-roller/">Dice Roller</a></li>
+        <li><a href="/random-number-generator/">Random Number Generator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/random/" style="font-size:.88rem">All random pickers →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+
+  function randInt(max){
+    var limit = Math.floor(4294967296 / max) * max;
+    var buf = new Uint32Array(1), v;
+    do { crypto.getRandomValues(buf); v = buf[0]; } while (v >= limit);
+    return v % max;
+  }
+
+  function getNames(){
+    var raw = $('names').value.split('\n')
+      .map(function(s){ return s.trim(); })
+      .filter(function(s){ return s.length; });
+    if ($('dedupe').checked) {
+      var seen = {}, out = [];
+      raw.forEach(function(n){
+        var key = n.toLowerCase();
+        if (!seen[key]) { seen[key] = 1; out.push(n); }
+      });
+      return out;
+    }
+    return raw;
+  }
+
+  function updateCount(){
+    var n = getNames().length;
+    $('count').textContent = n + (n === 1 ? ' name' : ' names') +
+      ($('dedupe').checked ? ' after removing duplicates' : '');
+  }
+
+  function draw(){
+    var names = getNames();
+    var want = Math.max(1, Math.min(100, parseInt($('winners').value, 10) || 1));
+    var err = $('err');
+
+    if (names.length === 0) {
+      err.hidden = false; err.textContent = 'Add some names first — one per line.';
+      $('out').hidden = true; return;
+    }
+    if (want > names.length) {
+      err.hidden = false;
+      err.textContent = 'You asked for ' + want + ' winners but there are only ' + names.length + ' names.';
+      $('out').hidden = true; return;
+    }
+    err.hidden = true;
+
+    // Partial Fisher-Yates: unbiased selection without replacement.
+    var pool = names.slice();
+    var picked = [];
+    for (var i = 0; i < want; i++) {
+      var j = i + randInt(pool.length - i);
+      var t = pool[i]; pool[i] = pool[j]; pool[j] = t;
+      picked.push(pool[i]);
+    }
+
+    if (picked.length === 1) {
+      $('winner').textContent = picked[0];
+      $('winner').hidden = false; $('list').hidden = true;
+      $('lbl').textContent = 'Winner';
+    } else {
+      $('winner').hidden = true; $('list').hidden = false;
+      $('list').innerHTML = picked.map(function(p){
+        return '<span>' + p.replace(/[<>&]/g, '') + '</span>';
+      }).join('');
+      $('lbl').textContent = picked.length + ' winners';
+    }
+    $('note').textContent = 'Drawn from ' + names.length + ' names. Each had a 1 in ' + names.length + ' chance.';
+    $('out').hidden = false;
+
+    if ($('remove').checked) {
+      var remaining = names.filter(function(n){ return picked.indexOf(n) === -1; });
+      $('names').value = remaining.join('\n');
+      updateCount();
+    }
+  }
+
+  $('draw').addEventListener('click', draw);
+  $('shuffle').addEventListener('click', function(){
+    var names = getNames();
+    if (names.length < 2) return;
+    for (var i = names.length - 1; i > 0; i--) {
+      var j = randInt(i + 1);
+      var t = names[i]; names[i] = names[j]; names[j] = t;
+    }
+    $('names').value = names.join('\n');
+    $('winner').hidden = true; $('list').hidden = false;
+    $('list').innerHTML = names.map(function(p, i){
+      return '<span>' + (i + 1) + '. ' + p.replace(/[<>&]/g, '') + '</span>';
+    }).join('');
+    $('lbl').textContent = 'Shuffled order';
+    $('note').textContent = 'Every ordering was equally likely.';
+    $('out').hidden = false;
+    $('err').hidden = true;
+  });
+  $('clear').addEventListener('click', function(){
+    $('names').value = ''; updateCount(); $('out').hidden = true; $('err').hidden = true;
+  });
+  $('names').addEventListener('input', updateCount);
+  $('dedupe').addEventListener('change', updateCount);
+  updateCount();
+})();</script>
+</body>
+</html>
