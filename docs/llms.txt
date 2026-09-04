@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 55 browser-based utilities for
+CinchPad is a free, ad-supported collection of 57 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -20,6 +20,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Mortgage Calculator](https://cinchpad.com/mortgage-calculator/): Free mortgage calculator. Work out your full monthly payment including property tax, home insurance, PMI and HOA fees, plus total interest over the loan.
 - [Overtime Pay Calculator](https://cinchpad.com/overtime-pay-calculator/): Free overtime pay calculator. Work out time and a half, double time and total weekly pay from your hourly rate and hours worked, including a daily breakdown.
 - [Percentage Calculator](https://cinchpad.com/percentage-calculator/): Free percentage calculator. Work out what X% of a number is, what percentage one number is of another, and the percentage increase or decrease between two values.
+- [Pregnancy Due Date Calculator](https://cinchpad.com/pregnancy-due-date-calculator/): Free pregnancy due date calculator. Work out your estimated due date from your last period, conception date or IVF transfer, with trimester dates and milestones.
 - [Salary Calculator](https://cinchpad.com/salary-calculator/): Free salary calculator. Convert between hourly, daily, weekly, monthly and annual pay, adjust for holiday and part-time hours, and compare two offers.
 - [Sales Tax Calculator](https://cinchpad.com/sales-tax-calculator/): Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.
 - [Tip Calculator](https://cinchpad.com/tip-calculator/): Free tip calculator and bill splitter. Enter the bill and tip percentage to see the tip, the total, and exactly what each person owes.
@@ -28,6 +29,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Roman Numeral Converter](https://cinchpad.com/roman-numeral-converter/): Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.
 - [Speed Converter](https://cinchpad.com/speed-converter/): Free speed converter for mph, km/h, m/s, feet per second and knots, with running pace per mile and per kilometre shown alongside.
 - [Temperature Converter](https://cinchpad.com/temperature-converter/): Free temperature converter for Celsius, Fahrenheit and Kelvin. Type any one value and see all three at once, with a reference chart of everyday temperatures.
+- [Time Zone Converter](https://cinchpad.com/time-zone-converter/): Free time zone converter. Pick a time and see it across several cities at once, with daylight saving handled and working-hours overlap highlighted.
 - [Unit Converter](https://cinchpad.com/unit-converter/): Free unit converter for length, weight, volume, area, speed, temperature, time and digital storage. Metric to imperial and back, with exact conversion factors.
 ### File & Image Tools
 - [Image Compressor](https://cinchpad.com/image-compressor/): Free image compressor. Reduce JPG, PNG and WebP file sizes for email or web uploads, with a live quality preview. Runs in your browser — no upload, no waiting.
