@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wheel of Names – Spin to Pick a Winner</title>
+<meta name="description" content="Free spinning wheel picker. Add names, spin the wheel and get a random winner, with an option to remove each winner as it is drawn. No signup.">
+<link rel="canonical" href="https://cinchpad.com/wheel-of-names/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Wheel of Names – Spin to Pick a Winner">
+<meta property="og:description" content="Free spinning wheel picker. Add names, spin the wheel and get a random winner, with an option to remove each winner as it is drawn. No signup.">
+<meta property="og:url" content="https://cinchpad.com/wheel-of-names/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wheel of Names – Spin to Pick a Winner">
+<meta name="twitter:description" content="Free spinning wheel picker. Add names, spin the wheel and get a random winner, with an option to remove each winner as it is drawn. No signup.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.wheel-layout{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:26px;align-items:start}
+@media (max-width:720px){.wheel-layout{grid-template-columns:1fr}}
+.wheel-stage{position:relative;display:grid;place-items:center}
+.wheel-stage canvas{width:100%;max-width:440px;height:auto;display:block}
+.wheel-pointer{position:absolute;top:-2px;left:50%;transform:translateX(-50%);
+  width:0;height:0;border-left:13px solid transparent;border-right:13px solid transparent;
+  border-top:24px solid var(--ink);filter:drop-shadow(0 2px 3px rgba(0,0,0,.3));z-index:2}
+.wheel-hub{position:absolute;width:86px;height:86px;border-radius:50%;border:4px solid var(--bg-raised);
+  background:var(--accent);color:#fff;font-size:1rem;font-weight:700;cursor:pointer;
+  box-shadow:0 3px 12px rgba(0,0,0,.25);letter-spacing:.02em}
+.wheel-hub:hover{background:var(--accent-hover)}
+.wheel-hub:disabled{opacity:.6;cursor:default}
+.pw-opts label{display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--ink-2);cursor:pointer}
+.pw-opts input{width:auto}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/wheel-of-names/#app","name":"Wheel of Names","url":"https://cinchpad.com/wheel-of-names/","description":"Free spinning wheel picker. Add names, spin the wheel and get a random winner, with an option to remove each winner as it is drawn. No signup.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Random Pickers","item":"https://cinchpad.com/category/random/"},{"@type":"ListItem","position":3,"name":"Wheel of Names","item":"https://cinchpad.com/wheel-of-names/"}]},{"@type":"HowTo","name":"How to use the Wheel of Names","description":"Free spinning wheel picker. Add names, spin the wheel and get a random winner, with an option to remove each winner as it is drawn. No signup.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Type or paste your names into the box, one per line.","url":"https://cinchpad.com/wheel-of-names/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Press Spin , or click the wheel itself.","url":"https://cinchpad.com/wheel-of-names/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Tick remove the winner if you are drawing several in sequence.","url":"https://cinchpad.com/wheel-of-names/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many names can I add?","acceptedAnswer":{"@type":"Answer","text":"There is no hard limit, though labels shrink past about thirty and become hard to read. For very long lists the random name picker is easier to work with."}},{"@type":"Question","name":"Can the same name win twice?","acceptedAnswer":{"@type":"Answer","text":"Yes, unless you tick \"remove the winner after each spin\", which takes each winner out of the list as it is drawn."}},{"@type":"Question","name":"Is the spin predetermined?","acceptedAnswer":{"@type":"Answer","text":"The winner is selected before the animation starts, then the wheel animates to it. The selection itself is cryptographically random and uniform, so this makes it fairer than a simulated physics spin, not less fair."}},{"@type":"Question","name":"Are my names saved?","acceptedAnswer":{"@type":"Answer","text":"No. They stay in your browser and are gone when you close the page."}},{"@type":"Question","name":"Does it work on a phone?","acceptedAnswer":{"@type":"Answer","text":"Yes. The wheel scales to the screen and you can tap it directly to spin."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 40 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/random/">Random Pickers</a></li><li><span aria-current="page">Wheel of Names</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Wheel of Names</h1>
+      <p class="lede">Add your names, spin, and let the wheel decide. The result is chosen by your browser’s secure random source — the animation just shows you where it landed.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="wheel-layout">
+  <div class="wheel-stage">
+    <canvas id="wheel" width="440" height="440" role="img" aria-label="Spinning wheel of names"></canvas>
+    <div class="wheel-pointer" aria-hidden="true"></div>
+    <button type="button" class="wheel-hub" id="spin">Spin</button>
+  </div>
+  <div>
+    <div class="field">
+      <label for="names">Names, one per line</label>
+      <textarea id="names" rows="9" style="min-height:190px">Alex
+Blake
+Casey
+Devon
+Emerson
+Frankie
+Harper
+Jordan</textarea>
+      <span class="hint" id="count"></span>
+    </div>
+    <div class="pw-opts">
+      <label><input type="checkbox" id="remove"> Remove the winner after each spin</label>
+    </div>
+  </div>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite" style="text-align:center">
+  <div class="result-label">Winner</div>
+  <div class="result-value" id="winner">—</div>
+  <div class="result-note" id="note"></div>
+</div>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">Is the wheel actually fair?</h2>
+      <div class="answer"><p><strong>Yes, and it is worth understanding why the animation is not what decides it.</strong> The winner is chosen first, using <code>crypto.getRandomValues</code> with rejection sampling so every name has exactly equal probability. The wheel then animates to that predetermined position. This is deliberately the opposite of a physical wheel, where friction, starting position and spin strength all introduce bias — a real wheel of fortune is famously exploitable for that reason.</p></div>
+    </section>
+
+    <section class="section prose" id="uses">
+      <h2 id="uses-h">Where a wheel beats a plain list</h2>
+      <p>Functionally, the wheel does the same job as a name picker. The difference is entirely social, and it matters more than it sounds.</p>
+<ul>
+<li><strong>Classrooms.</strong> A visible spin feels fair to students in a way a hidden algorithm does not. Turn on "remove the winner" so everyone gets asked before anyone is asked twice.</li>
+<li><strong>Live giveaways.</strong> The build-up is the point. On a stream, the four seconds of spin do more for engagement than any instant result.</li>
+<li><strong>Team meetings.</strong> Choosing who presents first, who runs the retro, who gets the last slot.</li>
+<li><strong>Household arguments.</strong> Chores, who picks the film, who does the washing up. The theatre defuses it.</li>
+</ul>
+    </section>
+<section class="section prose" id="physical">
+      <h2 id="physical-h">Why real spinning wheels are not fair</h2>
+      <p>A physical wheel is a deterministic mechanical system, not a random one. Given the starting position and the force applied, the outcome is in principle predictable — and in practice, wheels develop biases.</p>
+<p>Roulette provides the documented cases. In 1873 Joseph Jagger hired clerks to record thousands of spins at Monte Carlo, found a wheel with slightly worn frets that favoured certain numbers, and won a fortune before the casino rotated its wheels. A century later, groups using concealed computers to time the ball did the same thing with physics rather than defects.</p>
+<p>Casinos now rebalance wheels constantly for exactly this reason. A digital wheel has no frets to wear, which is why the result here is drawn cryptographically and merely displayed as a spin.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Wheel of Names</h2>
+  <ol class="prose"><li>Type or paste your names into the box, one per line.</li><li>Press <strong>Spin</strong>, or click the wheel itself.</li><li>Tick <strong>remove the winner</strong> if you are drawing several in sequence.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How many names can I add?</summary>
+    <div><p>There is no hard limit, though labels shrink past about thirty and become hard to read. For very long lists the random name picker is easier to work with.</p></div>
+  </details>
+  <details>
+    <summary>Can the same name win twice?</summary>
+    <div><p>Yes, unless you tick "remove the winner after each spin", which takes each winner out of the list as it is drawn.</p></div>
+  </details>
+  <details>
+    <summary>Is the spin predetermined?</summary>
+    <div><p>The winner is selected before the animation starts, then the wheel animates to it. The selection itself is cryptographically random and uniform, so this makes it fairer than a simulated physics spin, not less fair.</p></div>
+  </details>
+  <details>
+    <summary>Are my names saved?</summary>
+    <div><p>No. They stay in your browser and are gone when you close the page.</p></div>
+  </details>
+  <details>
+    <summary>Does it work on a phone?</summary>
+    <div><p>Yes. The wheel scales to the screen and you can tap it directly to spin.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/random-name-picker/">
+      <strong>Random Name Picker</strong>
+      <span>Paste a list and draw a fair winner, or several, with no repeats.</span>
+    </a>
+    <a class="tool-card" href="/coin-flip/">
+      <strong>Coin Flip</strong>
+      <span>Flip a fair virtual coin, one at a time or hundreds at once.</span>
+    </a>
+    <a class="tool-card" href="/dice-roller/">
+      <strong>Dice Roller</strong>
+      <span>Roll any number of dice, from a single D6 to a fistful of D20s.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More random pickers</h2>
+      <ul class="side-list">
+        <li><a href="/coin-flip/">Coin Flip</a></li>
+        <li><a href="/dice-roller/">Dice Roller</a></li>
+        <li><a href="/random-name-picker/">Random Name Picker</a></li>
+        <li><a href="/random-number-generator/">Random Number Generator</a></li>
+        <li><a href="/what-to-eat-picker/">What Should I Eat?</a></li>
+        <li><a href="/yes-no-decision-maker/">Yes or No Decision Maker</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/random/" style="font-size:.88rem">All random pickers →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var canvas = $('wheel'), ctx = canvas.getContext('2d');
+  var angle = 0, spinning = false;
+
+  var COLORS = ['#0f7d6b','#4f9ee8','#e8a33d','#c94f6d','#7a9e4f','#8a6fc4','#3fa8a0','#d47a3a'];
+
+  function names(){
+    return $('names').value.split('\n').map(function(s){ return s.trim(); }).filter(Boolean);
+  }
+
+  function draw(){
+    var list = names();
+    var size = canvas.width;
+    var cx = size / 2, cy = size / 2, r = size / 2 - 6;
+    ctx.clearRect(0, 0, size, size);
+
+    if (!list.length) {
+      ctx.fillStyle = '#c9c4bc';
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fill();
+      return;
+    }
+
+    var slice = Math.PI * 2 / list.length;
+    for (var i = 0; i < list.length; i++) {
+      var start = angle + i * slice;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, r, start, start + slice);
+      ctx.closePath();
+      ctx.fillStyle = COLORS[i % COLORS.length];
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(255,255,255,.55)';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Label, laid along the radius.
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(start + slice / 2);
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      ctx.fillStyle = '#fff';
+      var fontSize = list.length > 26 ? 10 : list.length > 16 ? 12 : 15;
+      ctx.font = '600 ' + fontSize + 'px ui-sans-serif, system-ui, sans-serif';
+      var label = list[i].length > 18 ? list[i].slice(0, 17) + '…' : list[i];
+      ctx.fillText(label, r - 14, 0);
+      ctx.restore();
+    }
+
+    ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(0,0,0,.18)'; ctx.lineWidth = 3; ctx.stroke();
+  }
+
+  function randInt(max){
+    var limit = Math.floor(4294967296 / max) * max;
+    var buf = new Uint32Array(1), v;
+    do { crypto.getRandomValues(buf); v = buf[0]; } while (v >= limit);
+    return v % max;
+  }
+
+  function spin(){
+    var list = names();
+    if (spinning || list.length < 2) return;
+    spinning = true;
+    $('spin').disabled = true;
+    $('out').hidden = true;
+
+    // Decide the winner first, then animate to it — the spin is presentation only.
+    var winnerIndex = randInt(list.length);
+    var slice = Math.PI * 2 / list.length;
+
+    // The pointer sits at the top, which is -90 degrees in canvas coordinates.
+    var targetCentre = -Math.PI / 2;
+    var desired = targetCentre - (winnerIndex * slice + slice / 2);
+    var turns = 5 + randInt(3);
+    // Wind back until the wheel travels at least that many full rotations, so a
+    // spin never looks like a half-hearted nudge.
+    var start = angle;
+    var end = desired;
+    while (end > start - Math.PI * 2 * turns) end -= Math.PI * 2;
+
+    var duration = 4200;
+    var t0 = performance.now();
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function frame(now){
+      var p = Math.min(1, (now - t0) / duration);
+      // Ease out quintic: fast start, long slow settle.
+      var eased = 1 - Math.pow(1 - p, 5);
+      angle = start + (end - start) * eased;
+      draw();
+      if (p < 1) requestAnimationFrame(frame);
+      else finish(list[winnerIndex], list.length);
+    }
+
+    if (reduced) { angle = end; draw(); finish(list[winnerIndex], list.length); }
+    else requestAnimationFrame(frame);
+  }
+
+  function finish(winner, total){
+    spinning = false;
+    $('spin').disabled = false;
+    $('winner').textContent = winner;
+    $('note').textContent = 'Drawn from ' + total + ' names — each had a 1 in ' + total + ' chance.';
+    $('out').hidden = false;
+
+    if ($('remove').checked) {
+      var list = names().filter(function(n){ return n !== winner; });
+      $('names').value = list.join('\n');
+      updateCount();
+      angle = 0;
+      draw();
+    }
+  }
+
+  function updateCount(){
+    var n = names().length;
+    $('count').textContent = n + (n === 1 ? ' name' : ' names') + (n < 2 ? ' — add at least two to spin' : '');
+  }
+
+  $('spin').addEventListener('click', spin);
+  $('names').addEventListener('input', function(){ updateCount(); draw(); });
+  canvas.addEventListener('click', spin);
+
+  updateCount();
+  draw();
+})();</script>
+</body>
+</html>

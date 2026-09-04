@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 39 browser-based utilities for
+CinchPad is a free, ad-supported collection of 40 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -35,6 +35,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Random Name Picker](https://cinchpad.com/random-name-picker/): Free random name picker for giveaways, classrooms and team draws. Paste a list of names and pick one winner or several, with duplicate handling and no signup.
 - [Random Number Generator](https://cinchpad.com/random-number-generator/): Free random number generator. Pick one number or many from any range, with optional no-repeats and sorting. Uses secure browser randomness.
 - [What Should I Eat?](https://cinchpad.com/what-to-eat-picker/): Free random meal picker. Get a suggestion for what to eat by cuisine and meal type, or add your own options and let the tool decide for you.
+- [Wheel of Names](https://cinchpad.com/wheel-of-names/): Free spinning wheel picker. Add names, spin the wheel and get a random winner, with an option to remove each winner as it is drawn. No signup.
 - [Yes or No Decision Maker](https://cinchpad.com/yes-no-decision-maker/): Free yes or no decision maker. Ask a question and get a random answer, with an option to weight the odds. Useful for breaking a deadlock, not for real decisions.
 ### Health & Body
 - [BMI Calculator](https://cinchpad.com/bmi-calculator/): Free BMI calculator. Enter your height and weight in metric or imperial units to get your body mass index instantly, plus the healthy weight range for your height.
