@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 89 browser-based utilities for
+CinchPad is a free, ad-supported collection of 91 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -29,6 +29,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Clothing Size Converter](https://cinchpad.com/clothing-size-converter/): Free clothing size converter for women’s and men’s clothing across US, UK, EU, Italian, French and Japanese sizing, with body measurements shown.
 - [Cooking Converter](https://cinchpad.com/cooking-converter/): Free cooking measurement converter. Convert cups to grams for common ingredients, plus spoons, ounces, millilitres and oven temperatures including gas marks.
 - [Currency Converter](https://cinchpad.com/currency-converter/): Free currency converter using daily European Central Bank reference rates. Convert between 30 major currencies, with a clear note on why your bank gives you less.
+- [HEIC to JPG](https://cinchpad.com/heic-to-jpg/): Free HEIC to JPG converter. Turn iPhone HEIC and HEIF photos into JPG or PNG that open anywhere, converted in your browser with no upload.
 - [Oven Temperature Converter](https://cinchpad.com/oven-temperature-converter/): Free oven temperature converter. Convert between Celsius, Fahrenheit, gas mark and fan oven settings, with a full chart and the fan oven adjustment explained.
 - [Roman Numeral Converter](https://cinchpad.com/roman-numeral-converter/): Free Roman numeral converter. Turn any number from 1 to 3,999 into Roman numerals, or decode Roman numerals back into digits, with the rules explained.
 - [Shoe Size Converter](https://cinchpad.com/shoe-size-converter/): Free shoe size converter for US, UK, EU, Japan and centimetres, for men, women and children, with a guide to measuring your foot properly.
@@ -102,6 +103,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Word Counter](https://cinchpad.com/word-counter/): Free word counter. Paste your text for instant word, character, sentence and paragraph counts, reading time, and a check against social media limits.
 ### Generators
 - [Barcode Generator](https://cinchpad.com/barcode-generator/): Free barcode generator for Code 128 and EAN-13. Create scannable barcodes for inventory, labels and retail, with automatic check digits. Download PNG or SVG.
+- [Colour Picker](https://cinchpad.com/color-picker/): Free colour picker. Pick any colour from an image to get HEX, RGB and HSL codes, extract a palette, and check contrast against white and black.
 - [Password Generator](https://cinchpad.com/password-generator/): Free strong password generator. Create random passwords or memorable passphrases with a live strength estimate, generated entirely in your browser.
 - [Password Strength Checker](https://cinchpad.com/password-strength-checker/): Free password strength checker. See how strong a password really is, how long it would take to crack, and which specific weaknesses make it guessable.
 - [QR Code Generator](https://cinchpad.com/qr-code-generator/): Free QR code generator with no watermark, no signup and no expiry. Create QR codes for links, WiFi networks, email and phone numbers, then download as PNG or SVG.
