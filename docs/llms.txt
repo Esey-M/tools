@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 63 browser-based utilities for
+CinchPad is a free, ad-supported collection of 65 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -61,8 +61,10 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Budget Tracker](https://cinchpad.com/budget-tracker/): Free monthly budget tracker. Enter income and expenses to see what is left over, how your spending splits across needs, wants and savings, and where it goes.
 - [Electricity Bill Estimator](https://cinchpad.com/electricity-bill-estimator/): Free electricity cost calculator. Work out what any appliance costs to run per hour, month and year from its wattage, usage and your unit rate.
 - [Grocery List Maker](https://cinchpad.com/grocery-list-maker/): Free grocery list maker. Type your shopping and it sorts automatically into supermarket aisles, saves in your browser, and works offline on your phone.
+- [Habit Tracker](https://cinchpad.com/habit-tracker/): Free habit tracker. Add daily habits, tick them off on a 30-day grid, and see your current streak and completion rate. Saved in your browser, no account.
 - [Paint Calculator](https://cinchpad.com/paint-calculator/): Free paint calculator. Work out how much paint a room needs from its dimensions, allowing for doors, windows, coats and ceiling, in litres or gallons.
 - [Recipe Scaler](https://cinchpad.com/recipe-scaler/): Free recipe scaler. Paste a recipe and change the number of servings — every quantity is rescaled automatically, with fractions kept readable.
+- [To-Do List](https://cinchpad.com/todo-list/): Free online to-do list. Add tasks with priorities and due dates, filter what is left, and reorder by dragging. Saved in your browser with no account.
 ### Fun & Social
 - [Birthday Countdown](https://cinchpad.com/birthday-countdown/): Free birthday countdown. Enter your date of birth to see how many days until your next birthday, how old you will turn, and what day of the week it falls on.
 - [Countdown Timer](https://cinchpad.com/countdown-timer/): Free countdown timer to any date. See days, hours, minutes and seconds ticking down to a wedding, exam, holiday or launch, and share the countdown by link.

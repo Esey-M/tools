@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habit Tracker – Build a Streak, Free and Private</title>
+<meta name="description" content="Free habit tracker. Add daily habits, tick them off on a 30-day grid, and see your current streak and completion rate. Saved in your browser, no account.">
+<link rel="canonical" href="https://cinchpad.com/habit-tracker/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Habit Tracker – Build a Streak, Free and Private">
+<meta property="og:description" content="Free habit tracker. Add daily habits, tick them off on a 30-day grid, and see your current streak and completion rate. Saved in your browser, no account.">
+<meta property="og:url" content="https://cinchpad.com/habit-tracker/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Habit Tracker – Build a Streak, Free and Private">
+<meta name="twitter:description" content="Free habit tracker. Add daily habits, tick them off on a 30-day grid, and see your current streak and completion rate. Saved in your browser, no account.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.ht-add{display:flex;gap:9px}
+.ht-add input{flex:1;min-width:0;font-size:1.02rem}
+.ht-add button{flex:none}
+.ht-wrap{margin-top:22px;overflow-x:auto}
+.ht-table{border-collapse:separate;border-spacing:3px;min-width:640px}
+.ht-table th{font-size:.66rem;color:var(--ink-3);font-weight:600;text-align:center;padding:0 0 4px;
+  font-variant-numeric:tabular-nums}
+.ht-table th.today{color:var(--accent);font-weight:800}
+.ht-name{text-align:left !important;min-width:170px;font-size:.94rem;font-weight:560;color:var(--ink);
+  padding-right:12px !important}
+.ht-name .sub{display:block;font-size:.75rem;color:var(--ink-3);font-weight:400;margin-top:2px}
+.ht-cell{width:22px;height:22px;border-radius:5px;background:var(--bg-sunken);border:1px solid var(--line);
+  cursor:pointer;padding:0;display:block}
+.ht-cell:hover{border-color:var(--accent)}
+.ht-cell.on{background:var(--accent);border-color:var(--accent)}
+.ht-cell.future{opacity:.35;cursor:default}
+.ht-cell.today-col{box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
+.ht-rm{width:28px;height:28px;border:none;background:transparent;color:var(--ink-3);cursor:pointer;
+  font-size:1.05rem;border-radius:6px}
+.ht-rm:hover{background:var(--bg-hover);color:var(--danger)}
+.ht-empty{color:var(--ink-3);text-align:center;padding:30px 0;font-size:.93rem}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/habit-tracker/#app","name":"Habit Tracker","url":"https://cinchpad.com/habit-tracker/","description":"Free habit tracker. Add daily habits, tick them off on a 30-day grid, and see your current streak and completion rate. Saved in your browser, no account.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Home & Daily Life","item":"https://cinchpad.com/category/home/"},{"@type":"ListItem","position":3,"name":"Habit Tracker","item":"https://cinchpad.com/habit-tracker/"}]},{"@type":"HowTo","name":"How to use the Habit Tracker","description":"Free habit tracker. Add daily habits, tick them off on a 30-day grid, and see your current streak and completion rate. Saved in your browser, no account.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Add a habit, phrased as something you either did or did not do today.","url":"https://cinchpad.com/habit-tracker/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Tap a square for each day you complete it. You can fill in past days you missed marking.","url":"https://cinchpad.com/habit-tracker/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Watch the streak and completion rate build.","url":"https://cinchpad.com/habit-tracker/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Everything is saved in your browser automatically.","url":"https://cinchpad.com/habit-tracker/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is my data private?","acceptedAnswer":{"@type":"Answer","text":"Completely. Habits are stored in your browser and never transmitted. There is no account and no server involved."}},{"@type":"Question","name":"Will it sync between my phone and laptop?","acceptedAnswer":{"@type":"Answer","text":"No. Local storage is per device and per browser. Use \"copy as text\" to move a record across."}},{"@type":"Question","name":"How long does it take to form a habit?","acceptedAnswer":{"@type":"Answer","text":"Research by Phillippa Lally found a median of 66 days to reach automaticity, ranging from 18 to 254 depending on the person and the habit. The popular 21-day figure has no research behind it."}},{"@type":"Question","name":"Can I tick off past days?","acceptedAnswer":{"@type":"Answer","text":"Yes. Any day in the 30-day grid can be toggled, so you can fill in days you forgot to mark at the time."}},{"@type":"Question","name":"What happens if I miss a day?","acceptedAnswer":{"@type":"Answer","text":"The streak resets, but the completion percentage keeps the fuller picture. Missing one day matters much less than missing two in a row."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 65 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/home/">Home &amp; Daily Life</a></li><li><span aria-current="page">Habit Tracker</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Habit Tracker</h1>
+      <p class="lede">Add a habit, tick each day you do it. Everything saves in your browser — no account, no app, no reminders nagging you.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<form id="add-form" class="ht-add">
+  <label for="habit" class="vh">Add a habit</label>
+  <input type="text" id="habit" placeholder="Read for 20 minutes" maxlength="60" autocomplete="off">
+  <button type="submit" class="btn">Add habit</button>
+</form>
+
+<div id="grid" class="ht-wrap"></div>
+
+<div class="btn-row" style="margin-top:20px">
+  <button type="button" class="btn btn-ghost" id="export">Copy as text</button>
+  <button type="button" class="btn btn-ghost" id="clear">Clear everything</button>
+</div>
+<p class="hint" id="meta" style="margin-top:12px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">Why ticking a box works</h2>
+      <div class="answer"><p><strong>Tracking a habit changes the behaviour, not just the record of it.</strong> The effect is well documented in behaviour research: measuring something makes it salient, and a visible run of ticks creates a small but real reluctance to break the chain. It also replaces a vague sense of "I've been meaning to" with an honest number. The common claim that habits take 21 days to form is a misreading of a 1960s plastic surgery observation — the actual research puts it at a median of 66 days, with enormous variation.</p></div>
+    </section>
+
+    <section class="section prose" id="design">
+      <h2 id="design-h">Choosing habits that stick</h2>
+      <ul>
+<li><strong>Make it embarrassingly small to start.</strong> "Read one page" beats "read for an hour" because it survives bad days, and the hard part is showing up, not the volume.</li>
+<li><strong>Make it binary.</strong> A habit you can definitively tick or not tick works; "eat better" does not.</li>
+<li><strong>Attach it to something you already do.</strong> "After I make coffee, I read one page" is far more reliable than an intention with no trigger.</li>
+<li><strong>Track no more than three or four at once.</strong> A grid full of gaps is demoralising and stops being useful.</li>
+<li><strong>Never miss twice.</strong> One missed day is noise. Two in a row is how a habit quietly ends.</li>
+</ul>
+    </section>
+<section class="section prose" id="privacy">
+      <h2 id="privacy-h">No account, and no nagging</h2>
+      <p>Habit apps generally want an account, notifications and often a subscription. This is deliberately none of those things.</p>
+<p>Your habits are stored in your browser's local storage. Nothing is uploaded, there is nothing to sign into, and no notification will ever appear. The trade-off is that the data lives on one device and clearing your browser data clears it — use <strong>copy as text</strong> if you want a record elsewhere.</p>
+<p>Bookmark the page, or add it to your phone's home screen, and it opens like an app.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Habit Tracker</h2>
+  <ol class="prose"><li>Add a habit, phrased as something you either did or did not do today.</li><li>Tap a square for each day you complete it. You can fill in past days you missed marking.</li><li>Watch the streak and completion rate build.</li><li>Everything is saved in your browser automatically.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>Is my data private?</summary>
+    <div><p>Completely. Habits are stored in your browser and never transmitted. There is no account and no server involved.</p></div>
+  </details>
+  <details>
+    <summary>Will it sync between my phone and laptop?</summary>
+    <div><p>No. Local storage is per device and per browser. Use "copy as text" to move a record across.</p></div>
+  </details>
+  <details>
+    <summary>How long does it take to form a habit?</summary>
+    <div><p>Research by Phillippa Lally found a median of 66 days to reach automaticity, ranging from 18 to 254 depending on the person and the habit. The popular 21-day figure has no research behind it.</p></div>
+  </details>
+  <details>
+    <summary>Can I tick off past days?</summary>
+    <div><p>Yes. Any day in the 30-day grid can be toggled, so you can fill in days you forgot to mark at the time.</p></div>
+  </details>
+  <details>
+    <summary>What happens if I miss a day?</summary>
+    <div><p>The streak resets, but the completion percentage keeps the fuller picture. Missing one day matters much less than missing two in a row.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/todo-list/">
+      <strong>To-Do List</strong>
+      <span>A to-do list with priorities and due dates, saved in your browser.</span>
+    </a>
+    <a class="tool-card" href="/budget-tracker/">
+      <strong>Budget Tracker</strong>
+      <span>Track monthly income and spending, with the 50/30/20 split checked for you.</span>
+    </a>
+    <a class="tool-card" href="/countdown-timer/">
+      <strong>Countdown Timer</strong>
+      <span>A live countdown to any date and time, with shareable links.</span>
+    </a>
+    <a class="tool-card" href="/sleep-calculator/">
+      <strong>Sleep Calculator</strong>
+      <span>Bedtimes and wake times that land between sleep cycles, not in the middle of one.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More home & daily life</h2>
+      <ul class="side-list">
+        <li><a href="/bill-split-calculator/">Bill Split Calculator</a></li>
+        <li><a href="/budget-tracker/">Budget Tracker</a></li>
+        <li><a href="/electricity-bill-estimator/">Electricity Bill Estimator</a></li>
+        <li><a href="/grocery-list-maker/">Grocery List Maker</a></li>
+        <li><a href="/paint-calculator/">Paint Calculator</a></li>
+        <li><a href="/recipe-scaler/">Recipe Scaler</a></li>
+        <li><a href="/todo-list/">To-Do List</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/home/" style="font-size:.88rem">All home & daily life →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var KEY = 'cp-habits';
+  var DAYS = 30;
+  var habits = [];
+
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  function iso(d){ return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+
+  /** The last DAYS days, oldest first, ending today. */
+  function window30(){
+    var out = [], today = new Date();
+    today.setHours(0, 0, 0, 0);
+    for (var i = DAYS - 1; i >= 0; i--) {
+      var d = new Date(today);
+      d.setDate(d.getDate() - i);
+      out.push(d);
+    }
+    return out;
+  }
+
+  function streak(habit){
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var count = 0;
+    var d = new Date(today);
+    // A habit not yet ticked today does not break the streak — check yesterday.
+    if (!habit.days[iso(d)]) d.setDate(d.getDate() - 1);
+    while (habit.days[iso(d)]) { count++; d.setDate(d.getDate() - 1); }
+    return count;
+  }
+
+  function save(){
+    try { localStorage.setItem(KEY, JSON.stringify(habits)); } catch (e) {}
+  }
+
+  function render(){
+    if (!habits.length) {
+      $('grid').innerHTML = '<p class="ht-empty">No habits yet. Add one above to start.</p>';
+      $('meta').textContent = '';
+      save();
+      return;
+    }
+
+    var days = window30();
+    var todayIso = iso(new Date());
+
+    var html = '<table class="ht-table"><thead><tr><th class="ht-name"></th>';
+    days.forEach(function(d){
+      var isToday = iso(d) === todayIso;
+      html += '<th' + (isToday ? ' class="today"' : '') + '>' + d.getDate() + '</th>';
+    });
+    html += '<th></th></tr></thead><tbody>';
+
+    habits.forEach(function(h, hi){
+      var done = days.filter(function(d){ return h.days[iso(d)]; }).length;
+      var s = streak(h);
+      html += '<tr><td class="ht-name">' + h.name.replace(/[<>&]/g, '') +
+        '<span class="sub">' + (s > 0 ? s + ' day streak · ' : '') + done + '/' + DAYS + ' days · ' +
+        Math.round(done / DAYS * 100) + '%</span></td>';
+      days.forEach(function(d){
+        var key = iso(d);
+        var on = !!h.days[key];
+        var isToday = key === todayIso;
+        html += '<td><button type="button" class="ht-cell' + (on ? ' on' : '') + (isToday ? ' today-col' : '') +
+          '" data-h="' + hi + '" data-d="' + key + '" aria-pressed="' + on + '" aria-label="' +
+          h.name.replace(/["<>&]/g, '') + ' on ' + key + '"></button></td>';
+      });
+      html += '<td><button type="button" class="ht-rm" data-rm="' + hi + '" aria-label="Remove habit">×</button></td></tr>';
+    });
+    html += '</tbody></table>';
+    $('grid').innerHTML = html;
+
+    var totalDone = habits.reduce(function(a, h){
+      return a + days.filter(function(d){ return h.days[iso(d)]; }).length;
+    }, 0);
+    $('meta').textContent = habits.length + (habits.length === 1 ? ' habit' : ' habits') + ' · ' +
+      totalDone + ' of ' + (habits.length * DAYS) + ' possible days ticked · saved in this browser';
+    save();
+  }
+
+  $('add-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = $('habit').value.trim();
+    if (!v) return;
+    habits.push({ name: v, days: {} });
+    $('habit').value = '';
+    render();
+  });
+
+  $('grid').addEventListener('click', function(e){
+    var cell = e.target.closest('button[data-d]');
+    if (cell) {
+      var h = habits[parseInt(cell.getAttribute('data-h'), 10)];
+      var key = cell.getAttribute('data-d');
+      if (h.days[key]) delete h.days[key]; else h.days[key] = 1;
+      render();
+      return;
+    }
+    var rm = e.target.closest('button[data-rm]');
+    if (rm) {
+      habits.splice(parseInt(rm.getAttribute('data-rm'), 10), 1);
+      render();
+    }
+  });
+
+  $('clear').addEventListener('click', function(){
+    if (habits.length && !confirm('Clear all habits and history?')) return;
+    habits = []; render();
+  });
+
+  $('export').addEventListener('click', function(){
+    var days = window30();
+    var text = habits.map(function(h){
+      return h.name + '  ' + days.map(function(d){ return h.days[iso(d)] ? '#' : '.'; }).join('') +
+        '  (' + streak(h) + ' day streak)';
+    }).join('\n');
+    navigator.clipboard.writeText(text).then(function(){
+      var b = $('export'); b.textContent = 'Copied'; setTimeout(function(){ b.textContent = 'Copy as text'; }, 1400);
+    });
+  });
+
+  try { habits = JSON.parse(localStorage.getItem(KEY) || '[]') || []; } catch (e) { habits = []; }
+  render();
+})();</script>
+</body>
+</html>
