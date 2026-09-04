@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales Tax Calculator – Add or Remove Tax From a Price</title>
+<meta name="description" content="Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.">
+<link rel="canonical" href="https://cinchpad.com/sales-tax-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Sales Tax Calculator – Add or Remove Tax From a Price">
+<meta property="og:description" content="Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.">
+<meta property="og:url" content="https://cinchpad.com/sales-tax-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sales Tax Calculator – Add or Remove Tax From a Price">
+<meta name="twitter:description" content="Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/sales-tax-calculator/#app","name":"Sales Tax Calculator","url":"https://cinchpad.com/sales-tax-calculator/","description":"Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://cinchpad.com/category/calculators/"},{"@type":"ListItem","position":3,"name":"Sales Tax Calculator","item":"https://cinchpad.com/sales-tax-calculator/"}]},{"@type":"HowTo","name":"How to use the Sales Tax Calculator","description":"Free sales tax calculator. Add tax to a net price or remove it from a gross total, with the correct reverse calculation and a table of US state rates.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Choose whether you are adding tax to a net price or removing it from a total.","url":"https://cinchpad.com/sales-tax-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Enter the amount.","url":"https://cinchpad.com/sales-tax-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Enter your tax rate — combined state and local, if that applies where you are.","url":"https://cinchpad.com/sales-tax-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate sales tax on a purchase?","acceptedAnswer":{"@type":"Answer","text":"Multiply the pre-tax price by the tax rate as a decimal. At 8.25%, a $100 item incurs $100 × 0.0825 = $8.25 of tax, for a total of $108.25."}},{"@type":"Question","name":"How do I find the pre-tax price from a total?","acceptedAnswer":{"@type":"Answer","text":"Divide the total by 1 plus the rate as a decimal. From $108.25 at 8.25%: 108.25 ÷ 1.0825 = $100.00."}},{"@type":"Question","name":"Is sales tax charged before or after a discount?","acceptedAnswer":{"@type":"Answer","text":"After. Tax applies to the amount you actually pay, so a discount reduces the tax with it. Manufacturer coupons are sometimes treated differently, as the retailer is reimbursed for their value."}},{"@type":"Question","name":"Which US states have no sales tax?","acceptedAnswer":{"@type":"Answer","text":"Delaware, Montana, New Hampshire and Oregon charge no statewide sales tax. Alaska has none at state level but allows local ones, so some Alaskan towns do charge it."}},{"@type":"Question","name":"Do I pay sales tax on online orders?","acceptedAnswer":{"@type":"Answer","text":"Usually yes. Since the 2018 South Dakota v. Wayfair decision, states can require online sellers to collect tax based on where the buyer lives, so most large retailers now charge it everywhere."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 24 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/calculators/">Calculators</a></li><li><span aria-current="page">Sales Tax Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Sales Tax Calculator</h1>
+      <p class="lede">Enter a price and a rate. Switch direction to work backwards from a total that already includes tax.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="field">
+  <span class="field-label" id="dir-label">Direction</span>
+  <div class="seg" role="group" aria-labelledby="dir-label" id="dirs">
+    <button type="button" data-dir="add" aria-pressed="true">Add tax to a price</button>
+    <button type="button" data-dir="remove">Remove tax from a total</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="amt" id="amtlabel">Price before tax</label>
+    <div class="input-group">
+      <span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+      <input type="number" id="amt" inputmode="decimal" min="0" step="0.01" placeholder="100.00" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)">
+    </div>
+  </div>
+  <div class="field">
+    <label for="rate">Tax rate</label>
+    <div class="input-group">
+      <input type="number" id="rate" inputmode="decimal" min="0" max="50" step="0.001" value="8.25">
+      <span class="addon">%</span>
+    </div>
+  </div>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label" id="lbl">Total including tax</div>
+  <div class="result-value" id="main">—</div>
+  <div class="result-note" id="note"></div>
+  <dl class="result-grid">
+    <div class="stat"><dt>Before tax</dt><dd id="net">—</dd></div>
+    <div class="stat"><dt>Tax</dt><dd id="tax">—</dd></div>
+    <div class="stat"><dt>Total</dt><dd id="gross">—</dd></div>
+  </dl>
+</div>
+<p class="hint" id="prompt" style="margin-top:14px">Enter an amount to see the tax.</p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">Adding and removing sales tax</h2>
+      <div class="answer"><p><strong>To add tax, multiply by (1 + rate). To remove it, divide by (1 + rate) — never subtract.</strong> A $100 item at 8.25% tax costs $108.25. Working backwards from that $108.25, dividing by 1.0825 correctly returns $100. Subtracting 8.25% of $108.25 would give $99.32, which is wrong by 68 cents, because the tax was charged on the smaller pre-tax figure rather than on the total.</p></div>
+    </section>
+
+    <section class="section prose" id="reverse">
+      <h2 id="reverse-h">The reverse-tax mistake</h2>
+      <p>This is the single most common error in sales tax arithmetic, and it always runs the same way — subtracting the percentage from the gross figure instead of dividing it out.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Total paid</th><th>Rate</th><th>Wrong (subtract)</th><th>Right (divide)</th></tr></thead>
+<tbody>
+<tr><td>$108.25</td><td>8.25%</td><td>$99.32</td><td>$100.00</td></tr>
+<tr><td>$120.00</td><td>20%</td><td>$96.00</td><td>$100.00</td></tr>
+<tr><td>$215.00</td><td>7.5%</td><td>$198.88</td><td>$200.00</td></tr>
+</tbody></table></div>
+<p>The gap widens as the rate rises. At 20% VAT the subtraction method is out by 4% of the whole invoice, which matters if you are reclaiming tax or filing accounts.</p>
+    </section>
+<section class="section prose" id="us-rates">
+      <h2 id="us-rates-h">US sales tax basics</h2>
+      <p>The United States has no national sales tax. Each state sets its own rate, and counties and cities frequently add their own on top, so the rate you actually pay is a combined figure that can vary between neighbouring towns.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>State</th><th>State rate</th><th>Typical combined</th></tr></thead>
+<tbody>
+<tr><td>California</td><td>7.25%</td><td>8.85%</td></tr>
+<tr><td>Texas</td><td>6.25%</td><td>8.20%</td></tr>
+<tr><td>New York</td><td>4.00%</td><td>8.53%</td></tr>
+<tr><td>Florida</td><td>6.00%</td><td>7.00%</td></tr>
+<tr><td>Illinois</td><td>6.25%</td><td>8.86%</td></tr>
+<tr><td>Tennessee</td><td>7.00%</td><td>9.55%</td></tr>
+<tr><td>Delaware, Montana, New Hampshire, Oregon</td><td>None</td><td>None</td></tr>
+</tbody></table></div>
+<p>Combined rates are approximate averages and change regularly. Many states also exempt groceries, prescription medicine and clothing, either entirely or at a reduced rate.</p>
+    </section>
+<section class="section prose" id="vat">
+      <h2 id="vat-h">Sales tax and VAT are not the same</h2>
+      <p>Both end up taxing the consumer, but they are collected differently, and the difference shows up on the price tag.</p>
+<ul>
+<li><strong>US sales tax</strong> is charged once, at the final sale, and is usually <em>excluded</em> from the displayed price. The number on the shelf is not what you pay.</li>
+<li><strong>VAT and GST</strong> are charged at every stage of production, with businesses reclaiming what they paid. In most countries consumer prices must be shown <em>including</em> VAT, so the shelf price is the final price.</li>
+</ul>
+<p>This is why visitors to the US are routinely surprised at the till, and why "remove tax from a total" is the more useful direction in Europe while "add tax to a price" is the common one in America.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Sales Tax Calculator</h2>
+  <ol class="prose"><li>Choose whether you are <strong>adding</strong> tax to a net price or <strong>removing</strong> it from a total.</li><li>Enter the amount.</li><li>Enter your tax rate — combined state and local, if that applies where you are.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How do I calculate sales tax on a purchase?</summary>
+    <div><p>Multiply the pre-tax price by the tax rate as a decimal. At 8.25%, a $100 item incurs $100 × 0.0825 = $8.25 of tax, for a total of $108.25.</p></div>
+  </details>
+  <details>
+    <summary>How do I find the pre-tax price from a total?</summary>
+    <div><p>Divide the total by 1 plus the rate as a decimal. From $108.25 at 8.25%: 108.25 ÷ 1.0825 = $100.00.</p></div>
+  </details>
+  <details>
+    <summary>Is sales tax charged before or after a discount?</summary>
+    <div><p>After. Tax applies to the amount you actually pay, so a discount reduces the tax with it. Manufacturer coupons are sometimes treated differently, as the retailer is reimbursed for their value.</p></div>
+  </details>
+  <details>
+    <summary>Which US states have no sales tax?</summary>
+    <div><p>Delaware, Montana, New Hampshire and Oregon charge no statewide sales tax. Alaska has none at state level but allows local ones, so some Alaskan towns do charge it.</p></div>
+  </details>
+  <details>
+    <summary>Do I pay sales tax on online orders?</summary>
+    <div><p>Usually yes. Since the 2018 <em>South Dakota v. Wayfair</em> decision, states can require online sellers to collect tax based on where the buyer lives, so most large retailers now charge it everywhere.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/discount-calculator/">
+      <strong>Discount Calculator</strong>
+      <span>Final sale price and your saving, including stacked and double discounts.</span>
+    </a>
+    <a class="tool-card" href="/percentage-calculator/">
+      <strong>Percentage Calculator</strong>
+      <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+    </a>
+    <a class="tool-card" href="/tip-calculator/">
+      <strong>Tip Calculator</strong>
+      <span>Tip amount, total, and what each person owes when you split the bill.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Rates change and local surcharges vary. Check your jurisdiction for the exact figure.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More calculators</h2>
+      <ul class="side-list">
+        <li><a href="/age-calculator/">Age Calculator</a></li>
+        <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+        <li><a href="/date-difference-calculator/">Date Difference Calculator</a></li>
+        <li><a href="/discount-calculator/">Discount Calculator</a></li>
+        <li><a href="/loan-calculator/">Loan Calculator</a></li>
+        <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+        <li><a href="/tip-calculator/">Tip Calculator</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/calculators/" style="font-size:.88rem">All calculators →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var dir = 'add';
+  var money = function(n){ return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+
+  function calc(){
+    var a = parseFloat($('amt').value);
+    var r = parseFloat($('rate').value);
+    if (!isFinite(a) || a < 0) { $('out').hidden = true; $('prompt').hidden = false; return; }
+    if (!isFinite(r) || r < 0) r = 0;
+
+    var net, tax, gross;
+    if (dir === 'add') {
+      net = a; tax = a * r / 100; gross = net + tax;
+      $('lbl').textContent = 'Total including tax';
+      $('main').textContent = money(gross);
+      $('note').textContent = money(net) + ' plus ' + r + '% tax.';
+    } else {
+      // Divide, never subtract: the total already contains the tax.
+      gross = a; net = a / (1 + r / 100); tax = gross - net;
+      $('lbl').textContent = 'Price before tax';
+      $('main').textContent = money(net);
+      $('note').textContent = money(gross) + ' includes ' + money(tax) + ' of tax at ' + r + '%.';
+    }
+
+    $('net').textContent = money(net);
+    $('tax').textContent = money(tax);
+    $('gross').textContent = money(gross);
+    $('out').hidden = false; $('prompt').hidden = true;
+  }
+
+  $('dirs').addEventListener('click', function(e){
+    var b = e.target.closest('button[data-dir]'); if (!b) return;
+    dir = b.getAttribute('data-dir');
+    var btns = $('dirs').querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) btns[i].setAttribute('aria-pressed', String(btns[i] === b));
+    $('amtlabel').textContent = dir === 'add' ? 'Price before tax' : 'Total including tax';
+    calc();
+  });
+  $('amt').addEventListener('input', calc);
+  $('rate').addEventListener('input', calc);
+})();</script>
+</body>
+</html>

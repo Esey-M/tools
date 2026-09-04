@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Countdown Timer – Days, Hours and Minutes to Any Date</title>
+<meta name="description" content="Free countdown timer to any date. See days, hours, minutes and seconds ticking down to a wedding, exam, holiday or launch, and share the countdown by link.">
+<link rel="canonical" href="https://cinchpad.com/countdown-timer/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Countdown Timer – Days, Hours and Minutes to Any Date">
+<meta property="og:description" content="Free countdown timer to any date. See days, hours, minutes and seconds ticking down to a wedding, exam, holiday or launch, and share the countdown by link.">
+<meta property="og:url" content="https://cinchpad.com/countdown-timer/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Countdown Timer – Days, Hours and Minutes to Any Date">
+<meta name="twitter:description" content="Free countdown timer to any date. See days, hours, minutes and seconds ticking down to a wedding, exam, holiday or launch, and share the countdown by link.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.cd-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.cd-unit{background:var(--bg-raised);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 6px;text-align:center}
+.cd-unit span{display:block;font-size:clamp(1.6rem,1rem+2.4vw,2.5rem);font-weight:720;line-height:1;
+  letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:var(--accent-ink)}
+.cd-unit small{display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--ink-3);margin-top:6px;font-weight:600}
+@media (max-width:460px){.cd-grid{grid-template-columns:repeat(2,1fr)}}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/countdown-timer/#app","name":"Countdown Timer","url":"https://cinchpad.com/countdown-timer/","description":"Free countdown timer to any date. See days, hours, minutes and seconds ticking down to a wedding, exam, holiday or launch, and share the countdown by link.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Fun & Social","item":"https://cinchpad.com/category/fun/"},{"@type":"ListItem","position":3,"name":"Countdown Timer","item":"https://cinchpad.com/countdown-timer/"}]},{"@type":"HowTo","name":"How to use the Countdown Timer","description":"Free countdown timer to any date. See days, hours, minutes and seconds ticking down to a wedding, exam, holiday or launch, and share the countdown by link.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Give your countdown a name — this appears in the label and in the shared link.","url":"https://cinchpad.com/countdown-timer/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Pick the date, and a time if it matters.","url":"https://cinchpad.com/countdown-timer/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"The countdown starts immediately and ticks every second.","url":"https://cinchpad.com/countdown-timer/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Use Copy shareable link to send the same countdown to someone else.","url":"https://cinchpad.com/countdown-timer/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the countdown keep running if I close the page?","acceptedAnswer":{"@type":"Answer","text":"The display stops, but nothing is lost. Reopening the shared link recreates the same countdown, because the date is stored in the link rather than on a server."}},{"@type":"Question","name":"Can I share a countdown with someone?","acceptedAnswer":{"@type":"Answer","text":"Yes. Press \"Copy shareable link\" and send it. The date, time and name travel in the URL, so anyone who opens it sees the same countdown running in their own time zone."}},{"@type":"Question","name":"What happens after the date passes?","acceptedAnswer":{"@type":"Answer","text":"It counts up instead, showing how long ago the moment was. This is handy for anniversaries and \"days since\" milestones."}},{"@type":"Question","name":"Does it handle leap years and daylight saving?","acceptedAnswer":{"@type":"Answer","text":"Yes. The countdown works on real timestamps rather than calendar arithmetic, so leap days and clock changes are accounted for automatically."}},{"@type":"Question","name":"Is my countdown stored anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Everything lives in the page URL and in your browser. Nothing is sent to a server."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 24 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/fun/">Fun &amp; Social</a></li><li><span aria-current="page">Countdown Timer</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Countdown Timer</h1>
+      <p class="lede">Pick a date and the countdown starts immediately. Copy the link to share the same countdown with anyone.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="row">
+  <div class="field">
+    <label for="name">What are you counting down to?</label>
+    <input type="text" id="name" placeholder="My birthday" maxlength="60" autocomplete="off">
+  </div>
+  <div class="field">
+    <label for="date">Date</label>
+    <input type="date" id="date">
+  </div>
+  <div class="field">
+    <label for="time">Time</label>
+    <input type="time" id="time" value="00:00">
+  </div>
+</div>
+
+<div class="pills" id="presets" style="justify-content:flex-start;margin-bottom:16px"></div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label" id="lbl">Counting down</div>
+  <div class="cd-grid">
+    <div class="cd-unit"><span id="d">0</span><small>days</small></div>
+    <div class="cd-unit"><span id="h">0</span><small>hours</small></div>
+    <div class="cd-unit"><span id="m">0</span><small>minutes</small></div>
+    <div class="cd-unit"><span id="s">0</span><small>seconds</small></div>
+  </div>
+  <div class="result-note" id="note"></div>
+  <div class="btn-row" style="margin-top:14px">
+    <button type="button" class="btn btn-ghost" id="share">Copy shareable link</button>
+  </div>
+</div>
+<p class="hint" id="prompt" style="margin-top:14px">Choose a date to start the countdown.</p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">How the countdown is calculated</h2>
+      <div class="answer"><p><strong>The countdown measures the real elapsed time between now and your target moment, in your own time zone.</strong> It updates every second and handles the awkward cases automatically: leap years, months of different lengths, and daylight saving changes are all absorbed because the calculation works on actual timestamps rather than counting calendar squares. If the date has already passed, it counts up instead of showing a negative number.</p></div>
+    </section>
+
+    <section class="section prose" id="timezone">
+      <h2 id="timezone-h">A note on time zones</h2>
+      <p>The countdown runs in the time zone of the device viewing it. That is usually what you want — a countdown to midnight on New Year's Eve should hit zero at midnight wherever you are.</p>
+<p>It does mean that a shared link behaves slightly differently for someone in another country. If you are counting down to a specific global moment, such as a product launch or a live broadcast, say the time zone in the countdown's name so there is no ambiguity.</p>
+    </section>
+<section class="section prose" id="uses">
+      <h2 id="uses-h">What people count down to</h2>
+      <p>The most-searched countdowns follow a predictable rhythm through the year, but the useful ones tend to be personal.</p>
+<ul>
+<li><strong>Exams and deadlines</strong> — seeing days rather than weeks tends to concentrate the mind usefully.</li>
+<li><strong>Weddings and holidays</strong> — a shared link is an easy thing to send round a group.</li>
+<li><strong>Launches and go-lives</strong> — pair the countdown name with an explicit time zone.</li>
+<li><strong>Milestones</strong> — a due date, a retirement, the end of a contract.</li>
+</ul>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Countdown Timer</h2>
+  <ol class="prose"><li>Give your countdown a name — this appears in the label and in the shared link.</li><li>Pick the date, and a time if it matters.</li><li>The countdown starts immediately and ticks every second.</li><li>Use <strong>Copy shareable link</strong> to send the same countdown to someone else.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>Does the countdown keep running if I close the page?</summary>
+    <div><p>The display stops, but nothing is lost. Reopening the shared link recreates the same countdown, because the date is stored in the link rather than on a server.</p></div>
+  </details>
+  <details>
+    <summary>Can I share a countdown with someone?</summary>
+    <div><p>Yes. Press "Copy shareable link" and send it. The date, time and name travel in the URL, so anyone who opens it sees the same countdown running in their own time zone.</p></div>
+  </details>
+  <details>
+    <summary>What happens after the date passes?</summary>
+    <div><p>It counts up instead, showing how long ago the moment was. This is handy for anniversaries and "days since" milestones.</p></div>
+  </details>
+  <details>
+    <summary>Does it handle leap years and daylight saving?</summary>
+    <div><p>Yes. The countdown works on real timestamps rather than calendar arithmetic, so leap days and clock changes are accounted for automatically.</p></div>
+  </details>
+  <details>
+    <summary>Is my countdown stored anywhere?</summary>
+    <div><p>No. Everything lives in the page URL and in your browser. Nothing is sent to a server.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/date-difference-calculator/">
+      <strong>Date Difference Calculator</strong>
+      <span>How many days, weeks, months or working days lie between any two dates.</span>
+    </a>
+    <a class="tool-card" href="/age-calculator/">
+      <strong>Age Calculator</strong>
+      <span>Your exact age in years, months and days — plus a countdown to your next birthday.</span>
+    </a>
+    <a class="tool-card" href="/sleep-calculator/">
+      <strong>Sleep Calculator</strong>
+      <span>Bedtimes and wake times that land between sleep cycles, not in the middle of one.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var target = null, timer = null;
+
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+
+  function parseTarget(){
+    var d = $('date').value, t = $('time').value || '00:00';
+    var dm = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d);
+    var tm = /^(\d{1,2}):(\d{2})$/.exec(t);
+    if (!dm) return null;
+    return new Date(+dm[1], +dm[2] - 1, +dm[3], tm ? +tm[1] : 0, tm ? +tm[2] : 0, 0);
+  }
+
+  function tick(){
+    if (!target) return;
+    var diff = target - new Date();
+    var past = diff < 0;
+    if (past) diff = -diff;
+
+    var total = Math.floor(diff / 1000);
+    var days = Math.floor(total / 86400);
+    var hours = Math.floor(total % 86400 / 3600);
+    var mins = Math.floor(total % 3600 / 60);
+    var secs = total % 60;
+
+    $('d').textContent = days.toLocaleString('en-US');
+    $('h').textContent = pad(hours);
+    $('m').textContent = pad(mins);
+    $('s').textContent = pad(secs);
+
+    var label = $('name').value.trim();
+    $('lbl').textContent = past
+      ? (label ? label + ' was' : 'That was')
+      : (label ? 'Until ' + label : 'Counting down');
+    $('note').textContent = target.toLocaleString('en-US', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+      hour: 'numeric', minute: '2-digit'
+    }) + (past ? ' — already passed.' : '');
+  }
+
+  function start(){
+    target = parseTarget();
+    if (!target) { $('out').hidden = true; $('prompt').hidden = false; clearInterval(timer); return; }
+    $('out').hidden = false; $('prompt').hidden = true;
+    tick();
+    clearInterval(timer);
+    timer = setInterval(tick, 1000);
+    updateUrl();
+  }
+
+  function updateUrl(){
+    if (!target) return;
+    var params = new URLSearchParams();
+    params.set('d', $('date').value);
+    if ($('time').value && $('time').value !== '00:00') params.set('t', $('time').value);
+    if ($('name').value.trim()) params.set('n', $('name').value.trim());
+    history.replaceState(null, '', location.pathname + '?' + params.toString());
+  }
+
+  ['date','time','name'].forEach(function(id){ $(id).addEventListener('input', start); });
+
+  $('share').addEventListener('click', function(){
+    navigator.clipboard.writeText(location.href).then(function(){
+      var b = $('share'); b.textContent = 'Link copied'; setTimeout(function(){ b.textContent = 'Copy shareable link'; }, 1500);
+    });
+  });
+
+  // Quick presets for the dates people actually count down to.
+  var now = new Date();
+  var year = now.getFullYear();
+  function iso(y, m, d){ return y + '-' + pad(m) + '-' + pad(d); }
+  function future(m, d){ var y = (new Date(year, m - 1, d) < now) ? year + 1 : year; return iso(y, m, d); }
+  var PRESETS = [
+    ['New Year', future(1, 1)],
+    ['Christmas', future(12, 25)],
+    ['Halloween', future(10, 31)],
+    ['Next Friday', (function(){
+      var t = new Date(now); t.setDate(t.getDate() + ((5 - t.getDay() + 7) % 7 || 7));
+      return iso(t.getFullYear(), t.getMonth() + 1, t.getDate());
+    })()]
+  ];
+  $('presets').innerHTML = PRESETS.map(function(p){
+    return '<button type="button" class="pill" data-d="' + p[1] + '" data-n="' + p[0] + '">' + p[0] + '</button>';
+  }).join('');
+  $('presets').addEventListener('click', function(e){
+    var b = e.target.closest('button[data-d]'); if (!b) return;
+    $('date').value = b.getAttribute('data-d');
+    $('name').value = b.getAttribute('data-n');
+    $('time').value = '00:00';
+    start();
+  });
+
+  // Restore a shared countdown from the URL.
+  var q = new URLSearchParams(location.search);
+  if (q.get('d')) {
+    $('date').value = q.get('d');
+    if (q.get('t')) $('time').value = q.get('t');
+    if (q.get('n')) $('name').value = q.get('n');
+    start();
+  }
+})();</script>
+</body>
+</html>

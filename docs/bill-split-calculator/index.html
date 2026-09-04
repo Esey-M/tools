@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bill Split Calculator – Divide a Bill Fairly, Even Unevenly</title>
+<meta name="description" content="Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.">
+<link rel="canonical" href="https://cinchpad.com/bill-split-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Bill Split Calculator – Divide a Bill Fairly, Even Unevenly">
+<meta property="og:description" content="Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.">
+<meta property="og:url" content="https://cinchpad.com/bill-split-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bill Split Calculator – Divide a Bill Fairly, Even Unevenly">
+<meta name="twitter:description" content="Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.split-rows{display:flex;flex-direction:column;gap:8px}
+.split-row{display:flex;gap:8px;align-items:center}
+.split-row input[type=text]{flex:1 1 auto;min-width:0}
+.split-row input[type=number]{flex:0 0 116px}
+.split-row button{flex:none;width:36px;height:38px;border:1px solid var(--line-strong);background:var(--bg);
+  border-radius:var(--radius-sm);color:var(--ink-3);cursor:pointer;font-size:1.1rem;line-height:1}
+.split-row button:hover{border-color:var(--danger);color:var(--danger)}
+.split-out{margin-top:14px;display:flex;flex-direction:column;gap:6px}
+.split-line{display:flex;justify-content:space-between;gap:14px;padding:9px 12px;background:var(--bg-raised);
+  border:1px solid var(--line);border-radius:var(--radius-sm);font-size:.94rem}
+.split-line b{font-variant-numeric:tabular-nums}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/bill-split-calculator/#app","name":"Bill Split Calculator","url":"https://cinchpad.com/bill-split-calculator/","description":"Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Home & Daily Life","item":"https://cinchpad.com/category/home/"},{"@type":"ListItem","position":3,"name":"Bill Split Calculator","item":"https://cinchpad.com/bill-split-calculator/"}]},{"@type":"HowTo","name":"How to use the Bill Split Calculator","description":"Free bill splitter. Divide a bill evenly between any number of people, or itemise what each person had, with tip and tax shared proportionally.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"For a straightforward meal, leave it on Evenly , enter the total and the number of people.","url":"https://cinchpad.com/bill-split-calculator/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"If orders were very different, switch to by what each person had and enter names and amounts.","url":"https://cinchpad.com/bill-split-calculator/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Set the tip percentage. If the bill already includes tax, enter the rate so the tip is calculated on the pre-tax subtotal.","url":"https://cinchpad.com/bill-split-calculator/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I split a bill with different amounts?","acceptedAnswer":{"@type":"Answer","text":"Switch to itemised mode, enter what each person ordered, and the tool adds each person’s proportional share of the tip and tax. Everyone pays for their own food plus their fair slice of the extras."}},{"@type":"Question","name":"Should the tip be split evenly or proportionally?","acceptedAnswer":{"@type":"Answer","text":"Proportionally, if you are itemising the food. Splitting the tip evenly while itemising the meal charges lighter eaters a disproportionate share of it."}},{"@type":"Question","name":"What about someone who did not drink?","acceptedAnswer":{"@type":"Answer","text":"The cleanest approach is to treat drinks as itemised even when the food is split evenly. Say so before ordering and it stops being awkward."}},{"@type":"Question","name":"How do I handle a bill that will not divide evenly?","acceptedAnswer":{"@type":"Answer","text":"Round each person up to the nearest dollar and let the small surplus go to the tip. It avoids a debate over cents and slightly improves the server’s night."}},{"@type":"Question","name":"Is the tip calculated on the pre-tax amount?","acceptedAnswer":{"@type":"Answer","text":"Yes, when you tell the tool what tax rate is included. Etiquette calculates the tip on the food and drink, not on the tax."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 24 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/home/">Home &amp; Daily Life</a></li><li><span aria-current="page">Bill Split Calculator</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Bill Split Calculator</h1>
+      <p class="lede">Split evenly in two taps, or switch to itemised mode when everyone ordered something different and the even split is not fair.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="field">
+  <span class="field-label" id="mode-label">How are you splitting?</span>
+  <div class="seg" role="group" aria-labelledby="mode-label" id="modes">
+    <button type="button" data-mode="even" aria-pressed="true">Evenly</button>
+    <button type="button" data-mode="items">By what each person had</button>
+  </div>
+</div>
+
+<div id="pane-even">
+  <div class="row">
+    <div class="field">
+      <label for="bill">Bill total</label>
+      <div class="input-group">
+        <span class="addon" style="border-radius:var(--radius-sm) 0 0 var(--radius-sm);border-right:none">$</span>
+        <input type="number" id="bill" inputmode="decimal" min="0" step="0.01" placeholder="120.00" style="border-radius:0 var(--radius-sm) var(--radius-sm) 0;border-left:none;border-right:1px solid var(--line-strong)">
+      </div>
+    </div>
+    <div class="field">
+      <label for="people">People</label>
+      <input type="number" id="people" inputmode="numeric" min="1" max="100" step="1" value="4">
+    </div>
+  </div>
+</div>
+
+<div id="pane-items" hidden>
+  <div class="field">
+    <span class="field-label">Who had what</span>
+    <div id="rows" class="split-rows"></div>
+    <button type="button" class="btn btn-ghost" id="addrow" style="margin-top:9px">+ Add a person</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="tip">Tip</label>
+    <div class="input-group">
+      <input type="number" id="tip" inputmode="decimal" min="0" max="100" step="1" value="18">
+      <span class="addon">%</span>
+    </div>
+  </div>
+  <div class="field">
+    <label for="tax">Tax already on the bill</label>
+    <div class="input-group">
+      <input type="number" id="tax" inputmode="decimal" min="0" max="50" step="0.01" value="0">
+      <span class="addon">%</span>
+    </div>
+  </div>
+</div>
+
+<div class="result" id="out" hidden aria-live="polite">
+  <div class="result-label" id="lbl">Each person pays</div>
+  <div class="result-value" id="each">—</div>
+  <div class="result-note" id="note"></div>
+  <div id="breakdown" class="split-out"></div>
+</div>
+<p class="hint" id="prompt" style="margin-top:14px">Enter the bill to see who owes what.</p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">Splitting a bill fairly</h2>
+      <div class="answer"><p><strong>An even split is fair only when everyone ordered similarly.</strong> Divide the total, including tip and tax, by the number of people. When orders differ significantly — one person had a steak and two glasses of wine, another had soup — the fairer method is to charge each person for what they ordered, then share the tip and tax <em>in proportion</em> to their share of the bill. Splitting the tip evenly while itemising the food quietly penalises whoever ate least.</p></div>
+    </section>
+
+    <section class="section prose" id="etiquette">
+      <h2 id="etiquette-h">When to split evenly and when not to</h2>
+      <p>The awkwardness of bill-splitting is nearly always about mismatched expectations rather than money.</p>
+<ul>
+<li><strong>Split evenly</strong> when orders are broadly comparable, when the group is close and the difference is a few dollars, or when someone has already offered.</li>
+<li><strong>Itemise</strong> when there is a large gap — non-drinkers subsidising a bar tab is the classic case — when the group is large, or when anyone has said they are on a budget.</li>
+<li><strong>Decide before ordering.</strong> Announcing "shall we just split it?" after the bill arrives puts pressure on whoever ordered least. Agreeing at the start lets people order accordingly.</li>
+</ul>
+<p>The drinks question is worth naming explicitly. Alcohol is often the largest single distortion on a restaurant bill, and separating drinks from food is a common middle ground.</p>
+    </section>
+<section class="section prose" id="proportional">
+      <h2 id="proportional-h">Why the tip should be proportional</h2>
+      <p>Consider a $100 food bill where one person ordered $40 and three ordered $20 each, with a 20% tip of $20.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Method</th><th>Big orderer pays</th><th>Each other person pays</th></tr></thead>
+<tbody>
+<tr><td>Everything split evenly</td><td>$30.00</td><td>$30.00</td></tr>
+<tr><td>Food itemised, tip split evenly</td><td>$45.00</td><td>$25.00</td></tr>
+<tr><td>Food itemised, tip proportional</td><td>$48.00</td><td>$24.00</td></tr>
+</tbody></table></div>
+<p>Splitting the tip evenly while itemising the food is a halfway house that nobody actually intends: it charges the light eaters a larger tip relative to what they ordered. This calculator uses the proportional method.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Bill Split Calculator</h2>
+  <ol class="prose"><li>For a straightforward meal, leave it on <strong>Evenly</strong>, enter the total and the number of people.</li><li>If orders were very different, switch to <strong>by what each person had</strong> and enter names and amounts.</li><li>Set the tip percentage. If the bill already includes tax, enter the rate so the tip is calculated on the pre-tax subtotal.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>How do I split a bill with different amounts?</summary>
+    <div><p>Switch to itemised mode, enter what each person ordered, and the tool adds each person’s proportional share of the tip and tax. Everyone pays for their own food plus their fair slice of the extras.</p></div>
+  </details>
+  <details>
+    <summary>Should the tip be split evenly or proportionally?</summary>
+    <div><p>Proportionally, if you are itemising the food. Splitting the tip evenly while itemising the meal charges lighter eaters a disproportionate share of it.</p></div>
+  </details>
+  <details>
+    <summary>What about someone who did not drink?</summary>
+    <div><p>The cleanest approach is to treat drinks as itemised even when the food is split evenly. Say so before ordering and it stops being awkward.</p></div>
+  </details>
+  <details>
+    <summary>How do I handle a bill that will not divide evenly?</summary>
+    <div><p>Round each person up to the nearest dollar and let the small surplus go to the tip. It avoids a debate over cents and slightly improves the server’s night.</p></div>
+  </details>
+  <details>
+    <summary>Is the tip calculated on the pre-tax amount?</summary>
+    <div><p>Yes, when you tell the tool what tax rate is included. Etiquette calculates the tip on the food and drink, not on the tax.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/tip-calculator/">
+      <strong>Tip Calculator</strong>
+      <span>Tip amount, total, and what each person owes when you split the bill.</span>
+    </a>
+    <a class="tool-card" href="/percentage-calculator/">
+      <strong>Percentage Calculator</strong>
+      <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+    </a>
+    <a class="tool-card" href="/sales-tax-calculator/">
+      <strong>Sales Tax Calculator</strong>
+      <span>Add tax to a price, or work backwards to strip it out of a total.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Results are estimates for general information only.
+    </p>
+  </div>
+
+  <aside class="side">
+    
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var mode = 'even';
+  var money = function(n){ return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var num = function(el, d){ var v = parseFloat(el.value); return isFinite(v) ? v : d; };
+
+  function addRow(name, amount){
+    var div = document.createElement('div');
+    div.className = 'split-row';
+    div.innerHTML =
+      '<input type="text" placeholder="Name" value="' + (name || '') + '" aria-label="Name">' +
+      '<input type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00" value="' + (amount || '') + '" aria-label="Amount">' +
+      '<button type="button" aria-label="Remove this person">×</button>';
+    div.querySelector('button').addEventListener('click', function(){ div.remove(); calc(); });
+    div.querySelectorAll('input').forEach(function(i){ i.addEventListener('input', calc); });
+    $('rows').appendChild(div);
+  }
+
+  function calc(){
+    var tip = num($('tip'), 0) / 100;
+    var taxRate = num($('tax'), 0) / 100;
+
+    if (mode === 'even') {
+      var bill = num($('bill'), NaN);
+      var n = Math.max(1, Math.round(num($('people'), 1)));
+      if (!isFinite(bill) || bill < 0) { $('out').hidden = true; $('prompt').hidden = false; return; }
+
+      // The bill already includes tax; tip is calculated on the pre-tax subtotal.
+      var subtotal = taxRate > 0 ? bill / (1 + taxRate) : bill;
+      var tipAmount = subtotal * tip;
+      var total = bill + tipAmount;
+      var each = total / n;
+
+      $('lbl').textContent = 'Each person pays';
+      $('each').textContent = money(each);
+      $('note').textContent = money(bill) + ' bill + ' + money(tipAmount) + ' tip = ' + money(total) + ', split ' + n + ' ways.';
+      $('breakdown').innerHTML =
+        '<div class="split-line"><span>Bill</span><b>' + money(bill) + '</b></div>' +
+        (taxRate > 0 ? '<div class="split-line"><span>of which tax</span><b>' + money(bill - subtotal) + '</b></div>' : '') +
+        '<div class="split-line"><span>Tip at ' + (tip * 100).toFixed(0) + '%</span><b>' + money(tipAmount) + '</b></div>' +
+        '<div class="split-line"><span><strong>Total</strong></span><b>' + money(total) + '</b></div>';
+      $('out').hidden = false; $('prompt').hidden = true;
+      return;
+    }
+
+    // Itemised: tip and tax are shared in proportion to what each person ordered.
+    var rows = [].slice.call($('rows').children);
+    var people = rows.map(function(r, i){
+      var inputs = r.querySelectorAll('input');
+      return { name: inputs[0].value.trim() || ('Person ' + (i + 1)), amount: num(inputs[1], 0) };
+    }).filter(function(p){ return p.amount > 0; });
+
+    if (!people.length) { $('out').hidden = true; $('prompt').hidden = false; return; }
+
+    var sub = people.reduce(function(a, p){ return a + p.amount; }, 0);
+    var tipTotal = sub * tip;
+    var taxTotal = sub * taxRate;
+    var grand = sub + tipTotal + taxTotal;
+
+    $('lbl').textContent = 'Total for the table';
+    $('each').textContent = money(grand);
+    $('note').textContent = money(sub) + ' of food and drink, plus ' +
+      (taxRate > 0 ? money(taxTotal) + ' tax and ' : '') + money(tipTotal) + ' tip, shared in proportion.';
+    $('breakdown').innerHTML = people.map(function(p){
+      var share = p.amount / sub;
+      return '<div class="split-line"><span>' + p.name.replace(/[<>&]/g, '') + '</span><b>' +
+        money(p.amount + (tipTotal + taxTotal) * share) + '</b></div>';
+    }).join('');
+    $('out').hidden = false; $('prompt').hidden = true;
+  }
+
+  $('modes').addEventListener('click', function(e){
+    var b = e.target.closest('button[data-mode]'); if (!b) return;
+    mode = b.getAttribute('data-mode');
+    var btns = $('modes').querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) btns[i].setAttribute('aria-pressed', String(btns[i] === b));
+    $('pane-even').hidden = mode !== 'even';
+    $('pane-items').hidden = mode === 'even';
+    calc();
+  });
+  $('addrow').addEventListener('click', function(){ addRow(); calc(); });
+  ['bill','people','tip','tax'].forEach(function(id){ $(id).addEventListener('input', calc); });
+
+  addRow(); addRow(); addRow();
+  calc();
+})();</script>
+</body>
+</html>
