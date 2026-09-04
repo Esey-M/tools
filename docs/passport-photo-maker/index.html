@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en" data-theme-init>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Passport Photo Maker – Correct Size for Any Country</title>
+<meta name="description" content="Free passport photo maker. Crop a photo to the official size for your country, check head proportions, and download a single photo or a printable sheet.">
+<link rel="canonical" href="https://cinchpad.com/passport-photo-maker/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0f7d6b">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CinchPad">
+<meta property="og:title" content="Passport Photo Maker – Correct Size for Any Country">
+<meta property="og:description" content="Free passport photo maker. Crop a photo to the official size for your country, check head proportions, and download a single photo or a printable sheet.">
+<meta property="og:url" content="https://cinchpad.com/passport-photo-maker/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cinchpad.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Passport Photo Maker – Correct Size for Any Country">
+<meta name="twitter:description" content="Free passport photo maker. Crop a photo to the official size for your country, check head proportions, and download a single photo or a printable sheet.">
+<meta name="twitter:image" content="https://cinchpad.com/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/style.css" as="style">
+<link rel="stylesheet" href="/style.css">
+<style>
+.drop{border:2px dashed var(--line-strong);border-radius:var(--radius-lg);padding:34px 20px;text-align:center;
+  cursor:pointer;color:var(--ink-2);display:grid;place-items:center;gap:8px;transition:border-color .15s,background .15s}
+.drop:hover,.drop:focus-visible,.drop.over{border-color:var(--accent);background:var(--accent-soft)}
+.drop p{margin:0}.drop svg{color:var(--ink-3)}
+.pp-stage{margin-top:12px;background:var(--bg-sunken);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;display:grid;place-items:center;touch-action:none}
+.pp-stage canvas{max-height:430px;max-width:100%;height:auto;cursor:move;border-radius:4px;
+  box-shadow:0 2px 10px rgba(0,0,0,.15)}</style>
+<script>
+/* Apply the saved theme before first paint so there is no flash. */
+(function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"WebApplication","@id":"https://cinchpad.com/passport-photo-maker/#app","name":"Passport Photo Maker","url":"https://cinchpad.com/passport-photo-maker/","description":"Free passport photo maker. Crop a photo to the official size for your country, check head proportions, and download a single photo or a printable sheet.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://cinchpad.com/#organization"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"File & Image Tools","item":"https://cinchpad.com/category/file-tools/"},{"@type":"ListItem","position":3,"name":"Passport Photo Maker","item":"https://cinchpad.com/passport-photo-maker/"}]},{"@type":"HowTo","name":"How to use the Passport Photo Maker","description":"Free passport photo maker. Crop a photo to the official size for your country, check head proportions, and download a single photo or a printable sheet.","totalTime":"PT1M","step":[{"@type":"HowToStep","position":1,"name":"Step 1","text":"Take or choose a photo against a plain light wall, lit evenly from the front.","url":"https://cinchpad.com/passport-photo-maker/#how-to"},{"@type":"HowToStep","position":2,"name":"Step 2","text":"Pick your country. The frame resizes to the official dimensions at 300 dpi.","url":"https://cinchpad.com/passport-photo-maker/#how-to"},{"@type":"HowToStep","position":3,"name":"Step 3","text":"Drag the photo so your eyes sit on the dashed line and your head fills the marked band.","url":"https://cinchpad.com/passport-photo-maker/#how-to"},{"@type":"HowToStep","position":4,"name":"Step 4","text":"Download a single photo, or the 6×4 sheet to print at any photo counter.","url":"https://cinchpad.com/passport-photo-maker/#how-to"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I take a passport photo at home?","acceptedAnswer":{"@type":"Answer","text":"Yes, and most authorities accept them provided the specification is met. Use a plain light wall, face a window for even light, and have someone else take it from about two metres away rather than using a selfie — arm’s length distorts facial proportions."}},{"@type":"Question","name":"Is my photo uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is done on a canvas in your browser and the result downloads directly."}},{"@type":"Question","name":"Can I wear glasses?","acceptedAnswer":{"@type":"Answer","text":"Not for a US passport, which prohibits them entirely. The UK and EU allow them if there is no glare and your eyes are clearly visible. Removing them avoids the risk."}},{"@type":"Question","name":"What background colour should I use?","acceptedAnswer":{"@type":"Answer","text":"Plain white or light grey for most countries, with no pattern, texture or shadow. The background option here only fills empty space; it cannot cut you out of a busy scene."}},{"@type":"Question","name":"How do I print these?","acceptedAnswer":{"@type":"Answer","text":"Download the 6×4 sheet and order a standard 6×4 print at any photo counter or kiosk, then cut along the guide lines. It costs a fraction of a photo booth."}},{"@type":"Question","name":"Will the guide lines appear in my download?","acceptedAnswer":{"@type":"Answer","text":"No. They are drawn on the preview only — the downloaded photo and print sheet are clean."}}]}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CinchPad</span>
+    </a>
+    <div class="search" role="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" id="site-search" class="js-search" placeholder="Search 79 tools…" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="site-search-results" aria-label="Search tools">
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="/tools/">All tools</a>
+      <a class="hide-sm" href="/blog/">Blog</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><span aria-current="page">Passport Photo Maker</span></li></ol></nav>
+<div class="tool-layout">
+  <div>
+    <header class="page-head">
+      <h1>Passport Photo Maker</h1>
+      <p class="lede">Position your face inside the guides, pick your country, and download either one photo or a 6×4 sheet ready to print.</p>
+    </header>
+
+    <div class="panel" id="tool">
+      
+<div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a photo">
+  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+    <circle cx="12" cy="9" r="3.5"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/><rect x="2" y="2" width="20" height="20" rx="2"/>
+  </svg>
+  <p><strong>Drop a photo here</strong> or click to choose</p>
+  <p class="hint">A plain background and even lighting give the best result</p>
+  <input type="file" id="file" accept="image/jpeg,image/png,image/webp" hidden>
+</div>
+
+<div id="editor" hidden>
+  <div class="row" style="margin-top:18px">
+    <div class="field">
+      <label for="country">Country or document</label>
+      <select id="country"></select>
+    </div>
+    <div class="field">
+      <label for="zoom">Zoom: <strong id="zval">100</strong>%</label>
+      <input type="range" id="zoom" min="50" max="300" step="5" value="100" style="width:100%;padding:0;border:none;background:transparent">
+    </div>
+    <div class="field">
+      <label for="bg">Background</label>
+      <select id="bg">
+        <option value="keep" selected>Keep original</option>
+        <option value="#ffffff">Force white</option>
+        <option value="#f2f2f2">Force off-white</option>
+      </select>
+      <span class="hint">Forcing a colour only fills gaps, it does not cut you out.</span>
+    </div>
+  </div>
+
+  <p class="hint">Drag the photo to position it. Line your eyes up with the horizontal guide.</p>
+  <div class="pp-stage" id="stage">
+    <canvas id="canvas" role="img" aria-label="Passport photo preview"></canvas>
+  </div>
+
+  <div class="btn-row" style="margin-top:14px">
+    <button type="button" class="btn" id="dl">Download photo</button>
+    <button type="button" class="btn btn-ghost" id="sheet">Download 6×4 print sheet</button>
+    <button type="button" class="btn btn-ghost" id="change">Choose another</button>
+  </div>
+  <p class="hint" id="meta" style="margin-top:10px"></p>
+</div>
+<p class="notice notice-warn" id="err" hidden style="margin-top:14px"></p>
+      <noscript>
+        <p class="notice notice-warn" style="margin-top:16px">
+          This tool needs JavaScript to calculate. Everything below still explains how to work it out by hand.
+        </p>
+      </noscript>
+    </div>
+
+    <div class="ad" data-empty="true" data-slot="tool-top"></div>
+
+    <section class="section prose" id="what-is" aria-labelledby="what-h">
+      <h2 id="what-h">What makes a passport photo acceptable</h2>
+      <div class="answer"><p><strong>Two things get photos rejected far more than anything else: head size and background.</strong> Most authorities require your head to occupy a specific proportion of the frame — around 50–69% of the height for a US photo, and 29–34 mm of a 45 mm UK photo — with your eyes on a defined line. The background must be plain, light and shadow-free. This tool handles the dimensions and shows guides for the head band and eye line; you still need a neutral expression, no glasses glare, and even lighting.</p></div>
+    </section>
+
+    <section class="section prose" id="specs">
+      <h2 id="specs-h">Official sizes</h2>
+      <div class="table-scroll"><table>
+<thead><tr><th>Document</th><th>Photo size</th><th>Head height</th></tr></thead>
+<tbody>
+<tr><td>US passport and visa</td><td>2 × 2 in (51 × 51 mm)</td><td>25–35 mm (1–1⅜ in)</td></tr>
+<tr><td>UK passport</td><td>35 × 45 mm</td><td>29–34 mm</td></tr>
+<tr><td>Schengen visa</td><td>35 × 45 mm</td><td>32–36 mm</td></tr>
+<tr><td>Canada passport</td><td>50 × 70 mm</td><td>31–36 mm</td></tr>
+<tr><td>Australia passport</td><td>35 × 45 mm</td><td>32–36 mm</td></tr>
+<tr><td>India passport</td><td>51 × 51 mm</td><td>25–35 mm</td></tr>
+</tbody></table></div>
+<p>Print at 300 dpi or better. A photo printed from a low-resolution file will be rejected for lacking detail even when the dimensions are right.</p>
+    </section>
+<section class="section prose" id="rejected">
+      <h2 id="rejected-h">Why photos get rejected</h2>
+      <ul>
+<li><strong>Shadows on the face or behind the head.</strong> Stand a metre or so from the wall and face a window.</li>
+<li><strong>Head too large or too small.</strong> The most common single failure, and what the guides here are for.</li>
+<li><strong>Smiling or an open mouth.</strong> Neutral expression, mouth closed, both eyes open.</li>
+<li><strong>Glasses.</strong> The US no longer permits them at all; the UK and EU allow them only with no glare and the eyes fully visible. Taking them off is safer.</li>
+<li><strong>Hair across the eyes or face.</strong></li>
+<li><strong>Anything covering the head</strong>, except for religious or medical reasons, and the full face must still be visible.</li>
+<li><strong>Filters, retouching or beauty modes.</strong> Turn them off; several authorities now reject digitally altered photos outright.</li>
+<li><strong>An old photo.</strong> Most require one taken within the last six months.</li>
+</ul>
+<p>Children have relaxed rules on expression and gaze, but the background and framing requirements still apply.</p>
+    </section>
+
+    <section class="section" id="how-to" aria-labelledby="howto-h">
+  <h2 id="howto-h">How to use the Passport Photo Maker</h2>
+  <ol class="prose"><li>Take or choose a photo against a plain light wall, lit evenly from the front.</li><li>Pick your country. The frame resizes to the official dimensions at 300 dpi.</li><li>Drag the photo so your eyes sit on the dashed line and your head fills the marked band.</li><li>Download a single photo, or the 6×4 sheet to print at any photo counter.</li></ol>
+</section>
+    <div class="ad" data-empty="true" data-slot="tool-mid"></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Frequently asked questions</h2>
+  <details>
+    <summary>Can I take a passport photo at home?</summary>
+    <div><p>Yes, and most authorities accept them provided the specification is met. Use a plain light wall, face a window for even light, and have someone else take it from about two metres away rather than using a selfie — arm’s length distorts facial proportions.</p></div>
+  </details>
+  <details>
+    <summary>Is my photo uploaded?</summary>
+    <div><p>No. Everything is done on a canvas in your browser and the result downloads directly.</p></div>
+  </details>
+  <details>
+    <summary>Can I wear glasses?</summary>
+    <div><p>Not for a US passport, which prohibits them entirely. The UK and EU allow them if there is no glare and your eyes are clearly visible. Removing them avoids the risk.</p></div>
+  </details>
+  <details>
+    <summary>What background colour should I use?</summary>
+    <div><p>Plain white or light grey for most countries, with no pattern, texture or shadow. The background option here only fills empty space; it cannot cut you out of a busy scene.</p></div>
+  </details>
+  <details>
+    <summary>How do I print these?</summary>
+    <div><p>Download the 6×4 sheet and order a standard 6×4 print at any photo counter or kiosk, then cut along the guide lines. It costs a fraction of a photo booth.</p></div>
+  </details>
+  <details>
+    <summary>Will the guide lines appear in my download?</summary>
+    <div><p>No. They are drawn on the preview only — the downloaded photo and print sheet are clean.</p></div>
+  </details>
+</section>
+    <section class="section" aria-labelledby="rel-h">
+  <h2 id="rel-h">Related tools</h2>
+  <div class="card-grid">
+    <a class="tool-card" href="/photo-cropper/">
+      <strong>Photo Cropper</strong>
+      <span>Crop a photo by dragging, with locked ratios for profiles and posts.</span>
+    </a>
+    <a class="tool-card" href="/image-resizer/">
+      <strong>Image Resizer</strong>
+      <span>Resize a photo to exact pixels, a percentage, or a preset size.</span>
+    </a>
+    <a class="tool-card" href="/image-compressor/">
+      <strong>Image Compressor</strong>
+      <span>Make photos smaller for email or uploads. Nothing leaves your device.</span>
+    </a>
+    <a class="tool-card" href="/image-to-pdf/">
+      <strong>Image to PDF</strong>
+      <span>Turn photos into a PDF, several to a document, in the order you choose.</span>
+    </a>
+  </div>
+</section>
+
+    <p style="margin-top:36px;font-size:.84rem;color:var(--ink-3)">
+      Last reviewed September 4, 2026.
+      Sizing follows published specifications, but acceptance is at the discretion of the issuing authority.
+    </p>
+  </div>
+
+  <aside class="side">
+    <nav aria-labelledby="side-h">
+      <h2 id="side-h">More file & image tools</h2>
+      <ul class="side-list">
+        <li><a href="/image-compressor/">Image Compressor</a></li>
+        <li><a href="/image-resizer/">Image Resizer</a></li>
+        <li><a href="/image-to-pdf/">Image to PDF</a></li>
+        <li><a href="/pdf-merger/">PDF Merger</a></li>
+        <li><a href="/pdf-splitter/">PDF Splitter</a></li>
+        <li><a href="/photo-cropper/">Photo Cropper</a></li>
+        <li><a href="/watermark-photo/">Photo Watermark</a></li>
+      </ul>
+      <p style="margin-top:10px"><a href="/category/file-tools/" style="font-size:.88rem">All file & image tools →</a></p>
+    </nav>
+    <div class="ad" data-empty="true" data-slot="sidebar"></div>
+  </aside>
+</div></div></main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true">C</span><span>CinchPad</span>
+        </a>
+        <p style="max-width:36ch;color:var(--ink-3);font-size:.88rem">
+          Free, fast, private tools for everyday life. Everything runs in your browser — nothing you type is uploaded.
+        </p>
+      </div>
+      <div>
+        <h2>Popular tools</h2>
+        <ul><li><a href="/bmi-calculator/">BMI calculator</a></li><li><a href="/age-calculator/">Age calculator</a></li><li><a href="/tip-calculator/">Tip calculator</a></li><li><a href="/percentage-calculator/">Percentage calculator</a></li><li><a href="/qr-code-generator/">QR code generator</a></li></ul>
+      </div><div>
+        <h2>Categories</h2>
+        <ul><li><a href="/category/calculators/">Calculators</a></li><li><a href="/category/converters/">Converters</a></li><li><a href="/category/file-tools/">File &amp; Image Tools</a></li><li><a href="/category/random/">Random Pickers</a></li><li><a href="/category/health/">Health &amp; Body</a></li></ul>
+      </div><div>
+        <h2>Site</h2>
+        <ul><li><a href="/tools/">All tools</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 CinchPad. Results are estimates — see our <a href="/disclaimer/">disclaimer</a>.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+<script>(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var canvas = $('canvas'), ctx = canvas.getContext('2d');
+  var img = null, offset = { x: 0, y: 0 }, drag = null;
+
+  // [name, width mm, height mm, head height as fraction, eye line from top as fraction]
+  var SPECS = [
+    ['US passport & visa — 2×2 in', 51, 51, 0.62, 0.42],
+    ['UK passport — 35×45 mm', 35, 45, 0.72, 0.40],
+    ['EU / Schengen visa — 35×45 mm', 35, 45, 0.75, 0.40],
+    ['Canada passport — 50×70 mm', 50, 70, 0.44, 0.38],
+    ['Australia passport — 35×45 mm', 35, 45, 0.72, 0.40],
+    ['India passport — 51×51 mm', 51, 51, 0.68, 0.42],
+    ['China visa — 33×48 mm', 33, 48, 0.65, 0.40],
+    ['Japan passport — 35×45 mm', 35, 45, 0.75, 0.38]
+  ];
+  var DPI = 300;
+
+  $('country').innerHTML = SPECS.map(function(s, i){
+    return '<option value="' + i + '">' + s[0] + '</option>';
+  }).join('');
+
+  function spec(){ return SPECS[parseInt($('country').value, 10)]; }
+  function mmToPx(mm){ return Math.round(mm / 25.4 * DPI); }
+
+  function render(){
+    if (!img) return;
+    var s = spec();
+    var w = mmToPx(s[1]), h = mmToPx(s[2]);
+    canvas.width = w; canvas.height = h;
+
+    if ($('bg').value !== 'keep') { ctx.fillStyle = $('bg').value; }
+    else { ctx.fillStyle = '#ffffff'; }
+    ctx.fillRect(0, 0, w, h);
+
+    // Cover the frame at the chosen zoom, then apply the drag offset.
+    var zoom = parseInt($('zoom').value, 10) / 100;
+    var base = Math.max(w / img.naturalWidth, h / img.naturalHeight);
+    var scale = base * zoom;
+    var dw = img.naturalWidth * scale, dh = img.naturalHeight * scale;
+    var dx = (w - dw) / 2 + offset.x, dy = (h - dh) / 2 + offset.y;
+    ctx.drawImage(img, dx, dy, dw, dh);
+
+    drawGuides(w, h, s);
+    $('meta').textContent = s[1] + ' × ' + s[2] + ' mm at ' + DPI + ' dpi = ' + w + ' × ' + h + ' px';
+  }
+
+  function drawGuides(w, h, s){
+    // Head-height band and eye line, per the published specification.
+    var headTop = h * (s[4] - s[3] * 0.42);
+    var headBottom = headTop + h * s[3];
+    var eyeY = h * s[4];
+
+    ctx.save();
+    ctx.strokeStyle = 'rgba(15,125,107,.85)';
+    ctx.setLineDash([9, 7]);
+    ctx.lineWidth = Math.max(2, w / 260);
+
+    ctx.beginPath(); ctx.moveTo(0, eyeY); ctx.lineTo(w, eyeY); ctx.stroke();
+
+    ctx.strokeStyle = 'rgba(15,125,107,.5)';
+    ctx.beginPath(); ctx.moveTo(0, headTop); ctx.lineTo(w, headTop); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0, headBottom); ctx.lineTo(w, headBottom); ctx.stroke();
+
+    ctx.setLineDash([]);
+    ctx.fillStyle = 'rgba(15,125,107,.9)';
+    ctx.font = '600 ' + Math.round(w / 22) + 'px ui-sans-serif, system-ui, sans-serif';
+    ctx.fillText('eyes', w * 0.03, eyeY - w / 45);
+    ctx.fillText('top of head', w * 0.03, headTop - w / 45);
+    ctx.fillText('chin', w * 0.03, headBottom - w / 45);
+    ctx.restore();
+  }
+
+  function renderClean(){
+    // Same drawing without the guides, for export.
+    var s = spec();
+    var w = mmToPx(s[1]), h = mmToPx(s[2]);
+    var out = document.createElement('canvas');
+    out.width = w; out.height = h;
+    var c = out.getContext('2d');
+    c.fillStyle = $('bg').value !== 'keep' ? $('bg').value : '#ffffff';
+    c.fillRect(0, 0, w, h);
+    var zoom = parseInt($('zoom').value, 10) / 100;
+    var base = Math.max(w / img.naturalWidth, h / img.naturalHeight);
+    var scale = base * zoom;
+    var dw = img.naturalWidth * scale, dh = img.naturalHeight * scale;
+    c.drawImage(img, (w - dw) / 2 + offset.x, (h - dh) / 2 + offset.y, dw, dh);
+    return out;
+  }
+
+  function download(cv, name){
+    cv.toBlob(function(blob){
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = name;
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+    }, 'image/jpeg', 0.95);
+  }
+
+  // Drag to reposition, in canvas pixels rather than screen pixels.
+  canvas.addEventListener('pointerdown', function(e){
+    e.preventDefault();
+    canvas.setPointerCapture(e.pointerId);
+    var rect = canvas.getBoundingClientRect();
+    drag = { x: e.clientX, y: e.clientY, ox: offset.x, oy: offset.y, k: canvas.width / rect.width };
+  });
+  canvas.addEventListener('pointermove', function(e){
+    if (!drag) return;
+    e.preventDefault();
+    offset.x = drag.ox + (e.clientX - drag.x) * drag.k;
+    offset.y = drag.oy + (e.clientY - drag.y) * drag.k;
+    render();
+  });
+  ['pointerup','pointercancel'].forEach(function(ev){
+    canvas.addEventListener(ev, function(){ drag = null; });
+  });
+
+  function load(file){
+    if (!/^image\/(jpeg|png|webp)$/.test(file.type)) {
+      $('err').hidden = false;
+      $('err').textContent = 'That file type is not supported. Choose a JPG, PNG or WebP image.';
+      return;
+    }
+    $('err').hidden = true;
+    var url = URL.createObjectURL(file);
+    var i = new Image();
+    i.onload = function(){
+      img = i; offset = { x: 0, y: 0 };
+      $('zoom').value = 100; $('zval').textContent = '100';
+      $('editor').hidden = false; $('drop').hidden = true;
+      render();
+    };
+    i.onerror = function(){ URL.revokeObjectURL(url); };
+    i.src = url;
+  }
+
+  var drop = $('drop');
+  drop.addEventListener('click', function(){ $('file').click(); });
+  drop.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('file').click(); } });
+  $('file').addEventListener('change', function(){ if (this.files[0]) load(this.files[0]); this.value = ''; });
+  ['dragenter','dragover'].forEach(function(ev){ drop.addEventListener(ev, function(e){ e.preventDefault(); drop.classList.add('over'); }); });
+  ['dragleave','drop'].forEach(function(ev){ drop.addEventListener(ev, function(e){ e.preventDefault(); drop.classList.remove('over'); }); });
+  drop.addEventListener('drop', function(e){ if (e.dataTransfer.files[0]) load(e.dataTransfer.files[0]); });
+
+  ['country','bg'].forEach(function(id){ $(id).addEventListener('change', render); });
+  $('zoom').addEventListener('input', function(){ $('zval').textContent = this.value; render(); });
+  $('change').addEventListener('click', function(){ $('drop').hidden = false; $('editor').hidden = true; });
+
+  $('dl').addEventListener('click', function(){ download(renderClean(), 'passport-photo.jpg'); });
+
+  $('sheet').addEventListener('click', function(){
+    // Lay repeats onto a standard 6x4 inch print at 300 dpi.
+    var photo = renderClean();
+    var sheetW = 6 * DPI, sheetH = 4 * DPI;
+    var out = document.createElement('canvas');
+    out.width = sheetW; out.height = sheetH;
+    var c = out.getContext('2d');
+    c.fillStyle = '#ffffff'; c.fillRect(0, 0, sheetW, sheetH);
+
+    var gap = Math.round(DPI * 0.08);
+    var cols = Math.floor((sheetW + gap) / (photo.width + gap));
+    var rows = Math.floor((sheetH + gap) / (photo.height + gap));
+    var totalW = cols * photo.width + (cols - 1) * gap;
+    var totalH = rows * photo.height + (rows - 1) * gap;
+    var startX = (sheetW - totalW) / 2, startY = (sheetH - totalH) / 2;
+
+    c.strokeStyle = '#cccccc'; c.lineWidth = 2;
+    for (var r = 0; r < rows; r++) {
+      for (var col = 0; col < cols; col++) {
+        var x = startX + col * (photo.width + gap);
+        var y = startY + r * (photo.height + gap);
+        c.drawImage(photo, x, y);
+        c.strokeRect(x, y, photo.width, photo.height);
+      }
+    }
+    download(out, 'passport-photos-6x4.jpg');
+  });
+})();</script>
+</body>
+</html>

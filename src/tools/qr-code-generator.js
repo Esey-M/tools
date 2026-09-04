@@ -315,5 +315,5 @@ input[type=color]{width:100%;border:1px solid var(--line-strong);border-radius:v
     { q: 'Can I use these codes commercially?', a: '<p>Yes. QR code patents expired long ago and the format is an open ISO standard. Codes made here carry no watermark and no licence conditions.</p>' },
   ],
 
-  related: ['wifi-qr-code-generator', 'barcode-generator', 'password-generator', 'url-shortener'],
+  related: ['wifi-qr-code-generator', 'barcode-generator', 'password-generator', 'image-to-pdf'],
 };

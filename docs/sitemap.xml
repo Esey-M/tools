@@ -277,6 +277,18 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://cinchpad.com/nickname-generator/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cinchpad.com/oven-temperature-converter/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://cinchpad.com/overtime-pay-calculator/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -290,6 +302,12 @@
   </url>
   <url>
     <loc>https://cinchpad.com/paint-calculator/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cinchpad.com/passport-photo-maker/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -325,6 +343,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://cinchpad.com/period-tracker/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://cinchpad.com/photo-cropper/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -338,6 +362,12 @@
   </url>
   <url>
     <loc>https://cinchpad.com/qr-code-generator/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cinchpad.com/random-fact-generator/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
