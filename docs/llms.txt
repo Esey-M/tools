@@ -2,7 +2,7 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 88 browser-based utilities for
+CinchPad is a free, ad-supported collection of 89 browser-based utilities for
 everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
 uploaded or stored. No account is required and every tool is free to use.
 
@@ -45,6 +45,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Passport Photo Maker](https://cinchpad.com/passport-photo-maker/): Free passport photo maker. Crop a photo to the official size for your country, check head proportions, and download a single photo or a printable sheet.
 - [PDF Merger](https://cinchpad.com/pdf-merger/): Free PDF merger. Combine multiple PDF files into one document, drag to reorder the files, and download. Runs in your browser — your files are never uploaded.
 - [PDF Splitter](https://cinchpad.com/pdf-splitter/): Free PDF splitter. Extract a page range, remove unwanted pages, or split a PDF into single files. Runs in your browser — your document is never uploaded.
+- [PDF to Image](https://cinchpad.com/pdf-to-image/): Free PDF to image converter. Turn PDF pages into PNG or JPG at your chosen resolution, preview them, and download individually. Runs in your browser.
 - [Photo Cropper](https://cinchpad.com/photo-cropper/): Free photo cropper. Drag to crop any image, lock to common aspect ratios for social profiles and posts, and download. Runs in your browser with no upload.
 - [Photo Watermark](https://cinchpad.com/watermark-photo/): Free photo watermark tool. Add your name or website across an image, choose position, opacity, size and rotation, and download. No upload, no watermark of ours.
 ### Random Pickers
