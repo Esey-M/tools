@@ -4,6 +4,8 @@ import { fileURLToPath } from 'node:url';
 import { site, categories } from './src/config.js';
 import { renderToolPage } from './src/templates/tool.js';
 import * as pages from './src/templates/pages.js';
+import { renderAnswerPage } from './src/templates/answer.js';
+import { renderAnswerIndex } from './src/templates/answer-index.js';
 import { renderMarkdown, parseFrontmatter } from './src/lib/markdown.js';
 import { textOf } from './src/lib/html.js';
 import { url } from './src/lib/seo.js';
@@ -72,6 +74,24 @@ async function loadPosts() {
   return out.sort((a, b) => b.date.localeCompare(a.date));
 }
 
+/** Generated long-tail answer pages: one page per specific query. */
+async function loadAnswers() {
+  const dir = path.join(root, 'src/answers');
+  let files = [];
+  try { files = (await fs.readdir(dir)).filter((f) => f.endsWith('.js')); } catch { return []; }
+  const out = [];
+  for (const file of files.sort()) {
+    const mod = await import(path.join(dir, file) + `?v=${Date.now()}`);
+    if (typeof mod.generate === 'function') out.push(...mod.generate());
+  }
+  const slugs = new Set();
+  for (const page of out) {
+    if (slugs.has(page.slug)) throw new Error(`duplicate answer page slug: ${page.slug}`);
+    slugs.add(page.slug);
+  }
+  return out;
+}
+
 async function loadStaticPages() {
   const dir = path.join(root, 'src/pages');
   let files = [];
@@ -116,6 +136,7 @@ async function main() {
   const tools = await loadTools();
   const posts = await loadPosts();
   const staticPages = await loadStaticPages();
+  const answers = await loadAnswers();
 
   const bySlug = Object.fromEntries(tools.map((t) => [t.slug, t]));
   const categoryTools = {};
@@ -144,7 +165,23 @@ async function main() {
     if (!popular.includes(t.slug)) popular.push(t.slug);
   }
 
-  const ctx = { tools, posts, bySlug, categoryTools, searchIndex, popular };
+  // Group answer pages by the tool they reference, spreading the picks across
+  // the value range rather than linking eleven consecutive centimetres.
+  const answersByTool = {};
+  for (const a of answers) {
+    if (!a.toolSlug) continue;
+    (answersByTool[a.toolSlug] = answersByTool[a.toolSlug] || []).push(a);
+  }
+  for (const slug of Object.keys(answersByTool)) {
+    const list = answersByTool[slug];
+    const stride = Math.max(1, Math.floor(list.length / 18));
+    answersByTool[slug] = list
+      .filter((_, i) => i % stride === 0)
+      .slice(0, 18)
+      .map((a) => ({ slug: a.slug, label: a.h1.replace(/^How many days until /, '').replace(/\?$/, '').replace(/ and inches$/, '') }));
+  }
+
+  const ctx = { tools, posts, bySlug, categoryTools, searchIndex, popular, answersByTool };
   const urls = [];
   const track = (loc, lastmod, changefreq, priority) => urls.push({ loc, lastmod, changefreq, priority });
 
@@ -175,6 +212,45 @@ async function main() {
       await writePage(`blog/${post.slug}`, pages.renderPost(post, ctx));
       track(url(`/blog/${post.slug}/`), post.updated || post.date, 'monthly', '0.7');
     }
+  }
+
+  // --- generated answer pages -------------------------------------------
+  for (const page of answers) {
+    await writePage(page.slug, renderAnswerPage(page, ctx));
+    track(url(`/${page.slug}/`), page.updated || today, 'weekly', '0.6');
+  }
+
+  const convert = answers.filter((a) => a.slug.startsWith('convert/'));
+  if (convert.length) {
+    const byGroup = (g) => convert.filter((a) => a.group === g)
+      .map((a) => ({ slug: a.slug, label: a.h1.replace(/ and inches$/, '').replace(/^What is /, '') }));
+    await writePage('convert', renderAnswerIndex({
+      slug: 'convert', name: 'Conversions',
+      h1: 'Conversion answers',
+      title: `Unit Conversion Answers – ${convert.length} Exact Conversions | ${site.name}`,
+      description: `Exact answers for ${convert.length} common conversions — height in centimetres to feet, weight in kilograms to pounds, and Celsius to Fahrenheit — each with the working shown.`,
+      lede: 'Direct answers to specific conversions, each with the arithmetic and a chart of nearby values. For anything not listed, use the full converters.',
+      groups: [
+        { title: 'Height — centimetres to feet and inches', blurb: 'The exact feet-and-inches equivalent for every centimetre from 140 to 200.', pages: byGroup('cm-to-feet') },
+        { title: 'Weight — kilograms to pounds', blurb: 'Pounds and stone for every kilogram from 40 to 130.', pages: byGroup('kg-to-lb') },
+        { title: 'Temperature — Celsius to Fahrenheit', blurb: 'Weather and oven temperatures, with gas marks and fan oven settings.', pages: byGroup('c-to-f') },
+      ],
+    }, ctx));
+    track(url('/convert/'), today, 'weekly', '0.7');
+  }
+
+  const countdowns = answers.filter((a) => a.slug.startsWith('days-until/'));
+  if (countdowns.length) {
+    await writePage('days-until', renderAnswerIndex({
+      slug: 'days-until', name: 'Countdowns',
+      h1: 'How many days until…',
+      title: `How Many Days Until – Live Countdowns to ${countdowns.length} Dates | ${site.name}`,
+      description: 'Live countdowns to Christmas, Halloween, Easter, Thanksgiving and other dates, each showing the exact days, hours and minutes remaining.',
+      lede: 'Live countdowns that tick every second, in your own time zone. For any other date, the countdown timer takes a custom one and gives you a shareable link.',
+      groups: [{ title: 'Countdowns', blurb: 'Each page shows the date, the live count and the dates for the next few years.',
+        pages: countdowns.map((a) => ({ slug: a.slug, label: a.h1.replace('How many days until ', '').replace('?', '') })) }],
+    }, ctx));
+    track(url('/days-until/'), today, 'daily', '0.7');
   }
 
   for (const page of staticPages) {
@@ -266,7 +342,7 @@ ${posts.length ? `## Articles\n${posts.map((p) => `- [${p.title}](${url('/blog/'
   if (site.customDomain) await write('CNAME', site.customDomain + '\n');
 
   const ms = Date.now() - started;
-  console.log(`✓ ${tools.length} tools · ${posts.length} posts · ${staticPages.length} pages · ${urls.length} URLs → docs/ (${ms}ms)`);
+  console.log(`✓ ${tools.length} tools · ${answers.length} answer pages · ${posts.length} posts · ${staticPages.length} pages · ${urls.length} URLs → docs/ (${ms}ms)`);
   const missing = tools.flatMap((t) => (t.related || []).filter((r) => !bySlug[r]).map((r) => `${t.slug} → ${r}`));
   if (missing.length) console.log(`  note: ${missing.length} related links point at tools not built yet`);
 }

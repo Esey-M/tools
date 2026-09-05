@@ -25,6 +25,19 @@ function stepsBlock(steps, name) {
 </section>`;
 }
 
+/** Long-tail answer pages that point at this tool, linked back for crawlability. */
+function answerLinks(tool, ctx) {
+  const links = (ctx.answersByTool || {})[tool.slug] || [];
+  if (links.length < 4) return '';
+  return `<section class="section" aria-labelledby="ans-h">
+  <h2 id="ans-h">Popular exact answers</h2>
+  <p style="color:var(--ink-2);font-size:.95rem;margin-bottom:12px">Worked answers to the questions people ask most, each with the arithmetic shown.</p>
+  <div class="pills" style="justify-content:flex-start">
+    ${links.slice(0, 18).map((a) => `<a class="pill" href="${B}/${a.slug}/">${esc(a.label)}</a>`).join('')}
+  </div>
+</section>`;
+}
+
 function relatedBlock(related, byslug) {
   const items = (related || []).map((slug) => byslug[slug]).filter(Boolean);
   if (!items.length) return '';
@@ -100,6 +113,7 @@ ${breadcrumbs(trail)}
     </section>`).join('\n')}
 
     ${stepsBlock(tool.steps, name)}
+    ${answerLinks(tool, ctx)}
     ${adSlot('tool-mid')}
     ${faqBlock(tool.faq)}
     ${relatedBlock(tool.related, bySlug)}

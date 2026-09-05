@@ -95,9 +95,13 @@ function footer() {
       ['/qr-code-generator/', 'QR code generator'],
     ]},
     { title: 'Categories', links: state.liveCategories.slice(0, 5).map((c) => [`/category/${c.slug}/`, c.name]) },
+    { title: 'Answers', links: [
+      ['/convert/', 'Conversion answers'],
+      ['/days-until/', 'How many days until…'],
+      ['/blog/', 'Blog'],
+    ]},
     { title: 'Site', links: [
       ['/tools/', 'All tools'],
-      ['/blog/', 'Blog'],
       ['/about/', 'About'],
       ['/contact/', 'Contact'],
     ]},

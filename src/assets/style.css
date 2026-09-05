@@ -475,3 +475,33 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
   body { background: #fff; }
   .print-only { display: block; }
 }
+
+
+/* ===========================================================================
+   Answer pages — one page, one exact question
+   =========================================================================== */
+.answer-box {
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: var(--radius-lg); padding: 24px 26px; margin-bottom: 20px;
+}
+.answer-label {
+  font-size: .78rem; text-transform: uppercase; letter-spacing: .08em;
+  font-weight: 640; color: var(--accent-ink);
+}
+.answer-value {
+  font-size: clamp(1.7rem, 1.2rem + 2.4vw, 2.6rem); font-weight: 720;
+  line-height: 1.15; letter-spacing: -.03em; color: var(--accent-ink);
+  margin-top: 6px; overflow-wrap: anywhere;
+}
+.answer-note { font-size: .96rem; color: var(--ink-2); margin-top: 10px; }
+.answer-cta {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 4px;
+  background: var(--bg-raised); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px 16px;
+  text-decoration: none; color: var(--ink);
+  transition: border-color .14s, box-shadow .14s;
+}
+.answer-cta:hover { border-color: var(--accent); color: var(--ink); box-shadow: var(--shadow); }
+.answer-cta strong { font-weight: 620; font-size: .97rem; display: block; }
+.answer-cta .tool-body > span { font-size: .84rem; color: var(--ink-3); line-height: 1.45; }

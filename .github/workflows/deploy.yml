@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # The countdown pages bake today's day count into their static HTML, so
+  # rebuild daily to keep it accurate for crawlers between pushes.
+  schedule:
+    - cron: '17 5 * * *'
 
 # Allow one concurrent deployment; a newer push supersedes an in-flight one.
 concurrency:
