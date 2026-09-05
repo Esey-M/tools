@@ -2,9 +2,12 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { site } from '../src/config.js';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'docs');
 const PORT = Number(process.env.PORT) || 4173;
+// Pages link assets under site.basePath, so strip it to mirror how the host serves them.
+const BASE = site.basePath || '';
 
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
@@ -14,7 +17,8 @@ const TYPES = {
 };
 
 http.createServer((req, res) => {
-  const clean = decodeURIComponent(req.url.split('?')[0]);
+  let clean = decodeURIComponent(req.url.split('?')[0]);
+  if (BASE && (clean === BASE || clean.startsWith(BASE + '/'))) clean = clean.slice(BASE.length) || '/';
   let file = path.join(ROOT, clean);
   // Block traversal outside the output directory.
   if (!file.startsWith(ROOT)) { res.writeHead(403).end('Forbidden'); return; }
@@ -30,4 +34,4 @@ http.createServer((req, res) => {
   }
   res.writeHead(200, { 'content-type': TYPES[path.extname(file)] || 'application/octet-stream' });
   fs.createReadStream(file).pipe(res);
-}).listen(PORT, () => console.log(`serving docs/ on http://localhost:${PORT}`));
+}).listen(PORT, () => console.log(`serving docs/ on http://localhost:${PORT}${BASE || ''}/`));

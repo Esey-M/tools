@@ -11,4 +11,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://cinchpad.com/sitemap.xml
+Sitemap: https://esey-m.github.io/tools/sitemap.xml

@@ -21,7 +21,7 @@ If something you need is missing, say what the task is rather than what the tool
 
 ## Getting in touch
 
-Email: **hello@cinchpad.com**
+Email: **bin946088@gmail.com**
 
 We read everything. Replies to genuine questions usually arrive within a few days.
 

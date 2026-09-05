@@ -9,6 +9,9 @@ import { fileURLToPath } from 'node:url';
 import { site } from '../src/config.js';
 
 const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'docs');
+// Pages reference assets under site.basePath; on disk they sit at the docs root.
+const BASE = site.basePath || '';
+const unbase = (p) => (BASE && (p === BASE || p.startsWith(BASE + '/')) ? p.slice(BASE.length) || '/' : p);
 
 const errors = [];
 const warnings = [];
@@ -125,7 +128,7 @@ async function main() {
       if (/^(https?:|mailto:|tel:|#|data:)/.test(href)) continue;
       const clean = href.split('#')[0].split('?')[0];
       if (!clean) continue;
-      const target = clean.startsWith('/') ? clean : path.posix.join(page, clean);
+      const target = unbase(clean.startsWith('/') ? clean : path.posix.join(page, clean));
       if (!servable.has(target) && !servable.has(target + '/') && !assets.has(target)) {
         fail(page, `broken internal link → ${href}`);
       }
@@ -133,7 +136,7 @@ async function main() {
 
     // --- referenced assets ------------------------------------------------
     for (const [, src] of html.matchAll(/(?:src|href)="(\/[^"]+\.(?:css|js|png|svg|webmanifest))"/g)) {
-      if (!assets.has(src)) fail(page, `missing asset → ${src}`);
+      if (!assets.has(unbase(src))) fail(page, `missing asset → ${src}`);
     }
   }
 
