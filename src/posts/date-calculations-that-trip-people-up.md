@@ -1,7 +1,7 @@
 ---
 title: Date Maths Is Harder Than It Looks
 slug: date-calculations-that-trip-people-up
-description: Leap years have a rule most people only half-know, "a month later" is ambiguous, and inclusive counting changes the answer by one. The edge cases that cause real errors.
+description: Leap years have a rule most people half-know, "a month later" is ambiguous, and inclusive counting shifts the answer by one.
 date: 2026-09-13
 tags: [Guides]
 tools: [date-difference-calculator, age-calculator, countdown-timer, anniversary-calculator]

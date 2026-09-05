@@ -127,7 +127,7 @@ nothing a visitor types or opens is uploaded. The documented exceptions are:
 - [WiFi QR Code Generator](https://cinchpad.com/wifi-qr-code-generator/): Free WiFi QR code generator. Make a scannable code that connects phones to your network without typing the password, with a printable card for guests.
 
 ## Articles
-- [Date Maths Is Harder Than It Looks](https://cinchpad.com/blog/date-calculations-that-trip-people-up/): Leap years have a rule most people only half-know, "a month later" is ambiguous, and inclusive counting changes the answer by one. The edge cases that cause real errors.
+- [Date Maths Is Harder Than It Looks](https://cinchpad.com/blog/date-calculations-that-trip-people-up/): Leap years have a rule most people half-know, "a month later" is ambiguous, and inclusive counting shifts the answer by one.
 - [What Happens to Files You Upload to Online Converters](https://cinchpad.com/blog/what-happens-to-files-you-upload/): Most web tools send your document to a server; some do everything in the browser. How to tell which is which in thirty seconds, and when it matters.
 - [Why the Same Recipe Works for Everyone Except You](https://cinchpad.com/blog/cups-versus-grams/): A cup of flour ranges from 120 g to 160 g depending on how you fill it, and cups differ by country. Why volume measuring fails, and the conversions that matter.
 - [The Hidden Cost of Changing Money](https://cinchpad.com/blog/hidden-cost-of-currency-conversion/): The rate you see online is not the rate you get. Where the margin is added, what each method typically costs, and the one question to always answer "no".

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Date Maths Is Harder Than It Looks | CinchPad</title>
-<meta name="description" content="Leap years have a rule most people only half-know, &quot;a month later&quot; is ambiguous, and inclusive counting changes the answer by one. The edge cases that cause real errors.">
+<meta name="description" content="Leap years have a rule most people half-know, &quot;a month later&quot; is ambiguous, and inclusive counting shifts the answer by one.">
 <link rel="canonical" href="https://cinchpad.com/blog/date-calculations-that-trip-people-up/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="theme-color" content="#740504">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="CinchPad">
 <meta property="og:title" content="Date Maths Is Harder Than It Looks | CinchPad">
-<meta property="og:description" content="Leap years have a rule most people only half-know, &quot;a month later&quot; is ambiguous, and inclusive counting changes the answer by one. The edge cases that cause real errors.">
+<meta property="og:description" content="Leap years have a rule most people half-know, &quot;a month later&quot; is ambiguous, and inclusive counting shifts the answer by one.">
 <meta property="og:url" content="https://cinchpad.com/blog/date-calculations-that-trip-people-up/">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cinchpad.com/og-default.png">
@@ -23,7 +23,7 @@
 <meta property="article:modified_time" content="2026-09-13">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Date Maths Is Harder Than It Looks | CinchPad">
-<meta name="twitter:description" content="Leap years have a rule most people only half-know, &quot;a month later&quot; is ambiguous, and inclusive counting changes the answer by one. The edge cases that cause real errors.">
+<meta name="twitter:description" content="Leap years have a rule most people half-know, &quot;a month later&quot; is ambiguous, and inclusive counting shifts the answer by one.">
 <meta name="twitter:image" content="https://cinchpad.com/og-default.png">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -36,7 +36,7 @@
 /* Apply the saved theme before first paint so there is no flash. */
 (function(){try{var t=localStorage.getItem('cp-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BlogPosting","@id":"https://cinchpad.com/blog/date-calculations-that-trip-people-up/#article","headline":"Date Maths Is Harder Than It Looks","description":"Leap years have a rule most people only half-know, \"a month later\" is ambiguous, and inclusive counting changes the answer by one. The edge cases that cause real errors.","datePublished":"2026-09-13","dateModified":"2026-09-13","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://cinchpad.com/blog/date-calculations-that-trip-people-up/"},"author":{"@type":"Organization","name":"CinchPad","url":"https://cinchpad.com"},"publisher":{"@id":"https://cinchpad.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://cinchpad.com/blog/"},{"@type":"ListItem","position":3,"name":"Date Maths Is Harder Than It Looks","item":"https://cinchpad.com/blog/date-calculations-that-trip-people-up/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cinchpad.com/#organization","name":"CinchPad","url":"https://cinchpad.com","logo":{"@type":"ImageObject","url":"https://cinchpad.com/icon-512.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://cinchpad.com/#website","name":"CinchPad","url":"https://cinchpad.com","description":"Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.","inLanguage":"en","publisher":{"@id":"https://cinchpad.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cinchpad.com/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BlogPosting","@id":"https://cinchpad.com/blog/date-calculations-that-trip-people-up/#article","headline":"Date Maths Is Harder Than It Looks","description":"Leap years have a rule most people half-know, \"a month later\" is ambiguous, and inclusive counting shifts the answer by one.","datePublished":"2026-09-13","dateModified":"2026-09-13","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://cinchpad.com/blog/date-calculations-that-trip-people-up/"},"author":{"@type":"Organization","name":"CinchPad","url":"https://cinchpad.com"},"publisher":{"@id":"https://cinchpad.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cinchpad.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://cinchpad.com/blog/"},{"@type":"ListItem","position":3,"name":"Date Maths Is Harder Than It Looks","item":"https://cinchpad.com/blog/date-calculations-that-trip-people-up/"}]}]}</script>
 
 </head>
 <body>
@@ -69,7 +69,7 @@
   <article>
     <header class="page-head">
       <h1>Date Maths Is Harder Than It Looks</h1>
-      <p class="lede">Leap years have a rule most people only half-know, &quot;a month later&quot; is ambiguous, and inclusive counting changes the answer by one. The edge cases that cause real errors.</p>
+      <p class="lede">Leap years have a rule most people half-know, &quot;a month later&quot; is ambiguous, and inclusive counting shifts the answer by one.</p>
       <div class="post-meta" style="margin-top:12px">
         <span>By CinchPad</span>
         <span>September 13, 2026</span>
