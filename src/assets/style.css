@@ -16,10 +16,10 @@
   --line:          #e3dfd8;
   --line-strong:   #cfc9c0;
 
-  --accent:        #0f7d6b;
-  --accent-hover:  #0c6656;
-  --accent-soft:   #e6f2ef;
-  --accent-ink:    #08503f;
+  --accent:        #740504;
+  --accent-hover:  #8d0605;
+  --accent-soft:   #fbeeed;
+  --accent-ink:    #5e0403;
 
   --warn:          #b45309;
   --warn-soft:     #fdf0e0;
@@ -51,10 +51,10 @@
     --ink-3:       #878d97;
     --line:        #2c313a;
     --line-strong: #3d434e;
-    --accent:      #3fbfa4;
-    --accent-hover:#57d3b8;
-    --accent-soft: #12312b;
-    --accent-ink:  #9fe6d5;
+    --accent:      #e8736c;
+    --accent-hover:#f0908a;
+    --accent-soft: #341413;
+    --accent-ink:  #f6b8b2;
     --warn:        #f0a758;
     --warn-soft:   #33260f;
     --danger:      #f2837a;
@@ -74,10 +74,10 @@
   --ink-3:       #878d97;
   --line:        #2c313a;
   --line-strong: #3d434e;
-  --accent:      #3fbfa4;
-  --accent-hover:#57d3b8;
-  --accent-soft: #12312b;
-  --accent-ink:  #9fe6d5;
+  --accent:      #e8736c;
+  --accent-hover:#f0908a;
+  --accent-soft: #341413;
+  --accent-ink:  #f6b8b2;
   --warn:        #f0a758;
   --warn-soft:   #33260f;
   --danger:      #f2837a;
@@ -158,7 +158,7 @@ a:hover { color: var(--accent-hover); }
 .brand:hover { color: var(--ink); }
 .brand-mark {
   width: 26px; height: 26px; border-radius: 7px; flex: none;
-  background: linear-gradient(140deg, var(--accent), color-mix(in srgb, var(--accent) 55%, #4f9ee8));
+  background: linear-gradient(140deg, var(--accent), color-mix(in srgb, var(--accent) 45%, #c9563f));
   display: grid; place-items: center; color: #fff; font-size: 14px; font-weight: 800;
 }
 
@@ -234,9 +234,9 @@ main { flex: 1 0 auto; padding-block: 28px 56px; }
 }
 @media (max-width: 560px) { .panel { padding: 17px; border-radius: var(--radius); } }
 
-.card-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(228px, 1fr)); }
+.card-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); }
 .tool-card {
-  display: flex; flex-direction: column; gap: 5px;
+  display: flex; align-items: flex-start; gap: 12px;
   background: var(--bg-raised); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 15px 16px;
   text-decoration: none; color: var(--ink);
@@ -246,8 +246,27 @@ main { flex: 1 0 auto; padding-block: 28px 56px; }
   border-color: var(--accent); color: var(--ink);
   transform: translateY(-2px); box-shadow: var(--shadow);
 }
+.tool-body { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
 .tool-card strong { font-weight: 620; font-size: .97rem; letter-spacing: -.01em; }
-.tool-card span { font-size: .84rem; color: var(--ink-3); line-height: 1.45; }
+.tool-card .tool-body > span { font-size: .84rem; color: var(--ink-3); line-height: 1.45; }
+
+/* Tinted tile so the icon reads as part of the card rather than floating text. */
+.tool-icon {
+  flex: none; width: 38px; height: 38px; border-radius: 10px;
+  display: grid; place-items: center;
+  background: var(--accent-soft); color: var(--accent);
+  transition: background .14s, color .14s;
+}
+.tool-card:hover .tool-icon { background: var(--accent); color: var(--bg-raised); }
+.tool-icon .ti { width: 20px; height: 20px; display: block; }
+@media (max-width: 420px) {
+  .tool-icon { width: 34px; height: 34px; border-radius: 9px; }
+  .tool-icon .ti { width: 18px; height: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tool-card, .tool-icon { transition: none; }
+  .tool-card:hover { transform: none; }
+}
 
 /* ===========================================================================
    Forms

@@ -14,12 +14,12 @@ export default {
 <div class="row">
   <div class="field">
     <label for="input">Type a colour</label>
-    <input type="text" id="input" value="#0f7d6b" autocomplete="off" spellcheck="false" style="font-family:var(--font-num)">
+    <input type="text" id="input" value="#740504" autocomplete="off" spellcheck="false" style="font-family:var(--font-num)">
     <span class="hint">HEX, rgb(), hsl() or a CSS colour name.</span>
   </div>
   <div class="field">
     <label for="swatchpick">Or use the picker</label>
-    <input type="color" id="swatchpick" value="#0f7d6b" style="height:42px;padding:4px">
+    <input type="color" id="swatchpick" value="#740504" style="height:42px;padding:4px">
   </div>
 </div>
 

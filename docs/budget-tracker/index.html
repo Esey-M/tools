@@ -7,7 +7,7 @@
 <meta name="description" content="Free monthly budget tracker. Enter income and expenses to see what is left over, how your spending splits across needs, wants and savings, and where it goes.">
 <link rel="canonical" href="https://esey-m.github.io/tools/budget-tracker/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<meta name="theme-color" content="#0f7d6b">
+<meta name="theme-color" content="#740504">
 <meta name="color-scheme" content="light dark">
 
 <meta property="og:type" content="website">
@@ -209,20 +209,32 @@
   <h2 id="rel-h">Related tools</h2>
   <div class="card-grid">
     <a class="tool-card" href="/tools/bill-split-calculator/">
-      <strong>Bill Split Calculator</strong>
-      <span>Split a bill evenly, or by what each person actually ordered.</span>
+      <span class="tool-icon"><svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18l2.5-1.5L10 21l2-1.5L14 21l2.5-1.5L19 21V3z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+      <span class="tool-body">
+        <strong>Bill Split Calculator</strong>
+        <span>Split a bill evenly, or by what each person actually ordered.</span>
+      </span>
     </a>
     <a class="tool-card" href="/tools/compound-interest-calculator/">
-      <strong>Compound Interest Calculator</strong>
-      <span>How savings grow over time with regular contributions and compounding.</span>
+      <span class="tool-icon"><svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M4 16l5-5 4 3 6-7"/><path d="M15 7h4v4"/></svg></span>
+      <span class="tool-body">
+        <strong>Compound Interest Calculator</strong>
+        <span>How savings grow over time with regular contributions and compounding.</span>
+      </span>
     </a>
     <a class="tool-card" href="/tools/loan-calculator/">
-      <strong>Loan Calculator</strong>
-      <span>Monthly repayment, total interest and full cost for any loan amount and rate.</span>
+      <span class="tool-icon"><svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></svg></span>
+      <span class="tool-body">
+        <strong>Loan Calculator</strong>
+        <span>Monthly repayment, total interest and full cost for any loan amount and rate.</span>
+      </span>
     </a>
     <a class="tool-card" href="/tools/percentage-calculator/">
-      <strong>Percentage Calculator</strong>
-      <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+      <span class="tool-icon"><svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 5 5 19"/><circle cx="7.5" cy="7.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg></span>
+      <span class="tool-body">
+        <strong>Percentage Calculator</strong>
+        <span>Find a percentage of a number, what percent one number is of another, or a percent change.</span>
+      </span>
     </a>
   </div>
 </section>
@@ -362,7 +374,7 @@
     expense.forEach(function(r){ if (r.cat) byCat[r.cat] += r.amount; });
     byCat.savings += Math.max(0, left);
 
-    var TARGETS = [['needs', 'Needs', 50, '#0f7d6b'], ['wants', 'Wants', 30, '#e8a33d'], ['savings', 'Savings', 20, '#4f9ee8']];
+    var TARGETS = [['needs', 'Needs', 50, '#740504'], ['wants', 'Wants', 30, '#e8a33d'], ['savings', 'Savings', 20, '#4f9ee8']];
     $('split').innerHTML = TARGETS.map(function(t){
       var amt = byCat[t[0]];
       var pct = totalIn > 0 ? amt / totalIn * 100 : 0;

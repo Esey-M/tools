@@ -142,7 +142,7 @@ export default {
     expense.forEach(function(r){ if (r.cat) byCat[r.cat] += r.amount; });
     byCat.savings += Math.max(0, left);
 
-    var TARGETS = [['needs', 'Needs', 50, '#0f7d6b'], ['wants', 'Wants', 30, '#e8a33d'], ['savings', 'Savings', 20, '#4f9ee8']];
+    var TARGETS = [['needs', 'Needs', 50, '#740504'], ['wants', 'Wants', 30, '#e8a33d'], ['savings', 'Savings', 20, '#4f9ee8']];
     $('split').innerHTML = TARGETS.map(function(t){
       var amt = byCat[t[0]];
       var pct = totalIn > 0 ? amt / totalIn * 100 : 0;

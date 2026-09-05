@@ -23,7 +23,7 @@ export const site = {
   // Leave empty until AdSense is approved; ad slots render as inert
   // placeholders and take up no layout space when this is blank.
   adsenseClient: '',
-  themeColor: '#0f7d6b',
+  themeColor: '#740504',
 };
 
 export const categories = [

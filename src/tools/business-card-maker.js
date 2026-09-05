@@ -66,7 +66,7 @@ export default {
       </div>
       <div class="field">
         <label for="accent">Accent</label>
-        <input type="color" id="accent" value="#0f7d6b" style="height:42px;padding:4px">
+        <input type="color" id="accent" value="#740504" style="height:42px;padding:4px">
       </div>
     </div>
     <label style="display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--ink-2)">

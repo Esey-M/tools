@@ -102,7 +102,7 @@ export default {
   var money2 = function(n){ return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
   var num = function(id, d){ var v = parseFloat($(id).value); return isFinite(v) ? v : d; };
 
-  var COLORS = ['#0f7d6b', '#4f9ee8', '#e8a33d', '#9b7fd4', '#7a8794'];
+  var COLORS = ['#740504', '#4f9ee8', '#e8a33d', '#9b7fd4', '#7a8794'];
 
   function calc(){
     var price = num('price', 0);

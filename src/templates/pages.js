@@ -1,13 +1,17 @@
 import { site, categories, categoryBySlug } from '../config.js';
 import { layout, adSlot, breadcrumbs, searchBox } from './layout.js';
 import { esc, formatDate } from '../lib/html.js';
+import { toolIcon } from '../lib/icons.js';
 import * as seo from '../lib/seo.js';
 
 const B = site.basePath;
 
 const card = (t) => `<a class="tool-card" href="${B}/${t.slug}/">
-  <strong>${esc(t.h1 || t.title)}</strong>
-  <span>${esc(t.cardText || t.description)}</span>
+  <span class="tool-icon">${toolIcon(t)}</span>
+  <span class="tool-body">
+    <strong>${esc(t.h1 || t.title)}</strong>
+    <span>${esc(t.cardText || t.description)}</span>
+  </span>
 </a>`;
 
 /* ------------------------------------------------------------------ home */

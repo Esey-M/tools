@@ -63,7 +63,7 @@ Jordan</textarea>
   var canvas = $('wheel'), ctx = canvas.getContext('2d');
   var angle = 0, spinning = false;
 
-  var COLORS = ['#0f7d6b','#4f9ee8','#e8a33d','#c94f6d','#7a9e4f','#8a6fc4','#3fa8a0','#d47a3a'];
+  var COLORS = ['#740504','#4f9ee8','#e8a33d','#c94f6d','#7a9e4f','#8a6fc4','#3fa8a0','#d47a3a'];
 
   function names(){
     return $('names').value.split('\\n').map(function(s){ return s.trim(); }).filter(Boolean);
