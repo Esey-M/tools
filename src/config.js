@@ -7,13 +7,13 @@ export const site = {
   shortName: 'CinchPad',
   tagline: 'Everyday math, made a cinch',
   // No trailing slash. Used for canonicals, sitemap, OG tags, JSON-LD.
-  origin: 'https://esey-m.github.io',
+  origin: 'https://cinchpad.com',
   // GitHub Pages project sites live under /<repo>. Empty string for a custom
   // domain or a <user>.github.io repo.
-  basePath: '/tools',
+  basePath: '',
   // Set this once the domain is bought and pointed at GitHub Pages. While it is
   // empty no CNAME file is written, so the default *.github.io URL keeps working.
-  customDomain: '',
+  customDomain: 'cinchpad.com',
   locale: 'en_US',
   lang: 'en',
   description:
