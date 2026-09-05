@@ -111,6 +111,10 @@ body {
 }
 
 img, svg, video { max-width: 100%; height: auto; display: block; }
+
+/* Class rules like .row{display:grid} outrank the UA style for [hidden], which
+   left panels visible when JS tried to hide them. This has to win outright. */
+[hidden] { display: none !important; }
 button, input, select, textarea { font: inherit; color: inherit; }
 
 h1, h2, h3, h4 { line-height: 1.2; font-weight: 650; letter-spacing: -0.018em; text-wrap: balance; }
