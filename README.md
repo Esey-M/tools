@@ -32,6 +32,21 @@ npm test          # validate an existing build (used by CI)
 npm run serve     # build and preview on http://localhost:4173
 ```
 
+### Previewing: serve `docs/` as the web root
+
+Pages link assets absolutely (`/style.css`, `/app.js`), so **the web root must be
+`docs/`, not the repo root.** `npm run serve` does this for you.
+
+If you use another server, run it from inside `docs/`:
+
+```bash
+cd docs && python3 -m http.server 8000
+```
+
+Opening a file directly with `file://`, or serving the repo root, gives an
+unstyled page — the browser asks for `/style.css` and gets a 404, because the
+file is at `docs/style.css`.
+
 ## Adding a tool
 
 Create `src/tools/my-tool.js` exporting a default object. The filename must match the `slug`.

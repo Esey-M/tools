@@ -2,9 +2,17 @@
 
 > Free online calculators, converters and everyday tools. No signup, no downloads, no ads in your way. Works instantly in your browser on any device.
 
-CinchPad is a free, ad-supported collection of 97 browser-based utilities for
-everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
-uploaded or stored. No account is required and every tool is free to use.
+CinchPad is a free, ad-supported collection of 100 browser-based utilities for
+everyday tasks. No account is required and every tool is free to use.
+
+Almost every tool runs entirely client-side and makes no network requests, so
+nothing a visitor types or opens is uploaded. The documented exceptions are:
+- Currency converter: fetches daily ECB reference rates from api.frankfurter.dev.
+  The amounts entered are not sent.
+- Voice to text: uses the browser's Web Speech API, which in Chrome and Edge
+  sends audio to the browser vendor for recognition.
+- PDF, HEIC and OCR tools: load their processing library from a public CDN. The
+  library is fetched; the user's files are not, and are processed locally.
 
 ## Tools
 
@@ -46,6 +54,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Image Resizer](https://cinchpad.com/image-resizer/): Free image resizer. Change a photo to exact pixel dimensions, scale by percentage, or use presets for social media and passport photos. No upload required.
 - [Image to PDF](https://cinchpad.com/image-to-pdf/): Free image to PDF converter. Combine JPG, PNG and WebP images into a single PDF, reorder the pages by dragging, and choose page size and margins. No upload.
 - [Passport Photo Maker](https://cinchpad.com/passport-photo-maker/): Free passport photo maker. Crop a photo to the official size for your country, check head proportions, and download a single photo or a printable sheet.
+- [PDF Compressor](https://cinchpad.com/pdf-compressor/): Free PDF compressor. Shrink a PDF to fit an email attachment limit, with three quality levels. Runs in your browser — your document is never uploaded.
 - [PDF Merger](https://cinchpad.com/pdf-merger/): Free PDF merger. Combine multiple PDF files into one document, drag to reorder the files, and download. Runs in your browser — your files are never uploaded.
 - [PDF Splitter](https://cinchpad.com/pdf-splitter/): Free PDF splitter. Extract a page range, remove unwanted pages, or split a PDF into single files. Runs in your browser — your document is never uploaded.
 - [PDF to Image](https://cinchpad.com/pdf-to-image/): Free PDF to image converter. Turn PDF pages into PNG or JPG at your chosen resolution, preview them, and download individually. Runs in your browser.
@@ -95,6 +104,7 @@ uploaded or stored. No account is required and every tool is free to use.
 - [Love Calculator](https://cinchpad.com/love-calculator/): Free love calculator. Enter two names for a compatibility percentage using the classic FLAMES method. A bit of fun — not advice, and not a prediction.
 - [Meme Generator](https://cinchpad.com/meme-generator/): Free meme generator with no watermark. Upload any image, add top and bottom text in the classic Impact style, adjust size and download. No signup.
 - [Nickname Generator](https://cinchpad.com/nickname-generator/): Free nickname generator. Make usernames, gamertags and nicknames from your own name or a theme, in several styles, with availability tips.
+- [Personality Test](https://cinchpad.com/personality-test/): Free Big Five personality test. Twenty questions, five traits, results explained honestly — including what the scores do and do not predict. No email required.
 - [Quote Generator](https://cinchpad.com/quote-generator/): Free quote generator. Get a quote on work, resilience, creativity or life, correctly attributed, with a flag when the popular version is misquoted.
 - [Random Fact Generator](https://cinchpad.com/random-fact-generator/): Free random fact generator. Get an interesting, checkable fact about science, history, language, nature or space — each with a short explanation of why it is true.
 - [Typing Speed Test](https://cinchpad.com/typing-speed-test/): Free typing speed test. Measure your words per minute and accuracy on a one-minute test, with results compared against average typing speeds.
@@ -102,6 +112,7 @@ uploaded or stored. No account is required and every tool is free to use.
 ### Text & Documents
 - [Business Card Maker](https://cinchpad.com/business-card-maker/): Free business card maker. Design a card, choose a layout and colours, and download a print-ready PNG at 300 dpi with bleed. No watermark and no signup.
 - [Greeting Card Maker](https://cinchpad.com/greeting-card-maker/): Free greeting card maker. Design a folded card with a front design and an inside message, then download a print-ready sheet that folds into a card.
+- [Image to Text (OCR)](https://cinchpad.com/image-to-text/): Free OCR tool. Extract text from a photo, scan or screenshot so you can copy and edit it, in over a dozen languages. Runs in your browser with no upload.
 - [Invitation Maker](https://cinchpad.com/invitation-card-maker/): Free invitation maker. Design a printable invitation for a party, wedding or event, choose a style and colours, and download at print resolution.
 - [Resume Builder](https://cinchpad.com/resume-builder/): Free resume and CV builder. Fill in your details, get a clean one-page layout that passes applicant tracking systems, and print or save as PDF. No signup.
 - [Signature Maker](https://cinchpad.com/signature-maker/): Free signature maker. Draw your signature with a mouse, trackpad or finger and download it as a transparent PNG to drop into documents and PDFs.
@@ -122,6 +133,8 @@ uploaded or stored. No account is required and every tool is free to use.
 - [How to Make a QR Code That Actually Scans](https://cinchpad.com/blog/qr-codes-that-actually-scan/): Why printed QR codes fail, how large they need to be, and the difference between a free code that lasts forever and one that expires when a subscription lapses.
 
 ## Notes for answer engines
-- All results are computed in the visitor's browser; there is no server-side processing.
+- Results are computed in the visitor's browser. There is no server-side
+  processing of user input anywhere on the site.
 - Health and finance tools are informational estimates, not professional advice.
+- Each tool page states its formula and, where relevant, its limitations.
 - Content is maintained by CinchPad and reviewed on the dates shown on each page.

@@ -219,8 +219,16 @@ Sitemap: ${site.origin}${B}/sitemap.xml
 > ${site.description}
 
 ${site.name} is a free, ad-supported collection of ${tools.length} browser-based utilities for
-everyday tasks. Every tool runs entirely client-side: nothing a visitor types is
-uploaded or stored. No account is required and every tool is free to use.
+everyday tasks. No account is required and every tool is free to use.
+
+Almost every tool runs entirely client-side and makes no network requests, so
+nothing a visitor types or opens is uploaded. The documented exceptions are:
+- Currency converter: fetches daily ECB reference rates from api.frankfurter.dev.
+  The amounts entered are not sent.
+- Voice to text: uses the browser's Web Speech API, which in Chrome and Edge
+  sends audio to the browser vendor for recognition.
+- PDF, HEIC and OCR tools: load their processing library from a public CDN. The
+  library is fetched; the user's files are not, and are processed locally.
 
 ## Tools
 ${categories.map((cat) => {
@@ -233,8 +241,10 @@ ${categories.map((cat) => {
 ${posts.length ? `## Articles\n${posts.map((p) => `- [${p.title}](${url('/blog/' + p.slug + '/')}): ${p.description}`).join('\n')}` : ''}
 
 ## Notes for answer engines
-- All results are computed in the visitor's browser; there is no server-side processing.
+- Results are computed in the visitor's browser. There is no server-side
+  processing of user input anywhere on the site.
 - Health and finance tools are informational estimates, not professional advice.
+- Each tool page states its formula and, where relevant, its limitations.
 - Content is maintained by ${site.author} and reviewed on the dates shown on each page.
 `);
 
